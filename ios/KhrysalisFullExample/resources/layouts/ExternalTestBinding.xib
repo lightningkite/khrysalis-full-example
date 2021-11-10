@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="external_testXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="scrollView" id="outletekoB7q" property="scrollView"/>
+        <outlet destination="openMap" id="outletf9Ko6l" property="openMap"/>
+        <outlet destination="openEvent" id="outletP4Ss0x" property="openEvent"/>
+        <outlet destination="openWeb" id="outletUl2jbx" property="openWeb"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollView" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <stackView alignment="top" axis="vertical" contentMode="scaleToFill" id="stackViewZCD9Kb" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="openMap" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Show me Lightning Kite's Location">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="openWeb" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Show me Lightning Kite's Website">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="openEvent" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Show me a future event">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+          </subviews>
+          <constraints>
+            <constraint constant="32.0" firstAttribute="width" id="constraint76rTob" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="openMap"/>
+            <constraint constant="32.0" firstAttribute="width" id="constraintoW11HZ" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="openMap"/>
+            <constraint constant="32.0" firstAttribute="width" id="constraintS5xmjk" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="openWeb"/>
+            <constraint constant="32.0" firstAttribute="width" id="constraint9aPWAr" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="openWeb"/>
+            <constraint constant="32.0" firstAttribute="width" id="constraintQqX91W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="openEvent"/>
+            <constraint constant="32.0" firstAttribute="width" id="constraint5BXqvR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="openEvent"/>
+          </constraints>
+          <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
+        </stackView>
+      </subviews>
+      <constraints>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewZCD9Kb" id="constraintnVhwL8" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollView"/>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintD1pE8T" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewZCD9Kb"/>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewZCD9Kb" id="constraintYR6R16" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollView"/>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraint3nNaUy" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+        <constraint constant="-0.0" firstAttribute="width" id="constraint0DC5bb" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+      </constraints>
+    </scrollView>
+  </objects>
+  <resources/>
+</document>

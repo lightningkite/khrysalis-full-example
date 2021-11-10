@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="view_pager_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="viewPager" id="outletekoB7q" property="viewPager"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <view clipsSubviews="YES" contentMode="scaleToFill" id="viewGeD4Au" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="none" id="viewPager" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
+          <collectionViewFlowLayout id="TAY-Sl-kKJ" key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10">
+            <size height="128" key="itemSize" width="128"/>
+            <size height="0.0" key="headerReferenceSize" width="0.0"/>
+            <size height="0.0" key="footerReferenceSize" width="0.0"/>
+            <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
+          </collectionViewFlowLayout>
+        </collectionView>
+      </subviews>
+      <constraints>
+        <constraint constant="0.0" firstAttribute="top" firstItem="viewPager" id="constraintYb5seV" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintuFoW1J" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewPager"/>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="viewPager" id="constraintBzP97h" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraintq325O3" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewPager"/>
+      </constraints>
+    </view>
+  </objects>
+  <resources/>
+</document>

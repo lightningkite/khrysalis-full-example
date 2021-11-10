@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="location_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="getLocation" id="outletekoB7q" property="getLocation"/>
+        <outlet destination="locationDisplay" id="outletf9Ko6l" property="locationDisplay"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="getLocation" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+          <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+          <userDefinedRuntimeAttributes>
+            <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+            <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+          </userDefinedRuntimeAttributes>
+          <state key="normal" title="Get Location">
+            <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+          </state>
+          <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+        </button>
+        <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="locationDisplay" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Camera" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+          <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+          <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+        </label>
+        <view id="viewNzN4dp" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
+          <constraints>
+            <constraint constant="1.0" firstAttribute="width" id="constraintHPvwfj" multiplier="1.0" priority="999" relation="equal"/>
+          </constraints>
+        </view>
+      </subviews>
+      <constraints>
+        <constraint constant="32.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="getLocation"/>
+        <constraint constant="32.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="getLocation"/>
+        <constraint constant="32.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="locationDisplay"/>
+        <constraint constant="32.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="locationDisplay"/>
+      </constraints>
+      <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
+    </stackView>
+  </objects>
+  <resources/>
+</document>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="video_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="play" id="outletekoB7q" property="play"/>
+        <outlet destination="galleryMulti" id="outletf9Ko6l" property="galleryMulti"/>
+        <outlet destination="thumbnail" id="outletP4Ss0x" property="thumbnail"/>
+        <outlet destination="video" id="outletUl2jbx" property="video"/>
+        <outlet destination="camera" id="outletYUeH5w" property="camera"/>
+        <outlet destination="gallery" id="outletjOHLTR" property="gallery"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <view clipsSubviews="YES" contentMode="scaleToFill" customClass="ContainerView" customModule="RxSwiftPlus" id="video" placeholderIntrinsicHeight="180" placeholderIntrinsicWidth="320" translatesAutoresizingMaskIntoConstraints="NO">
+          <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="backgroundColor" red="0.0"/>
+          <constraints>
+            <constraint constant="200.0" firstAttribute="height" id="constraintxyxzJP" multiplier="1.0" priority="999" relation="equal"/>
+          </constraints>
+        </view>
+        <view id="viewFskwBf" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <view id="viewCvMPJV" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" id="thumbnail" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251"/>
+              </subviews>
+              <constraints>
+                <constraint constant="0.0" firstAttribute="top" firstItem="thumbnail" id="constraint9qRfVn" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewCvMPJV"/>
+                <constraint constant="0.0" firstAttribute="bottom" id="constrainta40km2" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="thumbnail"/>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="thumbnail" id="constraint1G1BSw" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewCvMPJV"/>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintXxtMQZ" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="thumbnail"/>
+                <constraint constant="60.0" firstAttribute="width" id="constraintI9ooyS" multiplier="1.0" priority="999" relation="equal"/>
+                <constraint constant="30.0" firstAttribute="height" id="constraintxPZDJI" multiplier="1.0" priority="999" relation="equal"/>
+              </constraints>
+              <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="backgroundColor" red="0.0"/>
+            </view>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="top" firstItem="viewCvMPJV" id="constraintlWkpFI" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewFskwBf"/>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintXo1vI5" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewCvMPJV"/>
+          </constraints>
+        </view>
+        <view id="viewNzN4dp" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="play" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Play video">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="top" firstItem="play" id="constraint5MjZMi" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewNzN4dp"/>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintoyCvXY" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="play"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="play" id="constraintXoiKYx" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewNzN4dp"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintpjU4xO" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="play"/>
+          </constraints>
+        </view>
+        <view id="viewE08cok" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="gallery" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Gallery">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="top" firstItem="gallery" id="constrainti32vUK" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewE08cok"/>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintoHRDHw" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="gallery"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="gallery" id="constraintfKtA3Q" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewE08cok"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintu1ROv4" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="gallery"/>
+          </constraints>
+        </view>
+        <view id="viewWA7jCy" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="camera" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Camera">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="top" firstItem="camera" id="constraintrBGDFg" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewWA7jCy"/>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintOY6BSp" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="camera"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="camera" id="constraintII7Vj9" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewWA7jCy"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintztySvs" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="camera"/>
+          </constraints>
+        </view>
+        <view id="viewPmsiUe" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="galleryMulti" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+              </userDefinedRuntimeAttributes>
+              <state key="normal" title="Gallery Multiple">
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+              </state>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+            </button>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="top" firstItem="galleryMulti" id="constraintNUwpee" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewPmsiUe"/>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraint5vmuJR" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="galleryMulti"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="galleryMulti" id="constraintG0jwCp" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewPmsiUe"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintJHvO9p" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="galleryMulti"/>
+          </constraints>
+        </view>
+        <view id="viewt9dnFE" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
+          <constraints>
+            <constraint constant="1.0" firstAttribute="width" id="constraintrOw99K" multiplier="1.0" priority="999" relation="equal"/>
+          </constraints>
+        </view>
+      </subviews>
+      <constraints>
+        <constraint constant="0.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="video"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="video"/>
+        <constraint constant="8.0" firstAttribute="leading" firstItem="viewCvMPJV" id="constrainteknD6T" multiplier="1.0" priority="300" relation="equal" secondAttribute="leading" secondItem="stackViewGeD4Au"/>
+        <constraint constant="8.0" firstAttribute="leading" firstItem="viewCvMPJV" id="constraintcw5Hye" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="leading" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="centerX" id="constraintCQsGPt" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerX" secondItem="viewCvMPJV"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintVquMGL" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewFskwBf"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintTiEjpw" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewFskwBf"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintHHCiq3" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewNzN4dp"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintFlSUtr" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewNzN4dp"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintDTjHZS" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewE08cok"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintrOa4CA" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewE08cok"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintTx9Wuj" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewWA7jCy"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintjs5JXo" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewWA7jCy"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraint9mVh52" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewPmsiUe"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintcjGD41" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewPmsiUe"/>
+      </constraints>
+      <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
+    </stackView>
+  </objects>
+  <resources/>
+</document>

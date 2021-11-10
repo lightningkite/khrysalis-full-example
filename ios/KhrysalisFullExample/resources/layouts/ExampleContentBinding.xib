@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="example_contentXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="chainedNumber" id="outletekoB7q" property="chainedNumber"/>
+        <outlet destination="scrollToTop" id="outletf9Ko6l" property="scrollToTop"/>
+        <outlet destination="chainedIncrement" id="outletP4Ss0x" property="chainedIncrement"/>
+        <outlet destination="scrollView" id="outletUl2jbx" property="scrollView"/>
+        <outlet destination="exampleContentNumber" id="outletYUeH5w" property="exampleContentNumber"/>
+        <outlet destination="exampleContentIncrement" id="outletjOHLTR" property="exampleContentIncrement"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollView" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <stackView alignment="top" axis="vertical" contentMode="scaleToFill" id="stackViewZCD9Kb" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <view id="viewVPE6Vk" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="labels20918" lineBreakMode="tailTruncation" opaque="NO" text="Welcome!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
+                </label>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="labels20918" id="constraint1VdIyH" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewVPE6Vk"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintTg18Dr" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="labels20918"/>
+              </constraints>
+            </view>
+            <view id="viewf3Bewh" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="labeloReXr7" lineBreakMode="tailTruncation" opaque="NO" text="This an example for LK Rx. This screen exists to help you figure out stuff about it." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                  <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                </label>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="labeloReXr7" id="constraintK0k8rn" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewf3Bewh"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintHHWybE" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="labeloReXr7"/>
+              </constraints>
+            </view>
+            <view id="viewbJExFy" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewBRwRl6" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
+                  <subviews>
+                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="exampleContentNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                    </label>
+                    <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="exampleContentIncrement" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                      <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                        <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                      </userDefinedRuntimeAttributes>
+                      <state key="normal" title="Increment the Number">
+                        <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                      </state>
+                      <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+                    </button>
+                  </subviews>
+                  <constraints>
+                    <constraint constant="16.0" firstAttribute="height" id="constraint9rYXEl" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="exampleContentNumber"/>
+                    <constraint constant="16.0" firstAttribute="height" id="constraintWuzRLJ" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="exampleContentNumber"/>
+                    <constraint constant="16.0" firstAttribute="height" id="constraint2gT29V" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="exampleContentIncrement"/>
+                    <constraint constant="16.0" firstAttribute="height" id="constraintEhaiaI" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="exampleContentIncrement"/>
+                  </constraints>
+                  <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+                </stackView>
+              </subviews>
+              <constraints>
+                <constraint constant="0.0" firstAttribute="top" firstItem="stackViewBRwRl6" id="constraintl5jIRR" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewbJExFy"/>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintS1Prqz" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewBRwRl6"/>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewBRwRl6" id="constraintWetCTC" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewbJExFy"/>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraint0lZhI5" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewBRwRl6"/>
+              </constraints>
+            </view>
+            <view id="viewxdwuaZ" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackView4MHI1w" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
+                  <subviews>
+                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="chainedNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                    </label>
+                    <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="chainedIncrement" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                      <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                        <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                      </userDefinedRuntimeAttributes>
+                      <state key="normal" title="Increment the Number">
+                        <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                      </state>
+                      <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+                    </button>
+                  </subviews>
+                  <constraints>
+                    <constraint constant="16.0" firstAttribute="height" id="constraintAt3eAH" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="chainedNumber"/>
+                    <constraint constant="16.0" firstAttribute="height" id="constraintpoEMcS" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="chainedNumber"/>
+                    <constraint constant="16.0" firstAttribute="height" id="constraintiS4Qi5" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="chainedIncrement"/>
+                    <constraint constant="16.0" firstAttribute="height" id="constraintTRbkoH" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="chainedIncrement"/>
+                  </constraints>
+                  <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+                </stackView>
+              </subviews>
+              <constraints>
+                <constraint constant="0.0" firstAttribute="top" firstItem="stackView4MHI1w" id="constraint8bgy4h" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewxdwuaZ"/>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintSRQJTA" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackView4MHI1w"/>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="stackView4MHI1w" id="constraint4ymIkv" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewxdwuaZ"/>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintjaZJFL" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackView4MHI1w"/>
+              </constraints>
+            </view>
+            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" id="imageViewBwYICb" image="reason_expertise" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
+              <constraints>
+                <constraint constant="100.0" firstAttribute="width" id="constraintT9wGdX" multiplier="1.0" priority="999" relation="equal"/>
+                <constraint constant="50.0" firstAttribute="height" id="constraintCcn0mO" multiplier="1.0" priority="999" relation="equal"/>
+              </constraints>
+            </imageView>
+            <view id="viewd9D5db" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="scrollToTop" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                    <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                  </userDefinedRuntimeAttributes>
+                  <state key="normal" title="Scroll to Top">
+                    <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                  </state>
+                  <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+                </button>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="scrollToTop" id="constraint4DVQHo" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewd9D5db"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintmgk8xG" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="scrollToTop"/>
+              </constraints>
+            </view>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="trailing" firstItem="viewVPE6Vk" id="constraint76rTob" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="labels20918" id="constraintoW11HZ" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintS5xmjk" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="labels20918"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraint9aPWAr" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="labels20918"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintQqX91W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewVPE6Vk"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraint5BXqvR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewVPE6Vk"/>
+            <constraint constant="8.0" firstAttribute="trailing" firstItem="viewf3Bewh" id="constraintn7hjMz" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="labeloReXr7" id="constraintyZ4Jsd" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintvfst86" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="labeloReXr7"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintf4Ss1X" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="labeloReXr7"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintoGtYln" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewf3Bewh"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraint6hPReV" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewf3Bewh"/>
+            <constraint constant="8.0" firstAttribute="trailing" firstItem="viewbJExFy" id="constraintFmOi9u" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintooXg8N" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewbJExFy"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintkQrvpE" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewbJExFy"/>
+            <constraint constant="8.0" firstAttribute="trailing" firstItem="viewxdwuaZ" id="constrainto5pw4f" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintpkncRp" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewxdwuaZ"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintTe6joZ" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewxdwuaZ"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraint3UIdKh" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="imageViewBwYICb"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintfiaLKF" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="imageViewBwYICb"/>
+            <constraint constant="8.0" firstAttribute="trailing" firstItem="viewd9D5db" id="constraintd9iTJH" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="scrollToTop" id="constraintkD7PPr" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintVUJwOz" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="scrollToTop"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintS2rmou" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="scrollToTop"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraint8E2YCd" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewd9D5db"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintffjeEJ" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewd9D5db"/>
+          </constraints>
+          <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+        </stackView>
+      </subviews>
+      <constraints>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewZCD9Kb" id="constraintnVhwL8" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollView"/>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintD1pE8T" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewZCD9Kb"/>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewZCD9Kb" id="constraintYR6R16" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollView"/>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraint3nNaUy" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+        <constraint constant="-0.0" firstAttribute="width" id="constraint0DC5bb" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+      </constraints>
+    </scrollView>
+  </objects>
+  <resources>
+    <image height="75" name="reason_expertise" width="108"/>
+  </resources>
+</document>

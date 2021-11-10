@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'KhrysalisFullExample' do
+
+  #target 'KhrysalisFullExample_Tests' do
+  #  inherit! :search_paths
+  #  
+  #end
+  pod 'RxSwift', :path => '../../RxSwift/RxSwift.podspec'
+  pod 'RxSwiftPlus', :path => '../../RxSwiftPlus/RxSwiftPlus.podspec'
+  pod 'XmlToXibRuntime', :path => '../../android-xml-to-ios-xib/XmlToXibRuntime/XmlToXibRuntime.podspec'
+  pod 'KhrysalisRuntime', :path => '../../khrysalis/ios-runtime/KhrysalisRuntime/KhrysalisRuntime.podspec'
+  pod "RxCoreLocation", :git => 'https://github.com/RxSwiftCommunity/RxCoreLocation.git', :branch => 'master'
+end

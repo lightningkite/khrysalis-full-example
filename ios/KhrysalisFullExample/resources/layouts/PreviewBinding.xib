@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="previewXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="viewName" id="outletekoB7q" property="viewName"/>
+        <outlet destination="pager" id="outletf9Ko6l" property="pager"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <view id="viewoUvQdu" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="viewName" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="View Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+            </label>
+          </subviews>
+          <constraints>
+            <constraint constant="8.0" firstAttribute="top" firstItem="viewName" id="constraintySjrFE" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewoUvQdu"/>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintVbR0tT" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewName"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="viewName" id="constraintKicfVk" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewoUvQdu"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintx5LQy9" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewName"/>
+          </constraints>
+        </view>
+        <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="none" id="pager" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
+          <collectionViewFlowLayout id="TAY-Sl-kKJ" key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10">
+            <size height="128" key="itemSize" width="128"/>
+            <size height="0.0" key="headerReferenceSize" width="0.0"/>
+            <size height="0.0" key="footerReferenceSize" width="0.0"/>
+            <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
+          </collectionViewFlowLayout>
+          <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="backgroundColor" red="1.0"/>
+        </collectionView>
+      </subviews>
+      <constraints>
+        <constraint constant="0.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewoUvQdu"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewoUvQdu"/>
+        <constraint constant="0.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="pager"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="pager"/>
+      </constraints>
+      <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
+    </stackView>
+  </objects>
+  <resources/>
+</document>

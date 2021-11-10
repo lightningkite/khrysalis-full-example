@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="websocket_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="input" id="outletekoB7q" property="input"/>
+        <outlet destination="submit" id="outletf9Ko6l" property="submit"/>
+        <outlet destination="items" id="outletP4Ss0x" property="items"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="labeloUvQdu" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="This attaches to a socket that just echos the value back." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+          <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+          <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+        </label>
+        <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="none" id="items" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
+          <collectionViewFlowLayout id="TAY-Sl-kKJ" key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10">
+            <size height="128" key="itemSize" width="128"/>
+            <size height="0.0" key="headerReferenceSize" width="0.0"/>
+            <size height="0.0" key="footerReferenceSize" width="0.0"/>
+            <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
+          </collectionViewFlowLayout>
+        </collectionView>
+        <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewNzN4dp" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <view horizontalHuggingPriority="100" id="viewSqOO2G" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="input" minimumFontSize="17" opaque="NO" placeholder="" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="14" type="system"/>
+                  <textInputTraits key="textInputTraits"/>
+                  <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                </textField>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="input" id="constraintQFsEWd" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewSqOO2G"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintbZOQFK" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="input"/>
+              </constraints>
+            </view>
+            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="submit" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <state image="ic_send_black_24dp" key="normal"/>
+            </button>
+          </subviews>
+          <constraints>
+            <constraint constant="0.0" firstAttribute="top" id="constraintnXqytJ" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewSqOO2G"/>
+            <constraint constant="8.0" firstAttribute="top" firstItem="input" id="constraint50khFe" multiplier="1.0" priority="995" relation="equal" secondAttribute="top" secondItem="stackViewNzN4dp"/>
+            <constraint constant="8.0" firstAttribute="top" firstItem="input" id="constraintchaZBO" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="top" secondItem="stackViewNzN4dp"/>
+            <constraint constant="0.0" firstAttribute="centerY" id="constraintncZYqa" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerY" secondItem="input"/>
+            <constraint constant="0.0" firstAttribute="height" id="constraintIQF0Ma" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="viewSqOO2G"/>
+            <constraint constant="0.0" firstAttribute="height" id="constrainttoegQq" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="viewSqOO2G"/>
+            <constraint constant="0.0" firstAttribute="height" id="constraintkbJBIC" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="submit"/>
+            <constraint constant="0.0" firstAttribute="height" id="constraintQhpZEk" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="submit"/>
+          </constraints>
+          <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
+        </stackView>
+      </subviews>
+      <constraints>
+        <constraint constant="16.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="labeloUvQdu"/>
+        <constraint constant="16.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="labeloUvQdu"/>
+        <constraint constant="16.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="items"/>
+        <constraint constant="16.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="items"/>
+        <constraint constant="16.0" firstAttribute="width" id="constraintCQsGPt" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewNzN4dp"/>
+        <constraint constant="16.0" firstAttribute="width" id="constraintVquMGL" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewNzN4dp"/>
+      </constraints>
+      <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+    </stackView>
+  </objects>
+  <resources>
+    <image height="24" name="ic_send_black_24dp" width="24"/>
+  </resources>
+</document>
