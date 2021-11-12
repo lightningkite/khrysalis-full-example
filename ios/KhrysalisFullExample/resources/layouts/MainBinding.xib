@@ -1,102 +1,119 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
-  <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
-  </dependencies>
-  <objects>
-    <placeholder customClass="mainXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
-      <connections>
-        <outlet destination="bottom0" id="outletekoB7q" property="bottom0"/>
-        <outlet destination="mainBack" id="outletf9Ko6l" property="mainBack"/>
-        <outlet destination="mainContent" id="outletP4Ss0x" property="mainContent"/>
-        <outlet destination="topBar" id="outletUl2jbx" property="topBar"/>
-        <outlet destination="title" id="outletYUeH5w" property="title"/>
-      </connections>
-    </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
-    <view id="viewGeD4Au" translatesAutoresizingMaskIntoConstraints="NO">
-      <subviews>
-        <stackView axis="vertical" contentMode="scaleToFill" id="stackViewHV2qZ5" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
-          <subviews>
-            <view id="viewRK57e9" translatesAutoresizingMaskIntoConstraints="NO">
-              <subviews>
-                <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="topBar" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
-                  <subviews>
-                    <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="mainBack" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <color alpha="0.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="backgroundColor" red="0.0"/>
-                      <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
-                      <state image="ic_arrow_back_white_24dp" key="normal"/>
-                    </button>
-                    <view horizontalHuggingPriority="100" id="viewPNbJ9v" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO">
-                      <subviews>
-                        <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="title" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Lightning Kite Rx Example" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                          <fontDescription key="fontDescription" pointSize="18.0" type="boldSystem"/>
-                          <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="textColor" red="1.0"/>
-                        </label>
-                      </subviews>
-                      <constraints>
-                        <constraint constant="4.0" firstAttribute="top" firstItem="title" id="constraint4E5b5w" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewPNbJ9v"/>
-                        <constraint constant="4.0" firstAttribute="bottom" id="constraintCOzvRx" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="title"/>
-                        <constraint constant="4.0" firstAttribute="leading" firstItem="title" id="constraintJtv3D0" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewPNbJ9v"/>
-                        <constraint constant="4.0" firstAttribute="trailing" id="constraintJwe0DL" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="title"/>
-                      </constraints>
-                    </view>
-                  </subviews>
-                  <constraints>
-                    <constraint constant="0.0" firstAttribute="height" id="constraintFyZCZ1" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="mainBack"/>
-                    <constraint constant="0.0" firstAttribute="height" id="constraintL8m823" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="mainBack"/>
-                    <constraint constant="0.0" firstAttribute="height" id="constraint3xlEZK" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="viewPNbJ9v"/>
-                    <constraint constant="0.0" firstAttribute="height" id="constraintnIAz0f" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="viewPNbJ9v"/>
-                  </constraints>
-                  <edgeInsets bottom="0.0" key="layoutMargins" left="8.0" right="8.0" top="0.0"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="mainXml" customModule="KhrysalisFullExample">
+            <connections>
+                <outlet property="bottom0" destination="bottom0" id="outletekoB7q"/>
+                <outlet property="mainBack" destination="mainBack" id="outletf9Ko6l"/>
+                <outlet property="mainContent" destination="mainContent" id="outletP4Ss0x"/>
+                <outlet property="title" destination="title" id="outletYUeH5w"/>
+                <outlet property="topBar" destination="topBar" id="outletUl2jbx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewGeD4Au">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="stackViewHV2qZ5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewRK57e9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="84"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="topBar">
+                                    <rect key="frame" x="0.0" y="44" width="414" height="40"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="mainBack">
+                                            <rect key="frame" x="8" y="0.0" width="40" height="40"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="calibratedRGB"/>
+                                            <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                            <state key="normal" image="ic_arrow_back_white_24dp"/>
+                                        </button>
+                                        <view contentMode="scaleToFill" horizontalHuggingPriority="100" translatesAutoresizingMaskIntoConstraints="NO" id="viewPNbJ9v">
+                                            <rect key="frame" x="48" y="5.5" width="358" height="29.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Lightning Kite Rx Example" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="title">
+                                                    <rect key="frame" x="4" y="4" width="350" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="title" firstAttribute="top" secondItem="viewPNbJ9v" secondAttribute="top" constant="4" id="constraint4E5b5w"/>
+                                                <constraint firstAttribute="bottom" secondItem="title" secondAttribute="bottom" constant="4" id="constraintCOzvRx"/>
+                                                <constraint firstItem="title" firstAttribute="leading" secondItem="viewPNbJ9v" secondAttribute="leading" constant="4" id="constraintJtv3D0"/>
+                                                <constraint firstAttribute="trailing" secondItem="title" secondAttribute="trailing" constant="4" id="constraintJwe0DL"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="viewPNbJ9v" firstAttribute="height" relation="greaterThanOrEqual" secondItem="topBar" secondAttribute="height" priority="996" id="constraint3xlEZK"/>
+                                        <constraint firstItem="mainBack" firstAttribute="height" relation="greaterThanOrEqual" secondItem="topBar" secondAttribute="height" priority="996" id="constraintFyZCZ1"/>
+                                        <constraint firstItem="mainBack" firstAttribute="height" secondItem="topBar" secondAttribute="height" priority="995" id="constraintL8m823"/>
+                                        <constraint firstItem="viewPNbJ9v" firstAttribute="height" secondItem="topBar" secondAttribute="height" priority="995" id="constraintnIAz0f"/>
+                                    </constraints>
+                                    <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="8"/>
+                                </stackView>
+                            </subviews>
+                            <viewLayoutGuide key="safeArea" id="viewRK57e9SafeAreaGuide"/>
+                            <color key="backgroundColor" name="color_colorPrimary"/>
+                            <constraints>
+                                <constraint firstItem="topBar" firstAttribute="leading" secondItem="viewRK57e9" secondAttribute="leading" id="constraintMb80Fu"/>
+                                <constraint firstItem="topBar" firstAttribute="top" secondItem="viewRK57e9SafeAreaGuide" secondAttribute="top" id="constraintTVQElE"/>
+                                <constraint firstAttribute="bottom" secondItem="topBar" secondAttribute="bottom" id="constraintclb078"/>
+                                <constraint firstAttribute="trailing" secondItem="topBar" secondAttribute="trailing" id="constrainttKMLDD"/>
+                            </constraints>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="100" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="mainContent" customClass="SwapView" customModule="RxSwiftPlus">
+                            <rect key="frame" x="0.0" y="84" width="414" height="812"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bottom0">
+                            <rect key="frame" x="0.0" y="896" width="414" height="0.0"/>
+                            <color key="backgroundColor" name="color_colorPrimary"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" id="constraintxNQycM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="bottom0" firstAttribute="width" relation="greaterThanOrEqual" secondItem="stackViewHV2qZ5" secondAttribute="width" priority="700" id="constraint8GlwQc"/>
+                        <constraint firstItem="mainContent" firstAttribute="width" relation="greaterThanOrEqual" secondItem="stackViewHV2qZ5" secondAttribute="width" priority="700" id="constraintOEMSse"/>
+                        <constraint firstItem="viewRK57e9" firstAttribute="width" secondItem="stackViewHV2qZ5" secondAttribute="width" priority="300" id="constraintQ9bqC8"/>
+                        <constraint firstItem="mainContent" firstAttribute="width" secondItem="stackViewHV2qZ5" secondAttribute="width" priority="300" id="constraintWaaovD"/>
+                        <constraint firstItem="viewRK57e9" firstAttribute="width" relation="greaterThanOrEqual" secondItem="stackViewHV2qZ5" secondAttribute="width" priority="700" id="constraintZkAHO8"/>
+                        <constraint firstItem="bottom0" firstAttribute="width" secondItem="stackViewHV2qZ5" secondAttribute="width" priority="300" id="constraintinc2Ck"/>
+                    </constraints>
+                    <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                 </stackView>
-              </subviews>
-              <constraints>
-                <constraint constant="0.0" firstAttribute="top" firstItem="topBar" id="constraintz6mqmY" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewRK57e9"/>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintffDl5W" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="topBar"/>
-                <constraint constant="0.0" firstAttribute="leading" firstItem="topBar" id="constraintEyBt8k" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewRK57e9"/>
-                <constraint constant="0.0" firstAttribute="trailing" id="constraintcvwhcF" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="topBar"/>
-              </constraints>
-              <color key="backgroundColor" name="color_colorPrimary"/>
-            </view>
-            <view clipsSubviews="YES" contentMode="scaleToFill" customClass="SwapView" customModule="RxSwiftPlus" id="mainContent" placeholderIntrinsicHeight="50" placeholderIntrinsicWidth="50" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
-              <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="backgroundColor" red="1.0"/>
-            </view>
-            <view clipsSubviews="YES" contentMode="scaleToFill" id="bottom0" translatesAutoresizingMaskIntoConstraints="NO">
-              <color key="backgroundColor" name="color_colorPrimary"/>
-              <constraints>
-                <constraint constant="0.0" firstAttribute="height" id="constraintxNQycM" multiplier="1.0" priority="999" relation="equal"/>
-              </constraints>
-            </view>
-          </subviews>
-          <constraints>
-            <constraint constant="0.0" firstAttribute="width" id="constraintZkAHO8" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewRK57e9"/>
-            <constraint constant="0.0" firstAttribute="width" id="constraintQ9bqC8" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewRK57e9"/>
-            <constraint constant="0.0" firstAttribute="width" id="constraintOEMSse" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="mainContent"/>
-            <constraint constant="0.0" firstAttribute="width" id="constraintWaaovD" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="mainContent"/>
-            <constraint constant="0.0" firstAttribute="width" id="constraint8GlwQc" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="bottom0"/>
-            <constraint constant="0.0" firstAttribute="width" id="constraintinc2Ck" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="bottom0"/>
-          </constraints>
-          <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
-        </stackView>
-      </subviews>
-      <constraints>
-        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewHV2qZ5" id="constraintYb5seV" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="bottom" id="constraintuFoW1J" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewHV2qZ5"/>
-        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewHV2qZ5" id="constraintBzP97h" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="trailing" id="constraintq325O3" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewHV2qZ5"/>
-      </constraints>
-      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="backgroundColor" red="0.0"/>
-    </view>
-  </objects>
-  <resources>
-    <image height="24" name="ic_arrow_back_white_24dp" width="24"/>
-    <namedColor name="color_colorPrimary">
-      <color alpha="1.0" blue="0.6117647" colorSpace="custom" customColorSpace="sRGB" green="0.4627451" red="0.0627451"/>
-    </namedColor>
-  </resources>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="stackViewHV2qZ5" firstAttribute="leading" secondItem="viewGeD4Au" secondAttribute="leading" id="constraintBzP97h"/>
+                <constraint firstItem="stackViewHV2qZ5" firstAttribute="top" secondItem="viewGeD4Au" secondAttribute="top" id="constraintYb5seV"/>
+                <constraint firstAttribute="trailing" secondItem="stackViewHV2qZ5" secondAttribute="trailing" id="constraintq325O3"/>
+                <constraint firstAttribute="bottom" secondItem="stackViewHV2qZ5" secondAttribute="bottom" id="constraintuFoW1J"/>
+            </constraints>
+            <point key="canvasLocation" x="-58" y="70"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="mainContent">
+            <size key="intrinsicContentSize" width="50" height="50"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_arrow_back_white_24dp" width="24" height="24"/>
+        <namedColor name="color_colorPrimary">
+            <color red="0.062745098039215685" green="0.46274509803921571" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

@@ -27,12 +27,16 @@
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="label7Ao08Z" lineBreakMode="tailTruncation" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
+                  <nil key="highlightedColor"/>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
                 </label>
               </subviews>
               <constraints>
                 <constraint constant="8.0" firstAttribute="top" firstItem="label7Ao08Z" id="constraintUtzOIG" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewtuqTWc"/>
                 <constraint constant="8.0" firstAttribute="bottom" id="constraintFtNeXN" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="label7Ao08Z"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="label7Ao08Z" id="constraintdhx5wN" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewtuqTWc"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintwRrpn4" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="label7Ao08Z"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintNW4hdM" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="label7Ao08Z"/>
               </constraints>
             </view>
             <view id="viewza6yYL" translatesAutoresizingMaskIntoConstraints="NO">
@@ -95,6 +99,7 @@
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="label0q97P7" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Test Check" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                  <nil key="highlightedColor"/>
                   <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
                 </label>
                 <view id="viewXbgbSR" translatesAutoresizingMaskIntoConstraints="NO">
@@ -131,18 +136,18 @@
                   <constraints>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="stackViewo3ehCr" id="constraintFLuycz" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewXbgbSR"/>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintaJHCgC" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewo3ehCr"/>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="stackViewo3ehCr" id="constraintbYk4pp" multiplier="1.0" priority="995" relation="equal" secondAttribute="top" secondItem="viewXbgbSR"/>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="stackViewo3ehCr" id="constrainterqjoc" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="top" secondItem="viewXbgbSR"/>
+                    <constraint constant="0.0" firstAttribute="centerY" id="constraintUDiE6f" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerY" secondItem="stackViewo3ehCr"/>
                   </constraints>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="0.0" firstAttribute="height" id="constraintieg1xq" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="label0q97P7"/>
-                <constraint constant="0.0" firstAttribute="height" id="constraintVDFckd" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="label0q97P7"/>
+                <constraint constant="0.0" firstAttribute="height" firstItem="label0q97P7" id="constraintieg1xq" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackView6r3IJV"/>
+                <constraint constant="0.0" firstAttribute="height" firstItem="label0q97P7" id="constraintVDFckd" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackView6r3IJV"/>
                 <constraint constant="0.0" firstAttribute="top" id="constraintECeHsx" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewXbgbSR"/>
-                <constraint constant="8.0" firstAttribute="top" firstItem="stackViewo3ehCr" id="constraint97FyJu" multiplier="1.0" priority="995" relation="equal" secondAttribute="top" secondItem="stackView6r3IJV"/>
-                <constraint constant="8.0" firstAttribute="top" firstItem="stackViewo3ehCr" id="constraintu09O14" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="top" secondItem="stackView6r3IJV"/>
-                <constraint constant="0.0" firstAttribute="centerY" id="constraintHnQQaN" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerY" secondItem="stackViewo3ehCr"/>
-                <constraint constant="0.0" firstAttribute="height" id="constrainttyNHmB" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="viewXbgbSR"/>
-                <constraint constant="0.0" firstAttribute="height" id="constraintIPCMdk" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="viewXbgbSR"/>
+                <constraint constant="0.0" firstAttribute="height" firstItem="viewXbgbSR" id="constraint97FyJu" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackView6r3IJV"/>
+                <constraint constant="0.0" firstAttribute="height" firstItem="viewXbgbSR" id="constraintu09O14" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackView6r3IJV"/>
               </constraints>
               <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
             </stackView>
@@ -150,12 +155,16 @@
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="labelgI9wUw" lineBreakMode="tailTruncation" opaque="NO" text="Text Field" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                  <nil key="highlightedColor"/>
                   <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
                 </label>
               </subviews>
               <constraints>
                 <constraint constant="8.0" firstAttribute="top" firstItem="labelgI9wUw" id="constraintGcZmQA" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewyKA4c0"/>
                 <constraint constant="8.0" firstAttribute="bottom" id="constraintiSdo5q" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="labelgI9wUw"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="labelgI9wUw" id="constraintAS4Krw" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewyKA4c0"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintmIBto7" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="labelgI9wUw"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintREcCxp" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="labelgI9wUw"/>
               </constraints>
             </view>
             <view id="view3VAKaP" translatesAutoresizingMaskIntoConstraints="NO">
@@ -257,6 +266,7 @@
                   <subviews>
                     <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="editableTextCopy" lineBreakMode="tailTruncation" opaque="NO" text="" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                      <nil key="highlightedColor"/>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
                     </label>
                   </subviews>
@@ -271,6 +281,9 @@
               <constraints>
                 <constraint constant="8.0" firstAttribute="top" firstItem="viewNMsfhI" id="constraintCoFkhH" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5Md2uS"/>
                 <constraint constant="8.0" firstAttribute="bottom" id="constraintxQGZqC" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewNMsfhI"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="viewNMsfhI" id="constraintYrgG7I" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5Md2uS"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintLSKAAc" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="viewNMsfhI"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintGeXDLz" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="viewNMsfhI"/>
               </constraints>
             </view>
             <view id="viewwu1XTS" translatesAutoresizingMaskIntoConstraints="NO">
@@ -323,37 +336,28 @@
             </view>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="label7Ao08Z" id="constraint6aZtYN" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="stackViewlA4zd3"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintMTxMnG" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="label7Ao08Z"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraint6oJ2JM" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="label7Ao08Z"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintYJp1KR" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewtuqTWc"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintzrIx9W" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewtuqTWc"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintTCgbdF" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewza6yYL"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintaQENBG" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewza6yYL"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintrnZRDa" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewaGRlGa"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintbZRg8E" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewaGRlGa"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintQSOmzu" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackView6r3IJV"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintXVnShO" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackView6r3IJV"/>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="labelgI9wUw" id="constrainth4ctev" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="stackViewlA4zd3"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintIzHi6Q" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="labelgI9wUw"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintdHlGYA" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="labelgI9wUw"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintnN0b6f" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewyKA4c0"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraint9XcqBR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewyKA4c0"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintRzckpb" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="view3VAKaP"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintu9dJTS" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="view3VAKaP"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintZ1liNL" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewou1Gwi"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraint6CkDf8" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewou1Gwi"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintEAhH9N" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewqHZffb"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraint1aqX06" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewqHZffb"/>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="viewNMsfhI" id="constraintphNh9I" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="stackViewlA4zd3"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraint89z0aw" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="viewNMsfhI"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintdQwYtC" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="viewNMsfhI"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintZo8NWH" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="view5Md2uS"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintEBY3a0" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="view5Md2uS"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintSBndig" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewwu1XTS"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintm6dh9A" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewwu1XTS"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintGTZTNU" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewEtnPyp"/>
-            <constraint constant="16.0" firstAttribute="width" id="constraintXyrB3i" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewEtnPyp"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewtuqTWc" id="constraint6aZtYN" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewtuqTWc" id="constraintMTxMnG" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewza6yYL" id="constraint6oJ2JM" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewza6yYL" id="constraintYJp1KR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewaGRlGa" id="constraintzrIx9W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewaGRlGa" id="constraintTCgbdF" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="stackView6r3IJV" id="constraintaQENBG" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="stackView6r3IJV" id="constraintrnZRDa" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewyKA4c0" id="constraintbZRg8E" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewyKA4c0" id="constraintQSOmzu" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="view3VAKaP" id="constraintXVnShO" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="view3VAKaP" id="constrainth4ctev" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewou1Gwi" id="constraintIzHi6Q" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewou1Gwi" id="constraintdHlGYA" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewqHZffb" id="constraintnN0b6f" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewqHZffb" id="constraint9XcqBR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="view5Md2uS" id="constraintRzckpb" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="view5Md2uS" id="constraintu9dJTS" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewwu1XTS" id="constraintZ1liNL" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewwu1XTS" id="constraint6CkDf8" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewEtnPyp" id="constraintEAhH9N" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewEtnPyp" id="constraint1aqX06" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
           </constraints>
           <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
         </stackView>

@@ -38,10 +38,10 @@
         </view>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="tabs"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="tabs"/>
-        <constraint constant="0.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="tabs2"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="tabs2"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs2" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs2" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
       </constraints>
       <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
     </stackView>

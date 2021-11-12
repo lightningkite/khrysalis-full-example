@@ -19,9 +19,11 @@
       <subviews>
         <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="labeloUvQdu" lineBreakMode="tailTruncation" opaque="NO" text="Hello View Generators!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
           <fontDescription key="fontDescription" pointSize="17" type="system"/>
+          <nil key="highlightedColor"/>
         </label>
         <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="theNumber" lineBreakMode="tailTruncation" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
           <fontDescription key="fontDescription" pointSize="17" type="system"/>
+          <nil key="highlightedColor"/>
         </label>
         <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="incrementTheNumber" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
           <fontDescription key="fontDescription" pointSize="17" type="system"/>
@@ -34,12 +36,12 @@
         </view>
       </subviews>
       <constraints>
-        <constraint constant="16.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="labeloUvQdu"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="labeloUvQdu"/>
-        <constraint constant="16.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="theNumber"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="theNumber"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintCQsGPt" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="incrementTheNumber"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintVquMGL" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="incrementTheNumber"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="labeloUvQdu" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="labeloUvQdu" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="theNumber" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="theNumber" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="incrementTheNumber" id="constraintCQsGPt" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="incrementTheNumber" id="constraintVquMGL" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
       </constraints>
       <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
     </stackView>

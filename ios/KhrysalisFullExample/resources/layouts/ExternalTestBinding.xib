@@ -56,12 +56,12 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="32.0" firstAttribute="width" id="constraint76rTob" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="openMap"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintoW11HZ" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="openMap"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintS5xmjk" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="openWeb"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraint9aPWAr" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="openWeb"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintQqX91W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="openEvent"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraint5BXqvR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="openEvent"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openMap" id="constraint76rTob" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openMap" id="constraintoW11HZ" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openWeb" id="constraintS5xmjk" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openWeb" id="constraint9aPWAr" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openEvent" id="constraintQqX91W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openEvent" id="constraint5BXqvR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
           </constraints>
           <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
         </stackView>

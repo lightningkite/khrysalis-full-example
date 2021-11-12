@@ -20,6 +20,7 @@
           <subviews>
             <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="labelCKThrm" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Check out my multiple rows" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
+              <nil key="highlightedColor"/>
               <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
             </label>
           </subviews>
@@ -37,13 +38,14 @@
             <size height="0.0" key="footerReferenceSize" width="0.0"/>
             <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
           </collectionViewFlowLayout>
+          <color alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" key="backgroundColor" white="0.0"/>
         </collectionView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewoUvQdu"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewoUvQdu"/>
-        <constraint constant="0.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="list"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="list"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewoUvQdu" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewoUvQdu" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="list" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="list" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
       </constraints>
       <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
     </stackView>

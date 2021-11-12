@@ -14,6 +14,7 @@ class AppDelegate: ViewGeneratorAppDelegate {
     override func makeMain() -> ViewGenerator {
 //        fatalError()
         UIView.backgroundLayersByName = R.drawable.allEntries
+        UIView.useLayoutSubviewsLambda()
         return MainVG()
     }
 }

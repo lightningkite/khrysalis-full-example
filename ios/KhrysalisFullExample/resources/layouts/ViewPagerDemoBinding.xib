@@ -23,6 +23,7 @@
             <size height="0.0" key="footerReferenceSize" width="0.0"/>
             <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
           </collectionViewFlowLayout>
+          <color alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" key="backgroundColor" white="0.0"/>
         </collectionView>
       </subviews>
       <constraints>

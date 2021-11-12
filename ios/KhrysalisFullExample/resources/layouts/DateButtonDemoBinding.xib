@@ -22,6 +22,7 @@
           <subviews>
             <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="text" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <nil key="highlightedColor"/>
               <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
             </label>
             <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="dateButton" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
@@ -48,12 +49,12 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="32.0" firstAttribute="width" id="constraint6aZtYN" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="text"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintMTxMnG" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="text"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraint6oJ2JM" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="dateButton"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintYJp1KR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="dateButton"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintzrIx9W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="timeButton"/>
-            <constraint constant="32.0" firstAttribute="width" id="constraintTCgbdF" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="timeButton"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraint6aZtYN" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraintMTxMnG" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraint6oJ2JM" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraintYJp1KR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintzrIx9W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintTCgbdF" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
           </constraints>
           <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
         </stackView>

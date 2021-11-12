@@ -19,6 +19,7 @@
       <subviews>
         <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="labeloUvQdu" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="This data is loaded from JSON Placeholder Typicode." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
           <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+          <nil key="highlightedColor"/>
           <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
         </label>
         <progressView contentMode="scaleToFill" id="progress" opaque="NO" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000"/>
@@ -29,15 +30,16 @@
             <size height="0.0" key="footerReferenceSize" width="0.0"/>
             <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
           </collectionViewFlowLayout>
+          <color alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" key="backgroundColor" white="0.0"/>
         </collectionView>
       </subviews>
       <constraints>
-        <constraint constant="16.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="labeloUvQdu"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="labeloUvQdu"/>
-        <constraint constant="16.0" firstAttribute="width" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="progress"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="progress"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintCQsGPt" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="items"/>
-        <constraint constant="16.0" firstAttribute="width" id="constraintVquMGL" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="items"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="labeloUvQdu" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="labeloUvQdu" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="progress" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="progress" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="items" id="constraintCQsGPt" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="16.0" firstAttribute="width" firstItem="items" id="constraintVquMGL" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
       </constraints>
       <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
     </stackView>

@@ -47,6 +47,9 @@
           <constraints>
             <constraint constant="8.0" firstAttribute="top" firstItem="viewCvMPJV" id="constraintlWkpFI" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewFskwBf"/>
             <constraint constant="8.0" firstAttribute="bottom" id="constraintXo1vI5" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewCvMPJV"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="viewCvMPJV" id="constraintfE25nI" multiplier="1.0" priority="300" relation="equal" secondAttribute="leading" secondItem="viewFskwBf"/>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="viewCvMPJV" id="constraintHmGj9T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="leading" secondItem="viewFskwBf"/>
+            <constraint constant="0.0" firstAttribute="centerX" id="constraintGMkytE" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerX" secondItem="viewCvMPJV"/>
           </constraints>
         </view>
         <view id="viewNzN4dp" translatesAutoresizingMaskIntoConstraints="NO">
@@ -140,21 +143,18 @@
         </view>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="width" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="video"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="video"/>
-        <constraint constant="8.0" firstAttribute="leading" firstItem="viewCvMPJV" id="constrainteknD6T" multiplier="1.0" priority="300" relation="equal" secondAttribute="leading" secondItem="stackViewGeD4Au"/>
-        <constraint constant="8.0" firstAttribute="leading" firstItem="viewCvMPJV" id="constraintcw5Hye" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="leading" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="centerX" id="constraintCQsGPt" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerX" secondItem="viewCvMPJV"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintVquMGL" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewFskwBf"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintTiEjpw" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewFskwBf"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintHHCiq3" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewNzN4dp"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintFlSUtr" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewNzN4dp"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintDTjHZS" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewE08cok"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintrOa4CA" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewE08cok"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintTx9Wuj" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewWA7jCy"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintjs5JXo" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewWA7jCy"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraint9mVh52" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewPmsiUe"/>
-        <constraint constant="0.0" firstAttribute="width" id="constraintcjGD41" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewPmsiUe"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="video" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="video" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewFskwBf" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewFskwBf" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewNzN4dp" id="constraintCQsGPt" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewNzN4dp" id="constraintVquMGL" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewE08cok" id="constraintTiEjpw" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewE08cok" id="constraintHHCiq3" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewWA7jCy" id="constraintFlSUtr" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewWA7jCy" id="constraintDTjHZS" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewPmsiUe" id="constraintrOa4CA" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewPmsiUe" id="constraintTx9Wuj" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
       </constraints>
       <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
     </stackView>

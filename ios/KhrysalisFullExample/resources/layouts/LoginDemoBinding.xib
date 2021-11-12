@@ -1,255 +1,223 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-    </dependencies>
-    <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="login_demoXml" customModule="KhrysalisFullExample">
-            <connections>
-                <outlet property="agree" destination="agree" id="outletYUeH5w"/>
-                <outlet property="password" destination="password" id="outletf9Ko6l"/>
-                <outlet property="submit" destination="submit" id="outletP4Ss0x"/>
-                <outlet property="submitLoading" destination="submitLoading" id="outletUl2jbx"/>
-                <outlet property="username" destination="username" id="outletjOHLTR"/>
-                <outlet property="verifyPassword" destination="verifyPassword" id="outletekoB7q"/>
-            </connections>
-        </placeholder>
-        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="scrollViewGeD4Au">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-            <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="stackViewlA4zd3">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="363"/>
-                    <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewtuqTWc">
-                            <rect key="frame" x="8" y="8" width="398" height="45"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Welcome to Switch Town!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="label7Ao08Z">
-                                    <rect key="frame" x="0.0" y="8" width="286" height="29"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </label>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="label7Ao08Z" secondAttribute="bottom" constant="8" id="constraintFtNeXN"/>
-                                <constraint firstItem="label7Ao08Z" firstAttribute="top" secondItem="viewtuqTWc" secondAttribute="top" constant="8" id="constraintUtzOIG"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewza6yYL">
-                            <rect key="frame" x="8" y="53" width="398" height="72"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewheKCTp">
-                                    <rect key="frame" x="8" y="8" width="382" height="56"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="username">
-                                            <rect key="frame" x="8" y="8" width="366" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="constraint6aZnho"/>
-                                            </constraints>
-                                            <color key="textColor" red="0.13333333999999999" green="0.13333333999999999" blue="0.13333333999999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" smartDashesType="no" smartQuotesType="no" textContentType="email"/>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="username" secondAttribute="trailing" constant="8" id="constraintKkaTox"/>
-                                        <constraint firstItem="username" firstAttribute="leading" secondItem="viewheKCTp" secondAttribute="leading" constant="8" id="constraintVPgSNr"/>
-                                        <constraint firstAttribute="bottom" secondItem="username" secondAttribute="bottom" constant="8" id="constraintii1dMB"/>
-                                        <constraint firstItem="username" firstAttribute="top" secondItem="viewheKCTp" secondAttribute="top" constant="8" id="constraintmDMWYf"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundLayerName" value="border"/>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="trailing" secondItem="viewheKCTp" secondAttribute="trailing" constant="8" id="constraint2MQJnf"/>
-                                <constraint firstItem="viewheKCTp" firstAttribute="leading" secondItem="viewza6yYL" secondAttribute="leading" constant="8" id="constraintDEkv4M"/>
-                                <constraint firstItem="viewheKCTp" firstAttribute="top" secondItem="viewza6yYL" secondAttribute="top" constant="8" id="constraintOR2pe9"/>
-                                <constraint firstAttribute="bottom" secondItem="viewheKCTp" secondAttribute="bottom" constant="8" id="constraintfX6Dr9"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewaGRlGa">
-                            <rect key="frame" x="8" y="125" width="398" height="72"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="view9ulcDM">
-                                    <rect key="frame" x="8" y="8" width="382" height="56"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="password">
-                                            <rect key="frame" x="8" y="8" width="366" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="constraintxElA0O"/>
-                                            </constraints>
-                                            <color key="textColor" red="0.13333333999999999" green="0.13333333999999999" blue="0.13333333999999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="password" secondAttribute="bottom" constant="8" id="constraint0QjCTf"/>
-                                        <constraint firstItem="password" firstAttribute="top" secondItem="view9ulcDM" secondAttribute="top" constant="8" id="constraintHX7RPr"/>
-                                        <constraint firstAttribute="trailing" secondItem="password" secondAttribute="trailing" constant="8" id="constraintQSpXn9"/>
-                                        <constraint firstItem="password" firstAttribute="leading" secondItem="view9ulcDM" secondAttribute="leading" constant="8" id="constraintcPGAZ3"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundLayerName" value="border"/>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
-                            </subviews>
-                            <constraints>
-                                <constraint firstAttribute="bottom" secondItem="view9ulcDM" secondAttribute="bottom" constant="8" id="constraint0bglL4"/>
-                                <constraint firstAttribute="trailing" secondItem="view9ulcDM" secondAttribute="trailing" constant="8" id="constraintmg7ZFO"/>
-                                <constraint firstItem="view9ulcDM" firstAttribute="leading" secondItem="viewaGRlGa" secondAttribute="leading" constant="8" id="constraintol6Lg8"/>
-                                <constraint firstItem="view9ulcDM" firstAttribute="top" secondItem="viewaGRlGa" secondAttribute="top" constant="8" id="constraintz5fMC6"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="view6r3IJV">
-                            <rect key="frame" x="8" y="197" width="398" height="72"/>
-                            <subviews>
-                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewrrNB1I">
-                                    <rect key="frame" x="8" y="8" width="382" height="56"/>
-                                    <subviews>
-                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Verify Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="verifyPassword">
-                                            <rect key="frame" x="8" y="8" width="366" height="40"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="constraintSLce2L"/>
-                                            </constraints>
-                                            <color key="textColor" red="0.13333333999999999" green="0.13333333999999999" blue="0.13333333999999999" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
-                                        </textField>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="verifyPassword" firstAttribute="top" secondItem="viewrrNB1I" secondAttribute="top" constant="8" id="constraintLl0T7V"/>
-                                        <constraint firstAttribute="trailing" secondItem="verifyPassword" secondAttribute="trailing" constant="8" id="constraintVhvWZU"/>
-                                        <constraint firstItem="verifyPassword" firstAttribute="leading" secondItem="viewrrNB1I" secondAttribute="leading" constant="8" id="constrainthSREgG"/>
-                                        <constraint firstAttribute="bottom" secondItem="verifyPassword" secondAttribute="bottom" constant="8" id="constraintzTkR8v"/>
-                                    </constraints>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundLayerName" value="border"/>
-                                    </userDefinedRuntimeAttributes>
-                                </view>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="viewrrNB1I" firstAttribute="top" secondItem="view6r3IJV" secondAttribute="top" constant="8" id="constraintFDvNkm"/>
-                                <constraint firstItem="viewrrNB1I" firstAttribute="leading" secondItem="view6r3IJV" secondAttribute="leading" constant="8" id="constraintGchjBD"/>
-                                <constraint firstAttribute="bottom" secondItem="viewrrNB1I" secondAttribute="bottom" constant="8" id="constraintQnHrjc"/>
-                                <constraint firstAttribute="trailing" secondItem="viewrrNB1I" secondAttribute="trailing" constant="8" id="constraintkw2ZAU"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="viewyKA4c0">
-                            <rect key="frame" x="8" y="269" width="398" height="50"/>
-                            <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="agree" customClass="LabeledToggle" customModule="XmlToXibRuntime">
-                                    <rect key="frame" x="8" y="8" width="382" height="34"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="viewAYKY3I" customClass="M13Checkbox" customModule="M13Checkbox">
-                                            <rect key="frame" x="0.0" y="7" width="20.5" height="20.5"/>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20.5" id="constraintkSNLs4"/>
-                                                <constraint firstAttribute="width" constant="20.5" id="constraintvSiWAO"/>
-                                            </constraints>
-                                            <userDefinedRuntimeAttributes>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="_IBMarkType" value="Checkmark"/>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="_IBBoxType" value="Square"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                    <real key="value" value="2"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="string" keyPath="_IBCheckState" value="Unchecked"/>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="checkmarkLineWidth">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                                <userDefinedRuntimeAttribute type="number" keyPath="boxLineWidth">
-                                                    <real key="value" value="1"/>
-                                                </userDefinedRuntimeAttribute>
-                                            </userDefinedRuntimeAttributes>
-                                        </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="I Agree to the Terms of Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="labelhFLp8Z">
-                                            <rect key="frame" x="36.5" y="7" width="345.5" height="20.5"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        </label>
-                                    </subviews>
-                                </stackView>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="agree" firstAttribute="leading" secondItem="viewyKA4c0" secondAttribute="leading" constant="8" id="constraintAS4Krw"/>
-                                <constraint firstItem="agree" firstAttribute="top" secondItem="viewyKA4c0" secondAttribute="top" constant="8" id="constraintGcZmQA"/>
-                                <constraint firstAttribute="bottom" secondItem="agree" secondAttribute="bottom" constant="8" id="constraintiSdo5q"/>
-                                <constraint firstAttribute="trailing" secondItem="agree" secondAttribute="trailing" constant="8" id="constraintmIBto7"/>
-                            </constraints>
-                        </view>
-                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="submitLoading">
-                            <rect key="frame" x="8" y="319" width="398" height="36"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="submit" customClass="StyledUIButton" customModule="XmlToXibRuntime">
-                                    <rect key="frame" x="0.0" y="0.0" width="398" height="36"/>
-                                    <color key="backgroundColor" name="color_state_primary"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
-                                    <state key="normal" title="Submit">
-                                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </state>
-                                    <userDefinedRuntimeAttributes>
-                                        <userDefinedRuntimeAttribute type="string" keyPath="backgroundLayerName" value="button_primary"/>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="textAllCaps" value="NO"/>
-                                    </userDefinedRuntimeAttributes>
-                                </button>
-                            </subviews>
-                            <constraints>
-                                <constraint firstItem="submit" firstAttribute="leading" secondItem="submitLoading" secondAttribute="leading" id="constraintGSIZNK"/>
-                                <constraint firstAttribute="bottom" secondItem="submit" secondAttribute="bottom" priority="995" id="constraintMoZarM"/>
-                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="submit" secondAttribute="bottom" priority="996" id="constraintaeLUXh"/>
-                                <constraint firstAttribute="trailing" secondItem="submit" secondAttribute="trailing" id="constraintcS8rPm"/>
-                                <constraint firstItem="submit" firstAttribute="top" secondItem="submitLoading" secondAttribute="top" id="constraintlpsNeC"/>
-                            </constraints>
-                        </view>
-                    </subviews>
-                    <constraints>
-                        <constraint firstItem="label7Ao08Z" firstAttribute="leading" secondItem="stackViewlA4zd3" secondAttribute="leading" constant="8" id="constraint6aZtYN"/>
-                        <constraint firstAttribute="trailing" secondItem="label7Ao08Z" secondAttribute="trailing" priority="300" constant="8" id="constraint6oJ2JM"/>
-                        <constraint firstAttribute="width" secondItem="viewyKA4c0" secondAttribute="width" priority="300" constant="16" id="constraintIzHi6Q"/>
-                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="label7Ao08Z" secondAttribute="trailing" priority="700" constant="8" id="constraintMTxMnG"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="view6r3IJV" secondAttribute="width" priority="700" constant="16" id="constraintQSOmzu"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="viewza6yYL" secondAttribute="width" priority="700" constant="16" id="constraintTCgbdF"/>
-                        <constraint firstAttribute="width" secondItem="view6r3IJV" secondAttribute="width" priority="300" constant="16" id="constraintXVnShO"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="viewtuqTWc" secondAttribute="width" priority="700" constant="16" id="constraintYJp1KR"/>
-                        <constraint firstAttribute="width" secondItem="viewza6yYL" secondAttribute="width" priority="300" constant="16" id="constraintaQENBG"/>
-                        <constraint firstAttribute="width" secondItem="viewaGRlGa" secondAttribute="width" priority="300" constant="16" id="constraintbZRg8E"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="submitLoading" secondAttribute="width" priority="700" constant="16" id="constraintdHlGYA"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="viewyKA4c0" secondAttribute="width" priority="700" constant="16" id="constrainth4ctev"/>
-                        <constraint firstAttribute="width" secondItem="submitLoading" secondAttribute="width" priority="300" constant="16" id="constraintnN0b6f"/>
-                        <constraint firstAttribute="width" relation="greaterThanOrEqual" secondItem="viewaGRlGa" secondAttribute="width" priority="700" constant="16" id="constraintrnZRDa"/>
-                        <constraint firstAttribute="width" secondItem="viewtuqTWc" secondAttribute="width" priority="300" constant="16" id="constraintzrIx9W"/>
-                    </constraints>
-                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"/>
+  <dependencies>
+    <deployment identifier="iOS"/>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
+    <capability minToolsVersion="11.0" name="System colors in document resources"/>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+  </dependencies>
+  <objects>
+    <placeholder customClass="login_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <connections>
+        <outlet destination="verifyPassword" id="outletekoB7q" property="verifyPassword"/>
+        <outlet destination="password" id="outletf9Ko6l" property="password"/>
+        <outlet destination="submit" id="outletP4Ss0x" property="submit"/>
+        <outlet destination="submitLoading" id="outletUl2jbx" property="submitLoading"/>
+        <outlet destination="agree" id="outletYUeH5w" property="agree"/>
+        <outlet destination="username" id="outletjOHLTR" property="username"/>
+      </connections>
+    </placeholder>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollViewGeD4Au" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
+      <subviews>
+        <stackView axis="vertical" contentMode="scaleToFill" id="stackViewlA4zd3" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+          <subviews>
+            <view id="viewtuqTWc" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="label7Ao08Z" lineBreakMode="tailTruncation" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
+                  <nil key="highlightedColor"/>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
+                </label>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="label7Ao08Z" id="constraintUtzOIG" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewtuqTWc"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintFtNeXN" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="label7Ao08Z"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="label7Ao08Z" id="constraintdhx5wN" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewtuqTWc"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintwRrpn4" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="label7Ao08Z"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintNW4hdM" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="label7Ao08Z"/>
+              </constraints>
+            </view>
+            <view id="viewza6yYL" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <view id="viewheKCTp" translatesAutoresizingMaskIntoConstraints="NO">
+                  <subviews>
+                    <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="username" minimumFontSize="17" opaque="NO" placeholder="Username" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="14" type="system"/>
+                      <textInputTraits key="textInputTraits" keyboardType="emailAddress" smartDashesType="no" smartQuotesType="no" textContentType="email"/>
+                      <constraints constraints="constraints">
+                        <constraint constant="40.0" firstAttribute="height" id="constraint6aZnho" relation="greaterThanOrEqual"/>
+                      </constraints>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                    </textField>
+                  </subviews>
+                  <constraints>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="username" id="constraintmDMWYf" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewheKCTp"/>
+                    <constraint constant="8.0" firstAttribute="bottom" id="constraintii1dMB" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="username"/>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="username" id="constraintVPgSNr" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewheKCTp"/>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintKkaTox" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="username"/>
+                  </constraints>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"/>
+                  </userDefinedRuntimeAttributes>
+                </view>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="viewheKCTp" id="constraintOR2pe9" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewza6yYL"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintfX6Dr9" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewheKCTp"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="viewheKCTp" id="constraintDEkv4M" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewza6yYL"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraint2MQJnf" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewheKCTp"/>
+              </constraints>
+            </view>
+            <view id="viewaGRlGa" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <view id="view9ulcDM" translatesAutoresizingMaskIntoConstraints="NO">
+                  <subviews>
+                    <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="password" minimumFontSize="17" opaque="NO" placeholder="Password" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="14" type="system"/>
+                      <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
+                      <constraints constraints="constraints">
+                        <constraint constant="40.0" firstAttribute="height" id="constraintxElA0O" relation="greaterThanOrEqual"/>
+                      </constraints>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                    </textField>
+                  </subviews>
+                  <constraints>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="password" id="constraintHX7RPr" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view9ulcDM"/>
+                    <constraint constant="8.0" firstAttribute="bottom" id="constraint0QjCTf" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="password"/>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="password" id="constraintcPGAZ3" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view9ulcDM"/>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintQSpXn9" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="password"/>
+                  </constraints>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"/>
+                  </userDefinedRuntimeAttributes>
+                </view>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="view9ulcDM" id="constraintz5fMC6" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewaGRlGa"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraint0bglL4" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="view9ulcDM"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="view9ulcDM" id="constraintol6Lg8" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewaGRlGa"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintmg7ZFO" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="view9ulcDM"/>
+              </constraints>
+            </view>
+            <view id="view6r3IJV" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <view id="viewrrNB1I" translatesAutoresizingMaskIntoConstraints="NO">
+                  <subviews>
+                    <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="verifyPassword" minimumFontSize="17" opaque="NO" placeholder="Verify Password" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                      <fontDescription key="fontDescription" pointSize="14" type="system"/>
+                      <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
+                      <constraints constraints="constraints">
+                        <constraint constant="40.0" firstAttribute="height" id="constraintSLce2L" relation="greaterThanOrEqual"/>
+                      </constraints>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                    </textField>
+                  </subviews>
+                  <constraints>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="verifyPassword" id="constraintLl0T7V" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewrrNB1I"/>
+                    <constraint constant="8.0" firstAttribute="bottom" id="constraintzTkR8v" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="verifyPassword"/>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="verifyPassword" id="constrainthSREgG" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewrrNB1I"/>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintVhvWZU" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="verifyPassword"/>
+                  </constraints>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"/>
+                  </userDefinedRuntimeAttributes>
+                </view>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="viewrrNB1I" id="constraintFDvNkm" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view6r3IJV"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintQnHrjc" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewrrNB1I"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="viewrrNB1I" id="constraintGchjBD" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view6r3IJV"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintkw2ZAU" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewrrNB1I"/>
+              </constraints>
+            </view>
+            <view id="viewyKA4c0" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="agree" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <subviews>
+                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalHuggingPriority="750" id="viewAYKY3I" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="750">
+                      <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                      <constraints>
+                        <constraint constant="20.5" firstAttribute="height" id="constraintkSNLs4"/>
+                        <constraint constant="20.5" firstAttribute="width" id="constraintvSiWAO"/>
+                      </constraints>
+                      <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute keyPath="_IBMarkType" type="string" value="Checkmark"/>
+                        <userDefinedRuntimeAttribute keyPath="_IBBoxType" type="string" value="Square"/>
+                        <userDefinedRuntimeAttribute keyPath="cornerRadius" type="number">
+                          <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute keyPath="_IBCheckState" type="string" value="Unchecked"/>
+                        <userDefinedRuntimeAttribute keyPath="checkmarkLineWidth" type="number">
+                          <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute keyPath="boxLineWidth" type="number">
+                          <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                      </userDefinedRuntimeAttributes>
+                    </view>
+                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="labelhFLp8Z" lineBreakMode="tailTruncation" opaque="NO" text="I Agree to the Terms of Service" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
+                      <fontDescription key="fontDescription" pointSize="17" type="system"/>
+                    </label>
+                  </subviews>
                 </stackView>
-            </subviews>
-            <constraints>
-                <constraint firstItem="stackViewlA4zd3" firstAttribute="leading" secondItem="scrollViewGeD4Au" secondAttribute="leading" id="constraint1JCpFe"/>
-                <constraint firstAttribute="width" secondItem="stackViewlA4zd3" secondAttribute="width" id="constraint3YO6Y0"/>
-                <constraint firstAttribute="trailing" secondItem="stackViewlA4zd3" secondAttribute="trailing" id="constraint6mmANt"/>
-                <constraint firstItem="stackViewlA4zd3" firstAttribute="top" secondItem="scrollViewGeD4Au" secondAttribute="top" id="constraintVHiHgJ"/>
-                <constraint firstAttribute="bottom" secondItem="stackViewlA4zd3" secondAttribute="bottom" id="constraintxVEwta"/>
-            </constraints>
-            <point key="canvasLocation" x="-58" y="70"/>
-        </scrollView>
-    </objects>
-    <designables>
-        <designable name="submit">
-            <size key="intrinsicContentSize" width="16" height="36"/>
-        </designable>
-    </designables>
-    <resources>
-        <namedColor name="color_state_primary">
-            <color red="0.062745098039215685" green="0.46274509803921571" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
+              </subviews>
+              <constraints>
+                <constraint constant="8.0" firstAttribute="top" firstItem="agree" id="constraintGcZmQA" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewyKA4c0"/>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintiSdo5q" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="agree"/>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="agree" id="constraintAS4Krw" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewyKA4c0"/>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintmIBto7" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="agree"/>
+              </constraints>
+            </view>
+            <view clipsSubviews="YES" contentMode="scaleToFill" id="submitLoading" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="submit" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
+                    <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                  </userDefinedRuntimeAttributes>
+                  <state key="normal" title="Submit">
+                    <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                  </state>
+                  <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+                </button>
+              </subviews>
+              <constraints>
+                <constraint constant="0.0" firstAttribute="top" firstItem="submit" id="constraintlpsNeC" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="submitLoading"/>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintaeLUXh" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="bottom" secondItem="submit"/>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintMoZarM" multiplier="1.0" priority="995" relation="equal" secondAttribute="bottom" secondItem="submit"/>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="submit" id="constraintGSIZNK" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="submitLoading"/>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintcS8rPm" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="submit"/>
+              </constraints>
+            </view>
+          </subviews>
+          <constraints>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewtuqTWc" id="constraint6aZtYN" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewtuqTWc" id="constraintMTxMnG" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewza6yYL" id="constraint6oJ2JM" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewza6yYL" id="constraintYJp1KR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewaGRlGa" id="constraintzrIx9W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewaGRlGa" id="constraintTCgbdF" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="view6r3IJV" id="constraintaQENBG" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="view6r3IJV" id="constraintrnZRDa" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewyKA4c0" id="constraintbZRg8E" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="viewyKA4c0" id="constraintQSOmzu" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="submitLoading" id="constraintXVnShO" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="16.0" firstAttribute="width" firstItem="submitLoading" id="constrainth4ctev" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+          </constraints>
+          <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+        </stackView>
+      </subviews>
+      <constraints>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewlA4zd3" id="constraintVHiHgJ" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintxVEwta" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewlA4zd3"/>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewlA4zd3" id="constraint1JCpFe" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraint6mmANt" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewlA4zd3"/>
+        <constraint constant="-0.0" firstAttribute="width" id="constraint3YO6Y0" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+      </constraints>
+    </scrollView>
+  </objects>
+  <resources/>
 </document>
