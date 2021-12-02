@@ -7,16 +7,22 @@ import XmlToXibRuntime
 import UIKit
 import XmlToXibRuntime
 
-class LoginDemoBinding: XibView {
+public class LoginDemoBinding: XibView {
 
-    @IBOutlet weak public var verifyPassword: UITextField!
-    @IBOutlet weak public var password: UITextField!
-    @IBOutlet weak public var submit: UIButton!
-    @IBOutlet weak public var submitLoading: UIView!
-    @IBOutlet weak public var agree: LabeledToggle!
-    @IBOutlet weak public var username: UITextField!
+    @IBOutlet weak private var _verifyPassword: UITextField!
+    @IBOutlet weak private var _password: UITextField!
+    @IBOutlet weak private var _submit: UIButton!
+    @IBOutlet weak private var _submitLoading: UIView!
+    @IBOutlet weak private var _agree: LabeledToggle!
+    @IBOutlet weak private var _username: UITextField!
+    public var verifyPassword: UITextField { return _verifyPassword }
+    public var password: UITextField { return _password }
+    public var submit: UIButton { return _submit }
+    public var submitLoading: UIView { return _submitLoading }
+    public var agree: LabeledToggle { return _agree }
+    public var username: UITextField { return _username }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

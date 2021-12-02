@@ -44,7 +44,7 @@ public class WebsocketDemoVG : ViewGenerator {
             
             //--- Set Up cellXml.label (overwritten on flow generation)
             Observable.just("Some Text")
-                .subscribeAutoDispose(cellXml.label, \.text)
+                .subscribeAutoDispose(cellXml.label, \UILabel.text)
             //--- End Make Subview For xml.items (overwritten on flow generation)
             return cellView
         })

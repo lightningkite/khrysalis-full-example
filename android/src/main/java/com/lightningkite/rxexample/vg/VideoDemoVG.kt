@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 //
 // VideoDemoVG.swift
 // Created by Butterfly Prototype Generator
@@ -28,6 +28,7 @@ import com.lightningkite.rx.switchMapNotNull
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.kotlin.subscribeBy
 import java.util.*
+import com.lightningkite.khrysalis.SharedCode
 
 //--- Name (overwritten on flow generation)
 @Suppress("NAME_SHADOWING")

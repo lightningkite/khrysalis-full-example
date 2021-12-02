@@ -6,11 +6,12 @@
 import XmlToXibRuntime
 import UIKit
 
-class MultipleDemoBinding: XibView {
+public class MultipleDemoBinding: XibView {
 
-    @IBOutlet weak public var list: UICollectionView!
+    @IBOutlet weak private var _list: UICollectionView!
+    public var list: UICollectionView { return _list }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

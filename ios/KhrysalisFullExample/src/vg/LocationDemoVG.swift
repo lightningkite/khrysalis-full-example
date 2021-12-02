@@ -28,7 +28,7 @@ public class LocationDemoVG : ViewGenerator {
                 return "\(it)"
             } else {
                 return "Nothing yet"
-        } }).subscribeAutoDispose(xml.locationDisplay, \.text)
+        } }).subscribeAutoDispose(xml.locationDisplay, \UILabel.text)
         return view
     }
 }

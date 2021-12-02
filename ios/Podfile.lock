@@ -10,7 +10,8 @@ PODS:
   - DKImagePickerController/ImageDataManager (4.3.2)
   - DKImagePickerController/Resource (4.3.2)
   - IBPCollectionViewCompositionalLayout (0.6.9)
-  - KhrysalisRuntime (0.1.0)
+  - KhrysalisRuntime (0.7.1)
+  - LifecycleHooks (0.6.2)
   - M13Checkbox (3.4.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
@@ -38,6 +39,7 @@ PODS:
     - RxSwiftPlus/ViewGeneratorLocation (= 0.1.0)
   - RxSwiftPlus/Bindings (0.1.0):
     - IBPCollectionViewCompositionalLayout
+    - LifecycleHooks
     - RxSwiftPlus/Core
   - RxSwiftPlus/BindingsCosmo (0.1.0):
     - Cosmos
@@ -78,18 +80,19 @@ PODS:
     - M13Checkbox
 
 DEPENDENCIES:
-  - KhrysalisRuntime (from `../../khrysalis/ios-runtime/KhrysalisRuntime/KhrysalisRuntime.podspec`)
+  - Cosmos (from `https://github.com/lightningkite/Cosmos.git`, branch `master`)
+  - KhrysalisRuntime (from `https://github.com/lightningkite/khrysalis.git`, branch `master`)
   - RxCoreLocation (from `https://github.com/RxSwiftCommunity/RxCoreLocation.git`, branch `master`)
-  - RxSwift (from `../../RxSwift/RxSwift.podspec`)
-  - RxSwiftPlus (from `../../RxSwiftPlus/RxSwiftPlus.podspec`)
-  - XmlToXibRuntime (from `../../android-xml-to-ios-xib/XmlToXibRuntime/XmlToXibRuntime.podspec`)
+  - RxSwift (from `https://github.com/lightningkite/RxSwift.git`, branch `main`)
+  - RxSwiftPlus (from `https://github.com/lightningkite/RxSwiftPlus.git`, branch `master`)
+  - XmlToXibRuntime (from `https://github.com/lightningkite/android-xml-to-ios-xib.git`, branch `master`)
 
 SPEC REPOS:
   trunk:
-    - Cosmos
     - DKCamera
     - DKImagePickerController
     - IBPCollectionViewCompositionalLayout
+    - LifecycleHooks
     - M13Checkbox
     - RxCocoa
     - RxRelay
@@ -97,39 +100,62 @@ SPEC REPOS:
     - Starscream
 
 EXTERNAL SOURCES:
+  Cosmos:
+    :branch: master
+    :git: https://github.com/lightningkite/Cosmos.git
   KhrysalisRuntime:
-    :path: "../../khrysalis/ios-runtime/KhrysalisRuntime/KhrysalisRuntime.podspec"
+    :branch: master
+    :git: https://github.com/lightningkite/khrysalis.git
   RxCoreLocation:
     :branch: master
     :git: https://github.com/RxSwiftCommunity/RxCoreLocation.git
   RxSwift:
-    :path: "../../RxSwift/RxSwift.podspec"
+    :branch: main
+    :git: https://github.com/lightningkite/RxSwift.git
   RxSwiftPlus:
-    :path: "../../RxSwiftPlus/RxSwiftPlus.podspec"
+    :branch: master
+    :git: https://github.com/lightningkite/RxSwiftPlus.git
   XmlToXibRuntime:
-    :path: "../../android-xml-to-ios-xib/XmlToXibRuntime/XmlToXibRuntime.podspec"
+    :branch: master
+    :git: https://github.com/lightningkite/android-xml-to-ios-xib.git
 
 CHECKOUT OPTIONS:
+  Cosmos:
+    :commit: a5ae9304b7d295cc7875573669895b2c15d4f48a
+    :git: https://github.com/lightningkite/Cosmos.git
+  KhrysalisRuntime:
+    :commit: 10a269e9144736e6739ba22d958c57e300391851
+    :git: https://github.com/lightningkite/khrysalis.git
   RxCoreLocation:
     :commit: 8c4b301640e84c258018a82a105678ae287576a7
     :git: https://github.com/RxSwiftCommunity/RxCoreLocation.git
+  RxSwift:
+    :commit: 49051fd8058467f0feb1a7921ad54c139b2c84f3
+    :git: https://github.com/lightningkite/RxSwift.git
+  RxSwiftPlus:
+    :commit: fd888b46b7f6749a34466cd7fc8b4b29e5f33d42
+    :git: https://github.com/lightningkite/RxSwiftPlus.git
+  XmlToXibRuntime:
+    :commit: ed625429c84b19a65fa4d6a8fd8b9c4f4b32de08
+    :git: https://github.com/lightningkite/android-xml-to-ios-xib.git
 
 SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
   DKImagePickerController: b5eb7f7a388e4643264105d648d01f727110fc3d
   IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
-  KhrysalisRuntime: f268ebe4be0aeab646e4f13f60b9ef5cd212b870
+  KhrysalisRuntime: 3a72ac3c2ceaef60b9f9733ed02f1e247081f8b2
+  LifecycleHooks: 246984e8ef036a8c717298166845bb999b245f5b
   M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxCoreLocation: 5db05ff830a313466a29e82798d983826b93a2f8
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
-  RxSwiftPlus: 71c2cbc4b0f77f28455b851f8e224a9df48dda6a
+  RxSwiftPlus: 0adf05aaa8534dbd268500335323eb5778239ef3
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
-  XmlToXibRuntime: 544458d25275c4cccc86bc3e959300b886ea3736
+  XmlToXibRuntime: fb0067babac6185448e49ad067fbc3b0fa0c86fc
 
-PODFILE CHECKSUM: 2a8bdbd10632b7308cf02e00f77e7c22ceaee7f6
+PODFILE CHECKSUM: 21691ef35a12bd67ab4295b4b8036901e8d17ad7
 
 COCOAPODS: 1.11.2

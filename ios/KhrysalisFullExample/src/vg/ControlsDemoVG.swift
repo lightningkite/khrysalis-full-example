@@ -32,7 +32,7 @@ public class ControlsDemoVG : ViewGenerator {
             .bind(xml.editableText)
             .bind(xml.editableAutoText)
             .bind(xml.editableTextBig)
-            .subscribeAutoDispose(xml.editableTextCopy, \.text)
+            .subscribeAutoDispose(xml.editableTextCopy, \UILabel.text)
         self.options
             .showIn(xml.editableAutoText, onItemSelected: self.text)
             .showIn(xml.spinner, selected: self.text)

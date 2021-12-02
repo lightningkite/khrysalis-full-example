@@ -6,14 +6,18 @@
 import XmlToXibRuntime
 import UIKit
 
-class ExternalTestBinding: XibView {
+public class ExternalTestBinding: XibView {
 
-    @IBOutlet weak public var scrollView: UIScrollView!
-    @IBOutlet weak public var openMap: UIButton!
-    @IBOutlet weak public var openEvent: UIButton!
-    @IBOutlet weak public var openWeb: UIButton!
+    @IBOutlet weak private var _scrollView: UIScrollView!
+    @IBOutlet weak private var _openMap: UIButton!
+    @IBOutlet weak private var _openEvent: UIButton!
+    @IBOutlet weak private var _openWeb: UIButton!
+    public var scrollView: UIScrollView { return _scrollView }
+    public var openMap: UIButton { return _openMap }
+    public var openEvent: UIButton { return _openEvent }
+    public var openWeb: UIButton { return _openWeb }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

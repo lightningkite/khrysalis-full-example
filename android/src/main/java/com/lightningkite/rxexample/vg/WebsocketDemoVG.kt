@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 //
 // WebsocketDemoVG.swift
 // Created by Butterfly Prototype Generator
@@ -23,6 +23,7 @@ import com.lightningkite.rxexample.databinding.WebsocketDemoBinding
 import com.lightningkite.rx.android.*
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.subjects.Subject
+import com.lightningkite.khrysalis.SharedCode
 
 //--- Name (overwritten on flow generation)
 @Suppress("NAME_SHADOWING")

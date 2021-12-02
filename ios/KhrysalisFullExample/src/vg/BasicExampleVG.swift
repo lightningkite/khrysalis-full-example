@@ -22,8 +22,8 @@ public class BasicExampleVG : ViewGenerator {
     public let chained: ValueSubject<ValueSubject<Int>>
     
     public func increment() -> Void {
-        let temp2763 = self.number
-        temp2763.value = self.number.value + 1
+        let temp4 = self.number
+        temp4.value = self.number.value + 1
     }
     
     public func generate(dependency: ViewControllerAccess) -> UIView {
@@ -31,10 +31,10 @@ public class BasicExampleVG : ViewGenerator {
         let view = xml.root
         xml.exampleContentIncrement.onClick { () -> Void in self.increment() }
         self.number.map { (it) -> String in String(kotlin: it) }
-            .subscribeAutoDispose(xml.exampleContentNumber, \.text)
+            .subscribeAutoDispose(xml.exampleContentNumber, \UILabel.text)
         xml.chainedIncrement.onClick { () -> Void in self.chained.value.value = self.chained.value.value + 1 }
         self.chained.flatMap { (it) -> Observable<Int> in it }.map { (it) -> String in String(kotlin: it) }
-            .subscribeAutoDispose(xml.chainedNumber, \.text)
+            .subscribeAutoDispose(xml.chainedNumber, \UILabel.text)
         xml.scrollToTop.onClick { () -> Void in xml.scrollView.setContentOffset(CGPoint(x: CGFloat(0), y: CGFloat(0)), animated: true) }
         return view
     }

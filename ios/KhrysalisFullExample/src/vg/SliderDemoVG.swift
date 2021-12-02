@@ -6,6 +6,7 @@ import RxSwift
 import UIKit
 import RxSwiftPlus
 import Foundation
+import Cosmos
 
 public class SliderDemoVG : ViewGenerator {
     public init() {

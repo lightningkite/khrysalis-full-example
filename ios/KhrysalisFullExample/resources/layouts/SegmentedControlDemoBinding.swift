@@ -6,12 +6,14 @@
 import XmlToXibRuntime
 import UIKit
 
-class SegmentedControlDemoBinding: XibView {
+public class SegmentedControlDemoBinding: XibView {
 
-    @IBOutlet weak public var tabs2: UISegmentedControl!
-    @IBOutlet weak public var tabs: UISegmentedControl!
+    @IBOutlet weak private var _tabs2: UISegmentedControl!
+    @IBOutlet weak private var _tabs: UISegmentedControl!
+    public var tabs2: UISegmentedControl { return _tabs2 }
+    public var tabs: UISegmentedControl { return _tabs }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

@@ -7,15 +7,16 @@
     <capability minToolsVersion="11.0" name="System colors in document resources"/>
     <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
   </dependencies>
+  <customFonts key="customFonts"/>
   <objects>
-    <placeholder customClass="segmented_control_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+    <placeholder customClass="SegmentedControlDemoBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
       <connections>
-        <outlet destination="tabs2" id="outletekoB7q" property="tabs2"/>
-        <outlet destination="tabs" id="outletf9Ko6l" property="tabs"/>
+        <outlet destination="tabs2" id="outletekoB7q" property="_tabs2"/>
+        <outlet destination="tabs" id="outletf9Ko6l" property="_tabs"/>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
-    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewoXTUo1" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <segmentedControl contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="top" id="tabs" opaque="NO" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
           <segments>
@@ -31,17 +32,13 @@
             <segment title="Here"/>
           </segments>
         </segmentedControl>
-        <view id="viewNzN4dp" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
-          <constraints>
-            <constraint constant="1.0" firstAttribute="width" id="constraintHPvwfj" multiplier="1.0" priority="999" relation="equal"/>
-          </constraints>
-        </view>
+        <view id="viewIsmnLJ" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100"/>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="width" firstItem="tabs" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="tabs" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="tabs2" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="tabs2" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs" id="constraintdhGhM8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs" id="constraintyr3VN4" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs2" id="constraintIQCF4O" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="tabs2" id="constraintXtEnmN" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewoXTUo1"/>
       </constraints>
       <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
     </stackView>

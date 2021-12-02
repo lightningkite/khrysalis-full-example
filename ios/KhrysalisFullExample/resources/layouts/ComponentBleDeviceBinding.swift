@@ -6,14 +6,18 @@
 import XmlToXibRuntime
 import UIKit
 
-class ComponentBleDeviceBinding: XibView {
+public class ComponentBleDeviceBinding: XibView {
 
-    @IBOutlet weak public var rssi: UILabel!
-    @IBOutlet weak public var deviceName: UILabel!
-    @IBOutlet weak public var deviceId: UILabel!
-    @IBOutlet weak public var connect: UIButton!
+    @IBOutlet weak private var _rssi: UILabel!
+    @IBOutlet weak private var _deviceName: UILabel!
+    @IBOutlet weak private var _deviceId: UILabel!
+    @IBOutlet weak private var _connect: UIButton!
+    public var rssi: UILabel { return _rssi }
+    public var deviceName: UILabel { return _deviceName }
+    public var deviceId: UILabel { return _deviceId }
+    public var connect: UIButton { return _connect }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

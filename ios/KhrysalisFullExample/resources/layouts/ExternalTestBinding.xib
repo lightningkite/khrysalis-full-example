@@ -7,13 +7,14 @@
     <capability minToolsVersion="11.0" name="System colors in document resources"/>
     <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
   </dependencies>
+  <customFonts key="customFonts"/>
   <objects>
-    <placeholder customClass="external_testXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+    <placeholder customClass="ExternalTestBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
       <connections>
-        <outlet destination="scrollView" id="outletekoB7q" property="scrollView"/>
-        <outlet destination="openMap" id="outletf9Ko6l" property="openMap"/>
-        <outlet destination="openEvent" id="outletP4Ss0x" property="openEvent"/>
-        <outlet destination="openWeb" id="outletUl2jbx" property="openWeb"/>
+        <outlet destination="scrollView" id="outletekoB7q" property="_scrollView"/>
+        <outlet destination="openMap" id="outletf9Ko6l" property="_openMap"/>
+        <outlet destination="openEvent" id="outletP4Ss0x" property="_openEvent"/>
+        <outlet destination="openWeb" id="outletUl2jbx" property="_openWeb"/>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
@@ -56,21 +57,21 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="32.0" firstAttribute="width" firstItem="openMap" id="constraint76rTob" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="openMap" id="constraintoW11HZ" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="openWeb" id="constraintS5xmjk" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="openWeb" id="constraint9aPWAr" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="openEvent" id="constraintQqX91W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="openEvent" id="constraint5BXqvR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openMap" id="constraint76rTob" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openMap" id="constraintoW11HZ" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openWeb" id="constraintS5xmjk" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openWeb" id="constraint9aPWAr" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openEvent" id="constraintQqX91W" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="openEvent" id="constraint5BXqvR" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
           </constraints>
           <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
         </stackView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewZCD9Kb" id="constraintnVhwL8" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollView"/>
-        <constraint constant="0.0" firstAttribute="bottom" id="constraintD1pE8T" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewZCD9Kb"/>
-        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewZCD9Kb" id="constraintYR6R16" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollView"/>
-        <constraint constant="0.0" firstAttribute="trailing" id="constraint3nNaUy" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewZCD9Kb" id="constraintnVhwL8" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollView"/>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintD1pE8T" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewZCD9Kb"/>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewZCD9Kb" id="constraintYR6R16" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollView"/>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraint3nNaUy" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"/>
         <constraint constant="-0.0" firstAttribute="width" id="constraint0DC5bb" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"/>
       </constraints>
     </scrollView>

@@ -7,32 +7,33 @@
     <capability minToolsVersion="11.0" name="System colors in document resources"/>
     <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
   </dependencies>
+  <customFonts key="customFonts"/>
   <objects>
-    <placeholder customClass="select_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+    <placeholder customClass="SelectDemoBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
       <connections>
-        <outlet destination="list" id="outletekoB7q" property="list"/>
+        <outlet destination="list" id="outletekoB7q" property="_list"/>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
-    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+    <stackView axis="vertical" contentMode="scaleToFill" id="stackViewoXTUo1" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
-        <view id="viewoUvQdu" translatesAutoresizingMaskIntoConstraints="NO">
+        <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewDaXoMa" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
-            <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="labelCKThrm" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Select Demo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+            <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="labelkGyG8D" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Select Demo" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
               <nil key="highlightedColor"/>
               <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
             </label>
           </subviews>
           <constraints>
-            <constraint constant="16.0" firstAttribute="top" firstItem="labelCKThrm" id="constraintySjrFE" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewoUvQdu"/>
-            <constraint constant="16.0" firstAttribute="bottom" id="constraintVbR0tT" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="labelCKThrm"/>
-            <constraint constant="16.0" firstAttribute="leading" firstItem="labelCKThrm" id="constraintKicfVk" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewoUvQdu"/>
-            <constraint constant="16.0" firstAttribute="trailing" id="constraintx5LQy9" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="labelCKThrm"/>
+            <constraint constant="16.0" firstAttribute="top" firstItem="labelkGyG8D" id="constraint2TxgbI" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewDaXoMa"/>
+            <constraint constant="16.0" firstAttribute="bottom" id="constraintBo1EQ9" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="labelkGyG8D"/>
+            <constraint constant="16.0" firstAttribute="leading" firstItem="labelkGyG8D" id="constraintV5ySPB" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewDaXoMa"/>
+            <constraint constant="16.0" firstAttribute="trailing" id="constraintpmnZLc" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="labelkGyG8D"/>
           </constraints>
         </view>
         <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="none" id="list" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
-          <collectionViewFlowLayout id="TAY-Sl-kKJ" key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10">
+          <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10">
             <size height="128" key="itemSize" width="128"/>
             <size height="0.0" key="headerReferenceSize" width="0.0"/>
             <size height="0.0" key="footerReferenceSize" width="0.0"/>
@@ -42,10 +43,10 @@
         </collectionView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="width" firstItem="viewoUvQdu" id="constraintoedtgs" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="viewoUvQdu" id="constraintmv1pBk" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="list" id="constrainteknD6T" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="list" id="constraintcw5Hye" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewGeD4Au"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewDaXoMa" id="constraintdhGhM8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="viewDaXoMa" id="constraintyr3VN4" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="list" id="constraintIQCF4O" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" firstItem="list" id="constraintXtEnmN" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewoXTUo1"/>
       </constraints>
       <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
     </stackView>

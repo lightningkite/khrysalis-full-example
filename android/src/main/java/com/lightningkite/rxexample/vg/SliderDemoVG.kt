@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -17,6 +17,7 @@ import com.lightningkite.rx.android.subscribeAutoDispose
 import com.lightningkite.rx.plus
 import com.lightningkite.rx.toSubjectFloat
 import io.reactivex.rxjava3.core.Observable
+import com.lightningkite.khrysalis.SharedCode
 
 class SliderDemoVG() : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Slider Demo")

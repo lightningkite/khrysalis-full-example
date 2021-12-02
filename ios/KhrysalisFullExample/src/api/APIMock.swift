@@ -19,7 +19,7 @@ public class APIMock : APIInterface {
         }
         public static let INSTANCE = Companion()
         
-        public var delayMs: Int64
+        public var delayMs: Int
         public let lorem: String
     }
     

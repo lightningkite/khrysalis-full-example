@@ -7,18 +7,19 @@
     <capability minToolsVersion="11.0" name="System colors in document resources"/>
     <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
   </dependencies>
+  <customFonts key="customFonts"/>
   <objects>
-    <placeholder customClass="date_button_demoXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+    <placeholder customClass="DateButtonDemoBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
       <connections>
-        <outlet destination="dateButton" id="outletekoB7q" property="dateButton"/>
-        <outlet destination="timeButton" id="outletf9Ko6l" property="timeButton"/>
-        <outlet destination="text" id="outletP4Ss0x" property="text"/>
+        <outlet destination="dateButton" id="outletekoB7q" property="_dateButton"/>
+        <outlet destination="timeButton" id="outletf9Ko6l" property="_timeButton"/>
+        <outlet destination="text" id="outletP4Ss0x" property="_text"/>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
-    <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollViewGeD4Au" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
+    <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollViewoXTUo1" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
-        <stackView axis="vertical" contentMode="scaleToFill" id="stackViewlA4zd3" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
+        <stackView axis="vertical" contentMode="scaleToFill" id="stackViewfXUOMd" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="text" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
@@ -49,22 +50,22 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraint6aZtYN" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraintMTxMnG" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraint6oJ2JM" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraintYJp1KR" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintzrIx9W" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewlA4zd3"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintTCgbdF" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraintgrxV8Y" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraintz0hkK8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraintUlL4Nx" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraintJ5DwUg" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintZ5BJkU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintKusSjM" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
           </constraints>
           <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
         </stackView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewlA4zd3" id="constraintVHiHgJ" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="bottom" id="constraintxVEwta" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewlA4zd3"/>
-        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewlA4zd3" id="constraint1JCpFe" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewGeD4Au"/>
-        <constraint constant="0.0" firstAttribute="trailing" id="constraint6mmANt" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewlA4zd3"/>
-        <constraint constant="-0.0" firstAttribute="width" id="constraint3YO6Y0" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewlA4zd3"/>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"/>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"/>
+        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
       </constraints>
     </scrollView>
   </objects>

@@ -6,12 +6,14 @@
 import XmlToXibRuntime
 import UIKit
 
-class HttpDemoBinding: XibView {
+public class HttpDemoBinding: XibView {
 
-    @IBOutlet weak public var progress: UIProgressView!
-    @IBOutlet weak public var items: UICollectionView!
+    @IBOutlet weak private var _progress: UIProgressView!
+    @IBOutlet weak private var _items: UICollectionView!
+    public var progress: UIProgressView { return _progress }
+    public var items: UICollectionView { return _items }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

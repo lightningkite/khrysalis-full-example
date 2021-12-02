@@ -27,7 +27,7 @@ public class HttpDemoVG : ViewGenerator {
         
         //--- Set Up xml.progress
         call.map { (it) -> Float in it.approximate }.startWith(0)
-            .subscribeAutoDispose(xml.progress, \.progress)
+            .subscribeAutoDispose(xml.progress, \UIProgressView.progress)
         
         //--- Set Up xml.items
         call
@@ -40,7 +40,7 @@ public class HttpDemoVG : ViewGenerator {
             
             //--- Set Up cellXml.label
             observable.map { (it) -> String in it.title }
-                .subscribeAutoDispose(cellXml.label, \.text)
+                .subscribeAutoDispose(cellXml.label, \UILabel.text)
             //--- End Make Subview For xml.items
             return cellView
         })

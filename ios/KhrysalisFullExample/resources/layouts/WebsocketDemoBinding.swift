@@ -6,13 +6,16 @@
 import XmlToXibRuntime
 import UIKit
 
-class WebsocketDemoBinding: XibView {
+public class WebsocketDemoBinding: XibView {
 
-    @IBOutlet weak public var input: UITextField!
-    @IBOutlet weak public var submit: UIButton!
-    @IBOutlet weak public var items: UICollectionView!
+    @IBOutlet weak private var _input: UITextField!
+    @IBOutlet weak private var _submit: UIButton!
+    @IBOutlet weak private var _items: UICollectionView!
+    public var input: UITextField { return _input }
+    public var submit: UIButton { return _submit }
+    public var items: UICollectionView { return _items }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

@@ -66,7 +66,7 @@ public class LoginDemoVG : ViewGenerator {
         }
         print("Submit!")
         self.loading.value = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(1000), execute: { () -> Void in
+        DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(1000)), execute: { () -> Void in
             self.loading.value = false
             self.stack.push(ExampleContentVG())
         })

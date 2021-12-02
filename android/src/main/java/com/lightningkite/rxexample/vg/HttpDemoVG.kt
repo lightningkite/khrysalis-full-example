@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 //
 // HttpDemoVG.swift
 // Created by Butterfly Prototype Generator
@@ -11,6 +11,7 @@ package com.lightningkite.rxexample.vg
 import android.view.View
 import android.widget.ProgressBar
 import android.widget.TextView
+import com.lightningkite.khrysalis.SharedCode
 import com.lightningkite.rx.viewgenerators.ActivityAccess
 import com.lightningkite.rx.okhttp.HttpClient
 import com.lightningkite.rx.okhttp.readJson

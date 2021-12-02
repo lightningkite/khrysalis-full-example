@@ -6,12 +6,14 @@
 import XmlToXibRuntime
 import UIKit
 
-class PreviewBinding: XibView {
+public class PreviewBinding: XibView {
 
-    @IBOutlet weak public var viewName: UILabel!
-    @IBOutlet weak public var pager: UICollectionView!
+    @IBOutlet weak private var _viewName: UILabel!
+    @IBOutlet weak private var _pager: UICollectionView!
+    public var viewName: UILabel { return _viewName }
+    public var pager: UICollectionView { return _pager }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

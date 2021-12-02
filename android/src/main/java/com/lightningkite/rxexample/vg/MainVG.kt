@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -16,6 +16,7 @@ import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rx.android.onClick
 import com.lightningkite.rxexample.databinding.MainBinding
 import com.lightningkite.rx.android.subscribeAutoDispose
+import com.lightningkite.khrysalis.SharedCode
 
 class MainVG : ViewGenerator, EntryPoint {
     override val titleString: ViewString get() = ViewStringRaw("Main")

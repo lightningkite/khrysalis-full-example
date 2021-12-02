@@ -6,11 +6,12 @@
 import XmlToXibRuntime
 import UIKit
 
-class ComponentTextBinding: XibView {
+public class ComponentTextBinding: XibView {
 
-    @IBOutlet weak public var label: UILabel!
+    @IBOutlet weak private var _label: UILabel!
+    public var label: UILabel { return _label }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

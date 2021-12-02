@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.LayoutInflater
@@ -13,6 +13,7 @@ import com.lightningkite.rx.android.resources.ViewStringRaw
 import com.lightningkite.rx.android.showLoading
 import com.lightningkite.rx.viewgenerators.*
 import io.reactivex.rxjava3.subjects.Subject
+import com.lightningkite.khrysalis.SharedCode
 
 class LoginDemoVG(
     val stack: ViewGeneratorStack

@@ -7,15 +7,16 @@
     <capability minToolsVersion="11.0" name="System colors in document resources"/>
     <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
   </dependencies>
+  <customFonts key="customFonts"/>
   <objects>
-    <placeholder customClass="component_testXml" customModule="KhrysalisFullExample" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+    <placeholder customClass="ComponentTestBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
       <connections>
-        <outlet destination="button" id="outletekoB7q" property="button"/>
-        <outlet destination="label" id="outletf9Ko6l" property="label"/>
+        <outlet destination="button" id="outletekoB7q" property="_button"/>
+        <outlet destination="label" id="outletf9Ko6l" property="_label"/>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
-    <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewGeD4Au" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
+    <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewoXTUo1" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="label" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
           <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
@@ -35,10 +36,10 @@
         </button>
       </subviews>
       <constraints>
-        <constraint constant="32.0" firstAttribute="height" firstItem="label" id="constraintoedtgs" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackViewGeD4Au"/>
-        <constraint constant="32.0" firstAttribute="height" firstItem="label" id="constraintmv1pBk" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackViewGeD4Au"/>
-        <constraint constant="32.0" firstAttribute="height" firstItem="button" id="constrainteknD6T" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackViewGeD4Au"/>
-        <constraint constant="32.0" firstAttribute="height" firstItem="button" id="constraintcw5Hye" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackViewGeD4Au"/>
+        <constraint constant="32.0" firstAttribute="height" firstItem="label" id="constraintdhGhM8" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackViewoXTUo1"/>
+        <constraint constant="32.0" firstAttribute="height" firstItem="label" id="constraintyr3VN4" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackViewoXTUo1"/>
+        <constraint constant="32.0" firstAttribute="height" firstItem="button" id="constraintIQCF4O" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackViewoXTUo1"/>
+        <constraint constant="32.0" firstAttribute="height" firstItem="button" id="constraintXtEnmN" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackViewoXTUo1"/>
       </constraints>
       <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
     </stackView>

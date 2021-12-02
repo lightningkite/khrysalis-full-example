@@ -6,12 +6,14 @@
 import XmlToXibRuntime
 import UIKit
 
-class BasicExampleBinding: XibView {
+public class BasicExampleBinding: XibView {
 
-    @IBOutlet weak public var incrementTheNumber: UIButton!
-    @IBOutlet weak public var theNumber: UILabel!
+    @IBOutlet weak private var _incrementTheNumber: UIButton!
+    @IBOutlet weak private var _theNumber: UILabel!
+    public var incrementTheNumber: UIButton { return _incrementTheNumber }
+    public var theNumber: UILabel { return _theNumber }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

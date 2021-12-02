@@ -1,8 +1,5 @@
-//! This file will translate using Khrysalis.
-///Kotlin Only
+@file:SharedCode
 @file:Suppress("ConvertToStringTemplate", "RemoveExplicitTypeArguments")
-
-///End Kotlin Only
 
 package com.lightningkite.rxexample.api
 
@@ -10,6 +7,7 @@ import com.lightningkite.rx.okhttp.HttpClient
 import com.lightningkite.rx.okhttp.readJson
 import com.lightningkite.rxexample.models.Post
 import io.reactivex.rxjava3.core.Single
+import com.lightningkite.khrysalis.SharedCode
 
 
 class APIOnline(val baseUrl: String = "https://jsonplaceholder.typicode.com") : APIInterface {

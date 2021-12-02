@@ -24,7 +24,7 @@ public class DateButtonDemoVG : ViewGenerator {
         let view = xml.root
         
         self.date.map { (it) -> String in it.format(DateFormatter(dateStyle: DateFormatter.Style.medium, timeStyle: DateFormatter.Style.medium)) }
-            .subscribeAutoDispose(xml.text, \.text)
+            .subscribeAutoDispose(xml.text, \UILabel.text)
         self.date.toSubjectLocalDate().bind(xml.dateButton)
         self.date.toSubjectLocalTime().bind(xml.timeButton)
         

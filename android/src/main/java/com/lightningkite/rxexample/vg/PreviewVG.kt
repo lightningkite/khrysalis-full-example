@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -13,6 +13,7 @@ import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.*
 import com.lightningkite.rx.android.showIn
 import io.reactivex.rxjava3.core.Observable
+import com.lightningkite.khrysalis.SharedCode
 
 class PreviewVG : ViewGenerator {
     override val titleString: ViewString

@@ -6,13 +6,16 @@
 import XmlToXibRuntime
 import UIKit
 
-class DateButtonDemoBinding: XibView {
+public class DateButtonDemoBinding: XibView {
 
-    @IBOutlet weak public var dateButton: UIButton!
-    @IBOutlet weak public var timeButton: UIButton!
-    @IBOutlet weak public var text: UILabel!
+    @IBOutlet weak private var _dateButton: UIButton!
+    @IBOutlet weak private var _timeButton: UIButton!
+    @IBOutlet weak private var _text: UILabel!
+    public var dateButton: UIButton { return _dateButton }
+    public var timeButton: UIButton { return _timeButton }
+    public var text: UILabel { return _text }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

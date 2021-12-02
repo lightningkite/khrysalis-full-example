@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -8,6 +8,7 @@ import com.lightningkite.rx.android.bind
 import com.lightningkite.rx.viewgenerators.*
 import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.SegmentedControlDemoBinding
+import com.lightningkite.khrysalis.SharedCode
 
 class SegmentedControlDemoVG() : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Segmented Control Demo")

@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -21,6 +21,7 @@ import com.lightningkite.rx.android.subscribeAutoDispose
 import io.reactivex.rxjava3.core.Observable
 import java.util.*
 import java.time.*
+import com.lightningkite.khrysalis.SharedCode
 
 class DateButtonDemoVG() : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("ZonedDateTime Button Demo")

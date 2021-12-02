@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -27,6 +27,7 @@ import com.lightningkite.rx.optional
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.kotlin.subscribeBy
 import java.util.*
+import com.lightningkite.khrysalis.SharedCode
 
 class LoadImageDemoVG : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Load Image Demo")

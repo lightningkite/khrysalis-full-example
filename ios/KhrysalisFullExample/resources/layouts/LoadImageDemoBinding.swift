@@ -6,17 +6,24 @@
 import XmlToXibRuntime
 import UIKit
 
-class LoadImageDemoBinding: XibView {
+public class LoadImageDemoBinding: XibView {
 
-    @IBOutlet weak public var image: UIImageView!
-    @IBOutlet weak public var loremPixel: UIButton!
-    @IBOutlet weak public var checkCanUpload: UIButton!
-    @IBOutlet weak public var galleryMultiple: UIButton!
-    @IBOutlet weak public var camera: UIButton!
-    @IBOutlet weak public var gallery: UIButton!
-    @IBOutlet weak public var canUpload: UILabel!
+    @IBOutlet weak private var _image: UIImageView!
+    @IBOutlet weak private var _loremPixel: UIButton!
+    @IBOutlet weak private var _checkCanUpload: UIButton!
+    @IBOutlet weak private var _galleryMultiple: UIButton!
+    @IBOutlet weak private var _camera: UIButton!
+    @IBOutlet weak private var _gallery: UIButton!
+    @IBOutlet weak private var _canUpload: UILabel!
+    public var image: UIImageView { return _image }
+    public var loremPixel: UIButton { return _loremPixel }
+    public var checkCanUpload: UIButton { return _checkCanUpload }
+    public var galleryMultiple: UIButton { return _galleryMultiple }
+    public var camera: UIButton { return _camera }
+    public var gallery: UIButton { return _gallery }
+    public var canUpload: UILabel { return _canUpload }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

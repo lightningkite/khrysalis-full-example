@@ -5,11 +5,11 @@ import KhrysalisRuntime
 import Foundation
 
 public class Post : Codable, Hashable {
-    public var userId: Int64
-    public var id: Int64
+    public var userId: Int
+    public var id: Int
     public var title: String
     public var body: String
-    public init(userId: Int64 = 0, id: Int64 = 0, title: String = "", body: String = "") {
+    public init(userId: Int = 0, id: Int = 0, title: String = "", body: String = "") {
         self.userId = userId
         self.id = id
         self.title = title
@@ -19,8 +19,8 @@ public class Post : Codable, Hashable {
     convenience required public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         self.init(
-            userId: values.contains(.userId) ? try values.decode(Int64.self, forKey: .userId) : 0,
-            id: values.contains(.id) ? try values.decode(Int64.self, forKey: .id) : 0,
+            userId: values.contains(.userId) ? try values.decode(Int.self, forKey: .userId) : 0,
+            id: values.contains(.id) ? try values.decode(Int.self, forKey: .id) : 0,
             title: values.contains(.title) ? try values.decode(String.self, forKey: .title) : "",
             body: values.contains(.body) ? try values.decode(String.self, forKey: .body) : ""
         )
@@ -49,6 +49,6 @@ public class Post : Codable, Hashable {
     }
     public static func == (lhs: Post, rhs: Post) -> Bool { return lhs.userId == rhs.userId && lhs.id == rhs.id && lhs.title == rhs.title && lhs.body == rhs.body }
     public var description: String { return "Post(userId=\(String(kotlin: self.userId)), id=\(String(kotlin: self.id)), title=\(String(kotlin: self.title)), body=\(String(kotlin: self.body)))" }
-    public func copy(userId: Int64? = nil, id: Int64? = nil, title: String? = nil, body: String? = nil) -> Post { return Post(userId: userId ?? self.userId, id: id ?? self.id, title: title ?? self.title, body: body ?? self.body) }
+    public func copy(userId: Int? = nil, id: Int? = nil, title: String? = nil, body: String? = nil) -> Post { return Post(userId: userId ?? self.userId, id: id ?? self.id, title: title ?? self.title, body: body ?? self.body) }
 }
 

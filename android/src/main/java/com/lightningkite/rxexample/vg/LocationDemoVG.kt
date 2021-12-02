@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.location.Location
@@ -18,6 +18,7 @@ import com.lightningkite.rx.mapFromNullable
 import com.lightningkite.rx.optional
 import io.reactivex.rxjava3.core.Observable
 import java.util.*
+import com.lightningkite.khrysalis.SharedCode
 
 class LocationDemoVG : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Location Demo")

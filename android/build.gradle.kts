@@ -31,26 +31,21 @@ android {
     }
 }
 
-khrysalis {
-    projectName = "KhrysalisFullExample"
-}
-xmlToXib {
-    iosProjectName = "KhrysalisFullExample"
-}
-
 repositories {
-    mavenLocal()
     google()
     mavenCentral()
     maven("https://jitpack.io")
 }
 
-val kotlin_version = "1.5.31"
+val kotlin_version = "1.6.0"
 dependencies {
-    implementation("com.lightningkite.xmltoxib:safe-insets:0.0.1")
-    implementation("com.lightningkite.khrysalis:jvm-runtime:0.0.2")
-    implementation("com.lightningkite.rx:view-generator:0.0.4")
-    implementation("com.lightningkite.rx:okhttp-resources:0.0.4")
+    khrysalisSwift("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:0.7.1")
+    khrysalisKotlin("com.lightningkite.khrysalis:kotlin-compiler-plugin-kotlin:0.7.1")
+    implementation("com.lightningkite.xmltoxib:safe-insets:0.7.1")
+    implementation("com.lightningkite.khrysalis:jvm-runtime:0.7.1")
+    implementation("com.lightningkite.rx:view-generator:0.7.0")
+    implementation("com.lightningkite.rx:okhttp:0.7.0")
+    implementation("com.lightningkite.rx:okhttp-resources:0.7.0")
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.3.0")
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
@@ -59,6 +54,14 @@ dependencies {
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:1.1.5")
 }
 
+khrysalis {
+    projectName = "KhrysalisFullExample"
+    this.overrideIosFolder = project.rootDir.resolve("ios")
+}
+xmlToXib {
+    iosProjectName = "KhrysalisFullExample"
+    this.iosFolder = project.rootDir.resolve("ios")
+}
 
 tasks.create("wrapper"){
 

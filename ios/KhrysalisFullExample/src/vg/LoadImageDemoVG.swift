@@ -28,19 +28,19 @@ public class LoadImageDemoVG : ViewGenerator {
         self.currentImage.subscribe(onNext: { (it) -> Void in self.canUpload.value = nil }).disposed(by: view.removed)
         
         self.currentImage.subscribeAutoDispose(xml.image, { (this, it) -> Void in xml.image.setImage(it) })
-        xml.camera.onClick { () -> Void in dependency.requestImageCamera().subscribe(onSuccess: { (url) -> Void in self.currentImage.value = Image.localUrl(url) }) }
-        xml.galleryMultiple.onClick { () -> Void in dependency.requestImagesGallery().subscribe(onSuccess: { (urls) -> Void in if let url = (urls.first) {
-            self.currentImage.value = Image.localUrl(url)
+        xml.camera.onClick { () -> Void in dependency.requestImageCamera().subscribe(onSuccess: { (url) -> Void in self.currentImage.value = ImageLocalUrl(url) }) }
+        xml.galleryMultiple.onClick { () -> Void in dependency.requestImagesGallery().subscribe(onSuccess: { (urls) -> Void in if let url = (urls.firstOrNull()) {
+            self.currentImage.value = ImageLocalUrl(url)
         } }) }
-        xml.gallery.onClick { () -> Void in dependency.requestImageGallery().subscribe(onSuccess: { (url) -> Void in self.currentImage.value = Image.localUrl(url) }) }
-        xml.loremPixel.onClick { () -> Void in self.currentImage.value = Image.remoteUrl(URL(string: "https://picsum.photos/200")!) }
+        xml.gallery.onClick { () -> Void in dependency.requestImageGallery().subscribe(onSuccess: { (url) -> Void in self.currentImage.value = ImageLocalUrl(url) }) }
+        xml.loremPixel.onClick { () -> Void in self.currentImage.value = ImageRemoteUrl(URL(string: "https://picsum.photos/200")!) }
         xml.checkCanUpload.onClick { () -> Void in if let i = (self.currentImage.value) {
             i.toRequestBody().subscribe(onSuccess: { (it) -> Void in self.canUpload.value = true }, onError: { (it) -> Void in
                 it.printStackTrace()
                 self.canUpload.value = false
             })
         } }
-        self.canUpload.map({ (it) -> String in it == nil ? "Not checked" : it == true ? "Good to go!" : "FAILED!!!" }).subscribeAutoDispose(xml.canUpload, \.text)
+        self.canUpload.map({ (it) -> String in it == nil ? "Not checked" : it == true ? "Good to go!" : "FAILED!!!" }).subscribeAutoDispose(xml.canUpload, \UILabel.text)
         return view
     }
 }

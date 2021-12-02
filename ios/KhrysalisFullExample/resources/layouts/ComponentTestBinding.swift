@@ -6,12 +6,14 @@
 import XmlToXibRuntime
 import UIKit
 
-class ComponentTestBinding: XibView {
+public class ComponentTestBinding: XibView {
 
-    @IBOutlet weak public var button: UIButton!
-    @IBOutlet weak public var label: UILabel!
+    @IBOutlet weak private var _button: UIButton!
+    @IBOutlet weak private var _label: UILabel!
+    public var button: UIButton { return _button }
+    public var label: UILabel { return _label }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

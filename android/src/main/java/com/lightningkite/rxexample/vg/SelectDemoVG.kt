@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -14,6 +14,7 @@ import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rx.android.onClick
 import com.lightningkite.rxexample.databinding.ComponentTestBinding
 import com.lightningkite.rxexample.databinding.SelectDemoBinding
+import com.lightningkite.khrysalis.SharedCode
 
 class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Select Demo")

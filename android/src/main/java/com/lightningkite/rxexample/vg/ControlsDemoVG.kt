@@ -1,6 +1,7 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
+import com.lightningkite.khrysalis.SharedCode
 import android.view.View
 import android.widget.TextView
 import com.lightningkite.rx.viewgenerators.ActivityAccess

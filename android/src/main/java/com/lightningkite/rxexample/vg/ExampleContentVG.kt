@@ -1,4 +1,4 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
@@ -15,6 +15,7 @@ import com.lightningkite.rx.android.onClick
 import com.lightningkite.rxexample.databinding.ExampleContentBinding
 import com.lightningkite.rx.android.subscribeAutoDispose
 import io.reactivex.rxjava3.core.Observable
+import com.lightningkite.khrysalis.SharedCode
 
 class ExampleContentVG : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Example Content")

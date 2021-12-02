@@ -6,12 +6,14 @@
 import XmlToXibRuntime
 import UIKit
 
-class LocationDemoBinding: XibView {
+public class LocationDemoBinding: XibView {
 
-    @IBOutlet weak public var getLocation: UIButton!
-    @IBOutlet weak public var locationDisplay: UILabel!
+    @IBOutlet weak private var _getLocation: UIButton!
+    @IBOutlet weak private var _locationDisplay: UILabel!
+    public var getLocation: UIButton { return _getLocation }
+    public var locationDisplay: UILabel { return _locationDisplay }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }

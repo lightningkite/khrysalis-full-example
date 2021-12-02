@@ -1,9 +1,10 @@
-//! This file will translate using Khrysalis.
+@file:SharedCode
 package com.lightningkite.rxexample.api
 
 import com.lightningkite.rxexample.models.Post
 import io.reactivex.rxjava3.core.Single
 import java.util.concurrent.TimeUnit
+import com.lightningkite.khrysalis.SharedCode
 
 class APIMock() : APIInterface {
 

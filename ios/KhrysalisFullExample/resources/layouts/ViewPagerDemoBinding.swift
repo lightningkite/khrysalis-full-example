@@ -6,11 +6,12 @@
 import XmlToXibRuntime
 import UIKit
 
-class ViewPagerDemoBinding: XibView {
+public class ViewPagerDemoBinding: XibView {
 
-    @IBOutlet weak public var viewPager: UICollectionView!
+    @IBOutlet weak private var _viewPager: UICollectionView!
+    public var viewPager: UICollectionView { return _viewPager }
 
-    override func awakeFromNib() {
+    override public func awakeFromNib() {
         super.awakeFromNib()
         
     }
