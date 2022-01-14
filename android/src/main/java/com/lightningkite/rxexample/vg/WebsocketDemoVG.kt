@@ -24,6 +24,7 @@ import com.lightningkite.rx.android.*
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.subjects.Subject
 import com.lightningkite.khrysalis.SharedCode
+import com.lightningkite.rx.okhttp.WebSocketInterface
 
 //--- Name (overwritten on flow generation)
 @Suppress("NAME_SHADOWING")
@@ -37,7 +38,7 @@ class WebsocketDemoVG(
     override val titleString: ViewString get() = ViewStringRaw("Websocket Demo")
 
     //--- Data
-    val socket: Observable<ConnectedWebSocket> = HttpClient.webSocket("wss://echo.websocket.org").replay(1).refCount()
+    val socket: Observable<WebSocketInterface> = HttpClient.webSocket("wss://echo.websocket.org").replay(1).refCount()
     val text: ValueSubject<String> = ValueSubject("")
 
     //--- Generate Start (overwritten on flow generation)
@@ -47,7 +48,6 @@ class WebsocketDemoVG(
 
         //--- Set Up xml.items
         val itemsList = ArrayList<WebSocketFrame>()
-        WebSocketFrame()
         socket.switchMap { it -> it.read }.map { it ->
             println("Adding item")
             itemsList.add(it)

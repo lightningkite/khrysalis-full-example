@@ -18,6 +18,7 @@ import com.lightningkite.rx.plus
 import com.lightningkite.rx.toSubjectFloat
 import io.reactivex.rxjava3.core.Observable
 import com.lightningkite.khrysalis.SharedCode
+import com.lightningkite.rx.android.progressRatio
 
 class SliderDemoVG() : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Slider Demo")
@@ -44,7 +45,7 @@ class SliderDemoVG() : ViewGenerator {
         percent.bind(xml.slider)
         percent.subscribeAutoDispose(xml.valueDisplay) { xml.valueDisplay.text = it.toString() }
 //        xml.progress.max = 10000;
-//        ratio.subscribeAutoDispose(xml.progress) { xml.progress.progress = (it * 10000).toInt() }
+        ratio.subscribeAutoDispose(xml.progress, ProgressBar::progressRatio)
 
         xml.rating.numStars = 5
         xml.rating.stepSize = 1f

@@ -32,7 +32,6 @@ class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
         ControlsDemoVG(),
         ExampleContentVG(),
         ViewPagerDemoVG(stack),
-        SegmentedControlDemoVG(),
         SliderDemoVG(),
         PreviewVG()
     )

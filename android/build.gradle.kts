@@ -32,6 +32,7 @@ android {
 }
 
 repositories {
+    mavenLocal()
     google()
     mavenCentral()
     maven("https://jitpack.io")
@@ -40,12 +41,13 @@ repositories {
 val kotlin_version = "1.6.0"
 dependencies {
     khrysalisSwift("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:0.7.1")
+    khrysalisTypescript("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:0.7.1")
     khrysalisKotlin("com.lightningkite.khrysalis:kotlin-compiler-plugin-kotlin:0.7.1")
     implementation("com.lightningkite.xmltoxib:safe-insets:0.7.1")
     implementation("com.lightningkite.khrysalis:jvm-runtime:0.7.1")
-    implementation("com.lightningkite.rx:view-generator:0.7.0")
-    implementation("com.lightningkite.rx:okhttp:0.7.0")
-    implementation("com.lightningkite.rx:okhttp-resources:0.7.0")
+    implementation("com.lightningkite.rx:view-generator:0.7.3")
+    implementation("com.lightningkite.rx:okhttp:0.7.3")
+    implementation("com.lightningkite.rx:okhttp-resources:0.7.3")
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.3.0")
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")

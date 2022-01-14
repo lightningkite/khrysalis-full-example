@@ -26,7 +26,6 @@ class PreviewVG : ViewGenerator {
         XmlPreview("ExampleContentBinding") { it -> ExampleContentBinding.inflate(it.layoutInflater).root },
         XmlPreview("LoginDemoBinding") { it -> LoginDemoBinding.inflate(it.layoutInflater).root },
         XmlPreview("MainBinding") { it -> MainBinding.inflate(it.layoutInflater).root },
-        XmlPreview("SegmentedControlDemoBinding") { it -> SegmentedControlDemoBinding.inflate(it.layoutInflater).root },
         XmlPreview("SelectDemoBinding") { it -> SelectDemoBinding.inflate(it.layoutInflater).root },
         XmlPreview("SliderDemoBinding") { it -> SliderDemoBinding.inflate(it.layoutInflater).root },
         XmlPreview("ViewPagerDemoBinding") { it -> ViewPagerDemoBinding.inflate(it.layoutInflater).root }

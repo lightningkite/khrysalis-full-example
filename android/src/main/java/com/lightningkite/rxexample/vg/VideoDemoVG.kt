@@ -52,14 +52,9 @@ class VideoDemoVG(
         val view = xml.root
 
         //--- Set Up xml.video
-        currentVideo.subscribeAutoDispose<Observable<Optional<Video>>, PlayerView, Optional<Video>>(xml.video) {
+        currentVideo.subscribeAutoDispose(xml.video) {
             xml.video.setVideo(it.kotlin)
         }
-
-        //--- Set Up xml.thumbnail
-        currentVideo
-            .switchMap { it.kotlin?.thumbnail(dependency.context)?.toObservable() ?: Observable.never() }
-            .subscribeAutoDispose(xml.thumbnail, ImageView::setImage)
 
         //--- Set Up xml.play (overwritten on flow generation)
         xml.play.onClick { this.playClick() }
