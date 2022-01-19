@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "android-xml-runtime": "file:../../android-xml-to-ios-xib/web-runtime",
-    "rxjs-plus": "file:../../rxjs-plus",
-    "khrysalis-runtime": "file:../../khrysalis/web-runtime",
+    "@lightningkite/android-xml-runtime": "0.1.3",
+    "@lightningkite/rxjs-plus": "0.1.3",
+    "@lightningkite/khrysalis-runtime": "0.1.3",
     "rxjs": "7.4.0",
     "@js-joda/core": "^4.3.1",
     "iter-tools-es": "^7.1.4"

@@ -1,4 +1,4 @@
-import {inflateHtmlFile} from "android-xml-runtime";
+import {inflateHtmlFile} from "@lightningkite/android-xml-runtime";
 import html from './preview.html'
 
 //! Declares com.lightningkite.rxexample.databinding.PreviewBinding

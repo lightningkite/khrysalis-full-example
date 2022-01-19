@@ -4,7 +4,7 @@
 import { ComponentTestBinding } from '../resources/layouts/ComponentTestBinding'
 import { BehaviorSubject, of } from 'rxjs'
 import { ViewPagerDemoBinding } from '../resources/layouts/ViewPagerDemoBinding'
-import { StackSubject, ViewGenerator, showInPager } from 'rxjs-plus'
+import { StackSubject, ViewGenerator, showInPager } from '@lightningkite/rxjs-plus'
 
 //! Declares com.lightningkite.rxexample.vg.ViewPagerDemoVG
 export class ViewPagerDemoVG implements ViewGenerator {

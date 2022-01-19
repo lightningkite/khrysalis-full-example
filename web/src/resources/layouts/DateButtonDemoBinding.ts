@@ -1,4 +1,4 @@
-import {inflateHtmlFile} from "android-xml-runtime";
+import {inflateHtmlFile} from "@lightningkite/android-xml-runtime";
 import html from './date_button_demo.html'
 
 //! Declares com.lightningkite.rxexample.databinding.DateButtonDemoBinding

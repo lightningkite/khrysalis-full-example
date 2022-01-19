@@ -9,10 +9,10 @@ plugins {
 
 android {
     //    buildToolsVersion = "28.0.3"
-    compileSdkVersion(30)
+    compileSdkVersion(31)
     defaultConfig {
         minSdkVersion(21)
-        targetSdkVersion(30)
+        targetSdkVersion(31)
         multiDexEnabled = true
         applicationId = "com.lightningkite.rxexample"
         versionCode = 5
@@ -33,6 +33,7 @@ android {
 
 repositories {
     mavenLocal()
+    maven(url="https://s01.oss.sonatype.org/content/repositories/snapshots/")
     google()
     mavenCentral()
     maven("https://jitpack.io")
@@ -40,14 +41,14 @@ repositories {
 
 val kotlin_version = "1.6.0"
 dependencies {
-    khrysalisSwift("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:0.7.1")
-    khrysalisTypescript("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:0.7.1")
-    khrysalisKotlin("com.lightningkite.khrysalis:kotlin-compiler-plugin-kotlin:0.7.1")
-    implementation("com.lightningkite.xmltoxib:safe-insets:0.7.1")
-    implementation("com.lightningkite.khrysalis:jvm-runtime:0.7.1")
-    implementation("com.lightningkite.rx:view-generator:0.7.3")
-    implementation("com.lightningkite.rx:okhttp:0.7.3")
-    implementation("com.lightningkite.rx:okhttp-resources:0.7.3")
+    khrysalisSwift("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:master-SNAPSHOT")
+    khrysalisTypescript("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:master-SNAPSHOT")
+    khrysalisKotlin("com.lightningkite.khrysalis:kotlin-compiler-plugin-kotlin:master-SNAPSHOT")
+    implementation("com.lightningkite.xmltoxib:safe-insets:master-SNAPSHOT")
+    implementation("com.lightningkite.khrysalis:jvm-runtime:master-SNAPSHOT")
+    implementation("com.lightningkite.rx:view-generator:master-SNAPSHOT")
+    implementation("com.lightningkite.rx:okhttp:master-SNAPSHOT")
+    implementation("com.lightningkite.rx:okhttp-resources:master-SNAPSHOT")
     testImplementation("junit:junit:4.12")
     androidTestImplementation("androidx.test:runner:1.3.0")
     androidTestImplementation("com.android.support.test.espresso:espresso-core:3.0.2")
