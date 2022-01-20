@@ -4,23 +4,21 @@
 //
 
 import XmlToXibRuntime
-import UIKit
 import RxSwiftPlus
+import UIKit
 
 public class VideoDemoBinding: XibView {
 
-    @IBOutlet weak private var _play: UIButton!
-    @IBOutlet weak private var _galleryMulti: UIButton!
-    @IBOutlet weak private var _thumbnail: UIImageView!
     @IBOutlet weak private var _video: VCContainerView!
-    @IBOutlet weak private var _camera: UIButton!
+    @IBOutlet weak private var _play: UIButton!
     @IBOutlet weak private var _gallery: UIButton!
-    public var play: UIButton { return _play }
-    public var galleryMulti: UIButton { return _galleryMulti }
-    public var thumbnail: UIImageView { return _thumbnail }
+    @IBOutlet weak private var _camera: UIButton!
+    @IBOutlet weak private var _galleryMulti: UIButton!
     public var video: VCContainerView { return _video }
-    public var camera: UIButton { return _camera }
+    public var play: UIButton { return _play }
     public var gallery: UIButton { return _gallery }
+    public var camera: UIButton { return _camera }
+    public var galleryMulti: UIButton { return _galleryMulti }
 
     override public func awakeFromNib() {
         super.awakeFromNib()

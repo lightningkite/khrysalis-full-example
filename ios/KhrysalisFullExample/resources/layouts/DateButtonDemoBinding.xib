@@ -1,73 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
+<document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"></device>
   <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+    <deployment identifier="iOS"></deployment>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"></plugIn>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"></capability>
+    <capability minToolsVersion="11.0" name="System colors in document resources"></capability>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"></capability>
   </dependencies>
-  <customFonts key="customFonts"/>
+  <customFonts key="customFonts"></customFonts>
   <objects>
     <placeholder customClass="DateButtonDemoBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <attributedString key="userComments">
+        <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
+      </attributedString>
       <connections>
-        <outlet destination="dateButton" id="outletekoB7q" property="_dateButton"/>
-        <outlet destination="timeButton" id="outletf9Ko6l" property="_timeButton"/>
-        <outlet destination="text" id="outletP4Ss0x" property="_text"/>
+        <outlet destination="text" id="outletiue9Me" property="_text"></outlet>
+        <outlet destination="dateButton" id="outletFF6EUm" property="_dateButton"></outlet>
+        <outlet destination="timeButton" id="outletA7f7Yh" property="_timeButton"></outlet>
       </connections>
     </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollViewoXTUo1" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <stackView axis="vertical" contentMode="scaleToFill" id="stackViewfXUOMd" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="text" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
-              <nil key="highlightedColor"/>
-              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
-            </label>
-            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="dateButton" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+              <nil key="highlightedColor"></nil>
+              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
+            </label><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="dateButton" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
               <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
-                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
               </userDefinedRuntimeAttributes>
               <state key="normal">
-                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
               </state>
-              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
-            </button>
-            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="timeButton" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
+            </button><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="timeButton" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
               <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
-                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
               </userDefinedRuntimeAttributes>
               <state key="normal">
-                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
               </state>
-              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
             </button>
           </subviews>
           <constraints>
-            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraintgrxV8Y" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="text" id="constraintz0hkK8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraintUlL4Nx" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="dateButton" id="constraintJ5DwUg" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintZ5BJkU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="32.0" firstAttribute="width" firstItem="timeButton" id="constraintKusSjM" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="32.0" firstAttribute="width" id="constraintgrxV8Y" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="text"></constraint>
+            <constraint constant="32.0" firstAttribute="width" id="constraintz0hkK8" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="text"></constraint>
+            <constraint constant="32.0" firstAttribute="width" id="constraintUlL4Nx" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="dateButton"></constraint>
+            <constraint constant="32.0" firstAttribute="width" id="constraintJ5DwUg" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="dateButton"></constraint>
+            <constraint constant="32.0" firstAttribute="width" id="constraintZ5BJkU" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="timeButton"></constraint>
+            <constraint constant="32.0" firstAttribute="width" id="constraintKusSjM" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="timeButton"></constraint>
           </constraints>
-          <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
+          <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"></edgeInsets>
         </stackView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"/>
-        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"/>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"></constraint>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
       </constraints>
     </scrollView>
   </objects>
-  <resources/>
+  <resources></resources>
 </document>

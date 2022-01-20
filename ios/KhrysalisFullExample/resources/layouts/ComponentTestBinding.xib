@@ -1,48 +1,50 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
+<document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"></device>
   <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+    <deployment identifier="iOS"></deployment>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"></plugIn>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"></capability>
+    <capability minToolsVersion="11.0" name="System colors in document resources"></capability>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"></capability>
   </dependencies>
-  <customFonts key="customFonts"/>
+  <customFonts key="customFonts"></customFonts>
   <objects>
     <placeholder customClass="ComponentTestBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <attributedString key="userComments">
+        <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
+      </attributedString>
       <connections>
-        <outlet destination="button" id="outletekoB7q" property="_button"/>
-        <outlet destination="label" id="outletf9Ko6l" property="_label"/>
+        <outlet destination="label" id="outletiue9Me" property="_label"></outlet>
+        <outlet destination="button" id="outletFF6EUm" property="_button"></outlet>
       </connections>
     </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewoXTUo1" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="label" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-          <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
-          <nil key="highlightedColor"/>
-          <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
-        </label>
-        <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="button" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-          <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+          <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+          <nil key="highlightedColor"></nil>
+          <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
+        </label><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="button" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+          <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
           <userDefinedRuntimeAttributes>
-            <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
-            <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+            <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
+            <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
           </userDefinedRuntimeAttributes>
           <state key="normal" title="OK">
-            <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+            <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
           </state>
-          <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+          <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
         </button>
       </subviews>
       <constraints>
-        <constraint constant="32.0" firstAttribute="height" firstItem="label" id="constraintdhGhM8" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackViewoXTUo1"/>
-        <constraint constant="32.0" firstAttribute="height" firstItem="label" id="constraintyr3VN4" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackViewoXTUo1"/>
-        <constraint constant="32.0" firstAttribute="height" firstItem="button" id="constraintIQCF4O" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="stackViewoXTUo1"/>
-        <constraint constant="32.0" firstAttribute="height" firstItem="button" id="constraintXtEnmN" identifier="constraintMatchParent-height-start" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="stackViewoXTUo1"/>
+        <constraint constant="32.0" firstAttribute="height" id="constraintdhGhM8" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="label"></constraint>
+        <constraint constant="32.0" firstAttribute="height" id="constraintyr3VN4" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="label"></constraint>
+        <constraint constant="32.0" firstAttribute="height" id="constraintIQCF4O" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="button"></constraint>
+        <constraint constant="32.0" firstAttribute="height" id="constraintXtEnmN" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="button"></constraint>
       </constraints>
-      <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"/>
+      <edgeInsets bottom="16.0" key="layoutMargins" left="16.0" right="16.0" top="16.0"></edgeInsets>
     </stackView>
   </objects>
-  <resources/>
+  <resources></resources>
 </document>

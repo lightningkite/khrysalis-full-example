@@ -1,25 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
+<document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"></device>
   <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+    <deployment identifier="iOS"></deployment>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"></plugIn>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"></capability>
+    <capability minToolsVersion="11.0" name="System colors in document resources"></capability>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"></capability>
   </dependencies>
-  <customFonts key="customFonts"/>
+  <customFonts key="customFonts"></customFonts>
   <objects>
     <placeholder customClass="LoginDemoBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <attributedString key="userComments">
+        <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
+      </attributedString>
       <connections>
-        <outlet destination="verifyPassword" id="outletekoB7q" property="_verifyPassword"/>
-        <outlet destination="password" id="outletf9Ko6l" property="_password"/>
-        <outlet destination="submit" id="outletP4Ss0x" property="_submit"/>
-        <outlet destination="submitLoading" id="outletUl2jbx" property="_submitLoading"/>
-        <outlet destination="agree" id="outletYUeH5w" property="_agree"/>
-        <outlet destination="username" id="outletjOHLTR" property="_username"/>
+        <outlet destination="username" id="outletiue9Me" property="_username"></outlet>
+        <outlet destination="password" id="outletFF6EUm" property="_password"></outlet>
+        <outlet destination="verifyPassword" id="outletA7f7Yh" property="_verifyPassword"></outlet>
+        <outlet destination="agree" id="outlet2tCJk5" property="_agree"></outlet>
+        <outlet destination="submitLoading" id="outletYjtYgC" property="_submitLoading"></outlet>
+        <outlet destination="submit" id="outlet8goDGd" property="_submit"></outlet>
       </connections>
     </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollViewoXTUo1" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <stackView axis="vertical" contentMode="scaleToFill" id="stackViewfXUOMd" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
@@ -27,17 +30,17 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewQDo4AP" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="label7rgmyM" lineBreakMode="tailTruncation" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
-                  <nil key="highlightedColor"/>
-                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <nil key="highlightedColor"></nil>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="label7rgmyM" id="constraint4GIiYw" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewQDo4AP"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintD1YdJQ" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="label7rgmyM"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="label7rgmyM" id="constraintIW0BWA" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewQDo4AP"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintf24vfT" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="label7rgmyM"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraint0x51xo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="label7rgmyM"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="label7rgmyM" id="constraint4GIiYw" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewQDo4AP"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintD1YdJQ" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="label7rgmyM"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="label7rgmyM" id="constraintIW0BWA" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewQDo4AP"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintf24vfT" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="label7rgmyM"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraint0x51xo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="label7rgmyM"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewftHs9H" translatesAutoresizingMaskIntoConstraints="NO">
@@ -45,30 +48,30 @@
                 <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewNsemiv" translatesAutoresizingMaskIntoConstraints="NO">
                   <subviews>
                     <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="username" minimumFontSize="17" opaque="NO" placeholder="Username" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="14" type="system"/>
-                      <textInputTraits key="textInputTraits" keyboardType="emailAddress" smartDashesType="no" smartQuotesType="no" textContentType="email"/>
-                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                      <textInputTraits key="textInputTraits" keyboardType="emailAddress" smartDashesType="no" smartQuotesType="no" textContentType="email"></textInputTraits>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
                       <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintB5dlPx" relation="greaterThanOrEqual"/>
+                        <constraint constant="40.0" firstAttribute="height" id="constraintB5dlPx" relation="greaterThanOrEqual"></constraint>
                       </constraints>
                     </textField>
                   </subviews>
                   <constraints>
-                    <constraint constant="8.0" firstAttribute="top" firstItem="username" id="constraintXkE80A" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewNsemiv"/>
-                    <constraint constant="8.0" firstAttribute="bottom" id="constraintb7zos8" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="username"/>
-                    <constraint constant="8.0" firstAttribute="leading" firstItem="username" id="constraintDu2eYw" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewNsemiv"/>
-                    <constraint constant="8.0" firstAttribute="trailing" id="constraintHdhgAY" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="username"/>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="username" id="constraintXkE80A" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewNsemiv"></constraint>
+                    <constraint constant="8.0" firstAttribute="bottom" id="constraintb7zos8" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="username"></constraint>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="username" id="constraintDu2eYw" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewNsemiv"></constraint>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintHdhgAY" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="username"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
-                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"/>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="viewNsemiv" id="constraintWcHWl5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewftHs9H"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintQWQBcw" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewNsemiv"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="viewNsemiv" id="constraintp6U0NY" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewftHs9H"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintlGHa7c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewNsemiv"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="viewNsemiv" id="constraintWcHWl5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewftHs9H"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintQWQBcw" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewNsemiv"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="viewNsemiv" id="constraintp6U0NY" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewftHs9H"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintlGHa7c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewNsemiv"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="view5sCq7y" translatesAutoresizingMaskIntoConstraints="NO">
@@ -76,30 +79,30 @@
                 <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewEnuXpI" translatesAutoresizingMaskIntoConstraints="NO">
                   <subviews>
                     <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="password" minimumFontSize="17" opaque="NO" placeholder="Password" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="14" type="system"/>
-                      <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
-                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                      <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"></textInputTraits>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
                       <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintREKNmY" relation="greaterThanOrEqual"/>
+                        <constraint constant="40.0" firstAttribute="height" id="constraintREKNmY" relation="greaterThanOrEqual"></constraint>
                       </constraints>
                     </textField>
                   </subviews>
                   <constraints>
-                    <constraint constant="8.0" firstAttribute="top" firstItem="password" id="constraintPpPoSE" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewEnuXpI"/>
-                    <constraint constant="8.0" firstAttribute="bottom" id="constraintmJfyzD" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="password"/>
-                    <constraint constant="8.0" firstAttribute="leading" firstItem="password" id="constraintt8j8lD" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewEnuXpI"/>
-                    <constraint constant="8.0" firstAttribute="trailing" id="constraintTHvW5R" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="password"/>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="password" id="constraintPpPoSE" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewEnuXpI"></constraint>
+                    <constraint constant="8.0" firstAttribute="bottom" id="constraintmJfyzD" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="password"></constraint>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="password" id="constraintt8j8lD" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewEnuXpI"></constraint>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintTHvW5R" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="password"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
-                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"/>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="viewEnuXpI" id="constraint3bj4M5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5sCq7y"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintT1ILOC" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewEnuXpI"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="viewEnuXpI" id="constraintdAV041" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5sCq7y"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintfLboC5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewEnuXpI"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="viewEnuXpI" id="constraint3bj4M5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5sCq7y"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintT1ILOC" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewEnuXpI"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="viewEnuXpI" id="constraintdAV041" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5sCq7y"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintfLboC5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewEnuXpI"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewN5TZGF" translatesAutoresizingMaskIntoConstraints="NO">
@@ -107,118 +110,118 @@
                 <view customClass="ContainerView" customModule="XmlToXibRuntime" id="view8ITXsu" translatesAutoresizingMaskIntoConstraints="NO">
                   <subviews>
                     <textField contentHorizontalAlignment="left" contentMode="scaleToFill" contentVerticalAlignment="center" id="verifyPassword" minimumFontSize="17" opaque="NO" placeholder="Verify Password" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="14" type="system"/>
-                      <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
-                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                      <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"></textInputTraits>
+                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
                       <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintXyLxx2" relation="greaterThanOrEqual"/>
+                        <constraint constant="40.0" firstAttribute="height" id="constraintXyLxx2" relation="greaterThanOrEqual"></constraint>
                       </constraints>
                     </textField>
                   </subviews>
                   <constraints>
-                    <constraint constant="8.0" firstAttribute="top" firstItem="verifyPassword" id="constraintADj2Q1" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view8ITXsu"/>
-                    <constraint constant="8.0" firstAttribute="bottom" id="constraintnH0zKu" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="verifyPassword"/>
-                    <constraint constant="8.0" firstAttribute="leading" firstItem="verifyPassword" id="constrainthmhxJj" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view8ITXsu"/>
-                    <constraint constant="8.0" firstAttribute="trailing" id="constraintPDpkVo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="verifyPassword"/>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="verifyPassword" id="constraintADj2Q1" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view8ITXsu"></constraint>
+                    <constraint constant="8.0" firstAttribute="bottom" id="constraintnH0zKu" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="verifyPassword"></constraint>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="verifyPassword" id="constrainthmhxJj" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view8ITXsu"></constraint>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintPDpkVo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="verifyPassword"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
-                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"/>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="view8ITXsu" id="constraintK0VGHg" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewN5TZGF"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintOghqxj" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="view8ITXsu"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="view8ITXsu" id="constraintI5ZiYL" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewN5TZGF"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintvidw8t" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="view8ITXsu"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="view8ITXsu" id="constraintK0VGHg" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewN5TZGF"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintOghqxj" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="view8ITXsu"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="view8ITXsu" id="constraintI5ZiYL" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewN5TZGF"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintvidw8t" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="view8ITXsu"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewU0OdP4" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="agree" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <subviews>
-                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalHuggingPriority="750" id="viewAYKY3I" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="750">
-                      <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalCompressionResistancePriority="999" horizontalHuggingPriority="750" id="viewAYKY3I" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="999" verticalHuggingPriority="750">
+                      <color key="backgroundColor" systemColor="systemBackgroundColor"></color>
                       <constraints>
-                        <constraint constant="20.5" firstAttribute="height" id="constraintkSNLs4"/>
-                        <constraint constant="20.5" firstAttribute="width" id="constraintvSiWAO"/>
+                        <constraint constant="20.5" firstAttribute="height" id="constraintkSNLs4"></constraint>
+                        <constraint constant="20.5" firstAttribute="width" id="constraintvSiWAO"></constraint>
                       </constraints>
                       <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute keyPath="_IBMarkType" type="string" value="Checkmark"/>
-                        <userDefinedRuntimeAttribute keyPath="_IBBoxType" type="string" value="Square"/>
+                        <userDefinedRuntimeAttribute keyPath="_IBMarkType" type="string" value="Checkmark"></userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute keyPath="_IBBoxType" type="string" value="Square"></userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute keyPath="cornerRadius" type="number">
-                          <real key="value" value="2"/>
+                          <real key="value" value="2"></real>
                         </userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute keyPath="_IBCheckState" type="string" value="Unchecked"/>
+                        <userDefinedRuntimeAttribute keyPath="_IBCheckState" type="string" value="Unchecked"></userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute keyPath="checkmarkLineWidth" type="number">
-                          <real key="value" value="1"/>
+                          <real key="value" value="1"></real>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute keyPath="boxLineWidth" type="number">
-                          <real key="value" value="1"/>
+                          <real key="value" value="1"></real>
                         </userDefinedRuntimeAttribute>
                       </userDefinedRuntimeAttributes>
                     </view>
-                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="labelhFLp8Z" lineBreakMode="tailTruncation" opaque="NO" text="I Agree to the Terms of Service" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
-                      <fontDescription key="fontDescription" pointSize="17" type="system"/>
+                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="labelhFLp8Z" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="I Agree to the Terms of Service" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
+                      <fontDescription key="fontDescription" pointSize="17" type="system"></fontDescription>
                     </label>
                   </subviews>
                 </stackView>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="agree" id="constraintQ1krec" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewU0OdP4"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constrainth5O5zY" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="agree"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="agree" id="constraintEuuUG7" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewU0OdP4"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraint30B8Rb" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="agree"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="agree" id="constraintQ1krec" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewU0OdP4"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constrainth5O5zY" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="agree"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="agree" id="constraintEuuUG7" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewU0OdP4"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraint30B8Rb" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="agree"></constraint>
               </constraints>
             </view>
             <view clipsSubviews="YES" contentMode="scaleToFill" id="submitLoading" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="submit" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                   <userDefinedRuntimeAttributes>
-                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"/>
-                    <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"/>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                   <state key="normal" title="Submit">
-                    <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"/>
+                    <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
                   </state>
-                  <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"/>
+                  <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
                 </button>
               </subviews>
               <constraints>
-                <constraint constant="0.0" firstAttribute="top" firstItem="submit" id="constraintlpsNeC" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="submitLoading"/>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintaeLUXh" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="bottom" secondItem="submit"/>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintMoZarM" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="bottom" secondItem="submit"/>
-                <constraint constant="0.0" firstAttribute="leading" firstItem="submit" id="constraintGSIZNK" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="submitLoading"/>
-                <constraint constant="0.0" firstAttribute="trailing" id="constraintcS8rPm" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="submit"/>
+                <constraint constant="0.0" firstAttribute="top" firstItem="submit" id="constraintlpsNeC" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="submitLoading"></constraint>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintaeLUXh" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="bottom" secondItem="submit"></constraint>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintMoZarM" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="bottom" secondItem="submit"></constraint>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="submit" id="constraintGSIZNK" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="submitLoading"></constraint>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintcS8rPm" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="submit"></constraint>
               </constraints>
             </view>
           </subviews>
           <constraints>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewQDo4AP" id="constraintgrxV8Y" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewQDo4AP" id="constraintz0hkK8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewftHs9H" id="constraintUlL4Nx" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewftHs9H" id="constraintJ5DwUg" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="view5sCq7y" id="constraintZ5BJkU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="view5sCq7y" id="constraintKusSjM" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewN5TZGF" id="constraintegQTrP" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewN5TZGF" id="constraintGFl9yp" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewU0OdP4" id="constraintHRI6VR" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewU0OdP4" id="constraintTY95GG" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="submitLoading" id="constraintFIJn5V" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="submitLoading" id="constraint5JTRhU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="16.0" firstAttribute="width" id="constraintgrxV8Y" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewQDo4AP"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintz0hkK8" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewQDo4AP"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintUlL4Nx" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewftHs9H"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintJ5DwUg" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewftHs9H"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintZ5BJkU" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="view5sCq7y"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintKusSjM" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="view5sCq7y"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintegQTrP" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewN5TZGF"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintGFl9yp" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewN5TZGF"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintHRI6VR" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewU0OdP4"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintTY95GG" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewU0OdP4"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintFIJn5V" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="submitLoading"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint5JTRhU" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="submitLoading"></constraint>
           </constraints>
-          <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+          <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
         </stackView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"/>
-        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"/>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"></constraint>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
       </constraints>
     </scrollView>
   </objects>
-  <resources/>
+  <resources></resources>
 </document>

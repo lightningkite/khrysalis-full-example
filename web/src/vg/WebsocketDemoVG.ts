@@ -54,7 +54,7 @@ export class WebsocketDemoVG implements ViewGenerator {
         //--- Set Up xml.submit
         onThrottledEventDo(xml.submit, 'click', (): void => {
             elementRemoved(xml.submit).parts.push(this.socket.pipe(take(1)).subscribe((it: WebSocketInterface): void => {
-                it.next({ text: this.text.value });
+                it.write.next({ text: this.text.value });
             }, undefined, undefined));
         });
         

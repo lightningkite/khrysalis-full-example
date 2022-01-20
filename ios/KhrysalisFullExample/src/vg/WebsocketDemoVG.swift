@@ -20,7 +20,7 @@ public class WebsocketDemoVG : ViewGenerator {
         get { return "Websocket Demo" }
     }
     
-    public let socket: Observable<ConnectedWebSocket>
+    public let socket: Observable<WebSocketInterface>
     public let text: ValueSubject<String>
     
     public func generate(dependency: ViewControllerAccess) -> UIView {
@@ -29,7 +29,6 @@ public class WebsocketDemoVG : ViewGenerator {
         
         //--- Set Up xml.items
         var itemsList = [] as Array<WebSocketFrame>
-        WebSocketFrame()
         self.socket.switchMap { (it) -> Observable<WebSocketFrame> in it.read }.map { (it) -> Array<WebSocketFrame> in
             print("Adding item")
             itemsList.append(it)
@@ -53,7 +52,7 @@ public class WebsocketDemoVG : ViewGenerator {
         self.text.bind(xml.input)
         
         //--- Set Up xml.submit
-        xml.submit.onClick { () -> Void in self.socket.take(1).subscribe(onNext: { (it) -> Void in it.onNext(WebSocketFrame(text: self.text.value)) })
+        xml.submit.onClick { () -> Void in self.socket.take(1).subscribe(onNext: { (it) -> Void in it.write.onNext(WebSocketFrame(text: self.text.value)) })
             .disposed(by: xml.submit.removed) }
         
         //--- Generate End (overwritten on flow generation)

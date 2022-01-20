@@ -14,75 +14,74 @@
 		7C8AF24B273B031B00B43BF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF249273B031B00B43BF4 /* LaunchScreen.storyboard */; };
 		7C8AF256273B031B00B43BF4 /* KhrysalisFullExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF255273B031B00B43BF4 /* KhrysalisFullExampleTests.swift */; };
 		7C8AF261273B031B00B43BF4 /* KhrysalisFullExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF260273B031B00B43BF4 /* KhrysalisFullExampleUITests.swift */; };
-		7C8AF2BA273B070E00B43BF4 /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF26F273B070E00B43BF4 /* R.swift */; };
-		7C8AF2BB273B070E00B43BF4 /* button_primary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF271273B070E00B43BF4 /* button_primary.swift */; };
-		7C8AF2BC273B070E00B43BF4 /* border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF272273B070E00B43BF4 /* border.swift */; };
-		7C8AF2BD273B070E00B43BF4 /* button_disabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF273273B070E00B43BF4 /* button_disabled.swift */; };
-		7C8AF2BE273B070E00B43BF4 /* button_accent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF274273B070E00B43BF4 /* button_accent.swift */; };
-		7C8AF2BF273B070E00B43BF4 /* LocationDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF276273B070E00B43BF4 /* LocationDemoBinding.xib */; };
-		7C8AF2C0273B070E00B43BF4 /* ExampleContentBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF277273B070E00B43BF4 /* ExampleContentBinding.xib */; };
-		7C8AF2C1273B070E00B43BF4 /* ComponentBleDeviceBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF278273B070E00B43BF4 /* ComponentBleDeviceBinding.swift */; };
-		7C8AF2C2273B070E00B43BF4 /* SegmentedControlDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF279273B070E00B43BF4 /* SegmentedControlDemoBinding.swift */; };
-		7C8AF2C3273B070E00B43BF4 /* ComponentTextBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF27A273B070E00B43BF4 /* ComponentTextBinding.swift */; };
-		7C8AF2C4273B070E00B43BF4 /* SelectDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF27B273B070E00B43BF4 /* SelectDemoBinding.xib */; };
-		7C8AF2C5273B070E00B43BF4 /* ExternalTestBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF27C273B070E00B43BF4 /* ExternalTestBinding.xib */; };
-		7C8AF2C6273B070E00B43BF4 /* PreviewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF27D273B070E00B43BF4 /* PreviewBinding.swift */; };
-		7C8AF2C7273B070E00B43BF4 /* VideoDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF27E273B070E00B43BF4 /* VideoDemoBinding.swift */; };
-		7C8AF2C8273B070E00B43BF4 /* ViewPagerDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF27F273B070E00B43BF4 /* ViewPagerDemoBinding.xib */; };
-		7C8AF2C9273B070E00B43BF4 /* ExampleContentBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF280273B070E00B43BF4 /* ExampleContentBinding.swift */; };
-		7C8AF2CA273B070E00B43BF4 /* DateButtonDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF281273B070E00B43BF4 /* DateButtonDemoBinding.xib */; };
-		7C8AF2CB273B070E00B43BF4 /* WebsocketDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF282273B070E00B43BF4 /* WebsocketDemoBinding.xib */; };
-		7C8AF2CC273B070E00B43BF4 /* SelectDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF283273B070E00B43BF4 /* SelectDemoBinding.swift */; };
-		7C8AF2CD273B070E00B43BF4 /* BasicExampleBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF284273B070E00B43BF4 /* BasicExampleBinding.xib */; };
-		7C8AF2CE273B070E00B43BF4 /* MultipleDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF285273B070E00B43BF4 /* MultipleDemoBinding.swift */; };
-		7C8AF2CF273B070E00B43BF4 /* ComponentTextBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF286273B070E00B43BF4 /* ComponentTextBinding.xib */; };
-		7C8AF2D0273B070E00B43BF4 /* SegmentedControlDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF287273B070E00B43BF4 /* SegmentedControlDemoBinding.xib */; };
-		7C8AF2D1273B070E00B43BF4 /* PreviewBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF288273B070E00B43BF4 /* PreviewBinding.xib */; };
-		7C8AF2D2273B070E00B43BF4 /* ComponentBleDeviceBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF289273B070E00B43BF4 /* ComponentBleDeviceBinding.xib */; };
-		7C8AF2D3273B070E00B43BF4 /* MainBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF28A273B070E00B43BF4 /* MainBinding.swift */; };
-		7C8AF2D4273B070E00B43BF4 /* MainBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF28B273B070E00B43BF4 /* MainBinding.xib */; };
-		7C8AF2D5273B070E00B43BF4 /* BasicExampleBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF28C273B070E00B43BF4 /* BasicExampleBinding.swift */; };
-		7C8AF2D6273B070E00B43BF4 /* MultipleDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF28D273B070E00B43BF4 /* MultipleDemoBinding.xib */; };
-		7C8AF2D7273B070E00B43BF4 /* LoadImageDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF28E273B070E00B43BF4 /* LoadImageDemoBinding.xib */; };
-		7C8AF2D8273B070E00B43BF4 /* WebsocketDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF28F273B070E00B43BF4 /* WebsocketDemoBinding.swift */; };
-		7C8AF2D9273B070E00B43BF4 /* VideoDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF290273B070E00B43BF4 /* VideoDemoBinding.xib */; };
-		7C8AF2DA273B070E00B43BF4 /* ComponentTestBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF291273B070E00B43BF4 /* ComponentTestBinding.swift */; };
-		7C8AF2DB273B070E00B43BF4 /* ComponentTestBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF292273B070E00B43BF4 /* ComponentTestBinding.xib */; };
-		7C8AF2DC273B070E00B43BF4 /* LoginDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF293273B070E00B43BF4 /* LoginDemoBinding.xib */; };
-		7C8AF2DD273B070E00B43BF4 /* ExternalTestBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF294273B070E00B43BF4 /* ExternalTestBinding.swift */; };
-		7C8AF2DE273B070E00B43BF4 /* SliderDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF295273B070E00B43BF4 /* SliderDemoBinding.xib */; };
-		7C8AF2DF273B070E00B43BF4 /* SliderDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF296273B070E00B43BF4 /* SliderDemoBinding.swift */; };
-		7C8AF2E0273B070E00B43BF4 /* HttpDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF297273B070E00B43BF4 /* HttpDemoBinding.swift */; };
-		7C8AF2E1273B070E00B43BF4 /* HttpDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF298273B070E00B43BF4 /* HttpDemoBinding.xib */; };
-		7C8AF2E2273B070E00B43BF4 /* LocationDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF299273B070E00B43BF4 /* LocationDemoBinding.swift */; };
-		7C8AF2E3273B070E00B43BF4 /* DateButtonDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF29A273B070E00B43BF4 /* DateButtonDemoBinding.swift */; };
-		7C8AF2E4273B070E00B43BF4 /* ControlsDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF29B273B070E00B43BF4 /* ControlsDemoBinding.swift */; };
-		7C8AF2E5273B070E00B43BF4 /* LoadImageDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF29C273B070E00B43BF4 /* LoadImageDemoBinding.swift */; };
-		7C8AF2E6273B070E00B43BF4 /* ViewPagerDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF29D273B070E00B43BF4 /* ViewPagerDemoBinding.swift */; };
-		7C8AF2E7273B070E00B43BF4 /* LoginDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF29E273B070E00B43BF4 /* LoginDemoBinding.swift */; };
-		7C8AF2E8273B070E00B43BF4 /* ControlsDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C8AF29F273B070E00B43BF4 /* ControlsDemoBinding.xib */; };
-		7C8AF2E9273B070E00B43BF4 /* ExternalTestVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A2273B070E00B43BF4 /* ExternalTestVG.swift */; };
-		7C8AF2EA273B070E00B43BF4 /* HttpDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A3273B070E00B43BF4 /* HttpDemoVG.swift */; };
-		7C8AF2EB273B070E00B43BF4 /* ViewPagerDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A4273B070E00B43BF4 /* ViewPagerDemoVG.swift */; };
-		7C8AF2EC273B070E00B43BF4 /* LocationDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A5273B070E00B43BF4 /* LocationDemoVG.swift */; };
-		7C8AF2ED273B070E00B43BF4 /* SegmentedControlDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A6273B070E00B43BF4 /* SegmentedControlDemoVG.swift */; };
-		7C8AF2EE273B070E00B43BF4 /* DateButtonDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A7273B070E00B43BF4 /* DateButtonDemoVG.swift */; };
-		7C8AF2EF273B070E00B43BF4 /* LoginDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A8273B070E00B43BF4 /* LoginDemoVG.swift */; };
-		7C8AF2F0273B070E00B43BF4 /* SliderDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2A9273B070E00B43BF4 /* SliderDemoVG.swift */; };
-		7C8AF2F1273B070E00B43BF4 /* LoadImageDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2AA273B070E00B43BF4 /* LoadImageDemoVG.swift */; };
-		7C8AF2F2273B070E00B43BF4 /* PreviewVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2AB273B070E00B43BF4 /* PreviewVG.swift */; };
-		7C8AF2F3273B070E00B43BF4 /* BasicExampleVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2AC273B070E00B43BF4 /* BasicExampleVG.swift */; };
-		7C8AF2F4273B070E00B43BF4 /* VideoDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2AD273B070E00B43BF4 /* VideoDemoVG.swift */; };
-		7C8AF2F5273B070E00B43BF4 /* ExampleContentVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2AE273B070E00B43BF4 /* ExampleContentVG.swift */; };
-		7C8AF2F6273B070E00B43BF4 /* ControlsDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2AF273B070E00B43BF4 /* ControlsDemoVG.swift */; };
-		7C8AF2F7273B070E00B43BF4 /* SelectDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B0273B070E00B43BF4 /* SelectDemoVG.swift */; };
-		7C8AF2F8273B070E00B43BF4 /* MainVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B1273B070E00B43BF4 /* MainVG.swift */; };
-		7C8AF2F9273B070E00B43BF4 /* WebsocketDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B2273B070E00B43BF4 /* WebsocketDemoVG.swift */; };
-		7C8AF2FA273B070E00B43BF4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B4273B070E00B43BF4 /* Post.swift */; };
-		7C8AF2FB273B070E00B43BF4 /* APIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B6273B070E00B43BF4 /* APIMock.swift */; };
-		7C8AF2FC273B070E00B43BF4 /* APIOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B7273B070E00B43BF4 /* APIOnline.swift */; };
-		7C8AF2FD273B070E00B43BF4 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B8273B070E00B43BF4 /* API.swift */; };
-		7C8AF2FE273B070E00B43BF4 /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8AF2B9273B070E00B43BF4 /* APIInterface.swift */; };
+		7CE72AFD2798C79A0005C4CC /* R.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AB32798C79A0005C4CC /* R.swift */; };
+		7CE72AFE2798C79A0005C4CC /* button_primary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AB52798C79A0005C4CC /* button_primary.swift */; };
+		7CE72AFF2798C79A0005C4CC /* border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AB62798C79A0005C4CC /* border.swift */; };
+		7CE72B002798C79A0005C4CC /* button_disabled.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AB72798C79A0005C4CC /* button_disabled.swift */; };
+		7CE72B012798C79A0005C4CC /* button_accent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AB82798C79A0005C4CC /* button_accent.swift */; };
+		7CE72B022798C79A0005C4CC /* LocationDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ABA2798C79A0005C4CC /* LocationDemoBinding.xib */; };
+		7CE72B032798C79A0005C4CC /* ExampleContentBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ABB2798C79A0005C4CC /* ExampleContentBinding.xib */; };
+		7CE72B042798C79A0005C4CC /* ComponentBleDeviceBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ABC2798C79A0005C4CC /* ComponentBleDeviceBinding.swift */; };
+		7CE72B052798C79A0005C4CC /* SegmentedControlDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ABD2798C79A0005C4CC /* SegmentedControlDemoBinding.swift */; };
+		7CE72B062798C79A0005C4CC /* ComponentTextBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ABE2798C79A0005C4CC /* ComponentTextBinding.swift */; };
+		7CE72B072798C79A0005C4CC /* SelectDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ABF2798C79A0005C4CC /* SelectDemoBinding.xib */; };
+		7CE72B082798C79A0005C4CC /* ExternalTestBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AC02798C79A0005C4CC /* ExternalTestBinding.xib */; };
+		7CE72B092798C79A0005C4CC /* PreviewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AC12798C79A0005C4CC /* PreviewBinding.swift */; };
+		7CE72B0A2798C79A0005C4CC /* VideoDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AC22798C79A0005C4CC /* VideoDemoBinding.swift */; };
+		7CE72B0B2798C79A0005C4CC /* ViewPagerDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AC32798C79A0005C4CC /* ViewPagerDemoBinding.xib */; };
+		7CE72B0C2798C79A0005C4CC /* ExampleContentBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AC42798C79A0005C4CC /* ExampleContentBinding.swift */; };
+		7CE72B0D2798C79A0005C4CC /* DateButtonDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AC52798C79A0005C4CC /* DateButtonDemoBinding.xib */; };
+		7CE72B0E2798C79A0005C4CC /* WebsocketDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AC62798C79A0005C4CC /* WebsocketDemoBinding.xib */; };
+		7CE72B0F2798C79A0005C4CC /* SelectDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AC72798C79A0005C4CC /* SelectDemoBinding.swift */; };
+		7CE72B102798C79A0005C4CC /* BasicExampleBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AC82798C79A0005C4CC /* BasicExampleBinding.xib */; };
+		7CE72B112798C79A0005C4CC /* MultipleDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AC92798C79A0005C4CC /* MultipleDemoBinding.swift */; };
+		7CE72B122798C79A0005C4CC /* ComponentTextBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ACA2798C79A0005C4CC /* ComponentTextBinding.xib */; };
+		7CE72B132798C79A0005C4CC /* SegmentedControlDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ACB2798C79A0005C4CC /* SegmentedControlDemoBinding.xib */; };
+		7CE72B142798C79A0005C4CC /* PreviewBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ACC2798C79A0005C4CC /* PreviewBinding.xib */; };
+		7CE72B152798C79A0005C4CC /* ComponentBleDeviceBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ACD2798C79A0005C4CC /* ComponentBleDeviceBinding.xib */; };
+		7CE72B162798C79A0005C4CC /* MainBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ACE2798C79A0005C4CC /* MainBinding.swift */; };
+		7CE72B172798C79A0005C4CC /* MainBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ACF2798C79A0005C4CC /* MainBinding.xib */; };
+		7CE72B182798C79A0005C4CC /* BasicExampleBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AD02798C79A0005C4CC /* BasicExampleBinding.swift */; };
+		7CE72B192798C79A0005C4CC /* MultipleDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AD12798C79A0005C4CC /* MultipleDemoBinding.xib */; };
+		7CE72B1A2798C79A0005C4CC /* LoadImageDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AD22798C79A0005C4CC /* LoadImageDemoBinding.xib */; };
+		7CE72B1B2798C79A0005C4CC /* WebsocketDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AD32798C79A0005C4CC /* WebsocketDemoBinding.swift */; };
+		7CE72B1C2798C79A0005C4CC /* VideoDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AD42798C79A0005C4CC /* VideoDemoBinding.xib */; };
+		7CE72B1D2798C79A0005C4CC /* ComponentTestBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AD52798C79A0005C4CC /* ComponentTestBinding.swift */; };
+		7CE72B1E2798C79A0005C4CC /* ComponentTestBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AD62798C79A0005C4CC /* ComponentTestBinding.xib */; };
+		7CE72B1F2798C79A0005C4CC /* LoginDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AD72798C79A0005C4CC /* LoginDemoBinding.xib */; };
+		7CE72B202798C79A0005C4CC /* ExternalTestBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AD82798C79A0005C4CC /* ExternalTestBinding.swift */; };
+		7CE72B212798C79A0005C4CC /* SliderDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AD92798C79A0005C4CC /* SliderDemoBinding.xib */; };
+		7CE72B222798C79A0005C4CC /* SliderDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ADA2798C79A0005C4CC /* SliderDemoBinding.swift */; };
+		7CE72B232798C79A0005C4CC /* HttpDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ADB2798C79A0005C4CC /* HttpDemoBinding.swift */; };
+		7CE72B242798C79A0005C4CC /* HttpDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72ADC2798C79A0005C4CC /* HttpDemoBinding.xib */; };
+		7CE72B252798C79A0005C4CC /* LocationDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ADD2798C79A0005C4CC /* LocationDemoBinding.swift */; };
+		7CE72B262798C79A0005C4CC /* DateButtonDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ADE2798C79A0005C4CC /* DateButtonDemoBinding.swift */; };
+		7CE72B272798C79A0005C4CC /* ControlsDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72ADF2798C79A0005C4CC /* ControlsDemoBinding.swift */; };
+		7CE72B282798C79A0005C4CC /* LoadImageDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE02798C79A0005C4CC /* LoadImageDemoBinding.swift */; };
+		7CE72B292798C79A0005C4CC /* ViewPagerDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE12798C79A0005C4CC /* ViewPagerDemoBinding.swift */; };
+		7CE72B2A2798C79A0005C4CC /* LoginDemoBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE22798C79A0005C4CC /* LoginDemoBinding.swift */; };
+		7CE72B2B2798C79A0005C4CC /* ControlsDemoBinding.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CE72AE32798C79A0005C4CC /* ControlsDemoBinding.xib */; };
+		7CE72B2C2798C79A0005C4CC /* ExternalTestVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE62798C79A0005C4CC /* ExternalTestVG.swift */; };
+		7CE72B2D2798C79A0005C4CC /* HttpDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE72798C79A0005C4CC /* HttpDemoVG.swift */; };
+		7CE72B2E2798C79A0005C4CC /* ViewPagerDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE82798C79A0005C4CC /* ViewPagerDemoVG.swift */; };
+		7CE72B2F2798C79A0005C4CC /* LocationDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AE92798C79A0005C4CC /* LocationDemoVG.swift */; };
+		7CE72B302798C79A0005C4CC /* DateButtonDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AEA2798C79A0005C4CC /* DateButtonDemoVG.swift */; };
+		7CE72B312798C79A0005C4CC /* LoginDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AEB2798C79A0005C4CC /* LoginDemoVG.swift */; };
+		7CE72B322798C79A0005C4CC /* SliderDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AEC2798C79A0005C4CC /* SliderDemoVG.swift */; };
+		7CE72B332798C79A0005C4CC /* LoadImageDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AED2798C79A0005C4CC /* LoadImageDemoVG.swift */; };
+		7CE72B342798C79A0005C4CC /* PreviewVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AEE2798C79A0005C4CC /* PreviewVG.swift */; };
+		7CE72B352798C79A0005C4CC /* BasicExampleVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AEF2798C79A0005C4CC /* BasicExampleVG.swift */; };
+		7CE72B362798C79A0005C4CC /* VideoDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF02798C79A0005C4CC /* VideoDemoVG.swift */; };
+		7CE72B372798C79A0005C4CC /* ExampleContentVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF12798C79A0005C4CC /* ExampleContentVG.swift */; };
+		7CE72B382798C79A0005C4CC /* ControlsDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF22798C79A0005C4CC /* ControlsDemoVG.swift */; };
+		7CE72B392798C79A0005C4CC /* SelectDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF32798C79A0005C4CC /* SelectDemoVG.swift */; };
+		7CE72B3A2798C79A0005C4CC /* MainVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF42798C79A0005C4CC /* MainVG.swift */; };
+		7CE72B3B2798C79A0005C4CC /* WebsocketDemoVG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF52798C79A0005C4CC /* WebsocketDemoVG.swift */; };
+		7CE72B3C2798C79A0005C4CC /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF72798C79A0005C4CC /* Post.swift */; };
+		7CE72B3D2798C79A0005C4CC /* APIMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AF92798C79A0005C4CC /* APIMock.swift */; };
+		7CE72B3E2798C79A0005C4CC /* APIOnline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AFA2798C79A0005C4CC /* APIOnline.swift */; };
+		7CE72B3F2798C79A0005C4CC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AFB2798C79A0005C4CC /* API.swift */; };
+		7CE72B402798C79A0005C4CC /* APIInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE72AFC2798C79A0005C4CC /* APIInterface.swift */; };
 		D3228AEAF41286D22DA4F480 /* Pods_KhrysalisFullExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94E1F6259CDD3CCCA2228B9A /* Pods_KhrysalisFullExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,75 +117,74 @@
 		7C8AF25C273B031B00B43BF4 /* KhrysalisFullExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhrysalisFullExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8AF260273B031B00B43BF4 /* KhrysalisFullExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KhrysalisFullExampleUITests.swift; sourceTree = "<group>"; };
 		7C8AF262273B031B00B43BF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C8AF26F273B070E00B43BF4 /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
-		7C8AF271273B070E00B43BF4 /* button_primary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = button_primary.swift; sourceTree = "<group>"; };
-		7C8AF272273B070E00B43BF4 /* border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = border.swift; sourceTree = "<group>"; };
-		7C8AF273273B070E00B43BF4 /* button_disabled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = button_disabled.swift; sourceTree = "<group>"; };
-		7C8AF274273B070E00B43BF4 /* button_accent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = button_accent.swift; sourceTree = "<group>"; };
-		7C8AF276273B070E00B43BF4 /* LocationDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF277273B070E00B43BF4 /* ExampleContentBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleContentBinding.xib; sourceTree = "<group>"; };
-		7C8AF278273B070E00B43BF4 /* ComponentBleDeviceBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentBleDeviceBinding.swift; sourceTree = "<group>"; };
-		7C8AF279273B070E00B43BF4 /* SegmentedControlDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF27A273B070E00B43BF4 /* ComponentTextBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTextBinding.swift; sourceTree = "<group>"; };
-		7C8AF27B273B070E00B43BF4 /* SelectDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF27C273B070E00B43BF4 /* ExternalTestBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExternalTestBinding.xib; sourceTree = "<group>"; };
-		7C8AF27D273B070E00B43BF4 /* PreviewBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewBinding.swift; sourceTree = "<group>"; };
-		7C8AF27E273B070E00B43BF4 /* VideoDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF27F273B070E00B43BF4 /* ViewPagerDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewPagerDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF280273B070E00B43BF4 /* ExampleContentBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleContentBinding.swift; sourceTree = "<group>"; };
-		7C8AF281273B070E00B43BF4 /* DateButtonDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateButtonDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF282273B070E00B43BF4 /* WebsocketDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebsocketDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF283273B070E00B43BF4 /* SelectDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF284273B070E00B43BF4 /* BasicExampleBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicExampleBinding.xib; sourceTree = "<group>"; };
-		7C8AF285273B070E00B43BF4 /* MultipleDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF286273B070E00B43BF4 /* ComponentTextBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentTextBinding.xib; sourceTree = "<group>"; };
-		7C8AF287273B070E00B43BF4 /* SegmentedControlDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControlDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF288273B070E00B43BF4 /* PreviewBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewBinding.xib; sourceTree = "<group>"; };
-		7C8AF289273B070E00B43BF4 /* ComponentBleDeviceBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentBleDeviceBinding.xib; sourceTree = "<group>"; };
-		7C8AF28A273B070E00B43BF4 /* MainBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBinding.swift; sourceTree = "<group>"; };
-		7C8AF28B273B070E00B43BF4 /* MainBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainBinding.xib; sourceTree = "<group>"; };
-		7C8AF28C273B070E00B43BF4 /* BasicExampleBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicExampleBinding.swift; sourceTree = "<group>"; };
-		7C8AF28D273B070E00B43BF4 /* MultipleDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF28E273B070E00B43BF4 /* LoadImageDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadImageDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF28F273B070E00B43BF4 /* WebsocketDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF290273B070E00B43BF4 /* VideoDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF291273B070E00B43BF4 /* ComponentTestBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTestBinding.swift; sourceTree = "<group>"; };
-		7C8AF292273B070E00B43BF4 /* ComponentTestBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentTestBinding.xib; sourceTree = "<group>"; };
-		7C8AF293273B070E00B43BF4 /* LoginDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF294273B070E00B43BF4 /* ExternalTestBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalTestBinding.swift; sourceTree = "<group>"; };
-		7C8AF295273B070E00B43BF4 /* SliderDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF296273B070E00B43BF4 /* SliderDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF297273B070E00B43BF4 /* HttpDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF298273B070E00B43BF4 /* HttpDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF299273B070E00B43BF4 /* LocationDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF29A273B070E00B43BF4 /* DateButtonDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateButtonDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF29B273B070E00B43BF4 /* ControlsDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF29C273B070E00B43BF4 /* LoadImageDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF29D273B070E00B43BF4 /* ViewPagerDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPagerDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF29E273B070E00B43BF4 /* LoginDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemoBinding.swift; sourceTree = "<group>"; };
-		7C8AF29F273B070E00B43BF4 /* ControlsDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlsDemoBinding.xib; sourceTree = "<group>"; };
-		7C8AF2A2273B070E00B43BF4 /* ExternalTestVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalTestVG.swift; sourceTree = "<group>"; };
-		7C8AF2A3273B070E00B43BF4 /* HttpDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2A4273B070E00B43BF4 /* ViewPagerDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPagerDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2A5273B070E00B43BF4 /* LocationDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2A6273B070E00B43BF4 /* SegmentedControlDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2A7273B070E00B43BF4 /* DateButtonDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateButtonDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2A8273B070E00B43BF4 /* LoginDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2A9273B070E00B43BF4 /* SliderDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2AA273B070E00B43BF4 /* LoadImageDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2AB273B070E00B43BF4 /* PreviewVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVG.swift; sourceTree = "<group>"; };
-		7C8AF2AC273B070E00B43BF4 /* BasicExampleVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicExampleVG.swift; sourceTree = "<group>"; };
-		7C8AF2AD273B070E00B43BF4 /* VideoDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2AE273B070E00B43BF4 /* ExampleContentVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleContentVG.swift; sourceTree = "<group>"; };
-		7C8AF2AF273B070E00B43BF4 /* ControlsDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2B0273B070E00B43BF4 /* SelectDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2B1273B070E00B43BF4 /* MainVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVG.swift; sourceTree = "<group>"; };
-		7C8AF2B2273B070E00B43BF4 /* WebsocketDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketDemoVG.swift; sourceTree = "<group>"; };
-		7C8AF2B4273B070E00B43BF4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
-		7C8AF2B6273B070E00B43BF4 /* APIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };
-		7C8AF2B7273B070E00B43BF4 /* APIOnline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIOnline.swift; sourceTree = "<group>"; };
-		7C8AF2B8273B070E00B43BF4 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
-		7C8AF2B9273B070E00B43BF4 /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
+		7CE72AB32798C79A0005C4CC /* R.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.swift; sourceTree = "<group>"; };
+		7CE72AB52798C79A0005C4CC /* button_primary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = button_primary.swift; sourceTree = "<group>"; };
+		7CE72AB62798C79A0005C4CC /* border.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = border.swift; sourceTree = "<group>"; };
+		7CE72AB72798C79A0005C4CC /* button_disabled.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = button_disabled.swift; sourceTree = "<group>"; };
+		7CE72AB82798C79A0005C4CC /* button_accent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = button_accent.swift; sourceTree = "<group>"; };
+		7CE72ABA2798C79A0005C4CC /* LocationDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72ABB2798C79A0005C4CC /* ExampleContentBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleContentBinding.xib; sourceTree = "<group>"; };
+		7CE72ABC2798C79A0005C4CC /* ComponentBleDeviceBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentBleDeviceBinding.swift; sourceTree = "<group>"; };
+		7CE72ABD2798C79A0005C4CC /* SegmentedControlDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72ABE2798C79A0005C4CC /* ComponentTextBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTextBinding.swift; sourceTree = "<group>"; };
+		7CE72ABF2798C79A0005C4CC /* SelectDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AC02798C79A0005C4CC /* ExternalTestBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExternalTestBinding.xib; sourceTree = "<group>"; };
+		7CE72AC12798C79A0005C4CC /* PreviewBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewBinding.swift; sourceTree = "<group>"; };
+		7CE72AC22798C79A0005C4CC /* VideoDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AC32798C79A0005C4CC /* ViewPagerDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewPagerDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AC42798C79A0005C4CC /* ExampleContentBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleContentBinding.swift; sourceTree = "<group>"; };
+		7CE72AC52798C79A0005C4CC /* DateButtonDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateButtonDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AC62798C79A0005C4CC /* WebsocketDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebsocketDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AC72798C79A0005C4CC /* SelectDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AC82798C79A0005C4CC /* BasicExampleBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BasicExampleBinding.xib; sourceTree = "<group>"; };
+		7CE72AC92798C79A0005C4CC /* MultipleDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72ACA2798C79A0005C4CC /* ComponentTextBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentTextBinding.xib; sourceTree = "<group>"; };
+		7CE72ACB2798C79A0005C4CC /* SegmentedControlDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedControlDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72ACC2798C79A0005C4CC /* PreviewBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreviewBinding.xib; sourceTree = "<group>"; };
+		7CE72ACD2798C79A0005C4CC /* ComponentBleDeviceBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentBleDeviceBinding.xib; sourceTree = "<group>"; };
+		7CE72ACE2798C79A0005C4CC /* MainBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainBinding.swift; sourceTree = "<group>"; };
+		7CE72ACF2798C79A0005C4CC /* MainBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainBinding.xib; sourceTree = "<group>"; };
+		7CE72AD02798C79A0005C4CC /* BasicExampleBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicExampleBinding.swift; sourceTree = "<group>"; };
+		7CE72AD12798C79A0005C4CC /* MultipleDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultipleDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AD22798C79A0005C4CC /* LoadImageDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadImageDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AD32798C79A0005C4CC /* WebsocketDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AD42798C79A0005C4CC /* VideoDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AD52798C79A0005C4CC /* ComponentTestBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComponentTestBinding.swift; sourceTree = "<group>"; };
+		7CE72AD62798C79A0005C4CC /* ComponentTestBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ComponentTestBinding.xib; sourceTree = "<group>"; };
+		7CE72AD72798C79A0005C4CC /* LoginDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AD82798C79A0005C4CC /* ExternalTestBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalTestBinding.swift; sourceTree = "<group>"; };
+		7CE72AD92798C79A0005C4CC /* SliderDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SliderDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72ADA2798C79A0005C4CC /* SliderDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72ADB2798C79A0005C4CC /* HttpDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72ADC2798C79A0005C4CC /* HttpDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HttpDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72ADD2798C79A0005C4CC /* LocationDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72ADE2798C79A0005C4CC /* DateButtonDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateButtonDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72ADF2798C79A0005C4CC /* ControlsDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AE02798C79A0005C4CC /* LoadImageDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AE12798C79A0005C4CC /* ViewPagerDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPagerDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AE22798C79A0005C4CC /* LoginDemoBinding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemoBinding.swift; sourceTree = "<group>"; };
+		7CE72AE32798C79A0005C4CC /* ControlsDemoBinding.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ControlsDemoBinding.xib; sourceTree = "<group>"; };
+		7CE72AE62798C79A0005C4CC /* ExternalTestVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExternalTestVG.swift; sourceTree = "<group>"; };
+		7CE72AE72798C79A0005C4CC /* HttpDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AE82798C79A0005C4CC /* ViewPagerDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewPagerDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AE92798C79A0005C4CC /* LocationDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AEA2798C79A0005C4CC /* DateButtonDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateButtonDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AEB2798C79A0005C4CC /* LoginDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AEC2798C79A0005C4CC /* SliderDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AED2798C79A0005C4CC /* LoadImageDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadImageDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AEE2798C79A0005C4CC /* PreviewVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewVG.swift; sourceTree = "<group>"; };
+		7CE72AEF2798C79A0005C4CC /* BasicExampleVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicExampleVG.swift; sourceTree = "<group>"; };
+		7CE72AF02798C79A0005C4CC /* VideoDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AF12798C79A0005C4CC /* ExampleContentVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleContentVG.swift; sourceTree = "<group>"; };
+		7CE72AF22798C79A0005C4CC /* ControlsDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AF32798C79A0005C4CC /* SelectDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AF42798C79A0005C4CC /* MainVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVG.swift; sourceTree = "<group>"; };
+		7CE72AF52798C79A0005C4CC /* WebsocketDemoVG.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebsocketDemoVG.swift; sourceTree = "<group>"; };
+		7CE72AF72798C79A0005C4CC /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7CE72AF92798C79A0005C4CC /* APIMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIMock.swift; sourceTree = "<group>"; };
+		7CE72AFA2798C79A0005C4CC /* APIOnline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIOnline.swift; sourceTree = "<group>"; };
+		7CE72AFB2798C79A0005C4CC /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7CE72AFC2798C79A0005C4CC /* APIInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIInterface.swift; sourceTree = "<group>"; };
 		94E1F6259CDD3CCCA2228B9A /* Pods_KhrysalisFullExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhrysalisFullExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A05A3FEEFAECCE2432C757F7 /* Pods-KhrysalisFullExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhrysalisFullExample.release.xcconfig"; path = "Target Support Files/Pods-KhrysalisFullExample/Pods-KhrysalisFullExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,8 +248,8 @@
 		7C8AF23D273B031A00B43BF4 /* KhrysalisFullExample */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF26E273B070E00B43BF4 /* resources */,
-				7C8AF2A0273B070E00B43BF4 /* src */,
+				7CE72AB22798C79A0005C4CC /* resources */,
+				7CE72AE42798C79A0005C4CC /* src */,
 				7C8AF23E273B031A00B43BF4 /* AppDelegate.swift */,
 				7C8AF242273B031A00B43BF4 /* ViewController.swift */,
 				7C8AF244273B031A00B43BF4 /* Main.storyboard */,
@@ -280,125 +278,124 @@
 			path = KhrysalisFullExampleUITests;
 			sourceTree = "<group>";
 		};
-		7C8AF26E273B070E00B43BF4 /* resources */ = {
+		7CE72AB22798C79A0005C4CC /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF26F273B070E00B43BF4 /* R.swift */,
-				7C8AF270273B070E00B43BF4 /* drawables */,
-				7C8AF275273B070E00B43BF4 /* layouts */,
+				7CE72AB32798C79A0005C4CC /* R.swift */,
+				7CE72AB42798C79A0005C4CC /* drawables */,
+				7CE72AB92798C79A0005C4CC /* layouts */,
 			);
 			path = resources;
 			sourceTree = "<group>";
 		};
-		7C8AF270273B070E00B43BF4 /* drawables */ = {
+		7CE72AB42798C79A0005C4CC /* drawables */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF271273B070E00B43BF4 /* button_primary.swift */,
-				7C8AF272273B070E00B43BF4 /* border.swift */,
-				7C8AF273273B070E00B43BF4 /* button_disabled.swift */,
-				7C8AF274273B070E00B43BF4 /* button_accent.swift */,
+				7CE72AB52798C79A0005C4CC /* button_primary.swift */,
+				7CE72AB62798C79A0005C4CC /* border.swift */,
+				7CE72AB72798C79A0005C4CC /* button_disabled.swift */,
+				7CE72AB82798C79A0005C4CC /* button_accent.swift */,
 			);
 			path = drawables;
 			sourceTree = "<group>";
 		};
-		7C8AF275273B070E00B43BF4 /* layouts */ = {
+		7CE72AB92798C79A0005C4CC /* layouts */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF28C273B070E00B43BF4 /* BasicExampleBinding.swift */,
-				7C8AF284273B070E00B43BF4 /* BasicExampleBinding.xib */,
-				7C8AF278273B070E00B43BF4 /* ComponentBleDeviceBinding.swift */,
-				7C8AF289273B070E00B43BF4 /* ComponentBleDeviceBinding.xib */,
-				7C8AF291273B070E00B43BF4 /* ComponentTestBinding.swift */,
-				7C8AF292273B070E00B43BF4 /* ComponentTestBinding.xib */,
-				7C8AF27A273B070E00B43BF4 /* ComponentTextBinding.swift */,
-				7C8AF286273B070E00B43BF4 /* ComponentTextBinding.xib */,
-				7C8AF29B273B070E00B43BF4 /* ControlsDemoBinding.swift */,
-				7C8AF29F273B070E00B43BF4 /* ControlsDemoBinding.xib */,
-				7C8AF29A273B070E00B43BF4 /* DateButtonDemoBinding.swift */,
-				7C8AF281273B070E00B43BF4 /* DateButtonDemoBinding.xib */,
-				7C8AF280273B070E00B43BF4 /* ExampleContentBinding.swift */,
-				7C8AF277273B070E00B43BF4 /* ExampleContentBinding.xib */,
-				7C8AF294273B070E00B43BF4 /* ExternalTestBinding.swift */,
-				7C8AF27C273B070E00B43BF4 /* ExternalTestBinding.xib */,
-				7C8AF297273B070E00B43BF4 /* HttpDemoBinding.swift */,
-				7C8AF298273B070E00B43BF4 /* HttpDemoBinding.xib */,
-				7C8AF29C273B070E00B43BF4 /* LoadImageDemoBinding.swift */,
-				7C8AF28E273B070E00B43BF4 /* LoadImageDemoBinding.xib */,
-				7C8AF299273B070E00B43BF4 /* LocationDemoBinding.swift */,
-				7C8AF276273B070E00B43BF4 /* LocationDemoBinding.xib */,
-				7C8AF29E273B070E00B43BF4 /* LoginDemoBinding.swift */,
-				7C8AF293273B070E00B43BF4 /* LoginDemoBinding.xib */,
-				7C8AF28A273B070E00B43BF4 /* MainBinding.swift */,
-				7C8AF28B273B070E00B43BF4 /* MainBinding.xib */,
-				7C8AF285273B070E00B43BF4 /* MultipleDemoBinding.swift */,
-				7C8AF28D273B070E00B43BF4 /* MultipleDemoBinding.xib */,
-				7C8AF27D273B070E00B43BF4 /* PreviewBinding.swift */,
-				7C8AF288273B070E00B43BF4 /* PreviewBinding.xib */,
-				7C8AF279273B070E00B43BF4 /* SegmentedControlDemoBinding.swift */,
-				7C8AF287273B070E00B43BF4 /* SegmentedControlDemoBinding.xib */,
-				7C8AF283273B070E00B43BF4 /* SelectDemoBinding.swift */,
-				7C8AF27B273B070E00B43BF4 /* SelectDemoBinding.xib */,
-				7C8AF296273B070E00B43BF4 /* SliderDemoBinding.swift */,
-				7C8AF295273B070E00B43BF4 /* SliderDemoBinding.xib */,
-				7C8AF27E273B070E00B43BF4 /* VideoDemoBinding.swift */,
-				7C8AF290273B070E00B43BF4 /* VideoDemoBinding.xib */,
-				7C8AF29D273B070E00B43BF4 /* ViewPagerDemoBinding.swift */,
-				7C8AF27F273B070E00B43BF4 /* ViewPagerDemoBinding.xib */,
-				7C8AF28F273B070E00B43BF4 /* WebsocketDemoBinding.swift */,
-				7C8AF282273B070E00B43BF4 /* WebsocketDemoBinding.xib */,
+				7CE72ABA2798C79A0005C4CC /* LocationDemoBinding.xib */,
+				7CE72ABB2798C79A0005C4CC /* ExampleContentBinding.xib */,
+				7CE72ABC2798C79A0005C4CC /* ComponentBleDeviceBinding.swift */,
+				7CE72ABD2798C79A0005C4CC /* SegmentedControlDemoBinding.swift */,
+				7CE72ABE2798C79A0005C4CC /* ComponentTextBinding.swift */,
+				7CE72ABF2798C79A0005C4CC /* SelectDemoBinding.xib */,
+				7CE72AC02798C79A0005C4CC /* ExternalTestBinding.xib */,
+				7CE72AC12798C79A0005C4CC /* PreviewBinding.swift */,
+				7CE72AC22798C79A0005C4CC /* VideoDemoBinding.swift */,
+				7CE72AC32798C79A0005C4CC /* ViewPagerDemoBinding.xib */,
+				7CE72AC42798C79A0005C4CC /* ExampleContentBinding.swift */,
+				7CE72AC52798C79A0005C4CC /* DateButtonDemoBinding.xib */,
+				7CE72AC62798C79A0005C4CC /* WebsocketDemoBinding.xib */,
+				7CE72AC72798C79A0005C4CC /* SelectDemoBinding.swift */,
+				7CE72AC82798C79A0005C4CC /* BasicExampleBinding.xib */,
+				7CE72AC92798C79A0005C4CC /* MultipleDemoBinding.swift */,
+				7CE72ACA2798C79A0005C4CC /* ComponentTextBinding.xib */,
+				7CE72ACB2798C79A0005C4CC /* SegmentedControlDemoBinding.xib */,
+				7CE72ACC2798C79A0005C4CC /* PreviewBinding.xib */,
+				7CE72ACD2798C79A0005C4CC /* ComponentBleDeviceBinding.xib */,
+				7CE72ACE2798C79A0005C4CC /* MainBinding.swift */,
+				7CE72ACF2798C79A0005C4CC /* MainBinding.xib */,
+				7CE72AD02798C79A0005C4CC /* BasicExampleBinding.swift */,
+				7CE72AD12798C79A0005C4CC /* MultipleDemoBinding.xib */,
+				7CE72AD22798C79A0005C4CC /* LoadImageDemoBinding.xib */,
+				7CE72AD32798C79A0005C4CC /* WebsocketDemoBinding.swift */,
+				7CE72AD42798C79A0005C4CC /* VideoDemoBinding.xib */,
+				7CE72AD52798C79A0005C4CC /* ComponentTestBinding.swift */,
+				7CE72AD62798C79A0005C4CC /* ComponentTestBinding.xib */,
+				7CE72AD72798C79A0005C4CC /* LoginDemoBinding.xib */,
+				7CE72AD82798C79A0005C4CC /* ExternalTestBinding.swift */,
+				7CE72AD92798C79A0005C4CC /* SliderDemoBinding.xib */,
+				7CE72ADA2798C79A0005C4CC /* SliderDemoBinding.swift */,
+				7CE72ADB2798C79A0005C4CC /* HttpDemoBinding.swift */,
+				7CE72ADC2798C79A0005C4CC /* HttpDemoBinding.xib */,
+				7CE72ADD2798C79A0005C4CC /* LocationDemoBinding.swift */,
+				7CE72ADE2798C79A0005C4CC /* DateButtonDemoBinding.swift */,
+				7CE72ADF2798C79A0005C4CC /* ControlsDemoBinding.swift */,
+				7CE72AE02798C79A0005C4CC /* LoadImageDemoBinding.swift */,
+				7CE72AE12798C79A0005C4CC /* ViewPagerDemoBinding.swift */,
+				7CE72AE22798C79A0005C4CC /* LoginDemoBinding.swift */,
+				7CE72AE32798C79A0005C4CC /* ControlsDemoBinding.xib */,
 			);
 			path = layouts;
 			sourceTree = "<group>";
 		};
-		7C8AF2A0273B070E00B43BF4 /* src */ = {
+		7CE72AE42798C79A0005C4CC /* src */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF2A1273B070E00B43BF4 /* vg */,
-				7C8AF2B3273B070E00B43BF4 /* models */,
-				7C8AF2B5273B070E00B43BF4 /* api */,
+				7CE72AE52798C79A0005C4CC /* vg */,
+				7CE72AF62798C79A0005C4CC /* models */,
+				7CE72AF82798C79A0005C4CC /* api */,
 			);
 			path = src;
 			sourceTree = "<group>";
 		};
-		7C8AF2A1273B070E00B43BF4 /* vg */ = {
+		7CE72AE52798C79A0005C4CC /* vg */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF2A2273B070E00B43BF4 /* ExternalTestVG.swift */,
-				7C8AF2A3273B070E00B43BF4 /* HttpDemoVG.swift */,
-				7C8AF2A4273B070E00B43BF4 /* ViewPagerDemoVG.swift */,
-				7C8AF2A5273B070E00B43BF4 /* LocationDemoVG.swift */,
-				7C8AF2A6273B070E00B43BF4 /* SegmentedControlDemoVG.swift */,
-				7C8AF2A7273B070E00B43BF4 /* DateButtonDemoVG.swift */,
-				7C8AF2A8273B070E00B43BF4 /* LoginDemoVG.swift */,
-				7C8AF2A9273B070E00B43BF4 /* SliderDemoVG.swift */,
-				7C8AF2AA273B070E00B43BF4 /* LoadImageDemoVG.swift */,
-				7C8AF2AB273B070E00B43BF4 /* PreviewVG.swift */,
-				7C8AF2AC273B070E00B43BF4 /* BasicExampleVG.swift */,
-				7C8AF2AD273B070E00B43BF4 /* VideoDemoVG.swift */,
-				7C8AF2AE273B070E00B43BF4 /* ExampleContentVG.swift */,
-				7C8AF2AF273B070E00B43BF4 /* ControlsDemoVG.swift */,
-				7C8AF2B0273B070E00B43BF4 /* SelectDemoVG.swift */,
-				7C8AF2B1273B070E00B43BF4 /* MainVG.swift */,
-				7C8AF2B2273B070E00B43BF4 /* WebsocketDemoVG.swift */,
+				7CE72AE62798C79A0005C4CC /* ExternalTestVG.swift */,
+				7CE72AE72798C79A0005C4CC /* HttpDemoVG.swift */,
+				7CE72AE82798C79A0005C4CC /* ViewPagerDemoVG.swift */,
+				7CE72AE92798C79A0005C4CC /* LocationDemoVG.swift */,
+				7CE72AEA2798C79A0005C4CC /* DateButtonDemoVG.swift */,
+				7CE72AEB2798C79A0005C4CC /* LoginDemoVG.swift */,
+				7CE72AEC2798C79A0005C4CC /* SliderDemoVG.swift */,
+				7CE72AED2798C79A0005C4CC /* LoadImageDemoVG.swift */,
+				7CE72AEE2798C79A0005C4CC /* PreviewVG.swift */,
+				7CE72AEF2798C79A0005C4CC /* BasicExampleVG.swift */,
+				7CE72AF02798C79A0005C4CC /* VideoDemoVG.swift */,
+				7CE72AF12798C79A0005C4CC /* ExampleContentVG.swift */,
+				7CE72AF22798C79A0005C4CC /* ControlsDemoVG.swift */,
+				7CE72AF32798C79A0005C4CC /* SelectDemoVG.swift */,
+				7CE72AF42798C79A0005C4CC /* MainVG.swift */,
+				7CE72AF52798C79A0005C4CC /* WebsocketDemoVG.swift */,
 			);
 			path = vg;
 			sourceTree = "<group>";
 		};
-		7C8AF2B3273B070E00B43BF4 /* models */ = {
+		7CE72AF62798C79A0005C4CC /* models */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF2B4273B070E00B43BF4 /* Post.swift */,
+				7CE72AF72798C79A0005C4CC /* Post.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
 		};
-		7C8AF2B5273B070E00B43BF4 /* api */ = {
+		7CE72AF82798C79A0005C4CC /* api */ = {
 			isa = PBXGroup;
 			children = (
-				7C8AF2B6273B070E00B43BF4 /* APIMock.swift */,
-				7C8AF2B7273B070E00B43BF4 /* APIOnline.swift */,
-				7C8AF2B8273B070E00B43BF4 /* API.swift */,
-				7C8AF2B9273B070E00B43BF4 /* APIInterface.swift */,
+				7CE72AF92798C79A0005C4CC /* APIMock.swift */,
+				7CE72AFA2798C79A0005C4CC /* APIOnline.swift */,
+				7CE72AFB2798C79A0005C4CC /* API.swift */,
+				7CE72AFC2798C79A0005C4CC /* APIInterface.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -517,29 +514,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8AF2D4273B070E00B43BF4 /* MainBinding.xib in Resources */,
-				7C8AF2CF273B070E00B43BF4 /* ComponentTextBinding.xib in Resources */,
-				7C8AF2C4273B070E00B43BF4 /* SelectDemoBinding.xib in Resources */,
-				7C8AF2C5273B070E00B43BF4 /* ExternalTestBinding.xib in Resources */,
-				7C8AF2D6273B070E00B43BF4 /* MultipleDemoBinding.xib in Resources */,
+				7CE72B172798C79A0005C4CC /* MainBinding.xib in Resources */,
+				7CE72B122798C79A0005C4CC /* ComponentTextBinding.xib in Resources */,
+				7CE72B072798C79A0005C4CC /* SelectDemoBinding.xib in Resources */,
+				7CE72B082798C79A0005C4CC /* ExternalTestBinding.xib in Resources */,
+				7CE72B192798C79A0005C4CC /* MultipleDemoBinding.xib in Resources */,
 				7C8AF24B273B031B00B43BF4 /* LaunchScreen.storyboard in Resources */,
-				7C8AF2C8273B070E00B43BF4 /* ViewPagerDemoBinding.xib in Resources */,
-				7C8AF2DE273B070E00B43BF4 /* SliderDemoBinding.xib in Resources */,
-				7C8AF2BF273B070E00B43BF4 /* LocationDemoBinding.xib in Resources */,
-				7C8AF2CA273B070E00B43BF4 /* DateButtonDemoBinding.xib in Resources */,
-				7C8AF2DC273B070E00B43BF4 /* LoginDemoBinding.xib in Resources */,
+				7CE72B0B2798C79A0005C4CC /* ViewPagerDemoBinding.xib in Resources */,
+				7CE72B212798C79A0005C4CC /* SliderDemoBinding.xib in Resources */,
+				7CE72B022798C79A0005C4CC /* LocationDemoBinding.xib in Resources */,
+				7CE72B0D2798C79A0005C4CC /* DateButtonDemoBinding.xib in Resources */,
+				7CE72B1F2798C79A0005C4CC /* LoginDemoBinding.xib in Resources */,
 				7C8AF248273B031B00B43BF4 /* Assets.xcassets in Resources */,
-				7C8AF2D2273B070E00B43BF4 /* ComponentBleDeviceBinding.xib in Resources */,
-				7C8AF2DB273B070E00B43BF4 /* ComponentTestBinding.xib in Resources */,
-				7C8AF2C0273B070E00B43BF4 /* ExampleContentBinding.xib in Resources */,
-				7C8AF2D9273B070E00B43BF4 /* VideoDemoBinding.xib in Resources */,
-				7C8AF2D0273B070E00B43BF4 /* SegmentedControlDemoBinding.xib in Resources */,
-				7C8AF2E1273B070E00B43BF4 /* HttpDemoBinding.xib in Resources */,
-				7C8AF2CD273B070E00B43BF4 /* BasicExampleBinding.xib in Resources */,
-				7C8AF2D7273B070E00B43BF4 /* LoadImageDemoBinding.xib in Resources */,
-				7C8AF2E8273B070E00B43BF4 /* ControlsDemoBinding.xib in Resources */,
-				7C8AF2CB273B070E00B43BF4 /* WebsocketDemoBinding.xib in Resources */,
-				7C8AF2D1273B070E00B43BF4 /* PreviewBinding.xib in Resources */,
+				7CE72B152798C79A0005C4CC /* ComponentBleDeviceBinding.xib in Resources */,
+				7CE72B1E2798C79A0005C4CC /* ComponentTestBinding.xib in Resources */,
+				7CE72B032798C79A0005C4CC /* ExampleContentBinding.xib in Resources */,
+				7CE72B1C2798C79A0005C4CC /* VideoDemoBinding.xib in Resources */,
+				7CE72B132798C79A0005C4CC /* SegmentedControlDemoBinding.xib in Resources */,
+				7CE72B242798C79A0005C4CC /* HttpDemoBinding.xib in Resources */,
+				7CE72B102798C79A0005C4CC /* BasicExampleBinding.xib in Resources */,
+				7CE72B1A2798C79A0005C4CC /* LoadImageDemoBinding.xib in Resources */,
+				7CE72B2B2798C79A0005C4CC /* ControlsDemoBinding.xib in Resources */,
+				7CE72B0E2798C79A0005C4CC /* WebsocketDemoBinding.xib in Resources */,
+				7CE72B142798C79A0005C4CC /* PreviewBinding.xib in Resources */,
 				7C8AF246273B031A00B43BF4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,56 +604,55 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C8AF2F4273B070E00B43BF4 /* VideoDemoVG.swift in Sources */,
-				7C8AF2EA273B070E00B43BF4 /* HttpDemoVG.swift in Sources */,
-				7C8AF2E3273B070E00B43BF4 /* DateButtonDemoBinding.swift in Sources */,
-				7C8AF2F2273B070E00B43BF4 /* PreviewVG.swift in Sources */,
-				7C8AF2FE273B070E00B43BF4 /* APIInterface.swift in Sources */,
-				7C8AF2CE273B070E00B43BF4 /* MultipleDemoBinding.swift in Sources */,
-				7C8AF2BA273B070E00B43BF4 /* R.swift in Sources */,
-				7C8AF2FA273B070E00B43BF4 /* Post.swift in Sources */,
-				7C8AF2E7273B070E00B43BF4 /* LoginDemoBinding.swift in Sources */,
-				7C8AF2F9273B070E00B43BF4 /* WebsocketDemoVG.swift in Sources */,
-				7C8AF2C2273B070E00B43BF4 /* SegmentedControlDemoBinding.swift in Sources */,
-				7C8AF2DF273B070E00B43BF4 /* SliderDemoBinding.swift in Sources */,
-				7C8AF2C9273B070E00B43BF4 /* ExampleContentBinding.swift in Sources */,
-				7C8AF2FC273B070E00B43BF4 /* APIOnline.swift in Sources */,
-				7C8AF2FB273B070E00B43BF4 /* APIMock.swift in Sources */,
-				7C8AF2E4273B070E00B43BF4 /* ControlsDemoBinding.swift in Sources */,
-				7C8AF2CC273B070E00B43BF4 /* SelectDemoBinding.swift in Sources */,
-				7C8AF2E9273B070E00B43BF4 /* ExternalTestVG.swift in Sources */,
-				7C8AF2F1273B070E00B43BF4 /* LoadImageDemoVG.swift in Sources */,
-				7C8AF2BB273B070E00B43BF4 /* button_primary.swift in Sources */,
-				7C8AF2D8273B070E00B43BF4 /* WebsocketDemoBinding.swift in Sources */,
-				7C8AF2DD273B070E00B43BF4 /* ExternalTestBinding.swift in Sources */,
-				7C8AF2EC273B070E00B43BF4 /* LocationDemoVG.swift in Sources */,
-				7C8AF2EF273B070E00B43BF4 /* LoginDemoVG.swift in Sources */,
-				7C8AF2E6273B070E00B43BF4 /* ViewPagerDemoBinding.swift in Sources */,
-				7C8AF2DA273B070E00B43BF4 /* ComponentTestBinding.swift in Sources */,
-				7C8AF2E5273B070E00B43BF4 /* LoadImageDemoBinding.swift in Sources */,
-				7C8AF2C3273B070E00B43BF4 /* ComponentTextBinding.swift in Sources */,
-				7C8AF2D3273B070E00B43BF4 /* MainBinding.swift in Sources */,
-				7C8AF2C7273B070E00B43BF4 /* VideoDemoBinding.swift in Sources */,
+				7CE72B272798C79A0005C4CC /* ControlsDemoBinding.swift in Sources */,
+				7CE72B3B2798C79A0005C4CC /* WebsocketDemoVG.swift in Sources */,
+				7CE72B262798C79A0005C4CC /* DateButtonDemoBinding.swift in Sources */,
+				7CE72B352798C79A0005C4CC /* BasicExampleVG.swift in Sources */,
+				7CE72B392798C79A0005C4CC /* SelectDemoVG.swift in Sources */,
+				7CE72B252798C79A0005C4CC /* LocationDemoBinding.swift in Sources */,
+				7CE72B182798C79A0005C4CC /* BasicExampleBinding.swift in Sources */,
+				7CE72B372798C79A0005C4CC /* ExampleContentVG.swift in Sources */,
+				7CE72B282798C79A0005C4CC /* LoadImageDemoBinding.swift in Sources */,
+				7CE72B402798C79A0005C4CC /* APIInterface.swift in Sources */,
+				7CE72AFD2798C79A0005C4CC /* R.swift in Sources */,
+				7CE72B2A2798C79A0005C4CC /* LoginDemoBinding.swift in Sources */,
+				7CE72B052798C79A0005C4CC /* SegmentedControlDemoBinding.swift in Sources */,
+				7CE72B322798C79A0005C4CC /* SliderDemoVG.swift in Sources */,
+				7CE72B332798C79A0005C4CC /* LoadImageDemoVG.swift in Sources */,
+				7CE72B302798C79A0005C4CC /* DateButtonDemoVG.swift in Sources */,
+				7CE72B002798C79A0005C4CC /* button_disabled.swift in Sources */,
+				7CE72B0C2798C79A0005C4CC /* ExampleContentBinding.swift in Sources */,
+				7CE72B2F2798C79A0005C4CC /* LocationDemoVG.swift in Sources */,
+				7CE72B3A2798C79A0005C4CC /* MainVG.swift in Sources */,
+				7CE72B382798C79A0005C4CC /* ControlsDemoVG.swift in Sources */,
+				7CE72B092798C79A0005C4CC /* PreviewBinding.swift in Sources */,
+				7CE72B362798C79A0005C4CC /* VideoDemoVG.swift in Sources */,
+				7CE72B3D2798C79A0005C4CC /* APIMock.swift in Sources */,
+				7CE72B0A2798C79A0005C4CC /* VideoDemoBinding.swift in Sources */,
+				7CE72B3E2798C79A0005C4CC /* APIOnline.swift in Sources */,
 				7C8AF243273B031A00B43BF4 /* ViewController.swift in Sources */,
-				7C8AF2E0273B070E00B43BF4 /* HttpDemoBinding.swift in Sources */,
-				7C8AF2EE273B070E00B43BF4 /* DateButtonDemoVG.swift in Sources */,
+				7CE72B3C2798C79A0005C4CC /* Post.swift in Sources */,
+				7CE72B2C2798C79A0005C4CC /* ExternalTestVG.swift in Sources */,
+				7CE72B292798C79A0005C4CC /* ViewPagerDemoBinding.swift in Sources */,
+				7CE72B042798C79A0005C4CC /* ComponentBleDeviceBinding.swift in Sources */,
+				7CE72B1D2798C79A0005C4CC /* ComponentTestBinding.swift in Sources */,
+				7CE72B012798C79A0005C4CC /* button_accent.swift in Sources */,
+				7CE72B1B2798C79A0005C4CC /* WebsocketDemoBinding.swift in Sources */,
+				7CE72B2E2798C79A0005C4CC /* ViewPagerDemoVG.swift in Sources */,
+				7CE72B232798C79A0005C4CC /* HttpDemoBinding.swift in Sources */,
+				7CE72B312798C79A0005C4CC /* LoginDemoVG.swift in Sources */,
+				7CE72B112798C79A0005C4CC /* MultipleDemoBinding.swift in Sources */,
+				7CE72B2D2798C79A0005C4CC /* HttpDemoVG.swift in Sources */,
+				7CE72AFF2798C79A0005C4CC /* border.swift in Sources */,
+				7CE72AFE2798C79A0005C4CC /* button_primary.swift in Sources */,
+				7CE72B162798C79A0005C4CC /* MainBinding.swift in Sources */,
+				7CE72B342798C79A0005C4CC /* PreviewVG.swift in Sources */,
+				7CE72B062798C79A0005C4CC /* ComponentTextBinding.swift in Sources */,
+				7CE72B0F2798C79A0005C4CC /* SelectDemoBinding.swift in Sources */,
+				7CE72B202798C79A0005C4CC /* ExternalTestBinding.swift in Sources */,
+				7CE72B222798C79A0005C4CC /* SliderDemoBinding.swift in Sources */,
+				7CE72B3F2798C79A0005C4CC /* API.swift in Sources */,
 				7C8AF23F273B031A00B43BF4 /* AppDelegate.swift in Sources */,
-				7C8AF2F0273B070E00B43BF4 /* SliderDemoVG.swift in Sources */,
-				7C8AF2F8273B070E00B43BF4 /* MainVG.swift in Sources */,
-				7C8AF2F5273B070E00B43BF4 /* ExampleContentVG.swift in Sources */,
-				7C8AF2BD273B070E00B43BF4 /* button_disabled.swift in Sources */,
-				7C8AF2C6273B070E00B43BF4 /* PreviewBinding.swift in Sources */,
-				7C8AF2F6273B070E00B43BF4 /* ControlsDemoVG.swift in Sources */,
-				7C8AF2F7273B070E00B43BF4 /* SelectDemoVG.swift in Sources */,
-				7C8AF2BC273B070E00B43BF4 /* border.swift in Sources */,
-				7C8AF2ED273B070E00B43BF4 /* SegmentedControlDemoVG.swift in Sources */,
-				7C8AF2F3273B070E00B43BF4 /* BasicExampleVG.swift in Sources */,
-				7C8AF2FD273B070E00B43BF4 /* API.swift in Sources */,
-				7C8AF2D5273B070E00B43BF4 /* BasicExampleBinding.swift in Sources */,
-				7C8AF2EB273B070E00B43BF4 /* ViewPagerDemoVG.swift in Sources */,
-				7C8AF2E2273B070E00B43BF4 /* LocationDemoBinding.swift in Sources */,
-				7C8AF2C1273B070E00B43BF4 /* ComponentBleDeviceBinding.swift in Sources */,
-				7C8AF2BE273B070E00B43BF4 /* button_accent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

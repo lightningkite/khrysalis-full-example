@@ -1,71 +1,74 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
+<document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"></device>
   <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+    <deployment identifier="iOS"></deployment>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"></plugIn>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"></capability>
+    <capability minToolsVersion="11.0" name="System colors in document resources"></capability>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"></capability>
   </dependencies>
-  <customFonts key="customFonts"/>
+  <customFonts key="customFonts"></customFonts>
   <objects>
     <placeholder customClass="SliderDemoBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <attributedString key="userComments">
+        <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
+      </attributedString>
       <connections>
-        <outlet destination="slider" id="outletekoB7q" property="_slider"/>
-        <outlet destination="valueDisplay" id="outletf9Ko6l" property="_valueDisplay"/>
-        <outlet destination="ratingDisplayNumber" id="outletP4Ss0x" property="_ratingDisplayNumber"/>
-        <outlet destination="ratingDisplayStars" id="outletUl2jbx" property="_ratingDisplayStars"/>
-        <outlet destination="ratingDisplayNumberFloat" id="outletYUeH5w" property="_ratingDisplayNumberFloat"/>
-        <outlet destination="rating" id="outletjOHLTR" property="_rating"/>
-        <outlet destination="progress" id="outlettRiiLF" property="_progress"/>
-        <outlet destination="ratingFloat" id="outletmmOGmZ" property="_ratingFloat"/>
-        <outlet destination="ratingDisplayStarsFloat" id="outletID8pxe" property="_ratingDisplayStarsFloat"/>
-        <outlet destination="ratingDisplayStarsSmall" id="outletu6sVf4" property="_ratingDisplayStarsSmall"/>
-        <outlet destination="ratingDisplayStarsSmallFloat" id="outletQBHMbo" property="_ratingDisplayStarsSmallFloat"/>
+        <outlet destination="slider" id="outletiue9Me" property="_slider"></outlet>
+        <outlet destination="valueDisplay" id="outletFF6EUm" property="_valueDisplay"></outlet>
+        <outlet destination="progress" id="outletA7f7Yh" property="_progress"></outlet>
+        <outlet destination="rating" id="outlet2tCJk5" property="_rating"></outlet>
+        <outlet destination="ratingDisplayStars" id="outletYjtYgC" property="_ratingDisplayStars"></outlet>
+        <outlet destination="ratingDisplayStarsSmall" id="outlet8goDGd" property="_ratingDisplayStarsSmall"></outlet>
+        <outlet destination="ratingDisplayNumber" id="outletmdiyZ6" property="_ratingDisplayNumber"></outlet>
+        <outlet destination="ratingFloat" id="outletsmptWX" property="_ratingFloat"></outlet>
+        <outlet destination="ratingDisplayStarsFloat" id="outletjRqwdv" property="_ratingDisplayStarsFloat"></outlet>
+        <outlet destination="ratingDisplayStarsSmallFloat" id="outletaaEOkK" property="_ratingDisplayStarsSmallFloat"></outlet>
+        <outlet destination="ratingDisplayNumberFloat" id="outletHjHCtp" property="_ratingDisplayNumberFloat"></outlet>
       </connections>
     </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollViewoXTUo1" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <stackView alignment="top" axis="vertical" contentMode="scaleToFill" id="stackViewfXUOMd" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewQDo4AP" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
-                <slider contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" id="slider" maxValue="1" minValue="0.0" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" value="0.5" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000"/>
+                <slider contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" id="slider" maxValue="1" minValue="0.0" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" value="0.5" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000"></slider>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="slider" id="constraint4GIiYw" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewQDo4AP"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintD1YdJQ" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="slider"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="slider" id="constraintIW0BWA" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewQDo4AP"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintf24vfT" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="slider"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="slider" id="constraint4GIiYw" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewQDo4AP"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintD1YdJQ" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="slider"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="slider" id="constraintIW0BWA" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewQDo4AP"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintf24vfT" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="slider"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewftHs9H" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="valueDisplay" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
-                  <nil key="highlightedColor"/>
-                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <nil key="highlightedColor"></nil>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="valueDisplay" id="constraintWcHWl5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewftHs9H"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintQWQBcw" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="valueDisplay"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="valueDisplay" id="constraintp6U0NY" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewftHs9H"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintlGHa7c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="valueDisplay"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="valueDisplay" id="constraintWcHWl5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewftHs9H"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintQWQBcw" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="valueDisplay"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="valueDisplay" id="constraintp6U0NY" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewftHs9H"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintlGHa7c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="valueDisplay"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="view5sCq7y" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <progressView contentMode="scaleToFill" id="progress" opaque="NO" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="progressTintColor" red="1.0"/>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="progressTintColor" red="1.0"></color>
                 </progressView>
               </subviews>
               <constraints>
-                <constraint constant="0.0" firstAttribute="top" firstItem="progress" id="constraint3bj4M5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5sCq7y"/>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintT1ILOC" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="progress"/>
-                <constraint constant="0.0" firstAttribute="leading" firstItem="progress" id="constraintdAV041" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5sCq7y"/>
-                <constraint constant="0.0" firstAttribute="trailing" id="constraintfLboC5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="progress"/>
+                <constraint constant="0.0" firstAttribute="top" firstItem="progress" id="constraint3bj4M5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5sCq7y"></constraint>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintT1ILOC" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="progress"></constraint>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="progress" id="constraintdAV041" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5sCq7y"></constraint>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintfLboC5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="progress"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewN5TZGF" translatesAutoresizingMaskIntoConstraints="NO">
@@ -73,23 +76,23 @@
                 <view contentMode="scaleToFill" customClass="CosmosView" customModule="Cosmos" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="rating" opaque="NO" placeholderIntrinsicHeight="30" placeholderIntrinsicWidth="75" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="emptyColor" type="color">
-                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"/>
+                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="filledColor" type="color">
-                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"/>
+                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="starSize" type="number">
-                      <real key="value" value="42"/>
+                      <real key="value" value="42"></real>
                     </userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="rating" id="constraintK0VGHg" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewN5TZGF"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintOghqxj" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="rating"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="rating" id="constraintI5ZiYL" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewN5TZGF"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintvidw8t" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="rating"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintTtfpg2" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="rating"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="rating" id="constraintK0VGHg" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewN5TZGF"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintOghqxj" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="rating"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="rating" id="constraintI5ZiYL" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewN5TZGF"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintvidw8t" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="rating"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintTtfpg2" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="rating"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewU0OdP4" translatesAutoresizingMaskIntoConstraints="NO">
@@ -97,24 +100,24 @@
                 <view contentMode="scaleToFill" customClass="CosmosView" customModule="Cosmos" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="ratingDisplayStars" opaque="NO" placeholderIntrinsicHeight="30" placeholderIntrinsicWidth="75" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="emptyColor" type="color">
-                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"/>
+                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="filledColor" type="color">
-                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"/>
+                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="starSize" type="number">
-                      <real key="value" value="32"/>
+                      <real key="value" value="32"></real>
                     </userDefinedRuntimeAttribute>
-                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"/>
+                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStars" id="constraintQ1krec" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewU0OdP4"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constrainth5O5zY" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStars"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStars" id="constraintEuuUG7" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewU0OdP4"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraint30B8Rb" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStars"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintCy06ib" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStars"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStars" id="constraintQ1krec" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewU0OdP4"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constrainth5O5zY" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStars"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStars" id="constraintEuuUG7" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewU0OdP4"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraint30B8Rb" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStars"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintCy06ib" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStars"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewWNbHDx" translatesAutoresizingMaskIntoConstraints="NO">
@@ -122,39 +125,39 @@
                 <view contentMode="scaleToFill" customClass="CosmosView" customModule="Cosmos" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="ratingDisplayStarsSmall" opaque="NO" placeholderIntrinsicHeight="30" placeholderIntrinsicWidth="75" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="emptyColor" type="color">
-                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"/>
+                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="filledColor" type="color">
-                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"/>
+                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="starSize" type="number">
-                      <real key="value" value="20"/>
+                      <real key="value" value="20"></real>
                     </userDefinedRuntimeAttribute>
-                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"/>
+                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStarsSmall" id="constraintdBMVCZ" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewWNbHDx"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintkqI5JR" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStarsSmall"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStarsSmall" id="constraintxlV3ky" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewWNbHDx"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintRVWhML" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStarsSmall"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraint6dNslj" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStarsSmall"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStarsSmall" id="constraintdBMVCZ" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewWNbHDx"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintkqI5JR" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStarsSmall"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStarsSmall" id="constraintxlV3ky" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewWNbHDx"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintRVWhML" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStarsSmall"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraint6dNslj" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStarsSmall"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewrWcexu" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="ratingDisplayNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
-                  <nil key="highlightedColor"/>
-                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <nil key="highlightedColor"></nil>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayNumber" id="constraintqRXCAX" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewrWcexu"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintMZk3sG" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayNumber"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayNumber" id="constraintNVKExu" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewrWcexu"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintiJ0uZL" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayNumber"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayNumber" id="constraintqRXCAX" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewrWcexu"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintMZk3sG" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayNumber"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayNumber" id="constraintNVKExu" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewrWcexu"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintiJ0uZL" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayNumber"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewTF4rbe" translatesAutoresizingMaskIntoConstraints="NO">
@@ -162,23 +165,23 @@
                 <view contentMode="scaleToFill" customClass="CosmosView" customModule="Cosmos" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="ratingFloat" opaque="NO" placeholderIntrinsicHeight="30" placeholderIntrinsicWidth="75" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="emptyColor" type="color">
-                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"/>
+                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="filledColor" type="color">
-                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"/>
+                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="starSize" type="number">
-                      <real key="value" value="42"/>
+                      <real key="value" value="42"></real>
                     </userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingFloat" id="constraint8kXYyO" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewTF4rbe"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintSczHmI" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingFloat"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingFloat" id="constraintEwa5A3" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewTF4rbe"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintZXd03c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingFloat"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintXTsUGF" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingFloat"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingFloat" id="constraint8kXYyO" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewTF4rbe"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintSczHmI" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingFloat" id="constraintEwa5A3" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewTF4rbe"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintZXd03c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintXTsUGF" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingFloat"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewcrllZ7" translatesAutoresizingMaskIntoConstraints="NO">
@@ -186,24 +189,24 @@
                 <view contentMode="scaleToFill" customClass="CosmosView" customModule="Cosmos" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="ratingDisplayStarsFloat" opaque="NO" placeholderIntrinsicHeight="30" placeholderIntrinsicWidth="75" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="emptyColor" type="color">
-                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"/>
+                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="filledColor" type="color">
-                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"/>
+                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="starSize" type="number">
-                      <real key="value" value="32"/>
+                      <real key="value" value="32"></real>
                     </userDefinedRuntimeAttribute>
-                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"/>
+                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStarsFloat" id="constrainthQCVKc" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewcrllZ7"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintVa4YAH" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStarsFloat"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStarsFloat" id="constraint87VeVr" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewcrllZ7"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintmWszIS" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStarsFloat"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintSAyJLL" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStarsFloat"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStarsFloat" id="constrainthQCVKc" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewcrllZ7"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintVa4YAH" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStarsFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStarsFloat" id="constraint87VeVr" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewcrllZ7"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintmWszIS" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStarsFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintSAyJLL" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStarsFloat"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewABkztY" translatesAutoresizingMaskIntoConstraints="NO">
@@ -211,88 +214,88 @@
                 <view contentMode="scaleToFill" customClass="CosmosView" customModule="Cosmos" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="ratingDisplayStarsSmallFloat" opaque="NO" placeholderIntrinsicHeight="30" placeholderIntrinsicWidth="75" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="emptyColor" type="color">
-                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"/>
+                      <color alpha="1.0" blue="0.53333336" colorSpace="calibratedRGB" green="0.53333336" key="value" red="0.53333336"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="filledColor" type="color">
-                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"/>
+                      <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="1.0" key="value" red="1.0"></color>
                     </userDefinedRuntimeAttribute>
                     <userDefinedRuntimeAttribute keyPath="starSize" type="number">
-                      <real key="value" value="20"/>
+                      <real key="value" value="20"></real>
                     </userDefinedRuntimeAttribute>
-                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"/>
+                    <userDefinedRuntimeAttribute keyPath="updateOnTouch" type="boolean" value="NO"></userDefinedRuntimeAttribute>
                   </userDefinedRuntimeAttributes>
                 </view>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStarsSmallFloat" id="constraintktBQ1N" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewABkztY"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintzPkKmg" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStarsSmallFloat"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStarsSmallFloat" id="constrainta3d6xD" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewABkztY"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintuNlhHb" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStarsSmallFloat"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintCJ3Aef" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStarsSmallFloat"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayStarsSmallFloat" id="constraintktBQ1N" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewABkztY"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintzPkKmg" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayStarsSmallFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayStarsSmallFloat" id="constrainta3d6xD" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewABkztY"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintuNlhHb" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="ratingDisplayStarsSmallFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintCJ3Aef" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayStarsSmallFloat"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewt6pdek" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="ratingDisplayNumberFloat" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"/>
-                  <nil key="highlightedColor"/>
-                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"/>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <nil key="highlightedColor"></nil>
+                  <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayNumberFloat" id="constraintqdh6V8" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewt6pdek"/>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintcx81HG" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayNumberFloat"/>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayNumberFloat" id="constraint7PX6kg" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewt6pdek"/>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintthMijo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayNumberFloat"/>
+                <constraint constant="8.0" firstAttribute="top" firstItem="ratingDisplayNumberFloat" id="constraintqdh6V8" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewt6pdek"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintcx81HG" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="ratingDisplayNumberFloat"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="ratingDisplayNumberFloat" id="constraint7PX6kg" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewt6pdek"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintthMijo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="ratingDisplayNumberFloat"></constraint>
               </constraints>
             </view>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintgrxV8Y" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewQDo4AP"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewQDo4AP" id="constraintz0hkK8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewQDo4AP" id="constraintUlL4Nx" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintJ5DwUg" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewftHs9H"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewftHs9H" id="constraintZ5BJkU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewftHs9H" id="constraintKusSjM" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintegQTrP" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="view5sCq7y"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="view5sCq7y" id="constraintGFl9yp" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="view5sCq7y" id="constraintHRI6VR" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintTY95GG" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewN5TZGF"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewN5TZGF" id="constraintFIJn5V" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewN5TZGF" id="constraint5JTRhU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintxNft0v" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewU0OdP4"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewU0OdP4" id="constraintDP9RP1" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewU0OdP4" id="constraintR5LNUY" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraints8EfJZ" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewWNbHDx"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewWNbHDx" id="constraintLVInP5" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewWNbHDx" id="constraintjmDQKF" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintIzHMXC" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewrWcexu"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewrWcexu" id="constraintPareuK" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewrWcexu" id="constraint0v6SPB" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintgSLuuO" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewTF4rbe"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewTF4rbe" id="constraintHipbCG" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewTF4rbe" id="constraintyGpLcg" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintLQjYav" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewcrllZ7"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewcrllZ7" id="constraintpn60n7" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewcrllZ7" id="constraintx05IKk" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintXMKnwM" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewABkztY"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewABkztY" id="constraintbZjYVr" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewABkztY" id="constraintWTGgYE" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintXQbwx2" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewt6pdek"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewt6pdek" id="constraintX9PLQU" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewfXUOMd"/>
-            <constraint constant="16.0" firstAttribute="width" firstItem="viewt6pdek" id="constraint11aPhT" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintgrxV8Y" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewQDo4AP"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintz0hkK8" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewQDo4AP"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintUlL4Nx" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewQDo4AP"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintJ5DwUg" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewftHs9H"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintZ5BJkU" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewftHs9H"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintKusSjM" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewftHs9H"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintegQTrP" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="view5sCq7y"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintGFl9yp" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="view5sCq7y"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintHRI6VR" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="view5sCq7y"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintTY95GG" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewN5TZGF"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintFIJn5V" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewN5TZGF"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint5JTRhU" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewN5TZGF"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintxNft0v" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewU0OdP4"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintDP9RP1" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewU0OdP4"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintR5LNUY" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewU0OdP4"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraints8EfJZ" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewWNbHDx"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintLVInP5" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewWNbHDx"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintjmDQKF" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewWNbHDx"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintIzHMXC" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewrWcexu"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintPareuK" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewrWcexu"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint0v6SPB" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewrWcexu"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintgSLuuO" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewTF4rbe"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintHipbCG" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewTF4rbe"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintyGpLcg" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewTF4rbe"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintLQjYav" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewcrllZ7"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintpn60n7" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewcrllZ7"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintx05IKk" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewcrllZ7"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintXMKnwM" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewABkztY"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintbZjYVr" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewABkztY"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintWTGgYE" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewABkztY"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintXQbwx2" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewt6pdek"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintX9PLQU" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewt6pdek"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint11aPhT" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewt6pdek"></constraint>
           </constraints>
-          <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"/>
+          <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
         </stackView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"/>
-        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"/>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"/>
+        <constraint constant="0.0" firstAttribute="top" firstItem="stackViewfXUOMd" id="constraintTZnQVh" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="scrollViewoXTUo1"></constraint>
+        <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
+        <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
       </constraints>
     </scrollView>
   </objects>
-  <resources/>
+  <resources></resources>
 </document>

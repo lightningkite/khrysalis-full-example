@@ -35,7 +35,7 @@ public class SliderDemoVG : ViewGenerator {
         self.percent.bind(xml.slider)
         self.percent.subscribeAutoDispose(xml.valueDisplay, { (this, it) -> Void in xml.valueDisplay.text = String(kotlin: it) })
         //        xml.progress.max = 10000;
-        //        ratio.subscribeAutoDispose(xml.progress) { xml.progress.progress = (it * 10000).toInt() }
+        self.ratio.subscribeAutoDispose(xml.progress, \UIProgressView.progress)
         
         xml.rating.settings.totalStars = 5
         

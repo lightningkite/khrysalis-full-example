@@ -8,10 +8,10 @@ import UIKit
 
 public class BasicExampleBinding: XibView {
 
-    @IBOutlet weak private var _incrementTheNumber: UIButton!
     @IBOutlet weak private var _theNumber: UILabel!
-    public var incrementTheNumber: UIButton { return _incrementTheNumber }
+    @IBOutlet weak private var _incrementTheNumber: UIButton!
     public var theNumber: UILabel { return _theNumber }
+    public var incrementTheNumber: UIButton { return _incrementTheNumber }
 
     override public func awakeFromNib() {
         super.awakeFromNib()

@@ -1,17 +1,32 @@
 const path = require('path');
 const webpack = require('webpack')
 const CopyPlugin = require("copy-webpack-plugin");
+const CompressionPlugin = require("compression-webpack-plugin");
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const zlib = require("zlib");
 
 module.exports = {
   entry: './src/index.ts',
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
   plugins: [
-    // new BundleAnalyzerPlugin(),
     new webpack.EnvironmentPlugin({
       API_URL: 'http://localhost:8000/',
       WEBSOCKET_URL: 'ws://localhost:8000/api/v2/ws/?token=',
     }),
+    new CompressionPlugin({
+      filename: "[path][base].br",
+      algorithm: "brotliCompress",
+      test: /\.(js|css|html|svg)$/,
+      compressionOptions: {
+        params: {
+          [zlib.constants.BROTLI_PARAM_QUALITY]: 11,
+        },
+      },
+      threshold: 10240,
+      minRatio: 0.8,
+      deleteOriginalAssets: false,
+    }),
+    new BundleAnalyzerPlugin({ analyzerMode: "static"}),
   ],
   module: {
     rules: [

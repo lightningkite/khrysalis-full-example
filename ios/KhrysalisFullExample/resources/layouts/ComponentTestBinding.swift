@@ -8,10 +8,10 @@ import UIKit
 
 public class ComponentTestBinding: XibView {
 
-    @IBOutlet weak private var _button: UIButton!
     @IBOutlet weak private var _label: UILabel!
-    public var button: UIButton { return _button }
+    @IBOutlet weak private var _button: UIButton!
     public var label: UILabel { return _label }
+    public var button: UIButton { return _button }
 
     override public func awakeFromNib() {
         super.awakeFromNib()

@@ -10,7 +10,7 @@ PODS:
   - DKImagePickerController/ImageDataManager (4.3.2)
   - DKImagePickerController/Resource (4.3.2)
   - IBPCollectionViewCompositionalLayout (0.6.9)
-  - KhrysalisRuntime (0.7.1)
+  - KhrysalisRuntime (0.1.0)
   - LifecycleHooks (0.6.2)
   - M13Checkbox (3.4.0)
   - RxCocoa (6.2.0):
@@ -81,11 +81,11 @@ PODS:
 
 DEPENDENCIES:
   - Cosmos (from `https://github.com/lightningkite/Cosmos.git`, branch `master`)
-  - KhrysalisRuntime (from `https://github.com/lightningkite/khrysalis.git`, branch `master`)
+  - KhrysalisRuntime (from `../../khrysalis/ios-runtime/KhrysalisRuntime/KhrysalisRuntime.podspec`)
   - RxCoreLocation (from `https://github.com/RxSwiftCommunity/RxCoreLocation.git`, branch `master`)
-  - RxSwift (from `https://github.com/lightningkite/RxSwift.git`, branch `main`)
-  - RxSwiftPlus (from `https://github.com/lightningkite/RxSwiftPlus.git`, branch `master`)
-  - XmlToXibRuntime (from `https://github.com/lightningkite/android-xml-to-ios-xib.git`, branch `master`)
+  - RxSwift (from `../../RxSwift/RxSwift.podspec`)
+  - RxSwiftPlus (from `../../RxSwiftPlus/RxSwiftPlus.podspec`)
+  - XmlToXibRuntime (from `../../android-xml-to-ios-xib/XmlToXibRuntime/XmlToXibRuntime.podspec`)
 
 SPEC REPOS:
   trunk:
@@ -104,47 +104,31 @@ EXTERNAL SOURCES:
     :branch: master
     :git: https://github.com/lightningkite/Cosmos.git
   KhrysalisRuntime:
-    :branch: master
-    :git: https://github.com/lightningkite/khrysalis.git
+    :path: "../../khrysalis/ios-runtime/KhrysalisRuntime/KhrysalisRuntime.podspec"
   RxCoreLocation:
     :branch: master
     :git: https://github.com/RxSwiftCommunity/RxCoreLocation.git
   RxSwift:
-    :branch: main
-    :git: https://github.com/lightningkite/RxSwift.git
+    :path: "../../RxSwift/RxSwift.podspec"
   RxSwiftPlus:
-    :branch: master
-    :git: https://github.com/lightningkite/RxSwiftPlus.git
+    :path: "../../RxSwiftPlus/RxSwiftPlus.podspec"
   XmlToXibRuntime:
-    :branch: master
-    :git: https://github.com/lightningkite/android-xml-to-ios-xib.git
+    :path: "../../android-xml-to-ios-xib/XmlToXibRuntime/XmlToXibRuntime.podspec"
 
 CHECKOUT OPTIONS:
   Cosmos:
     :commit: a5ae9304b7d295cc7875573669895b2c15d4f48a
     :git: https://github.com/lightningkite/Cosmos.git
-  KhrysalisRuntime:
-    :commit: 10a269e9144736e6739ba22d958c57e300391851
-    :git: https://github.com/lightningkite/khrysalis.git
   RxCoreLocation:
     :commit: 8c4b301640e84c258018a82a105678ae287576a7
     :git: https://github.com/RxSwiftCommunity/RxCoreLocation.git
-  RxSwift:
-    :commit: 49051fd8058467f0feb1a7921ad54c139b2c84f3
-    :git: https://github.com/lightningkite/RxSwift.git
-  RxSwiftPlus:
-    :commit: fd888b46b7f6749a34466cd7fc8b4b29e5f33d42
-    :git: https://github.com/lightningkite/RxSwiftPlus.git
-  XmlToXibRuntime:
-    :commit: ed625429c84b19a65fa4d6a8fd8b9c4f4b32de08
-    :git: https://github.com/lightningkite/android-xml-to-ios-xib.git
 
 SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   DKCamera: a902b66921fca14b7a75266feb8c7568aa7caa71
   DKImagePickerController: b5eb7f7a388e4643264105d648d01f727110fc3d
   IBPCollectionViewCompositionalLayout: bbb29e39ac564666a8c3cdb6633ed944b6feb55b
-  KhrysalisRuntime: 3a72ac3c2ceaef60b9f9733ed02f1e247081f8b2
+  KhrysalisRuntime: f268ebe4be0aeab646e4f13f60b9ef5cd212b870
   LifecycleHooks: 246984e8ef036a8c717298166845bb999b245f5b
   M13Checkbox: 6f59404540ac98ba83a3d1afac335895a40c6a5d
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
@@ -154,8 +138,8 @@ SPEC CHECKSUMS:
   RxSwiftPlus: 0adf05aaa8534dbd268500335323eb5778239ef3
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
-  XmlToXibRuntime: fb0067babac6185448e49ad067fbc3b0fa0c86fc
+  XmlToXibRuntime: c4349eae51421a751881fb9c8846861a22188320
 
-PODFILE CHECKSUM: 21691ef35a12bd67ab4295b4b8036901e8d17ad7
+PODFILE CHECKSUM: e9f82564f027790d7659515b5901895ce10a8ec2
 
 COCOAPODS: 1.11.2

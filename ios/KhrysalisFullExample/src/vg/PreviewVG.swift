@@ -9,7 +9,7 @@ import Foundation
 
 public class PreviewVG : ViewGenerator {
     public init() {
-        self.previews = [XmlPreview(name: "ControlsDemoBinding", make: { (it) -> UIView in ControlsDemoBinding().root }), XmlPreview(name: "ExampleContentBinding", make: { (it) -> UIView in ExampleContentBinding().root }), XmlPreview(name: "LoginDemoBinding", make: { (it) -> UIView in LoginDemoBinding().root }), XmlPreview(name: "MainBinding", make: { (it) -> UIView in MainBinding().root }), XmlPreview(name: "SegmentedControlDemoBinding", make: { (it) -> UIView in SegmentedControlDemoBinding().root }), XmlPreview(name: "SelectDemoBinding", make: { (it) -> UIView in SelectDemoBinding().root }), XmlPreview(name: "SliderDemoBinding", make: { (it) -> UIView in SliderDemoBinding().root }), XmlPreview(name: "ViewPagerDemoBinding", make: { (it) -> UIView in ViewPagerDemoBinding().root })]
+        self.previews = [XmlPreview(name: "ControlsDemoBinding", make: { (it) -> UIView in ControlsDemoBinding().root }), XmlPreview(name: "ExampleContentBinding", make: { (it) -> UIView in ExampleContentBinding().root }), XmlPreview(name: "LoginDemoBinding", make: { (it) -> UIView in LoginDemoBinding().root }), XmlPreview(name: "MainBinding", make: { (it) -> UIView in MainBinding().root }), XmlPreview(name: "SelectDemoBinding", make: { (it) -> UIView in SelectDemoBinding().root }), XmlPreview(name: "SliderDemoBinding", make: { (it) -> UIView in SliderDemoBinding().root }), XmlPreview(name: "ViewPagerDemoBinding", make: { (it) -> UIView in ViewPagerDemoBinding().root })]
         self.previewIndex = ValueSubject(0)
         //Necessary properties should be initialized now
     }

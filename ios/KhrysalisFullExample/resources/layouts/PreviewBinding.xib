@@ -1,57 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
+<document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"></device>
   <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+    <deployment identifier="iOS"></deployment>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"></plugIn>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"></capability>
+    <capability minToolsVersion="11.0" name="System colors in document resources"></capability>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"></capability>
   </dependencies>
-  <customFonts key="customFonts"/>
+  <customFonts key="customFonts"></customFonts>
   <objects>
     <placeholder customClass="PreviewBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <attributedString key="userComments">
+        <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
+      </attributedString>
       <connections>
-        <outlet destination="viewName" id="outletekoB7q" property="_viewName"/>
-        <outlet destination="pager" id="outletf9Ko6l" property="_pager"/>
+        <outlet destination="viewName" id="outletiue9Me" property="_viewName"></outlet>
+        <outlet destination="pager" id="outletFF6EUm" property="_pager"></outlet>
       </connections>
     </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <stackView axis="vertical" contentMode="scaleToFill" id="stackViewoXTUo1" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewDaXoMa" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="viewName" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="View Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
-              <nil key="highlightedColor"/>
-              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+              <nil key="highlightedColor"></nil>
+              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
             </label>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="top" firstItem="viewName" id="constraint2TxgbI" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewDaXoMa"/>
-            <constraint constant="8.0" firstAttribute="bottom" id="constraintBo1EQ9" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewName"/>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="viewName" id="constraintV5ySPB" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewDaXoMa"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintpmnZLc" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewName"/>
+            <constraint constant="8.0" firstAttribute="top" firstItem="viewName" id="constraint2TxgbI" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewDaXoMa"></constraint>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintBo1EQ9" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="viewName"></constraint>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="viewName" id="constraintV5ySPB" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewDaXoMa"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintpmnZLc" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewName"></constraint>
           </constraints>
         </view>
         <collectionView clipsSubviews="YES" contentMode="scaleToFill" dataMode="none" id="pager" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
           <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10">
-            <size height="128" key="itemSize" width="128"/>
-            <size height="0.0" key="headerReferenceSize" width="0.0"/>
-            <size height="0.0" key="footerReferenceSize" width="0.0"/>
-            <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"/>
+            <size height="128" key="itemSize" width="128"></size>
+            <size height="0.0" key="headerReferenceSize" width="0.0"></size>
+            <size height="0.0" key="footerReferenceSize" width="0.0"></size>
+            <inset key="sectionInset" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0"></inset>
           </collectionViewFlowLayout>
-          <color alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" key="backgroundColor" white="0.0"/>
-          <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="backgroundColor" red="1.0"/>
+          <color alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace" key="backgroundColor" white="0.0"></color>
+          <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="backgroundColor" red="1.0"></color>
         </collectionView>
       </subviews>
       <constraints>
-        <constraint constant="0.0" firstAttribute="width" firstItem="viewDaXoMa" id="constraintdhGhM8" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="viewDaXoMa" id="constraintyr3VN4" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="pager" id="constraintIQCF4O" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="700" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewoXTUo1"/>
-        <constraint constant="0.0" firstAttribute="width" firstItem="pager" id="constraintXtEnmN" identifier="constraintMatchParent-width-start" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewoXTUo1"/>
+        <constraint constant="0.0" firstAttribute="width" id="constraintdhGhM8" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewDaXoMa"></constraint>
+        <constraint constant="0.0" firstAttribute="width" id="constraintyr3VN4" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewDaXoMa"></constraint>
+        <constraint constant="0.0" firstAttribute="width" id="constraintIQCF4O" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="pager"></constraint>
+        <constraint constant="0.0" firstAttribute="width" id="constraintXtEnmN" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="pager"></constraint>
       </constraints>
-      <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"/>
+      <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"></edgeInsets>
     </stackView>
   </objects>
-  <resources/>
+  <resources></resources>
 </document>

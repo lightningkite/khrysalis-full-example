@@ -30,11 +30,6 @@ public class VideoDemoVG : ViewGenerator {
         //--- Set Up xml.video
         self.currentVideo.subscribeAutoDispose(xml.video, { (this, it) -> Void in xml.video.setVideo(it) })
         
-        //--- Set Up xml.thumbnail
-        self.currentVideo
-            .switchMap { (it) -> Observable<Image> in it?.thumbnail().toObservable() ?? Observable.never() }
-            .subscribeAutoDispose(xml.thumbnail, UIImageView.setImage)
-        
         //--- Set Up xml.play (overwritten on flow generation)
         xml.play.onClick { () -> Void in self.playClick() }
         

@@ -5,15 +5,15 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@lightningkite/android-xml-runtime": "0.1.3",
-    "@lightningkite/rxjs-plus": "0.1.3",
-    "@lightningkite/khrysalis-runtime": "0.1.3",
-    "rxjs": "7.4.0",
     "@js-joda/core": "^4.3.1",
-    "iter-tools-es": "^7.1.4"
+    "@lightningkite/android-xml-runtime": "0.8.0",
+    "@lightningkite/khrysalis-runtime": "0.8.0",
+    "@lightningkite/rxjs-plus": "0.8.0",
+    "iter-tools-es": "^7.1.4",
+    "rxjs": "7.4.0"
   },
   "devDependencies": {
-    "typescript": "^4.5.2",
+    "compression-webpack-plugin": "^9.2.0",
     "copy-webpack-plugin": "^10.2.0",
     "css-loader": "^6.5.1",
     "file-loader": "^6.2.0",
@@ -25,6 +25,7 @@
     "sass-loader": "^12.4.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
     "webpack": "^5.65.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",

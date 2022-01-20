@@ -1,46 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
-  <device appearance="light" id="retina6_1" orientation="portrait"/>
+<document colorMatched="YES" propertyAccessControl="none" targetRuntime="iOS.CocoaTouch" toolsVersion="18122" type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" useAutolayout="YES" useSafeAreas="YES" useTraitCollections="YES" version="3.0">
+  <device appearance="light" id="retina6_1" orientation="portrait"></device>
   <dependencies>
-    <deployment identifier="iOS"/>
-    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
-    <capability minToolsVersion="9.0" name="Safe area layout guides"/>
-    <capability minToolsVersion="11.0" name="System colors in document resources"/>
-    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"/>
+    <deployment identifier="iOS"></deployment>
+    <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"></plugIn>
+    <capability minToolsVersion="9.0" name="Safe area layout guides"></capability>
+    <capability minToolsVersion="11.0" name="System colors in document resources"></capability>
+    <capability minToolsVersion="8.0" name="documents saved in the Xcode 8 format"></capability>
   </dependencies>
-  <customFonts key="customFonts"/>
+  <customFonts key="customFonts"></customFonts>
   <objects>
     <placeholder customClass="ComponentTextBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="-1" placeholderIdentifier="IBFilesOwner" userLabel="File's Owner">
+      <attributedString key="userComments">
+        <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
+      </attributedString>
       <connections>
-        <outlet destination="label" id="outletekoB7q" property="_label"/>
+        <outlet destination="label" id="outletiue9Me" property="_label"></outlet>
       </connections>
     </placeholder>
-    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"/>
+    <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <view clipsSubviews="YES" contentMode="scaleToFill" id="viewoXTUo1" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewtzbOHI" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="label" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Some Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-              <fontDescription key="fontDescription" pointSize="16.0" type="system"/>
-              <nil key="highlightedColor"/>
-              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"/>
+              <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+              <nil key="highlightedColor"></nil>
+              <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
             </label>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="top" firstItem="label" id="constraint1AVkaF" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewtzbOHI"/>
-            <constraint constant="8.0" firstAttribute="bottom" id="constraint0Xi1RH" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="label"/>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="label" id="constraintwifD0s" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewtzbOHI"/>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintUcxQcB" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="label"/>
+            <constraint constant="8.0" firstAttribute="top" firstItem="label" id="constraint1AVkaF" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewtzbOHI"></constraint>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraint0Xi1RH" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="label"></constraint>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="label" id="constraintwifD0s" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewtzbOHI"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintUcxQcB" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="label"></constraint>
           </constraints>
         </view>
       </subviews>
       <constraints>
-        <constraint constant="8.0" firstAttribute="top" firstItem="viewtzbOHI" id="constraintdHIOZ8" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewoXTUo1"/>
-        <constraint constant="8.0" firstAttribute="bottom" id="constraintpYT5Tv" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="bottom" secondItem="viewtzbOHI"/>
-        <constraint constant="8.0" firstAttribute="bottom" id="constraint3TVjAE" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="bottom" secondItem="viewtzbOHI"/>
-        <constraint constant="8.0" firstAttribute="leading" firstItem="viewtzbOHI" id="constraintE0HH5e" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewoXTUo1"/>
-        <constraint constant="8.0" firstAttribute="trailing" id="constraintobzxx1" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewtzbOHI"/>
+        <constraint constant="8.0" firstAttribute="top" firstItem="viewtzbOHI" id="constraintdHIOZ8" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewoXTUo1"></constraint>
+        <constraint constant="8.0" firstAttribute="bottom" id="constraintpYT5Tv" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="bottom" secondItem="viewtzbOHI"></constraint>
+        <constraint constant="8.0" firstAttribute="bottom" id="constraint3TVjAE" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="bottom" secondItem="viewtzbOHI"></constraint>
+        <constraint constant="8.0" firstAttribute="leading" firstItem="viewtzbOHI" id="constraintE0HH5e" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewoXTUo1"></constraint>
+        <constraint constant="8.0" firstAttribute="trailing" id="constraintobzxx1" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewtzbOHI"></constraint>
       </constraints>
     </view>
   </objects>
-  <resources/>
+  <resources></resources>
 </document>
