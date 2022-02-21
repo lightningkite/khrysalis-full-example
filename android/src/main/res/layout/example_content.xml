@@ -93,6 +93,8 @@
                 android:text="Scroll to Top"
         />
 
+        <include layout="@layout/component_text" android:id="@+id/sub"/>
+
     </LinearLayout>
 
 </ScrollView>

@@ -2,8 +2,8 @@
 R.ts
 Created by Khrysalis
 */
-
-export interface Strings {
+//! Declares com.lightningkite.rxexample.R
+export interface StringInterface {
     app_name: string
     back: string
     camera: string
@@ -68,5 +68,24 @@ export namespace DefaultStrings {
     export const welcome_message = "This an example for LK Rx. This screen exists to help you figure out stuff about it."
     export const welcome_to_switch_town = "Welcome to Switch Town!"
     export const you_made_it_to_another_screen = "You made it to another screen!"
-    export const strings: Strings = Object.assign({}, DefaultStrings);
+}
+export const Strings: StringInterface = Object.assign({}, DefaultStrings);
+export namespace Colors {
+    export const calendar_range_middle_deactivated_bg = "#ccccccff"
+    export const calendar_range_middle_unavailable_bg = "#ffff00ff"
+    export const calendar_selected_day_bg = "#ff0000ff"
+    export const calendar_selected_range_bg = "#ff0000ff"
+    export const calendar_unavailable_bg = "#ffff00ff"
+    export const colorAccent = "#f5952eff"
+    export const colorAccentDark = "#ae6a21ff"
+    export const colorPrimary = "#10769cff"
+    export const colorPrimaryDark = "#0e6484ff"
+    export const colorPrimaryDarker = "#0a465cff"
+    export const disabled = "#adadadff"
+    export const state_accent = "--color-state_accent"
+    export const state_accent_toggle = "--color-state_accent_toggle"
+    export const state_login_text = "--color-state_login_text"
+    export const state_primary = "--color-state_primary"
+}
+export namespace Dimen {
 }

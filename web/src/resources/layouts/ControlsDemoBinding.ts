@@ -1,6 +1,7 @@
 import {inflateHtmlFile} from "@lightningkite/android-xml-runtime";
 import html from './controls_demo.html'
 
+
 //! Declares com.lightningkite.rxexample.databinding.ControlsDemoBinding
 export interface ControlsDemoBinding {
     root: HTMLElement
@@ -11,10 +12,11 @@ export interface ControlsDemoBinding {
     editableTextBig: HTMLTextAreaElement
     spinner: HTMLSelectElement
     
+    
 }
 
 export namespace ControlsDemoBinding {
-   export function inflate() {
-       return inflateHtmlFile(html, ["editableText", "numberText", "editableAutoText", "editableTextCopy", "editableTextBig", "spinner"], {}) as ControlsDemoBinding
+   export function inflate(): ControlsDemoBinding {
+       return inflateHtmlFile(html, ["editableText", "numberText", "editableAutoText", "editableTextCopy", "editableTextBig", "spinner"], {}, {}) as ControlsDemoBinding
    }
 }

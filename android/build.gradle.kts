@@ -41,9 +41,9 @@ repositories {
 
 val kotlin_version = "1.6.0"
 dependencies {
-    khrysalisSwift("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:master-SNAPSHOT")
-    khrysalisTypescript("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:master-SNAPSHOT")
-    khrysalisKotlin("com.lightningkite.khrysalis:kotlin-compiler-plugin-kotlin:master-SNAPSHOT")
+    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:master-SNAPSHOT")
+    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:master-SNAPSHOT")
+    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-kotlin:master-SNAPSHOT")
     implementation("com.lightningkite.xmltoxib:safe-insets:master-SNAPSHOT")
     implementation("com.lightningkite.khrysalis:jvm-runtime:master-SNAPSHOT")
     implementation("com.lightningkite.rx:view-generator:master-SNAPSHOT")

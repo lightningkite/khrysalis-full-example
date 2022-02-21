@@ -1,6 +1,7 @@
 import {inflateHtmlFile} from "@lightningkite/android-xml-runtime";
 import html from './load_image_demo.html'
 
+
 //! Declares com.lightningkite.rxexample.databinding.LoadImageDemoBinding
 export interface LoadImageDemoBinding {
     root: HTMLElement
@@ -12,10 +13,11 @@ export interface LoadImageDemoBinding {
     checkCanUpload: HTMLButtonElement
     canUpload: HTMLDivElement
     
+    
 }
 
 export namespace LoadImageDemoBinding {
-   export function inflate() {
-       return inflateHtmlFile(html, ["gallery", "galleryMultiple", "camera", "loremPixel", "image", "checkCanUpload", "canUpload"], {}) as LoadImageDemoBinding
+   export function inflate(): LoadImageDemoBinding {
+       return inflateHtmlFile(html, ["gallery", "galleryMultiple", "camera", "loremPixel", "image", "checkCanUpload", "canUpload"], {}, {}) as LoadImageDemoBinding
    }
 }

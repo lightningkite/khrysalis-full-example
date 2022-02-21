@@ -1,0 +1,7 @@
+mkdir 'node_modules/@lightningkite'
+mkdir 'node_modules/@lightningkite/android-xml-runtime'
+rsync -r --delete-after --filter=':- .npmignore' ../../android-xml-to-ios-xib/ 'node_modules/@lightningkite/android-xml-runtime/'
+mkdir 'node_modules/@lightningkite/khrysalis-runtime'
+rsync -r --delete-after --filter=':- .npmignore' ../../khrysalis/ 'node_modules/@lightningkite/khrysalis-runtime/'
+mkdir 'node_modules/@lightningkite/rxjs-plus'
+rsync -r --delete-after --filter=':- .npmignore' ../../rxjs-plus/ 'node_modules/@lightningkite/rxjs-plus/'

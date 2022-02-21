@@ -1,6 +1,7 @@
 import {inflateHtmlFile} from "@lightningkite/android-xml-runtime";
 import html from './external_test.html'
 
+
 //! Declares com.lightningkite.rxexample.databinding.ExternalTestBinding
 export interface ExternalTestBinding {
     root: HTMLElement
@@ -9,10 +10,11 @@ export interface ExternalTestBinding {
     openEvent: HTMLButtonElement
     scrollView: HTMLDivElement
     
+    
 }
 
 export namespace ExternalTestBinding {
-   export function inflate() {
-       return inflateHtmlFile(html, ["openMap", "openWeb", "openEvent", "scrollView"], {}) as ExternalTestBinding
+   export function inflate(): ExternalTestBinding {
+       return inflateHtmlFile(html, ["openMap", "openWeb", "openEvent", "scrollView"], {}, {}) as ExternalTestBinding
    }
 }
