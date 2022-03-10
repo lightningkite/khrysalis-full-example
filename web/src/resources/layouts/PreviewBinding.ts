@@ -6,12 +6,12 @@ import html from './preview.html'
 export interface PreviewBinding {
     root: HTMLElement
     viewName: HTMLDivElement
-    pager: {root: HTMLDivElement, container: HTMLDivElement, previous: HTMLButtonElement, next: HTMLButtonElement}
+    pager: HTMLDivElement & {container: HTMLDivElement, previous: HTMLButtonElement, next: HTMLButtonElement}
     
 }
 
 export namespace PreviewBinding {
    export function inflate(): PreviewBinding {
-       return inflateHtmlFile(html, ["viewName"], {pager: ["root", "container", "previous", "next"]}, {}) as PreviewBinding
+       return inflateHtmlFile(html, ["viewName"], {pager: ["container", "previous", "next"]}, {}) as PreviewBinding
    }
 }

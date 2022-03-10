@@ -6,12 +6,12 @@ import html from './view_pager_demo.html'
 export interface ViewPagerDemoBinding {
     root: HTMLElement
     
-    viewPager: {root: HTMLDivElement, container: HTMLDivElement, previous: HTMLButtonElement, next: HTMLButtonElement}
+    viewPager: HTMLDivElement & {container: HTMLDivElement, previous: HTMLButtonElement, next: HTMLButtonElement}
     
 }
 
 export namespace ViewPagerDemoBinding {
    export function inflate(): ViewPagerDemoBinding {
-       return inflateHtmlFile(html, [], {viewPager: ["root", "container", "previous", "next"]}, {}) as ViewPagerDemoBinding
+       return inflateHtmlFile(html, [], {viewPager: ["container", "previous", "next"]}, {}) as ViewPagerDemoBinding
    }
 }

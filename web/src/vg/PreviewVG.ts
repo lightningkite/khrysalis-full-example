@@ -15,7 +15,7 @@ import { BehaviorSubject, of } from 'rxjs'
 export class PreviewVG implements ViewGenerator {
     public static implementsViewGenerator = true;
     public constructor() {
-        this.previews = [new PreviewVG.XmlPreview("ControlsDemoBinding", (it: Window): HTMLElement => ControlsDemoBinding.inflate().root), new PreviewVG.XmlPreview("ExampleContentBinding", (it: Window): HTMLElement => ExampleContentBinding.inflate().root), new PreviewVG.XmlPreview("LoginDemoBinding", (it: Window): HTMLElement => LoginDemoBinding.inflate().root), new PreviewVG.XmlPreview("MainBinding", (it: Window): HTMLElement => MainBinding.inflate().root), new PreviewVG.XmlPreview("SelectDemoBinding", (it: Window): HTMLElement => SelectDemoBinding.inflate().root), new PreviewVG.XmlPreview("SliderDemoBinding", (it: Window): HTMLElement => SliderDemoBinding.inflate().root), new PreviewVG.XmlPreview("ViewPagerDemoBinding", (it: Window): HTMLElement => ViewPagerDemoBinding.inflate().root)];
+        this.previews = [new PreviewVG.XmlPreview("ControlsDemoBinding", (it: Window): HTMLElement => (ControlsDemoBinding.inflate().root)), new PreviewVG.XmlPreview("ExampleContentBinding", (it: Window): HTMLElement => (ExampleContentBinding.inflate().root)), new PreviewVG.XmlPreview("LoginDemoBinding", (it: Window): HTMLElement => (LoginDemoBinding.inflate().root)), new PreviewVG.XmlPreview("MainBinding", (it: Window): HTMLElement => (MainBinding.inflate().root)), new PreviewVG.XmlPreview("SelectDemoBinding", (it: Window): HTMLElement => (SelectDemoBinding.inflate().root)), new PreviewVG.XmlPreview("SliderDemoBinding", (it: Window): HTMLElement => (SliderDemoBinding.inflate().root)), new PreviewVG.XmlPreview("ViewPagerDemoBinding", (it: Window): HTMLElement => (ViewPagerDemoBinding.inflate().root))];
         this.previewIndex = new BehaviorSubject(0);
     }
     
@@ -32,7 +32,7 @@ export class PreviewVG implements ViewGenerator {
     public generate(dependency: Window): HTMLElement {
         const xml = PreviewBinding.inflate();
         const view = xml.root;
-        of(this.previews).pipe(showInPager(xml.pager, this.previewIndex, (it: PreviewVG.XmlPreview): HTMLElement => it.make(dependency)));
+        of(this.previews).pipe(showInPager(xml.pager, this.previewIndex, (it: PreviewVG.XmlPreview): HTMLElement => (it.make(dependency))));
         elementRemoved(view).parts.push(this.previewIndex.subscribe((it: number): void => {
             xml.viewName.textContent = this.previews[it].name;
         }, undefined, undefined));

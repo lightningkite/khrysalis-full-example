@@ -29,7 +29,7 @@ export class WebsocketDemoVG implements ViewGenerator {
         
         //--- Set Up xml.items
         const itemsList = ([] as Array<WebSocketFrame>);
-        concat(of(itemsList), this.socket.pipe(switchMap((it: WebSocketInterface): Observable<WebSocketFrame> => it.read)).pipe(map((it: WebSocketFrame): Array<WebSocketFrame> => {
+        concat(of(itemsList), this.socket.pipe(switchMap((it: WebSocketInterface): Observable<WebSocketFrame> => (it.read))).pipe(map((it: WebSocketFrame): Array<WebSocketFrame> => {
             console.log("Adding item");
             itemsList.push(it);
             while (itemsList.length > 20) {

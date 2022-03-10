@@ -49,7 +49,7 @@ export class SelectDemoVG implements ViewGenerator {
             obs.pipe(subscribeAutoDispose(xml.label, (this_: HTMLElement, it: ViewGenerator): void => {
                 this_.textContent = it.titleString;
             }));
-            fromEvent(xml.button, "click", ev => ev.preventDefault()).pipe(mergeMap((it: void): Observable<ViewGenerator> => obs.pipe(take(1)))).pipe(subscribeAutoDispose(view, (this_: HTMLDivElement, it: ViewGenerator): void => {
+            fromEvent(xml.button, "click", ev => ev.preventDefault()).pipe(mergeMap((it: void): Observable<ViewGenerator> => (obs.pipe(take(1))))).pipe(subscribeAutoDispose(view, (this_: HTMLDivElement, it: ViewGenerator): void => {
                 this.selectVG(it);
             }));
             return view;

@@ -9,9 +9,9 @@ export class SliderDemoVG implements ViewGenerator {
     public static implementsViewGenerator = true;
     public constructor() {
         this.ratio = new BehaviorSubject(0);
-        this.percent = this.ratio.pipe(mapSubject((it: number): number => Math.floor((it * 100)), (it: number): number => it / 100));
-        this.obsRatingInt = this.ratio.pipe(mapSubject((it: number): number => Math.floor((it * 5)), (it: number): number => it / 5));
-        this.obsRatingFloat = this.ratio.pipe(mapSubject((it: number): number => it * 5, (it: number): number => it / 5));
+        this.percent = this.ratio.pipe(mapSubject((it: number): number => (Math.floor((it * 100))), (it: number): number => (it / 100)));
+        this.obsRatingInt = this.ratio.pipe(mapSubject((it: number): number => (Math.floor((it * 5))), (it: number): number => (it / 5)));
+        this.obsRatingFloat = this.ratio.pipe(mapSubject((it: number): number => (it * 5), (it: number): number => (it / 5)));
     }
     
     //! Declares com.lightningkite.rxexample.vg.SliderDemoVG.titleString
@@ -49,15 +49,15 @@ export class SliderDemoVG implements ViewGenerator {
         
         xml.ratingFloat.step = (0.01).toString();
         xml.ratingFloat.max = (5).toString();
-        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingFloat, (this_: HTMLDivElement, it: number): void => {
+        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingFloat, (this_: HTMLInputElement, it: number): void => {
             xml.ratingFloat.valueAsNumber = it;
         }));
         xml.ratingDisplayStarsFloat.max = (5).toString();
-        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsFloat, (this_: HTMLDivElement, it: number): void => {
+        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsFloat, (this_: HTMLInputElement, it: number): void => {
             xml.ratingDisplayStarsFloat.valueAsNumber = it;
         }));
         xml.ratingDisplayStarsSmallFloat.max = (5).toString();
-        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsSmallFloat, (this_: HTMLDivElement, it: number): void => {
+        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsSmallFloat, (this_: HTMLInputElement, it: number): void => {
             xml.ratingDisplayStarsSmallFloat.valueAsNumber = it;
         }));
         this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayNumberFloat, (this_: HTMLElement, it: number): void => {

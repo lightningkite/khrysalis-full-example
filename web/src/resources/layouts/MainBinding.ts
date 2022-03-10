@@ -5,17 +5,16 @@ import html from './main.html'
 //! Declares com.lightningkite.rxexample.databinding.MainBinding
 export interface MainBinding {
     root: HTMLElement
-    mainBack: HTMLButtonElement
     title: HTMLDivElement
     topBar: HTMLDivElement
     mainContent: HTMLDivElement
     bottom0: HTMLDivElement
-    
+    mainBack: HTMLButtonElement & {image: HTMLImageElement}
     
 }
 
 export namespace MainBinding {
    export function inflate(): MainBinding {
-       return inflateHtmlFile(html, ["mainBack", "title", "topBar", "mainContent", "bottom0"], {}, {}) as MainBinding
+       return inflateHtmlFile(html, ["title", "topBar", "mainContent", "bottom0"], {mainBack: ["image"]}, {}) as MainBinding
    }
 }

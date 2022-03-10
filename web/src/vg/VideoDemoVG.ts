@@ -74,15 +74,18 @@ export class VideoDemoVG implements ViewGenerator {
     public playClick(): void {
         this.timesPlayPressed.next(this.timesPlayPressed.value + 1);
         switch(this.timesPlayPressed.value % 3) {
-            case 0:
-            this.currentVideo.next({ url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" })
-            break;
-            case 1:
-            this.currentVideo.next({ url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" })
-            break;
-            case 2:
-            this.currentVideo.next(null)
-            break;
+            case 0: {
+                this.currentVideo.next({ url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" })
+                break;
+            }
+            case 1: {
+                this.currentVideo.next({ url: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" })
+                break;
+            }
+            case 2: {
+                this.currentVideo.next(null)
+                break;
+            }
         }
         
     }

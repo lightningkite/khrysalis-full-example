@@ -7,13 +7,12 @@ export interface WebsocketDemoBinding {
     root: HTMLElement
     items: HTMLDivElement
     input: HTMLInputElement
-    submit: HTMLButtonElement
-    
+    submit: HTMLButtonElement & {image: HTMLImageElement}
     
 }
 
 export namespace WebsocketDemoBinding {
    export function inflate(): WebsocketDemoBinding {
-       return inflateHtmlFile(html, ["items", "input", "submit"], {}, {}) as WebsocketDemoBinding
+       return inflateHtmlFile(html, ["items", "input"], {submit: ["image"]}, {}) as WebsocketDemoBinding
    }
 }

@@ -63,7 +63,7 @@ export class LoadImageDemoVG implements ViewGenerator {
                 });
             }
         });
-        this.canUpload.pipe(map((it: (boolean | null)): string => it === null ? "Not checked" : it === true ? "Good to go!" : "FAILED!!!")).pipe(subscribeAutoDispose(xml.canUpload, "textContent"));
+        this.canUpload.pipe(map((it: (boolean | null)): string => (it === null ? "Not checked" : it === true ? "Good to go!" : "FAILED!!!"))).pipe(subscribeAutoDispose(xml.canUpload, "textContent"));
         return view;
     }
 }

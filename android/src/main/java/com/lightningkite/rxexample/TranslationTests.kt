@@ -26,7 +26,7 @@ fun test(old: View, new: RecyclerView, layout: ViewGroup, response: Response) {
     val b = "asdf".uppercase()
     val c = 'd'.uppercase()
     val d = listOf(1, 2, 3).reduceOrNull { acc, i -> acc + i }
-    val e = mapOf(1 to 2, 3 to 4) - (3 to 4)
+//    val e = mapOf<Int, Int>(1 to 2, 3 to 4) - Pair(3, 4)
     val f = mapOf(1 to 2).entries.first().toPair()
     val g = Optional.empty<Int>().isPresent
     println(ZoneId.systemDefault().id)

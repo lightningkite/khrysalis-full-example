@@ -3,6 +3,8 @@ package com.lightningkite.rxexample.vg
 
 import com.lightningkite.khrysalis.SharedCode
 import android.view.View
+import android.widget.CheckBox
+import android.widget.Switch
 import android.widget.TextView
 import com.lightningkite.rx.viewgenerators.ActivityAccess
 import com.lightningkite.rx.ValueSubject
@@ -24,17 +26,24 @@ class ControlsDemoVG() : ViewGenerator {
     val options: ValueSubject<List<String>> =
         ValueSubject(listOf("Apple", "Banana", "Chili Pepper", "Dragon Fruit"))
     val number: ValueSubject<Int> = ValueSubject(32)
+    val isOn = ValueSubject(false)
 
     override fun generate(dependency: ActivityAccess): View {
         val xml = ControlsDemoBinding.inflate(dependency.layoutInflater)
         val view = xml.root
 
+        isOn
+            .bind(xml.check)
+            .bind(xml.toggleSwitch)
+            .bind(xml.checkAlt)
+        number.map { it > 5 }.subscribeAutoDispose(xml.checkAlt, CheckBox::setEnabled)
         number.toSubjectString().bind(xml.numberText)
         text
             .bind(xml.editableText)
             .bind(xml.editableAutoText)
             .bind(xml.editableTextBig)
             .subscribeAutoDispose(xml.editableTextCopy, TextView::setText)
+            .subscribeAutoDispose(xml.toggleSwitch, Switch::setText)
         options
             .showIn(xml.editableAutoText, this.text)
             .showIn(xml.spinner, text)

@@ -24,7 +24,7 @@ export class DateButtonDemoVG implements ViewGenerator {
         const xml = DateButtonDemoBinding.inflate();
         const view = xml.root;
         
-        this.date.pipe(map((it: ZonedDateTime): string => it.format(ofLocalizedDateTime(FormatStyle.MEDIUM, FormatStyle.MEDIUM)))).pipe(subscribeAutoDispose(xml.text, "textContent"));
+        this.date.pipe(map((it: ZonedDateTime): string => (it.format(ofLocalizedDateTime(FormatStyle.MEDIUM, FormatStyle.MEDIUM))))).pipe(subscribeAutoDispose(xml.text, "textContent"));
         this.date.pipe(mapSubjectWithExisting(x => x.toLocalDate(), (a, b) => a.with(b))).pipe(mapSubject(x => convert(x).toDate(), x => LocalDate.from(nativeJs(x))), subscribeAutoDispose(xml.dateButton, buttonDate("date")));
         this.date.pipe(mapSubjectWithExisting(x => x.toLocalTime(), (a, b) => a.with(b))).pipe(mapSubject(x => convert(LocalDateTime.of(LocalDate.now(), x)).toDate(), x => LocalTime.from(nativeJs(x))), subscribeAutoDispose(xml.timeButton, buttonDate("time")));
         

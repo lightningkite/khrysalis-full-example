@@ -10,12 +10,12 @@ export interface LoginDemoBinding {
     verifyPassword: HTMLInputElement
     submit: HTMLButtonElement
     submitLoading: HTMLDivElement
-    agree: {root: HTMLLabelElement, input: HTMLInputElement, label: HTMLSpanElement}
+    agree: HTMLLabelElement & {input: HTMLInputElement, label: HTMLSpanElement}
     
 }
 
 export namespace LoginDemoBinding {
    export function inflate(): LoginDemoBinding {
-       return inflateHtmlFile(html, ["username", "password", "verifyPassword", "submit", "submitLoading"], {agree: ["root", "input", "label"]}, {}) as LoginDemoBinding
+       return inflateHtmlFile(html, ["username", "password", "verifyPassword", "submit", "submitLoading"], {agree: ["input", "label"]}, {}) as LoginDemoBinding
    }
 }

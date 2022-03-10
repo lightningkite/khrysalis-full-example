@@ -2,3 +2,5 @@
 .gradle
 build
 ios/Pods
+web/node_modules
+web/dist

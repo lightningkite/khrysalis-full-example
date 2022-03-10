@@ -8,8 +8,8 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.lightningkite.khrysalis:plugin:master-SNAPSHOT")
-        classpath("com.lightningkite.xmltoxib:plugin:master-SNAPSHOT")
+        classpath("com.lightningkite.khrysalis:plugin:1.0.0-rc1-SNAPSHOT")
+        classpath("com.lightningkite.xmltoxib:plugin:1.0.0-rc1-SNAPSHOT")
         classpath("com.android.tools.build:gradle:4.2.2")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
 

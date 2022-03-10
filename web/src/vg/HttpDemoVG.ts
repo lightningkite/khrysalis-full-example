@@ -24,19 +24,19 @@ export class HttpDemoVG implements ViewGenerator {
         const view = xml.root;
         
         //--- Call
-        const call = HttpClient.INSTANCE.callWithProgress<Array<Post>>("https://jsonplaceholder.typicode.com/posts/", undefined, undefined, undefined, undefined, (it: Response): Observable<Array<Post>> => of(it).pipe(fromJSON<Array<Post>>([Array, [Post]])));
+        const call = HttpClient.INSTANCE.callWithProgress<Array<Post>>("https://jsonplaceholder.typicode.com/posts/", undefined, undefined, undefined, undefined, (it: Response): Observable<Array<Post>> => (of(it).pipe(fromJSON<Array<Post>>([Array, [Post]]))));
         
         //--- Set Up xml.progress
-        concat(of(0), call.pipe(map((it: HttpProgress<Array<Post>>): number => approximateProgress(it)))).pipe(subscribeAutoDispose(xml.progress, "value"));
+        concat(of(0), call.pipe(map((it: HttpProgress<Array<Post>>): number => (approximateProgress(it))))).pipe(subscribeAutoDispose(xml.progress, "value"));
         
         //--- Set Up xml.items
-        concat(of([new Post(0, 0, "Loading...", "-")]), call.pipe(rMap((it: HttpProgress<Array<Post>>): (Array<Post> | null) => it.response), filter(isNonNull))).pipe(showIn(xml.items, (observable: Observable<Post>): HTMLElement => {
+        concat(of([new Post(0, 0, "Loading...", "-")]), call.pipe(rMap((it: HttpProgress<Array<Post>>): (Array<Post> | null) => (it.response)), filter(isNonNull))).pipe(showIn(xml.items, (observable: Observable<Post>): HTMLElement => {
             //--- Make Subview For xml.items
             const cellXml = ComponentTextBinding.inflate();
             const cellView = cellXml.root;
             
             //--- Set Up cellXml.label
-            observable.pipe(map((it: Post): string => it.title)).pipe(subscribeAutoDispose(cellXml.label, "textContent"));
+            observable.pipe(map((it: Post): string => (it.title))).pipe(subscribeAutoDispose(cellXml.label, "textContent"));
             //--- End Make Subview For xml.items
             return cellView;
         }));
