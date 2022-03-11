@@ -15,8 +15,4 @@ public class WebsocketDemoBinding: XibView {
     public var input: UITextField { return _input }
     public var submit: UIButton { return _submit }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

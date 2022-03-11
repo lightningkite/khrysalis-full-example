@@ -12,7 +12,11 @@ export interface WebsocketDemoBinding {
 }
 
 export namespace WebsocketDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): WebsocketDemoBinding {
-       return inflateHtmlFile(html, ["items", "input"], {submit: ["image"]}, {}) as WebsocketDemoBinding
+       return inflateHtmlFile(variants, ["items", "input"], {submit: ["image"]}, {}) as WebsocketDemoBinding
    }
 }

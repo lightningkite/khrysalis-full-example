@@ -11,8 +11,4 @@ public class ComponentTextBinding: XibView {
     @IBOutlet weak private var _label: UILabel!
     public var label: UILabel { return _label }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

@@ -20,8 +20,4 @@ public class MainBinding: XibView {
     public var mainContent: SwapView { return _mainContent }
     public var bottom0: UIView { return _bottom0 }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

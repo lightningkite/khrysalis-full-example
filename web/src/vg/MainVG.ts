@@ -4,7 +4,6 @@ import { MainBinding } from '../resources/layouts/MainBinding'
 import { ExampleContentVG } from './ExampleContentVG'
 import { SelectDemoVG } from './SelectDemoVG'
 import { EntryPoint, HasBackActionDefaults, StackSubject, ViewGenerator, onThrottledEventDo, showInSwap, subscribeAutoDispose, viewVisible, xStackPop, xStackPush } from '@lightningkite/rxjs-plus'
-import { takeLastOr } from 'iter-tools-es'
 import { BehaviorSubject, Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 
@@ -37,7 +36,7 @@ export class MainVG implements ViewGenerator, EntryPoint {
         
         this.stack.pipe(showInSwap(xml.mainContent));
         this.stack.pipe(map((it: Array<ViewGenerator>): string => (((): (string | null) => {
-            const temp14 = (takeLastOr(null, it)!?.titleString ?? null);
+            const temp14 = ((it[it.length - 1] ?? null)?.titleString ?? null);
             if(temp14 === null) { return null }
             return temp14
         })() ?? ""))).pipe(subscribeAutoDispose(xml.title, "textContent"));

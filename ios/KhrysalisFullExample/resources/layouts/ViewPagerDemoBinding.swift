@@ -11,8 +11,4 @@ public class ViewPagerDemoBinding: XibView {
     @IBOutlet weak private var _viewPager: UICollectionView!
     public var viewPager: UICollectionView { return _viewPager }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

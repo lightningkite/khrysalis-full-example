@@ -14,12 +14,15 @@
         <fragment content="Generated with XmlToXib, will be overwritten"></fragment>
       </attributedString>
       <connections>
-        <outlet destination="editableText" id="outletiue9Me" property="_editableText"></outlet>
-        <outlet destination="numberText" id="outletFF6EUm" property="_numberText"></outlet>
-        <outlet destination="editableAutoText" id="outletA7f7Yh" property="_editableAutoText"></outlet>
-        <outlet destination="editableTextCopy" id="outlet2tCJk5" property="_editableTextCopy"></outlet>
-        <outlet destination="editableTextBig" id="outletYjtYgC" property="_editableTextBig"></outlet>
-        <outlet destination="spinner" id="outlet8goDGd" property="_spinner"></outlet>
+        <outlet destination="toggleSwitch" id="outletiue9Me" property="_toggleSwitch"></outlet>
+        <outlet destination="check" id="outletFF6EUm" property="_check"></outlet>
+        <outlet destination="checkAlt" id="outletA7f7Yh" property="_checkAlt"></outlet>
+        <outlet destination="editableText" id="outlet2tCJk5" property="_editableText"></outlet>
+        <outlet destination="numberText" id="outletYjtYgC" property="_numberText"></outlet>
+        <outlet destination="editableAutoText" id="outlet8goDGd" property="_editableAutoText"></outlet>
+        <outlet destination="editableTextCopy" id="outletmdiyZ6" property="_editableTextCopy"></outlet>
+        <outlet destination="editableTextBig" id="outletsmptWX" property="_editableTextBig"></outlet>
+        <outlet destination="spinner" id="outletjRqwdv" property="_spinner"></outlet>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
@@ -30,7 +33,7 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewQDo4AP" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="label7rgmyM" lineBreakMode="tailTruncation" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
@@ -45,31 +48,30 @@
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewftHs9H" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
-                <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="stackViewNsemiv" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="toggleSwitch" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <subviews>
-                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="251" id="labelSLtDGb" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
+                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="251" id="labelvMHEzs" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
                       <fontDescription key="fontDescription" pointSize="17" type="system"></fontDescription>
                     </label>
-                    <switch contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" horizontalCompressionResistancePriority="999" horizontalHuggingPriority="750" id="switchvGmtqD" on="NO" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="999" verticalHuggingPriority="750"></switch>
+                    <switch contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" horizontalCompressionResistancePriority="999" horizontalHuggingPriority="750" id="switchccoD43" on="NO" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="999" verticalHuggingPriority="750"></switch>
                   </subviews>
                 </stackView>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="stackViewNsemiv" id="constraintWcHWl5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewftHs9H"></constraint>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintQWQBcw" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewNsemiv"></constraint>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="stackViewNsemiv" id="constraintp6U0NY" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewftHs9H"></constraint>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintlGHa7c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewNsemiv"></constraint>
+                <constraint constant="8.0" firstAttribute="top" firstItem="toggleSwitch" id="constraintWcHWl5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewftHs9H"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintQWQBcw" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="toggleSwitch"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="toggleSwitch" id="constraintp6U0NY" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewftHs9H"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintlGHa7c" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="toggleSwitch"></constraint>
               </constraints>
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="view5sCq7y" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
-                <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="stackViewEnuXpI" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="check" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <subviews>
-                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalCompressionResistancePriority="999" horizontalHuggingPriority="750" id="viewfWoTkC" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="999" verticalHuggingPriority="750">
-                      <color key="backgroundColor" systemColor="systemBackgroundColor"></color>
+                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalCompressionResistancePriority="999" horizontalHuggingPriority="750" id="viewmcGazH" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="999" verticalHuggingPriority="750">
                       <constraints>
-                        <constraint constant="20.5" firstAttribute="height" id="constraintBTeYjK"></constraint>
-                        <constraint constant="20.5" firstAttribute="width" id="constraint0Gpssm"></constraint>
+                        <constraint constant="20.5" firstAttribute="height" id="constraint3GWwsl"></constraint>
+                        <constraint constant="20.5" firstAttribute="width" id="constraintSRFNUr"></constraint>
                       </constraints>
                       <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute keyPath="_IBMarkType" type="string" value="Checkmark"></userDefinedRuntimeAttribute>
@@ -86,17 +88,17 @@
                         </userDefinedRuntimeAttribute>
                       </userDefinedRuntimeAttributes>
                     </view>
-                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="labelUwfgj1" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
+                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="labelnPmAji" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
                       <fontDescription key="fontDescription" pointSize="17" type="system"></fontDescription>
                     </label>
                   </subviews>
                 </stackView>
               </subviews>
               <constraints>
-                <constraint constant="8.0" firstAttribute="top" firstItem="stackViewEnuXpI" id="constraint3bj4M5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5sCq7y"></constraint>
-                <constraint constant="8.0" firstAttribute="bottom" id="constraintT1ILOC" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewEnuXpI"></constraint>
-                <constraint constant="8.0" firstAttribute="leading" firstItem="stackViewEnuXpI" id="constraintdAV041" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5sCq7y"></constraint>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintfLboC5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewEnuXpI"></constraint>
+                <constraint constant="8.0" firstAttribute="top" firstItem="check" id="constraint3bj4M5" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="view5sCq7y"></constraint>
+                <constraint constant="8.0" firstAttribute="bottom" id="constraintT1ILOC" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="check"></constraint>
+                <constraint constant="8.0" firstAttribute="leading" firstItem="check" id="constraintdAV041" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view5sCq7y"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintfLboC5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="check"></constraint>
               </constraints>
             </view>
             <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewN5TZGF" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
@@ -108,11 +110,10 @@
                 </label>
                 <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewdrP264" translatesAutoresizingMaskIntoConstraints="NO">
                   <subviews>
-                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="viewN2887S" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <color key="backgroundColor" systemColor="systemBackgroundColor"></color>
+                    <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="checkAlt" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                       <constraints>
-                        <constraint constant="20.5" firstAttribute="height" id="constraintnfaO8p"></constraint>
-                        <constraint constant="20.5" firstAttribute="width" id="constraintF9B2Fm"></constraint>
+                        <constraint constant="20.5" firstAttribute="height" id="constraintyMcsY8"></constraint>
+                        <constraint constant="20.5" firstAttribute="width" id="constraintlqy6Aa"></constraint>
                       </constraints>
                       <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute keyPath="_IBMarkType" type="string" value="Checkmark"></userDefinedRuntimeAttribute>
@@ -131,11 +132,11 @@
                     </view>
                   </subviews>
                   <constraints>
-                    <constraint constant="8.0" firstAttribute="leading" firstItem="viewN2887S" id="constraintvGLaHn" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewdrP264"></constraint>
-                    <constraint constant="8.0" firstAttribute="trailing" id="constraintsJm9aj" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewN2887S"></constraint>
-                    <constraint constant="8.0" firstAttribute="top" firstItem="viewN2887S" id="constraintwYYxrY" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="995" relation="equal" secondAttribute="top" secondItem="viewdrP264"></constraint>
-                    <constraint constant="8.0" firstAttribute="top" firstItem="viewN2887S" id="constraintDFNraC" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="top" secondItem="viewdrP264"></constraint>
-                    <constraint constant="0.0" firstAttribute="centerY" id="constraintvnQ4np" identifier="constraintMatchParent-centerY-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerY" secondItem="viewN2887S"></constraint>
+                    <constraint constant="8.0" firstAttribute="leading" firstItem="checkAlt" id="constraintvGLaHn" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewdrP264"></constraint>
+                    <constraint constant="8.0" firstAttribute="trailing" id="constraintsJm9aj" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="checkAlt"></constraint>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="checkAlt" id="constraintwYYxrY" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="995" relation="equal" secondAttribute="top" secondItem="viewdrP264"></constraint>
+                    <constraint constant="8.0" firstAttribute="top" firstItem="checkAlt" id="constraintDFNraC" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="top" secondItem="viewdrP264"></constraint>
+                    <constraint constant="0.0" firstAttribute="centerY" id="constraintvnQ4np" identifier="constraintMatchParent-centerY-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="centerY" secondItem="checkAlt"></constraint>
                   </constraints>
                 </view>
               </subviews>
@@ -172,9 +173,6 @@
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                       <textInputTraits key="textInputTraits"></textInputTraits>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                      <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constrainthpaLbl" relation="greaterThanOrEqual"></constraint>
-                      </constraints>
                     </textField>
                   </subviews>
                   <constraints>
@@ -182,6 +180,7 @@
                     <constraint constant="8.0" firstAttribute="bottom" id="constraintAql4yi" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="editableText"></constraint>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="editableText" id="constraintSdCUes" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewfnbKlJ"></constraint>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintVmSCFp" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="editableText"></constraint>
+                    <constraint constant="40.0" firstAttribute="height" id="constraintFpUBgb" relation="greaterThanOrEqual"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
@@ -203,9 +202,6 @@
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                       <textInputTraits key="textInputTraits" keyboardType="numberPad" smartDashesType="no" smartQuotesType="no"></textInputTraits>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                      <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintapdRyW" relation="greaterThanOrEqual"></constraint>
-                      </constraints>
                     </textField>
                   </subviews>
                   <constraints>
@@ -213,6 +209,7 @@
                     <constraint constant="8.0" firstAttribute="bottom" id="constraintW9nYs7" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="numberText"></constraint>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="numberText" id="constraintG1phEb" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewMl4Ka6"></constraint>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintPlw4kZ" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="numberText"></constraint>
+                    <constraint constant="40.0" firstAttribute="height" id="constraintoG4QOk" relation="greaterThanOrEqual"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
@@ -234,9 +231,6 @@
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                       <textInputTraits key="textInputTraits"></textInputTraits>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                      <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintzy8FnB" relation="greaterThanOrEqual"></constraint>
-                      </constraints>
                     </textField>
                   </subviews>
                   <constraints>
@@ -244,6 +238,7 @@
                     <constraint constant="8.0" firstAttribute="bottom" id="constraintOuiq11" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="editableAutoText"></constraint>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="editableAutoText" id="constraintiTTlLP" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewb9ki1G"></constraint>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintOptwmP" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="editableAutoText"></constraint>
+                    <constraint constant="40.0" firstAttribute="height" id="constraintm3Y7AY" relation="greaterThanOrEqual"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
@@ -364,7 +359,7 @@
         <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
         <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
         <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" firstItem="stackViewfXUOMd" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="scrollViewoXTUo1"></constraint>
       </constraints>
     </scrollView>
   </objects>

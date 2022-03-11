@@ -30,7 +30,7 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewQDo4AP" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="label7rgmyM" lineBreakMode="tailTruncation" opaque="NO" text="Welcome to Switch Town!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
@@ -51,9 +51,6 @@
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                       <textInputTraits key="textInputTraits" keyboardType="emailAddress" smartDashesType="no" smartQuotesType="no" textContentType="email"></textInputTraits>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                      <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintB5dlPx" relation="greaterThanOrEqual"></constraint>
-                      </constraints>
                     </textField>
                   </subviews>
                   <constraints>
@@ -61,6 +58,7 @@
                     <constraint constant="8.0" firstAttribute="bottom" id="constraintb7zos8" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="username"></constraint>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="username" id="constraintDu2eYw" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewNsemiv"></constraint>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintHdhgAY" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="username"></constraint>
+                    <constraint constant="40.0" firstAttribute="height" id="constraintezy3Hc" relation="greaterThanOrEqual"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
@@ -82,9 +80,6 @@
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                       <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"></textInputTraits>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                      <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintREKNmY" relation="greaterThanOrEqual"></constraint>
-                      </constraints>
                     </textField>
                   </subviews>
                   <constraints>
@@ -92,6 +87,7 @@
                     <constraint constant="8.0" firstAttribute="bottom" id="constraintmJfyzD" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="password"></constraint>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="password" id="constraintt8j8lD" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewEnuXpI"></constraint>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintTHvW5R" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="password"></constraint>
+                    <constraint constant="40.0" firstAttribute="height" id="constraintf1cXgp" relation="greaterThanOrEqual"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
@@ -113,9 +109,6 @@
                       <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                       <textInputTraits key="textInputTraits" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"></textInputTraits>
                       <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                      <constraints constraints="constraints">
-                        <constraint constant="40.0" firstAttribute="height" id="constraintXyLxx2" relation="greaterThanOrEqual"></constraint>
-                      </constraints>
                     </textField>
                   </subviews>
                   <constraints>
@@ -123,6 +116,7 @@
                     <constraint constant="8.0" firstAttribute="bottom" id="constraintnH0zKu" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="verifyPassword"></constraint>
                     <constraint constant="8.0" firstAttribute="leading" firstItem="verifyPassword" id="constrainthmhxJj" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="view8ITXsu"></constraint>
                     <constraint constant="8.0" firstAttribute="trailing" id="constraintPDpkVo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="verifyPassword"></constraint>
+                    <constraint constant="40.0" firstAttribute="height" id="constraintAA8QHA" relation="greaterThanOrEqual"></constraint>
                   </constraints>
                   <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="border"></userDefinedRuntimeAttribute>
@@ -141,10 +135,9 @@
                 <stackView alignment="center" contentMode="scaleToFill" customClass="LabeledToggle" customModule="XmlToXibRuntime" id="agree" opaque="NO" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <subviews>
                     <view contentMode="scaleToFill" customClass="M13Checkbox" customModule="M13Checkbox" horizontalCompressionResistancePriority="999" horizontalHuggingPriority="750" id="viewAYKY3I" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="999" verticalHuggingPriority="750">
-                      <color key="backgroundColor" systemColor="systemBackgroundColor"></color>
                       <constraints>
-                        <constraint constant="20.5" firstAttribute="height" id="constraintkSNLs4"></constraint>
-                        <constraint constant="20.5" firstAttribute="width" id="constraintvSiWAO"></constraint>
+                        <constraint constant="20.5" firstAttribute="height" id="constraintRrTokm"></constraint>
+                        <constraint constant="20.5" firstAttribute="width" id="constraintS2U5br"></constraint>
                       </constraints>
                       <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute keyPath="_IBMarkType" type="string" value="Checkmark"></userDefinedRuntimeAttribute>
@@ -219,7 +212,7 @@
         <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
         <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
         <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" firstItem="stackViewfXUOMd" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="scrollViewoXTUo1"></constraint>
       </constraints>
     </scrollView>
   </objects>

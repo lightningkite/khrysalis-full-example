@@ -14,7 +14,11 @@ export interface MainBinding {
 }
 
 export namespace MainBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): MainBinding {
-       return inflateHtmlFile(html, ["title", "topBar", "mainContent", "bottom0"], {mainBack: ["image"]}, {}) as MainBinding
+       return inflateHtmlFile(variants, ["title", "topBar", "mainContent", "bottom0"], {mainBack: ["image"]}, {}) as MainBinding
    }
 }

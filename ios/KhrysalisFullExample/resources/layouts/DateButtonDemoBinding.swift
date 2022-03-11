@@ -15,8 +15,4 @@ public class DateButtonDemoBinding: XibView {
     public var dateButton: UIButton { return _dateButton }
     public var timeButton: UIButton { return _timeButton }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

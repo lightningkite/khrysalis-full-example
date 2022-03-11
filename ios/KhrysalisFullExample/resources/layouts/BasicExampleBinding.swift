@@ -13,8 +13,4 @@ public class BasicExampleBinding: XibView {
     public var theNumber: UILabel { return _theNumber }
     public var incrementTheNumber: UIButton { return _incrementTheNumber }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

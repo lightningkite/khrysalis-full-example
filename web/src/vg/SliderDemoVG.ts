@@ -49,15 +49,15 @@ export class SliderDemoVG implements ViewGenerator {
         
         xml.ratingFloat.step = (0.01).toString();
         xml.ratingFloat.max = (5).toString();
-        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingFloat, (this_: HTMLInputElement, it: number): void => {
+        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingFloat, (this_: HTMLDivElement, it: number): void => {
             xml.ratingFloat.valueAsNumber = it;
         }));
         xml.ratingDisplayStarsFloat.max = (5).toString();
-        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsFloat, (this_: HTMLInputElement, it: number): void => {
+        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsFloat, (this_: HTMLDivElement, it: number): void => {
             xml.ratingDisplayStarsFloat.valueAsNumber = it;
         }));
         xml.ratingDisplayStarsSmallFloat.max = (5).toString();
-        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsSmallFloat, (this_: HTMLInputElement, it: number): void => {
+        this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayStarsSmallFloat, (this_: HTMLDivElement, it: number): void => {
             xml.ratingDisplayStarsSmallFloat.valueAsNumber = it;
         }));
         this.obsRatingFloat.pipe(subscribeAutoDispose(xml.ratingDisplayNumberFloat, (this_: HTMLElement, it: number): void => {

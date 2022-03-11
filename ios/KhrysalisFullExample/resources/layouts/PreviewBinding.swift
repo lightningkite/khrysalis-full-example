@@ -13,8 +13,4 @@ public class PreviewBinding: XibView {
     public var viewName: UILabel { return _viewName }
     public var pager: UICollectionView { return _pager }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

@@ -9,11 +9,14 @@ export interface DateButtonDemoBinding {
     dateButton: HTMLButtonElement
     timeButton: HTMLButtonElement
     
-    
 }
 
 export namespace DateButtonDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): DateButtonDemoBinding {
-       return inflateHtmlFile(html, ["text", "dateButton", "timeButton"], {}, {}) as DateButtonDemoBinding
+       return inflateHtmlFile(variants, ["text", "dateButton", "timeButton"], {}, {}) as DateButtonDemoBinding
    }
 }

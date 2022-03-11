@@ -32,8 +32,4 @@ public class SliderDemoBinding: XibView {
     public var ratingDisplayStarsSmallFloat: CosmosView { return _ratingDisplayStarsSmallFloat }
     public var ratingDisplayNumberFloat: UILabel { return _ratingDisplayNumberFloat }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

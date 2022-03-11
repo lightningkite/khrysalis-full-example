@@ -29,7 +29,7 @@ export class ControlsDemoVG implements ViewGenerator {
         const view = xml.root;
         
         this.isOn.pipe(bind(xml.check.input, "checked", "input")).pipe(bind(xml.toggleSwitch.input, "checked", "input")).pipe(bind(xml.checkAlt.input, "checked", "input"));
-        this._number.pipe(map((it: number): boolean => (it > 5))).pipe(subscribeAutoDispose(xml.checkAlt, chain("input", elementEnabled)));
+        this._number.pipe(map((it: number): boolean => (it > 5))).pipe(subscribeAutoDispose(xml.checkAlt, elementEnabled));
         this._number.pipe(intToString).pipe(bind(xml.numberText, "value", "input"));
         this.text.pipe(bind(xml.editableText, "value", "input")).pipe(bind(xml.editableAutoText, "value", "input")).pipe(bind(xml.editableTextBig, "value", "input")).pipe(subscribeAutoDispose(xml.editableTextCopy, "textContent")).pipe(subscribeAutoDispose(xml.toggleSwitch, chain("label", "textContent")));
         this.options.pipe(showInInput(xml.editableAutoText, this.text, undefined)).pipe(showInSelect(xml.spinner, this.text));

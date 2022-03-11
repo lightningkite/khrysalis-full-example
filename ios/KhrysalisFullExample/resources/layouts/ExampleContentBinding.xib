@@ -20,6 +20,7 @@
         <outlet destination="chainedNumber" id="outlet2tCJk5" property="_chainedNumber"></outlet>
         <outlet destination="chainedIncrement" id="outletYjtYgC" property="_chainedIncrement"></outlet>
         <outlet destination="scrollToTop" id="outlet8goDGd" property="_scrollToTop"></outlet>
+        <outlet destination="sub" id="outletmdiyZ6" property="_sub"></outlet>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
@@ -30,7 +31,7 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewVPE6Vk" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="labels20918" lineBreakMode="tailTruncation" opaque="NO" text="Welcome!" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
@@ -159,6 +160,17 @@
                 <constraint constant="8.0" firstAttribute="trailing" id="constraintCAbWTV" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="scrollToTop"></constraint>
               </constraints>
             </view>
+            <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewi3YKJl" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" customClass="ComponentTextBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="sub" placeholderIntrinsicHeight="50" placeholderIntrinsicWidth="50" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000"></view>
+              </subviews>
+              <constraints>
+                <constraint constant="0.0" firstAttribute="top" firstItem="sub" id="constraintAjJJct" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewi3YKJl"></constraint>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintI89lle" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="sub"></constraint>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="sub" id="constraint7W00j2" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewi3YKJl"></constraint>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintn5sGmo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="sub"></constraint>
+              </constraints>
+            </view>
           </subviews>
           <constraints>
             <constraint constant="8.0" firstAttribute="trailing" id="constraint76rTob" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewVPE6Vk"></constraint>
@@ -178,6 +190,9 @@
             <constraint constant="8.0" firstAttribute="trailing" id="constraintkQrvpE" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewd9D5db"></constraint>
             <constraint constant="16.0" firstAttribute="width" id="constrainto5pw4f" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewd9D5db"></constraint>
             <constraint constant="16.0" firstAttribute="width" id="constraintpkncRp" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewd9D5db"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintTe6joZ" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewi3YKJl"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint3UIdKh" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewi3YKJl"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintfiaLKF" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewi3YKJl"></constraint>
           </constraints>
           <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
         </stackView>
@@ -187,7 +202,7 @@
         <constraint constant="0.0" firstAttribute="bottom" id="constraintD1pE8T" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewZCD9Kb"></constraint>
         <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewZCD9Kb" id="constraintYR6R16" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollView"></constraint>
         <constraint constant="0.0" firstAttribute="trailing" id="constraint3nNaUy" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewZCD9Kb"></constraint>
-        <constraint constant="-0.0" firstAttribute="width" id="constraint0DC5bb" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewZCD9Kb"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" firstItem="stackViewZCD9Kb" id="constraint0DC5bb" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="scrollView"></constraint>
       </constraints>
     </scrollView>
   </objects>

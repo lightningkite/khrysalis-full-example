@@ -11,11 +11,14 @@ export interface VideoDemoBinding {
     camera: HTMLButtonElement
     galleryMulti: HTMLButtonElement
     
-    
 }
 
 export namespace VideoDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): VideoDemoBinding {
-       return inflateHtmlFile(html, ["video", "play", "gallery", "camera", "galleryMulti"], {}, {}) as VideoDemoBinding
+       return inflateHtmlFile(variants, ["video", "play", "gallery", "camera", "galleryMulti"], {}, {}) as VideoDemoBinding
    }
 }

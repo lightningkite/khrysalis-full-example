@@ -22,8 +22,4 @@ public class LoginDemoBinding: XibView {
     public var submitLoading: UIView { return _submitLoading }
     public var submit: UIButton { return _submit }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

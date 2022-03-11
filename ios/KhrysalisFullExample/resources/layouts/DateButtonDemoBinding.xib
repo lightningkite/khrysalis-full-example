@@ -66,7 +66,7 @@
         <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
         <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
         <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" firstItem="stackViewfXUOMd" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="scrollViewoXTUo1"></constraint>
       </constraints>
     </scrollView>
   </objects>

@@ -10,11 +10,14 @@ export interface ExternalTestBinding {
     openEvent: HTMLButtonElement
     scrollView: HTMLDivElement
     
-    
 }
 
 export namespace ExternalTestBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): ExternalTestBinding {
-       return inflateHtmlFile(html, ["openMap", "openWeb", "openEvent", "scrollView"], {}, {}) as ExternalTestBinding
+       return inflateHtmlFile(variants, ["openMap", "openWeb", "openEvent", "scrollView"], {}, {}) as ExternalTestBinding
    }
 }

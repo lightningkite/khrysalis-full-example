@@ -10,11 +10,14 @@ export interface ComponentBleDeviceBinding {
     rssi: HTMLDivElement
     connect: HTMLButtonElement
     
-    
 }
 
 export namespace ComponentBleDeviceBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): ComponentBleDeviceBinding {
-       return inflateHtmlFile(html, ["deviceName", "deviceId", "rssi", "connect"], {}, {}) as ComponentBleDeviceBinding
+       return inflateHtmlFile(variants, ["deviceName", "deviceId", "rssi", "connect"], {}, {}) as ComponentBleDeviceBinding
    }
 }

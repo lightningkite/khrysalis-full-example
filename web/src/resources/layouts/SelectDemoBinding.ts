@@ -7,11 +7,14 @@ export interface SelectDemoBinding {
     root: HTMLElement
     list: HTMLDivElement
     
-    
 }
 
 export namespace SelectDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): SelectDemoBinding {
-       return inflateHtmlFile(html, ["list"], {}, {}) as SelectDemoBinding
+       return inflateHtmlFile(variants, ["list"], {}, {}) as SelectDemoBinding
    }
 }

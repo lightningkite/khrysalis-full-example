@@ -13,8 +13,4 @@ public class LocationDemoBinding: XibView {
     public var getLocation: UIButton { return _getLocation }
     public var locationDisplay: UILabel { return _locationDisplay }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

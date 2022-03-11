@@ -89,3 +89,27 @@ export namespace Colors {
 }
 export namespace Dimen {
 }
+import drawable_ic_android_black_24dp from "./drawables/ic_android_black_24dp.svg"
+import drawable_ic_arrow_back_white_24dp from "./drawables/ic_arrow_back_white_24dp.svg"
+import drawable_ic_beach_access_black_24dp from "./drawables/ic_beach_access_black_24dp.svg"
+import drawable_ic_exposure_black_24dp from "./drawables/ic_exposure_black_24dp.svg"
+import drawable_ic_launcher_background from "./drawables/ic_launcher_background.svg"
+import drawable_ic_launcher_foreground from "./drawables/ic_launcher_foreground.svg"
+import drawable_ic_send_black_24dp from "./drawables/ic_send_black_24dp.svg"
+import drawable_reason_expertise from "./drawables/reason_expertise.png"
+import drawable_test_drawable from "./drawables/test_drawable.svg"
+export namespace Drawables {
+    export const border = {name: "border"}
+    export const button_accent = {name: "button_accent"}
+    export const button_disabled = {name: "button_disabled"}
+    export const button_primary = {name: "button_primary"}
+    export const ic_android_black_24dp = {name: "ic_android_black_24dp", file: drawable_ic_android_black_24dp}
+    export const ic_arrow_back_white_24dp = {name: "ic_arrow_back_white_24dp", file: drawable_ic_arrow_back_white_24dp}
+    export const ic_beach_access_black_24dp = {name: "ic_beach_access_black_24dp", file: drawable_ic_beach_access_black_24dp}
+    export const ic_exposure_black_24dp = {name: "ic_exposure_black_24dp", file: drawable_ic_exposure_black_24dp}
+    export const ic_launcher_background = {name: "ic_launcher_background", file: drawable_ic_launcher_background}
+    export const ic_launcher_foreground = {name: "ic_launcher_foreground", file: drawable_ic_launcher_foreground}
+    export const ic_send_black_24dp = {name: "ic_send_black_24dp", file: drawable_ic_send_black_24dp}
+    export const reason_expertise = {name: "reason_expertise", file: drawable_reason_expertise}
+    export const test_drawable = {name: "test_drawable", file: drawable_test_drawable}
+}

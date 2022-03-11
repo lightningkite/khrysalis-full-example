@@ -20,8 +20,4 @@ public class VideoDemoBinding: XibView {
     public var camera: UIButton { return _camera }
     public var galleryMulti: UIButton { return _galleryMulti }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

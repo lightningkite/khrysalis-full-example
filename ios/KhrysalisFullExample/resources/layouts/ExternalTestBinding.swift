@@ -17,8 +17,4 @@ public class ExternalTestBinding: XibView {
     public var openWeb: UIButton { return _openWeb }
     public var openEvent: UIButton { return _openEvent }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

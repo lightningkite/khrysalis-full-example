@@ -17,11 +17,14 @@ export interface SliderDemoBinding {
     ratingDisplayStarsSmallFloat: HTMLInputElement
     ratingDisplayNumberFloat: HTMLDivElement
     
-    
 }
 
 export namespace SliderDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): SliderDemoBinding {
-       return inflateHtmlFile(html, ["slider", "valueDisplay", "progress", "rating", "ratingDisplayStars", "ratingDisplayStarsSmall", "ratingDisplayNumber", "ratingFloat", "ratingDisplayStarsFloat", "ratingDisplayStarsSmallFloat", "ratingDisplayNumberFloat"], {}, {}) as SliderDemoBinding
+       return inflateHtmlFile(variants, ["slider", "valueDisplay", "progress", "rating", "ratingDisplayStars", "ratingDisplayStarsSmall", "ratingDisplayNumber", "ratingFloat", "ratingDisplayStarsFloat", "ratingDisplayStarsSmallFloat", "ratingDisplayNumberFloat"], {}, {}) as SliderDemoBinding
    }
 }

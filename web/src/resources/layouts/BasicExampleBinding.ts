@@ -8,11 +8,14 @@ export interface BasicExampleBinding {
     theNumber: HTMLDivElement
     incrementTheNumber: HTMLButtonElement
     
-    
 }
 
 export namespace BasicExampleBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): BasicExampleBinding {
-       return inflateHtmlFile(html, ["theNumber", "incrementTheNumber"], {}, {}) as BasicExampleBinding
+       return inflateHtmlFile(variants, ["theNumber", "incrementTheNumber"], {}, {}) as BasicExampleBinding
    }
 }

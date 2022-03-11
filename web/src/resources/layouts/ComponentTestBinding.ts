@@ -8,11 +8,14 @@ export interface ComponentTestBinding {
     label: HTMLDivElement
     button: HTMLButtonElement
     
-    
 }
 
 export namespace ComponentTestBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): ComponentTestBinding {
-       return inflateHtmlFile(html, ["label", "button"], {}, {}) as ComponentTestBinding
+       return inflateHtmlFile(variants, ["label", "button"], {}, {}) as ComponentTestBinding
    }
 }

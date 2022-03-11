@@ -13,8 +13,4 @@ public class HttpDemoBinding: XibView {
     public var progress: UIProgressView { return _progress }
     public var items: UICollectionView { return _items }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

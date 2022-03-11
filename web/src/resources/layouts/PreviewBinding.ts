@@ -11,7 +11,11 @@ export interface PreviewBinding {
 }
 
 export namespace PreviewBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): PreviewBinding {
-       return inflateHtmlFile(html, ["viewName"], {pager: ["container", "previous", "next"]}, {}) as PreviewBinding
+       return inflateHtmlFile(variants, ["viewName"], {pager: ["container", "previous", "next"]}, {}) as PreviewBinding
    }
 }

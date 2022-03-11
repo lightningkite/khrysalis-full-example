@@ -17,8 +17,4 @@ public class ComponentBleDeviceBinding: XibView {
     public var rssi: UILabel { return _rssi }
     public var connect: UIButton { return _connect }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

@@ -7,11 +7,14 @@ export interface ComponentTextBinding {
     root: HTMLElement
     label: HTMLDivElement
     
-    
 }
 
 export namespace ComponentTextBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): ComponentTextBinding {
-       return inflateHtmlFile(html, ["label"], {}, {}) as ComponentTextBinding
+       return inflateHtmlFile(variants, ["label"], {}, {}) as ComponentTextBinding
    }
 }

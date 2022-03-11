@@ -43,7 +43,7 @@
                     <view customClass="ContainerView" customModule="XmlToXibRuntime" horizontalHuggingPriority="100" id="viewPNbJ9v" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO">
                       <subviews>
                         <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="title" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Lightning Kite Rx Example" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                          <fontDescription key="fontDescription" pointSize="18.0" type="system"></fontDescription>
+                          <fontDescription key="fontDescription" pointSize="18.0" type="boldSystem"></fontDescription>
                           <nil key="highlightedColor"></nil>
                           <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="textColor" red="1.0"></color>
                         </label>

@@ -8,11 +8,14 @@ export interface HttpDemoBinding {
     progress: HTMLProgressElement
     items: HTMLDivElement
     
-    
 }
 
 export namespace HttpDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): HttpDemoBinding {
-       return inflateHtmlFile(html, ["progress", "items"], {}, {}) as HttpDemoBinding
+       return inflateHtmlFile(variants, ["progress", "items"], {}, {}) as HttpDemoBinding
    }
 }

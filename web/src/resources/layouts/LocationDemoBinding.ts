@@ -8,11 +8,14 @@ export interface LocationDemoBinding {
     getLocation: HTMLButtonElement
     locationDisplay: HTMLDivElement
     
-    
 }
 
 export namespace LocationDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): LocationDemoBinding {
-       return inflateHtmlFile(html, ["getLocation", "locationDisplay"], {}, {}) as LocationDemoBinding
+       return inflateHtmlFile(variants, ["getLocation", "locationDisplay"], {}, {}) as LocationDemoBinding
    }
 }

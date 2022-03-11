@@ -11,12 +11,15 @@ export interface ExampleContentBinding {
     chainedIncrement: HTMLButtonElement
     scrollToTop: HTMLButtonElement
     scrollView: HTMLDivElement
-    
     sub: ComponentTextBinding
 }
 
 export namespace ExampleContentBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): ExampleContentBinding {
-       return inflateHtmlFile(html, ["exampleContentNumber", "exampleContentIncrement", "chainedNumber", "chainedIncrement", "scrollToTop", "scrollView"], {}, {sub: ComponentTextBinding.inflate}) as ExampleContentBinding
+       return inflateHtmlFile(variants, ["exampleContentNumber", "exampleContentIncrement", "chainedNumber", "chainedIncrement", "scrollToTop", "scrollView"], {}, {sub: ComponentTextBinding.inflate}) as ExampleContentBinding
    }
 }

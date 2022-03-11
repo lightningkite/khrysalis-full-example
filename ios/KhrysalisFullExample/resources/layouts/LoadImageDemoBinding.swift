@@ -23,8 +23,4 @@ public class LoadImageDemoBinding: XibView {
     public var checkCanUpload: UIButton { return _checkCanUpload }
     public var canUpload: UILabel { return _canUpload }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

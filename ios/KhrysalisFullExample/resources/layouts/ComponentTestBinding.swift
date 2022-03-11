@@ -13,8 +13,4 @@ public class ComponentTestBinding: XibView {
     public var label: UILabel { return _label }
     public var button: UIButton { return _button }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

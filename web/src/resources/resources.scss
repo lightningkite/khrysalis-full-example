@@ -11,19 +11,19 @@ $colorPrimaryDark: #0e6484ff;
 $colorPrimaryDarker: #0a465cff;
 $disabled: #adadadff;
 * {
---color-state_accent: $colorAccent;
---color-state_accent_toggle: $disabled;
---color-state_login_text: $colorPrimary;
---color-state_primary: $colorPrimary;
+--color-state_accent: #{$colorAccent};
+--color-state_accent_toggle: #{$disabled};
+--color-state_login_text: #{$colorPrimary};
+--color-state_primary: #{$colorPrimary};
 }
-:checked ~ * {
---color-state_accent_toggle: $colorAccent;
+.checked, .checked>* {
+--color-state_accent_toggle: #{$colorAccent};
 }
 :disabled ~ * {
---color-state_accent: $disabled;
---color-state_accent_toggle: $disabled;
---color-state_login_text: $disabled;
---color-state_primary: $disabled;
+--color-state_accent: #{$disabled};
+--color-state_accent_toggle: #{$disabled};
+--color-state_login_text: #{$disabled};
+--color-state_primary: #{$disabled};
 }
 :active:hover ~ * {
 }
@@ -31,135 +31,165 @@ $disabled: #adadadff;
 }
 .drawable-border {
 background-color: #ffffffff;
-border-color: $disabled;
+border-color: #{$disabled};
 border-width: 1.0px;
 border-style: solid;
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 &:active:hover {
-background-color: $disabled;
-border-color: $disabled;
+background-color: #{$disabled};
+border-color: #{$disabled};
 border-width: 1.0px;
 border-style: solid;
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
-&:disabled {
-background-color: $disabled;
-border-color: $disabled;
+&:disabled, :disabled>& {
+background-color: #{$disabled};
+border-color: #{$disabled};
 border-width: 1.0px;
 border-style: solid;
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
 }
+.compound-border::after { @extend .drawable-border; }
 .drawable-button_accent {
-background-color: $colorAccent;
+background-color: #{$colorAccent};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 &:active:hover {
-background-color: $colorAccentDark;
+background-color: #{$colorAccentDark};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
-&:disabled {
-background-color: $disabled;
+&:disabled, :disabled>& {
+background-color: #{$disabled};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
 }
+.compound-button_accent::after { @extend .drawable-button_accent; }
 .drawable-button_disabled {
-background-color: $disabled;
+background-color: #{$disabled};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 &:active:hover {
-background-color: $disabled;
+background-color: #{$disabled};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
-&:disabled {
-background-color: $disabled;
+&:disabled, :disabled>& {
+background-color: #{$disabled};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
 }
+.compound-button_disabled::after { @extend .drawable-button_disabled; }
 .drawable-button_primary {
-background-color: $colorPrimary;
+background-color: #{$colorPrimary};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 &:active:hover {
-background-color: $colorPrimaryDark;
+background-color: #{$colorPrimaryDark};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
-&:disabled {
-background-color: $disabled;
+&:disabled, :disabled>& {
+background-color: #{$disabled};
 border-top-left-radius: 3.0px;
 border-top-right-radius: 3.0px;
-border-bottom-right-radius: 3.0px;
 border-bottom-left-radius: 3.0px;
+border-bottom-right-radius: 3.0px;
 }
 }
+.compound-button_primary::after { @extend .drawable-button_primary; }
 .drawable-ic_android_black_24dp {
+@extend .imageDrawable;
 background-image: url("drawables/ic_android_black_24dp.svg");
-background-size: contain;
+--drawable-width: 24px;
+--drawable-height: 24px;
 }
+.compound-ic_android_black_24dp::after { @extend .drawable-ic_android_black_24dp; }
 .drawable-ic_arrow_back_white_24dp {
+@extend .imageDrawable;
 background-image: url("drawables/ic_arrow_back_white_24dp.svg");
-background-size: contain;
+--drawable-width: 24px;
+--drawable-height: 24px;
 }
+.compound-ic_arrow_back_white_24dp::after { @extend .drawable-ic_arrow_back_white_24dp; }
 .drawable-ic_beach_access_black_24dp {
+@extend .imageDrawable;
 background-image: url("drawables/ic_beach_access_black_24dp.svg");
-background-size: contain;
+--drawable-width: 24px;
+--drawable-height: 24px;
 }
+.compound-ic_beach_access_black_24dp::after { @extend .drawable-ic_beach_access_black_24dp; }
 .drawable-ic_exposure_black_24dp {
+@extend .imageDrawable;
 background-image: url("drawables/ic_exposure_black_24dp.svg");
-background-size: contain;
+--drawable-width: 24px;
+--drawable-height: 24px;
 }
+.compound-ic_exposure_black_24dp::after { @extend .drawable-ic_exposure_black_24dp; }
 .drawable-ic_launcher_background {
+@extend .imageDrawable;
 background-image: url("drawables/ic_launcher_background.svg");
-background-size: contain;
+--drawable-width: 108px;
+--drawable-height: 108px;
 }
+.compound-ic_launcher_background::after { @extend .drawable-ic_launcher_background; }
 .drawable-ic_launcher_foreground {
+@extend .imageDrawable;
 background-image: url("drawables/ic_launcher_foreground.svg");
-background-size: contain;
+--drawable-width: 108px;
+--drawable-height: 108px;
 }
+.compound-ic_launcher_foreground::after { @extend .drawable-ic_launcher_foreground; }
 .drawable-ic_send_black_24dp {
+@extend .imageDrawable;
 background-image: url("drawables/ic_send_black_24dp.svg");
-background-size: contain;
+--drawable-width: 24px;
+--drawable-height: 24px;
 }
+.compound-ic_send_black_24dp::after { @extend .drawable-ic_send_black_24dp; }
 .drawable-reason_expertise {
+@extend .imageDrawable;
 background-image: url("./drawables/reason_expertise.png");
-background-size: contain;
+--drawable-width: 108px;
+--drawable-height: 75px;
 }
+.compound-reason_expertise::after { @extend .drawable-reason_expertise; }
 .drawable-test_drawable {
+@extend .imageDrawable;
 background-image: url("drawables/test_drawable.svg");
-background-size: contain;
+--drawable-width: 34px;
+--drawable-height: 33px;
 }
+.compound-test_drawable::after { @extend .drawable-test_drawable; }
 .style-AppBarTitle {
-color: #ffffffff;
 font-size: 18.0pt;
 padding: 4.0px;
 @extend .bold-text;
@@ -167,25 +197,19 @@ padding: 4.0px;
 .style-AppTheme {
 }
 .style-Body {
-color: #222222ff;
 font-size: 16.0pt;
 }
 .style-ButtonAccent {
-@extend .drawable-button_accent;
 font-size: 16.0pt;
-color: #ffffffff;
 padding: 8.0px;
 }
 .style-ButtonPrimary {
-@extend .drawable-button_primary;
 font-size: 16.0pt;
-color: #ffffffff;
 padding: 8.0px;
 }
 .style-DarkAppTheme {
 }
 .style-Header {
-color: #000000ff;
 font-size: 24.0pt;
 @extend .bold-text;
 }

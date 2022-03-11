@@ -11,8 +11,4 @@ public class SelectDemoBinding: XibView {
     @IBOutlet weak private var _list: UICollectionView!
     public var list: UICollectionView { return _list }
 
-    override public func awakeFromNib() {
-        super.awakeFromNib()
-        
-    }
 }

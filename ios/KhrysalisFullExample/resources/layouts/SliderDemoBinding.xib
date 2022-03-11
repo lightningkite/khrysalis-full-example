@@ -46,7 +46,7 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewftHs9H" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="valueDisplay" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
@@ -148,7 +148,7 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewrWcexu" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="ratingDisplayNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
@@ -237,7 +237,7 @@
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewt6pdek" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="ratingDisplayNumberFloat" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                  <fontDescription key="fontDescription" pointSize="24.0" type="system"></fontDescription>
+                  <fontDescription key="fontDescription" pointSize="24.0" type="boldSystem"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="textColor" red="0.0"></color>
                 </label>
@@ -293,7 +293,7 @@
         <constraint constant="0.0" firstAttribute="bottom" id="constraintGodW67" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewfXUOMd"></constraint>
         <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewfXUOMd" id="constraintY2SaYs" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="scrollViewoXTUo1"></constraint>
         <constraint constant="0.0" firstAttribute="trailing" id="constraintysyeMh" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewfXUOMd"></constraint>
-        <constraint constant="-0.0" firstAttribute="width" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="stackViewfXUOMd"></constraint>
+        <constraint constant="-0.0" firstAttribute="width" firstItem="stackViewfXUOMd" id="constraintvk4Bvh" multiplier="1.0" priority="1000" relation="equal" secondAttribute="width" secondItem="scrollViewoXTUo1"></constraint>
       </constraints>
     </scrollView>
   </objects>

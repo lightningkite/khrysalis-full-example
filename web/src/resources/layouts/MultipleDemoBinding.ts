@@ -7,11 +7,14 @@ export interface MultipleDemoBinding {
     root: HTMLElement
     list: HTMLDivElement
     
-    
 }
 
 export namespace MultipleDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): MultipleDemoBinding {
-       return inflateHtmlFile(html, ["list"], {}, {}) as MultipleDemoBinding
+       return inflateHtmlFile(variants, ["list"], {}, {}) as MultipleDemoBinding
    }
 }

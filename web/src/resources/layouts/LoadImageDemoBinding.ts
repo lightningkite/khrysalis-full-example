@@ -13,11 +13,14 @@ export interface LoadImageDemoBinding {
     checkCanUpload: HTMLButtonElement
     canUpload: HTMLDivElement
     
-    
 }
 
 export namespace LoadImageDemoBinding {
+   const variants = [{
+    html: html,
+    widerThan: undefined
+}]
    export function inflate(): LoadImageDemoBinding {
-       return inflateHtmlFile(html, ["gallery", "galleryMultiple", "camera", "loremPixel", "image", "checkCanUpload", "canUpload"], {}, {}) as LoadImageDemoBinding
+       return inflateHtmlFile(variants, ["gallery", "galleryMultiple", "camera", "loremPixel", "image", "checkCanUpload", "canUpload"], {}, {}) as LoadImageDemoBinding
    }
 }
