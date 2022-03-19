@@ -53,7 +53,8 @@ class VideoDemoVG(
 
         //--- Set Up xml.video
         currentVideo.subscribeAutoDispose(xml.video) {
-            xml.video.setVideo(it.kotlin)
+            if(it.isPresent)
+                xml.video.setVideo(it.kotlin!!)
         }
 
         //--- Set Up xml.play (overwritten on flow generation)

@@ -4,3 +4,4 @@ build
 ios/Pods
 web/node_modules
 web/dist
+local.properties

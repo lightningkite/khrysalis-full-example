@@ -26,7 +26,7 @@
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <scrollView clipsSubviews="YES" contentMode="scaleToFill" id="scrollView" multipleTouchEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
-        <stackView alignment="top" axis="vertical" contentMode="scaleToFill" id="stackViewZCD9Kb" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
+        <stackView axis="vertical" contentMode="scaleToFill" id="stackViewZCD9Kb" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewVPE6Vk" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
@@ -46,7 +46,7 @@
             </view>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewf3Bewh" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
-                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="labeloReXr7" lineBreakMode="tailTruncation" opaque="NO" text="This an example for LK Rx. This screen exists to help you figure out stuff about it." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="labeloReXr7" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="This an example for LK Rx. This screen exists to help you figure out stuff about it." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
                   <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
                   <nil key="highlightedColor"></nil>
                   <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
@@ -56,88 +56,78 @@
                 <constraint constant="8.0" firstAttribute="top" firstItem="labeloReXr7" id="constraintK0k8rn" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewf3Bewh"></constraint>
                 <constraint constant="8.0" firstAttribute="bottom" id="constraintHHWybE" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="labeloReXr7"></constraint>
                 <constraint constant="8.0" firstAttribute="leading" firstItem="labeloReXr7" id="constraintviLlxn" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewf3Bewh"></constraint>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintMBt3t7" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="labeloReXr7"></constraint>
-                <constraint constant="8.0" firstAttribute="trailing" id="constraintnMsUK7" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="labeloReXr7"></constraint>
+                <constraint constant="8.0" firstAttribute="trailing" id="constraintMBt3t7" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="labeloReXr7"></constraint>
               </constraints>
             </view>
-            <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewbJExFy" translatesAutoresizingMaskIntoConstraints="NO">
+            <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewbJExFy" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
-                <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewBRwRl6" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
-                  <subviews>
-                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="exampleContentNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
-                      <nil key="highlightedColor"></nil>
-                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                    </label><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="exampleContentIncrement" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
-                      <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
-                      </userDefinedRuntimeAttributes>
-                      <state key="normal" title="Increment the Number">
-                        <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
-                      </state>
-                      <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
-                    </button>
-                  </subviews>
-                  <constraints>
-                    <constraint constant="16.0" firstAttribute="height" id="constraint9rYXEl" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="exampleContentNumber"></constraint>
-                    <constraint constant="16.0" firstAttribute="height" id="constraintWuzRLJ" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="exampleContentNumber"></constraint>
-                    <constraint constant="16.0" firstAttribute="height" id="constraint2gT29V" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="exampleContentIncrement"></constraint>
-                    <constraint constant="16.0" firstAttribute="height" id="constraintEhaiaI" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="exampleContentIncrement"></constraint>
-                  </constraints>
-                  <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
-                </stackView>
+                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="exampleContentNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                  <nil key="highlightedColor"></nil>
+                  <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
+                </label><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="exampleContentIncrement" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
+                  </userDefinedRuntimeAttributes>
+                  <state key="normal" title="Increment the Number">
+                    <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
+                  </state>
+                  <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
+                </button>
               </subviews>
               <constraints>
-                <constraint constant="0.0" firstAttribute="top" firstItem="stackViewBRwRl6" id="constraintl5jIRR" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewbJExFy"></constraint>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintS1Prqz" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackViewBRwRl6"></constraint>
-                <constraint constant="0.0" firstAttribute="leading" firstItem="stackViewBRwRl6" id="constraintWetCTC" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewbJExFy"></constraint>
-                <constraint constant="0.0" firstAttribute="trailing" id="constraint0lZhI5" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackViewBRwRl6"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintyrClNJ" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="exampleContentNumber"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraint29qpZ4" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="exampleContentNumber"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintxl4dTi" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="exampleContentIncrement"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintKQsiz1" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="exampleContentIncrement"></constraint>
               </constraints>
-            </view>
-            <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewxdwuaZ" translatesAutoresizingMaskIntoConstraints="NO">
+              <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
+            </stackView>
+            <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackViewxdwuaZ" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
-                <stackView alignment="center" axis="horizontal" contentMode="scaleToFill" id="stackView4MHI1w" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="16.0" translatesAutoresizingMaskIntoConstraints="NO">
-                  <subviews>
-                    <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="chainedNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
-                      <nil key="highlightedColor"></nil>
-                      <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
-                    </label><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="chainedIncrement" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-                      <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
-                      <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
-                        <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
-                      </userDefinedRuntimeAttributes>
-                      <state key="normal" title="Increment the Number">
-                        <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
-                      </state>
-                      <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
-                    </button>
-                  </subviews>
-                  <constraints>
-                    <constraint constant="16.0" firstAttribute="height" id="constraintAt3eAH" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="chainedNumber"></constraint>
-                    <constraint constant="16.0" firstAttribute="height" id="constraintpoEMcS" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="chainedNumber"></constraint>
-                    <constraint constant="16.0" firstAttribute="height" id="constraintiS4Qi5" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="chainedIncrement"></constraint>
-                    <constraint constant="16.0" firstAttribute="height" id="constraintTRbkoH" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="chainedIncrement"></constraint>
-                  </constraints>
-                  <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
-                </stackView>
+                <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" horizontalHuggingPriority="100" id="chainedNumber" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="0.0" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                  <nil key="highlightedColor"></nil>
+                  <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
+                </label><button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="chainedIncrement" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+                  <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
+                  <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
+                  </userDefinedRuntimeAttributes>
+                  <state key="normal" title="Increment the Number">
+                    <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
+                  </state>
+                  <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
+                </button>
               </subviews>
               <constraints>
-                <constraint constant="0.0" firstAttribute="top" firstItem="stackView4MHI1w" id="constraint8bgy4h" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewxdwuaZ"></constraint>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintSRQJTA" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="stackView4MHI1w"></constraint>
-                <constraint constant="0.0" firstAttribute="leading" firstItem="stackView4MHI1w" id="constraint4ymIkv" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewxdwuaZ"></constraint>
-                <constraint constant="0.0" firstAttribute="trailing" id="constraintjaZJFL" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="stackView4MHI1w"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintkyU3jK" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="chainedNumber"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintdEgEbn" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="chainedNumber"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintyvfTa6" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="996" relation="greaterThanOrEqual" secondAttribute="height" secondItem="chainedIncrement"></constraint>
+                <constraint constant="16.0" firstAttribute="height" id="constraintDpCspo" identifier="constraintMatchParent-height-end" multiplier="1.0" priority="995" relation="equal" secondAttribute="height" secondItem="chainedIncrement"></constraint>
+              </constraints>
+              <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
+            </stackView>
+            <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewBwYICb" translatesAutoresizingMaskIntoConstraints="NO">
+              <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" id="imageViewApGJgU" image="reason_expertise" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
+                  <constraints>
+                    <constraint constant="100.0" firstAttribute="width" id="constraintgFYWoY" multiplier="1.0" priority="1000" relation="equal"></constraint>
+                    <constraint constant="50.0" firstAttribute="height" id="constraintWyLO9Z" multiplier="1.0" priority="1000" relation="equal"></constraint>
+                  </constraints>
+                </imageView>
+              </subviews>
+              <constraints>
+                <constraint constant="0.0" firstAttribute="top" firstItem="imageViewApGJgU" id="constraintFn4Oel" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewBwYICb"></constraint>
+                <constraint constant="0.0" firstAttribute="bottom" id="constraintqeMORe" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="imageViewApGJgU"></constraint>
+                <constraint constant="0.0" firstAttribute="leading" firstItem="imageViewApGJgU" id="constraintC9r5Tx" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewBwYICb"></constraint>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintG98kkx" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="trailing" secondItem="imageViewApGJgU"></constraint>
+                <constraint constant="0.0" firstAttribute="trailing" id="constraintOu77R0" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="imageViewApGJgU"></constraint>
               </constraints>
             </view>
-            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" id="imageViewBwYICb" image="reason_expertise" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalHuggingPriority="251">
-              <constraints>
-                <constraint constant="100.0" firstAttribute="width" id="constraintT9wGdX" multiplier="1.0" priority="1000" relation="equal"></constraint>
-                <constraint constant="50.0" firstAttribute="height" id="constraintCcn0mO" multiplier="1.0" priority="1000" relation="equal"></constraint>
-              </constraints>
-            </imageView>
             <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewd9D5db" translatesAutoresizingMaskIntoConstraints="NO">
               <subviews>
                 <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" horizontalCompressionResistancePriority="1000" horizontalHuggingPriority="1000" id="scrollToTop" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
@@ -160,39 +150,23 @@
                 <constraint constant="8.0" firstAttribute="trailing" id="constraintCAbWTV" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="trailing" secondItem="scrollToTop"></constraint>
               </constraints>
             </view>
-            <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewi3YKJl" translatesAutoresizingMaskIntoConstraints="NO">
-              <subviews>
-                <view clipsSubviews="YES" contentMode="scaleToFill" customClass="ComponentTextBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="sub" placeholderIntrinsicHeight="50" placeholderIntrinsicWidth="50" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000"></view>
-              </subviews>
-              <constraints>
-                <constraint constant="0.0" firstAttribute="top" firstItem="sub" id="constraintAjJJct" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewi3YKJl"></constraint>
-                <constraint constant="0.0" firstAttribute="bottom" id="constraintI89lle" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="sub"></constraint>
-                <constraint constant="0.0" firstAttribute="leading" firstItem="sub" id="constraint7W00j2" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewi3YKJl"></constraint>
-                <constraint constant="0.0" firstAttribute="trailing" id="constraintn5sGmo" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="sub"></constraint>
-              </constraints>
-            </view>
+            <view clipsSubviews="YES" contentMode="scaleToFill" customClass="ComponentTextBinding" customModule="KhrysalisFullExample" customModuleProvider="target" id="sub" placeholderIntrinsicHeight="50" placeholderIntrinsicWidth="50" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000"></view>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraint76rTob" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewVPE6Vk"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintoW11HZ" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewVPE6Vk"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintS5xmjk" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewVPE6Vk"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraint9aPWAr" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewf3Bewh"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintQqX91W" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewf3Bewh"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraint5BXqvR" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewf3Bewh"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintn7hjMz" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewbJExFy"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintyZ4Jsd" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewbJExFy"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintvfst86" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewbJExFy"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintf4Ss1X" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewxdwuaZ"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintoGtYln" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewxdwuaZ"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraint6hPReV" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewxdwuaZ"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintFmOi9u" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="imageViewBwYICb"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintooXg8N" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="imageViewBwYICb"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintkQrvpE" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewd9D5db"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constrainto5pw4f" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewd9D5db"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintpkncRp" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewd9D5db"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintTe6joZ" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="viewi3YKJl"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraint3UIdKh" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewi3YKJl"></constraint>
-            <constraint constant="16.0" firstAttribute="width" id="constraintfiaLKF" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewi3YKJl"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint76rTob" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewVPE6Vk"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintoW11HZ" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewVPE6Vk"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintS5xmjk" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewf3Bewh"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint9aPWAr" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewf3Bewh"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintQqX91W" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewbJExFy"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint5BXqvR" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewbJExFy"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintn7hjMz" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="stackViewxdwuaZ"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintyZ4Jsd" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="stackViewxdwuaZ"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintvfst86" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewBwYICb"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintf4Ss1X" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewBwYICb"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintoGtYln" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewd9D5db"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraint6hPReV" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewd9D5db"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintFmOi9u" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="sub"></constraint>
+            <constraint constant="16.0" firstAttribute="width" id="constraintooXg8N" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="sub"></constraint>
           </constraints>
           <edgeInsets bottom="8.0" key="layoutMargins" left="8.0" right="8.0" top="8.0"></edgeInsets>
         </stackView>

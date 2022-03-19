@@ -22,7 +22,7 @@
       <subviews>
         <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewtzbOHI" numberOfLines="0" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
-            <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="label" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
+            <label adjustsFontSizeToFit="NO" baselineAdjustment="alignBaselines" contentMode="left" id="label" lineBreakMode="tailTruncation" numberOfLines="0" opaque="NO" text="Some Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" userInteractionEnabled="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
               <nil key="highlightedColor"></nil>
               <color alpha="1.0" blue="0.13333334" colorSpace="calibratedRGB" green="0.13333334" key="textColor" red="0.13333334"></color>
