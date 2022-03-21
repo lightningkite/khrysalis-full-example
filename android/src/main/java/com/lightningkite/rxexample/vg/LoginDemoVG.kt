@@ -30,10 +30,10 @@ class LoginDemoVG(
         val xml = LoginDemoBinding.inflate(dependency.activity.layoutInflater)
         val view = xml.root
 
-        username.bind<Subject<String>>(xml.username)
-        password.bind<Subject<String>>(xml.password)
-        verifyPassword.bind<Subject<String>>(xml.verifyPassword)
-        agree.bind<Subject<Boolean>>(xml.agree)
+        username.bind(xml.username)
+        password.bind(xml.password)
+        verifyPassword.bind(xml.verifyPassword)
+        agree.bind(xml.agree)
         loading.showLoading(xml.submitLoading)
         xml.submit.onClick {
             this.submit()

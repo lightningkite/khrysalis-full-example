@@ -5,6 +5,7 @@ plugins {
     id("kotlin-android")
     id("com.lightningkite.khrysalis")
     id("com.lightningkite.xmltoxib")
+    kotlin("plugin.serialization") version "1.6.10"
 }
 
 android {

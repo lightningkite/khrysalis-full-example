@@ -31,11 +31,15 @@ class ExampleContentVG : ViewGenerator {
         val xml = ExampleContentBinding.inflate(dependency.layoutInflater)
         val view = xml.root
         xml.exampleContentIncrement.onClick{ this.increment() }
-        number.map { it -> it.toString() }
+
+        number
+            .map { it -> it.toString() }
             .subscribeAutoDispose(xml.exampleContentNumber, TextView::setText)
+
         xml.chainedIncrement.onClick { this.chained.value.value = this.chained.value.value + 1 }
         chained.flatMap { it -> it }.map { it -> it.toString() }
             .subscribeAutoDispose(xml.chainedNumber, TextView::setText)
+
         xml.scrollToTop.onClick { xml.scrollView.smoothScrollTo(0,0) }
         return view
     }

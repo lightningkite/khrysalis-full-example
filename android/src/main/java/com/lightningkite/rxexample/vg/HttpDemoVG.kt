@@ -24,6 +24,7 @@ import com.lightningkite.rxexample.databinding.HttpDemoBinding
 import com.lightningkite.rx.android.*
 import com.lightningkite.rxexample.models.Post
 import io.reactivex.rxjava3.core.Observable
+import io.reactivex.rxjava3.kotlin.addTo
 
 //--- Name (overwritten on flow generation)
 @Suppress("NAME_SHADOWING")
@@ -59,7 +60,7 @@ class HttpDemoVG(
 
                 //--- Set Up cellXml.label
                 observable.map { it -> it.title }
-                    .subscribeAutoDispose<Observable<String>, TextView, String>(cellXml.label, TextView::setText)
+                    .subscribeAutoDispose(cellXml.label, TextView::setText)
                 //--- End Make Subview For xml.items
                 return@label cellView
             }

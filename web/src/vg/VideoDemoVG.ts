@@ -28,7 +28,7 @@ export class VideoDemoVG implements ViewGenerator {
         
         //--- Set Up xml.video
         this.currentVideo.pipe(subscribeAutoDispose(xml.video, (this_: HTMLVideoElement, it: (Video | null)): void => {
-            videoElementSet(xml.video, it);
+            if ((it !== null)) { videoElementSet(xml.video, it!!) }
         }));
         
         //--- Set Up xml.play (overwritten on flow generation)

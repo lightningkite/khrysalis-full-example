@@ -31,11 +31,14 @@ export class ExampleContentVG implements ViewGenerator {
         onThrottledEventDo(xml.exampleContentIncrement, 'click', (): void => {
             this.increment();
         });
+        
         this._number.pipe(map((it: number): string => (it.toString()))).pipe(subscribeAutoDispose(xml.exampleContentNumber, "textContent"));
+        
         onThrottledEventDo(xml.chainedIncrement, 'click', (): void => {
             this.chained.value.next(this.chained.value.value + 1);
         });
         this.chained.pipe(mergeMap((it: BehaviorSubject<number>): Observable<number> => (it))).pipe(map((it: number): string => (it.toString()))).pipe(subscribeAutoDispose(xml.chainedNumber, "textContent"));
+        
         onThrottledEventDo(xml.scrollToTop, 'click', (): void => {
             xml.scrollView.scroll(0, 0);
         });
