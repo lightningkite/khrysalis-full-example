@@ -32,14 +32,14 @@ android {
 }
 
 repositories {
-//        mavenLocal()
+//  mavenLocal()
     maven(url = "https://s01.oss.sonatype.org/content/repositories/releases/")
     google()
     mavenCentral()
 }
 
 val khrysaliVersion = "1.0.0-rc3"
-val rxPlusVersion = "1.0.0-rc3"
+val rxPlusVersion = "1.0.0-rc4"
 val kotlinVersion = "1.6.10"
 dependencies {
 

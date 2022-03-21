@@ -29,7 +29,7 @@ export class ExternalTestVG implements ViewGenerator {
         
         //--- Set Up xml.openWeb
         onThrottledEventDo(xml.openWeb, 'click', (): void => {
-            window.open("https://lightningkite.com", "_blank");
+            window.open("https://www.lightningkite.com/", "_blank");
         });
         
         //--- Set Up xml.openEvent

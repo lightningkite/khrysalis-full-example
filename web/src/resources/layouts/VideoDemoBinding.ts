@@ -6,7 +6,6 @@ import html from './video_demo.html'
 export interface VideoDemoBinding {
     root: HTMLElement
     video: HTMLVideoElement
-    play: HTMLButtonElement
     gallery: HTMLButtonElement
     camera: HTMLButtonElement
     galleryMulti: HTMLButtonElement
@@ -19,6 +18,6 @@ export namespace VideoDemoBinding {
     widerThan: undefined
 }]
    export function inflate(): VideoDemoBinding {
-       return inflateHtmlFile(variants, ["video", "play", "gallery", "camera", "galleryMulti"], {}, {}) as VideoDemoBinding
+       return inflateHtmlFile(variants, ["video", "gallery", "camera", "galleryMulti"], {}, {}) as VideoDemoBinding
    }
 }

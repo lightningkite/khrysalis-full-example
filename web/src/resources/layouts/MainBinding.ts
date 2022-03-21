@@ -8,7 +8,6 @@ export interface MainBinding {
     title: HTMLDivElement
     topBar: HTMLDivElement
     mainContent: HTMLDivElement
-    bottom0: HTMLDivElement
     mainBack: HTMLButtonElement & {image: HTMLImageElement}
     
 }
@@ -19,6 +18,6 @@ export namespace MainBinding {
     widerThan: undefined
 }]
    export function inflate(): MainBinding {
-       return inflateHtmlFile(variants, ["title", "topBar", "mainContent", "bottom0"], {mainBack: ["image"]}, {}) as MainBinding
+       return inflateHtmlFile(variants, ["title", "topBar", "mainContent"], {mainBack: ["image"]}, {}) as MainBinding
    }
 }

@@ -5,13 +5,11 @@ import { SelectDemoBinding } from '../resources/layouts/SelectDemoBinding'
 import { BasicExampleVG } from './BasicExampleVG'
 import { ControlsDemoVG } from './ControlsDemoVG'
 import { DateButtonDemoVG } from './DateButtonDemoVG'
-import { ExampleContentVG } from './ExampleContentVG'
 import { ExternalTestVG } from './ExternalTestVG'
 import { HttpDemoVG } from './HttpDemoVG'
 import { LoadImageDemoVG } from './LoadImageDemoVG'
 import { LocationDemoVG } from './LocationDemoVG'
 import { LoginDemoVG } from './LoginDemoVG'
-import { PreviewVG } from './PreviewVG'
 import { SliderDemoVG } from './SliderDemoVG'
 import { VideoDemoVG } from './VideoDemoVG'
 import { ViewPagerDemoVG } from './ViewPagerDemoVG'
@@ -25,7 +23,7 @@ import { mergeMap, take } from 'rxjs/operators'
 export class SelectDemoVG implements ViewGenerator {
     public static implementsViewGenerator = true;
     public constructor(public readonly stack: StackSubject<ViewGenerator>) {
-        this.options = [new BasicExampleVG(), new VideoDemoVG(), new WebsocketDemoVG(), new HttpDemoVG(), new ExternalTestVG(), new DateButtonDemoVG(), new LocationDemoVG(), new LoginDemoVG(this.stack), new LoadImageDemoVG(), new ControlsDemoVG(), new ExampleContentVG(), new ViewPagerDemoVG(this.stack), new SliderDemoVG(), new PreviewVG()];
+        this.options = [new BasicExampleVG(), new VideoDemoVG(), new WebsocketDemoVG(), new HttpDemoVG(), new ExternalTestVG(), new DateButtonDemoVG(), new LocationDemoVG(), new LoginDemoVG(this.stack), new LoadImageDemoVG(), new ControlsDemoVG(), new ViewPagerDemoVG(this.stack), new SliderDemoVG()];
     }
     
     //! Declares com.lightningkite.rxexample.vg.SelectDemoVG.titleString

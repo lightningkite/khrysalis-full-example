@@ -28,10 +28,10 @@ export class ExampleContentVG implements ViewGenerator {
     public generate(dependency: Window): HTMLElement {
         const xml = ExampleContentBinding.inflate();
         const view = xml.root;
+        
         onThrottledEventDo(xml.exampleContentIncrement, 'click', (): void => {
             this.increment();
         });
-        
         this._number.pipe(map((it: number): string => (it.toString()))).pipe(subscribeAutoDispose(xml.exampleContentNumber, "textContent"));
         
         onThrottledEventDo(xml.chainedIncrement, 'click', (): void => {

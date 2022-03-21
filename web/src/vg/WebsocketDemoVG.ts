@@ -10,10 +10,10 @@ import { map, publishReplay, refCount, retry, switchMap, take } from 'rxjs/opera
 export class WebsocketDemoVG implements ViewGenerator {
     public static implementsViewGenerator = true;
     public constructor() {
-        this.socket = HttpClient.INSTANCE.webSocket("wss://echo.websocket.org").pipe(publishReplay(1)).pipe(refCount());
+        this.socket = HttpClient.INSTANCE
+            .webSocket("wss://echo.websocket.events").pipe(publishReplay(1)).pipe(refCount());
         this.text = new BehaviorSubject("");
     }
-    
     
     
     //! Declares com.lightningkite.rxexample.vg.WebsocketDemoVG.titleString
@@ -21,6 +21,7 @@ export class WebsocketDemoVG implements ViewGenerator {
     
     
     public readonly socket: Observable<WebSocketInterface>;
+    
     public readonly text: BehaviorSubject<string>;
     
     public generate(dependency: Window): HTMLElement {
@@ -28,21 +29,21 @@ export class WebsocketDemoVG implements ViewGenerator {
         const view = xml.root;
         
         //--- Set Up xml.items
-        const itemsList = ([] as Array<WebSocketFrame>);
-        concat(of(itemsList), this.socket.pipe(switchMap((it: WebSocketInterface): Observable<WebSocketFrame> => (it.read))).pipe(map((it: WebSocketFrame): Array<WebSocketFrame> => {
-            console.log("Adding item");
-            itemsList.push(it);
-            while (itemsList.length > 20) {
-                itemsList.splice(0, 1)[0];
+        let responses = ([] as Array<WebSocketFrame>);
+        
+        concat(of(responses), this.socket.pipe(switchMap((it: WebSocketInterface): Observable<WebSocketFrame> => (it.read))).pipe(map((it: WebSocketFrame): Array<WebSocketFrame> => {
+            responses = responses.concat([it]);
+            if (responses.length > 20) {
+                responses = responses.slice(-20);
             }
-            return itemsList as Array<WebSocketFrame>;
+            return responses;
         }))).pipe(retry()).pipe(showIn(xml.items, (observable: Observable<WebSocketFrame>): HTMLElement => {
             //--- Make Subview For xml.items (overwritten on flow generation)
             const cellXml = ComponentTextBinding.inflate();
             const cellView = cellXml.root;
             
-            //--- Set Up cellXml.label (overwritten on flow generation)
-            of("Some Text").pipe(subscribeAutoDispose(cellXml.label, "textContent"));
+            //--- Set Up cellXml.label
+            observable.pipe(map((it: WebSocketFrame): string => (it.text ?? ""))).pipe(subscribeAutoDispose(cellXml.label, "textContent"));
             //--- End Make Subview For xml.items (overwritten on flow generation)
             return cellView;
         }));
@@ -69,8 +70,7 @@ export class WebsocketDemoVG implements ViewGenerator {
     //--- Actions
     
     
-    public submitClick(): void {
-    }
+    //--- Action submitClick
     
     //--- Body End
 }
