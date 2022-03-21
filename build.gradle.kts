@@ -2,13 +2,14 @@
 buildscript {
     val kotlinVersion = "1.6.10"
     repositories {
-        maven(url="https://s01.oss.sonatype.org/content/repositories/snapshots/")
+//        mavenLocal()
+        maven(url = "https://s01.oss.sonatype.org/content/repositories/releases/")
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.lightningkite.khrysalis:plugin:1.0.0-rc2")
-        classpath("com.lightningkite.xmltoxib:plugin:1.0.0-rc1")
+        classpath("com.lightningkite.khrysalis:plugin:1.0.0-rc3")
+        classpath("com.lightningkite.androidlayouttranslator:plugin:1.0.0-rc2")
         classpath("com.android.tools.build:gradle:7.0.4")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
 

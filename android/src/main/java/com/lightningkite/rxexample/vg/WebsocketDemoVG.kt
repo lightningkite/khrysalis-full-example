@@ -33,12 +33,15 @@ class WebsocketDemoVG(
     //--- Extends (overwritten on flow generation)
 ) : ViewGenerator {
 
-
     //--- Title (overwritten on flow generation)
     override val titleString: ViewString get() = ViewStringRaw("Websocket Demo")
 
     //--- Data
-    val socket: Observable<WebSocketInterface> = HttpClient.webSocket("wss://echo.websocket.org").replay(1).refCount()
+    val socket: Observable<WebSocketInterface> = HttpClient
+        .webSocket("wss://echo.websocket.events")
+        .replay(1)
+        .refCount()
+
     val text: ValueSubject<String> = ValueSubject("")
 
     //--- Generate Start (overwritten on flow generation)
@@ -47,33 +50,43 @@ class WebsocketDemoVG(
         val view = xml.root
 
         //--- Set Up xml.items
-        val itemsList = ArrayList<WebSocketFrame>()
-        socket.switchMap { it -> it.read }.map { it ->
-            println("Adding item")
-            itemsList.add(it)
-            while (itemsList.size > 20) {
-                itemsList.removeAt(0)
-            }
-            return@map itemsList as List<WebSocketFrame>
-        }.startWithItem(itemsList).retry().showIn(xml.items, makeView = label@{ observable ->
-            //--- Make Subview For xml.items (overwritten on flow generation)
-            val cellXml = ComponentTextBinding.inflate(dependency.layoutInflater)
-            val cellView = cellXml.root
+        var responses = listOf<WebSocketFrame>()
 
-            //--- Set Up cellXml.label (overwritten on flow generation)
-            Observable.just("Some Text")
-                .subscribeAutoDispose(cellXml.label, TextView::setText)
-            //--- End Make Subview For xml.items (overwritten on flow generation)
-            return@label cellView
-        }
-        )
+        socket
+            .switchMap { it -> it.read }
+            .map { it ->
+                responses += it
+                if(responses.size > 20){
+                    responses = responses.takeLast(20)
+                }
+                return@map responses
+            }
+            .startWithItem(responses)
+            .retry()
+            .showIn(
+                xml.items,
+                makeView = label@{ observable ->
+                    //--- Make Subview For xml.items (overwritten on flow generation)
+                    val cellXml = ComponentTextBinding.inflate(dependency.layoutInflater)
+                    val cellView = cellXml.root
+
+                    //--- Set Up cellXml.label
+                    observable
+                        .map { it.text ?: "" }
+                        .subscribeAutoDispose(cellXml.label, TextView::setText)
+                    //--- End Make Subview For xml.items (overwritten on flow generation)
+                    return@label cellView
+                }
+            )
 
         //--- Set Up xml.input
         text.bind(xml.input)
 
         //--- Set Up xml.submit
         xml.submit.onClick {
-            this.socket.take(1).subscribe { it -> it.write.onNext(WebSocketFrame(text = this.text.value)) }
+            this.socket
+                .take(1)
+                .subscribe { it -> it.write.onNext(WebSocketFrame(text = this.text.value)) }
                 .addTo(xml.submit.removed)
         }
 
@@ -91,9 +104,7 @@ class WebsocketDemoVG(
     //--- Actions
 
 
-    //--- Action submitClick (overwritten on flow generation)
-    fun submitClick() {
-    }
+    //--- Action submitClick
 
     //--- Body End
 }

@@ -67,7 +67,7 @@ class LoginDemoVG(
         this.loading.value = true
         delay(1000) {
             this.loading.value = false
-            this.stack.push(ExampleContentVG())
+            this.stack.push(BasicExampleVG())
         }
     }
 }

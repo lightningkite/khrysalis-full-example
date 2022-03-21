@@ -43,8 +43,7 @@ class VideoDemoVG(
 
     //--- Properties
     val currentVideo =
-        ValueSubject<Optional<Video>>(VideoRemoteUrl("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4").optional)
-    val timesPlayPressed = ValueSubject<Int>(0)
+        ValueSubject<Video>(VideoRemoteUrl("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"))
 
     //--- Generate Start (overwritten on flow generation)
     override fun generate(dependency: ActivityAccess): View {
@@ -52,35 +51,28 @@ class VideoDemoVG(
         val view = xml.root
 
         //--- Set Up xml.video
-        currentVideo.subscribeAutoDispose(xml.video) {
-            if(it.isPresent)
-                xml.video.setVideo(it.kotlin!!)
-        }
-
-        //--- Set Up xml.play (overwritten on flow generation)
-        xml.play.onClick { this.playClick() }
+        currentVideo
+            .subscribeAutoDispose(xml.video) { xml.video.setVideo(it, false) }
 
         //--- Set Up xml.gallery
         xml.gallery.onClick {
-            dependency.requestVideoGallery().subscribeBy {
-                currentVideo.value = VideoReference(it).optional
-            }
+            dependency
+                .requestVideoGallery()
+                .subscribeBy { currentVideo.value = VideoReference(it) }
         }
 
         //--- Set Up xml.camera
         xml.camera.onClick {
-            dependency.requestVideoCamera().subscribeBy {
-                currentVideo.value = VideoReference(it).optional
-            }
+            dependency
+                .requestVideoCamera()
+                .subscribeBy { currentVideo.value = VideoReference(it) }
         }
 
         //--- Set Up xml.galleryMulti
         xml.galleryMulti.onClick {
-            dependency.requestVideosGallery().subscribeBy {
-                it.firstOrNull()?.let {
-                    currentVideo.value = VideoReference(it).optional
-                }
-            }
+            dependency
+                .requestVideosGallery()
+                .subscribeBy { it.firstOrNull()?.let { currentVideo.value = VideoReference(it) } }
         }
 
         //--- Generate End (overwritten on flow generation)
@@ -96,27 +88,12 @@ class VideoDemoVG(
 
     //--- Actions
 
-    //--- Action playClick
-    fun playClick() {
-        timesPlayPressed.value++
-        when (timesPlayPressed.value % 3) {
-            0 -> currentVideo.value =
-                VideoRemoteUrl("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4").optional
-            1 -> currentVideo.value =
-                VideoRemoteUrl("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4").optional
-            2 -> currentVideo.value = Optional.empty()
-        }
-    }
 
     //--- Action galleryClick
 
-    //--- Action cameraClick (overwritten on flow generation)
-    fun cameraClick() {
-    }
+    //--- Action cameraClick 
 
-    //--- Action galleryMultiClick (overwritten on flow generation)
-    fun galleryMultiClick() {
-    }
+    //--- Action galleryMultiClick
 
     //--- Body End
 }

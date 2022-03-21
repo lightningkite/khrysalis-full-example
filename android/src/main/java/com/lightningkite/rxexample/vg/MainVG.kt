@@ -35,9 +35,14 @@ class MainVG : ViewGenerator, EntryPoint {
         val view = xml.root
 
         stack.showIn(xml.mainContent, dependency)
-        stack.map { it -> it.lastOrNull()?.titleString?.get(dependency.context) ?: "" }
+
+        stack
+            .map { it -> it.lastOrNull()?.titleString?.get(dependency.context) ?: "" }
             .subscribeAutoDispose<Observable<String>, TextView, String>(xml.title, TextView::setText)
-        shouldBackBeShown.subscribeAutoDispose(xml.mainBack, View::visible)
+
+        shouldBackBeShown
+            .subscribeAutoDispose(xml.mainBack, View::visible)
+
         xml.mainBack.onClick { this.stack.pop() }
 
         return view

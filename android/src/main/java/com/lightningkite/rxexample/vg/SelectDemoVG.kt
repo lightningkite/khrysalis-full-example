@@ -30,10 +30,10 @@ class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
         LoginDemoVG(stack),
         LoadImageDemoVG(),
         ControlsDemoVG(),
-        ExampleContentVG(),
+//        ExampleContentVG(),
         ViewPagerDemoVG(stack),
         SliderDemoVG(),
-        PreviewVG()
+//        PreviewVG()
     )
 
     fun selectVG(viewGenerator: ViewGenerator){

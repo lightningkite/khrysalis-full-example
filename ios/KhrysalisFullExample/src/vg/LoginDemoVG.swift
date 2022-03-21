@@ -32,10 +32,10 @@ public class LoginDemoVG : ViewGenerator {
         let xml = LoginDemoBinding()
         let view = xml.root
         
-        (self.username.bind(xml.username) as Subject<String>)
-        (self.password.bind(xml.password) as Subject<String>)
-        (self.verifyPassword.bind(xml.verifyPassword) as Subject<String>)
-        (self.agree.bind(xml.agree) as Subject<Bool>)
+        self.username.bind(xml.username)
+        self.password.bind(xml.password)
+        self.verifyPassword.bind(xml.verifyPassword)
+        self.agree.bind(xml.agree)
         self.loading.showLoading(xml.submitLoading)
         xml.submit.onClick { () -> Void in self.submit() }
         

@@ -30,14 +30,17 @@ class ExampleContentVG : ViewGenerator {
     override fun generate(dependency: ActivityAccess): View {
         val xml = ExampleContentBinding.inflate(dependency.layoutInflater)
         val view = xml.root
-        xml.exampleContentIncrement.onClick{ this.increment() }
 
+        xml.exampleContentIncrement.onClick(0L){ this.increment() }
         number
             .map { it -> it.toString() }
             .subscribeAutoDispose(xml.exampleContentNumber, TextView::setText)
 
-        xml.chainedIncrement.onClick { this.chained.value.value = this.chained.value.value + 1 }
-        chained.flatMap { it -> it }.map { it -> it.toString() }
+        xml.chainedIncrement
+            .onClick(0L) { this.chained.value.value = this.chained.value.value + 1 }
+        chained
+            .flatMap { it -> it }
+            .map { it -> it.toString() }
             .subscribeAutoDispose(xml.chainedNumber, TextView::setText)
 
         xml.scrollToTop.onClick { xml.scrollView.smoothScrollTo(0,0) }

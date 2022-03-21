@@ -51,7 +51,7 @@ class ExternalTestVG(
 
         //--- Set Up xml.openWeb
         xml.openWeb.onClick {
-            dependency.openUrl("https://lightningkite.com")
+            dependency.openUrl("https://www.lightningkite.com/")
         }
 
         //--- Set Up xml.openEvent
