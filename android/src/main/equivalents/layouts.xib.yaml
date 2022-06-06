@@ -1,0 +1,32 @@
+---
+
+- id: com.google.android.gms.maps.MapView
+  type: element
+  template: |
+    <view clipsSubviews="YES" customClass="GMSMapView" multipleTouchEnabled="YES" contentMode="scaleToFill" customModuleAlt="GoogleMaps" translatesAutoresizingMaskIntoConstraints="NO">
+    </view>
+
+- id: com.adamstyrc.cookiecutter.CookieCutterImageView
+  type: element
+  template: |
+    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" customClass="CookieCutterImageView" customModuleProvider="target" customModule="KLYP" placeholderIntrinsicWidth="50" placeholderIntrinsicHeight="50">
+    </view>
+
+- id: de.hdodenhof.circleimageview.CircleImageView
+  type: element
+  parent: ImageView
+  template: |
+    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" >
+      <userDefinedRuntimeAttributes>
+        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+            <real key="value" value="~halfSize~"/>
+        </userDefinedRuntimeAttribute>
+      </userDefinedRuntimeAttributes>
+    </imageView>
+
+- id: com.rd.PageIndicatorView
+  type: element
+  template: |
+    <pageControl clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" numberOfPages="3">
+    </pageControl>

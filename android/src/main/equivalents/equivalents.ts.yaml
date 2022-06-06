@@ -1,0 +1,12 @@
+
+- id: java.net.URLEncoder.encode
+  type: call
+  template: encodeURIComponent(~0~)
+
+- id: okhttp3.RequestBody.contentType
+  type: call
+  template: "~this~.type"
+
+- id: okhttp3.MediaType.subtype
+  type: get
+  template: "~this~.slice(~this~.lastIndexOf('/') + 1)"

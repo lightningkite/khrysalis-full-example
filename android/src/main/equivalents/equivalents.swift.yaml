@@ -1,0 +1,31 @@
+---
+
+- id: android.view.ViewGroup.addView
+  type: call
+  template: ~this~.addArrangedSubview(~0~)
+
+- id: android.view.ViewGroup.removeAllViews
+  type: call
+  template: ~this~.removeAllArrangedSubviews()
+
+- id: com.google.android.gms.maps.MapView
+  type: type
+  template:
+    pattern: GMSMapView
+    imports: [GoogleMaps]
+
+- id: android.webkit.WebView.loadDataWithBaseURL
+  type: call
+  template: '~this~.loadHTMLString(~1~, baseURL: URL(string:~0~))'
+
+- id: java.net.URLEncoder.encode
+  type: call
+  template: "~0~.addingPercentEncoding(withAllowedCharacters: .alphanumerics)"
+
+- id: okhttp3.RequestBody.contentType
+  type: call
+  template: "~this~.mediaType"
+
+- id: okhttp3.MediaType.subtype
+  type: get
+  template: "~this~.substringAfterLast(delimiter: \"/\")"

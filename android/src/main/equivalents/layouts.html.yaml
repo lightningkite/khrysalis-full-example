@@ -1,0 +1,18 @@
+---
+
+- id: com.google.android.gms.maps.MapView
+  type: element
+  template: '<div/>'
+
+- id: com.adamstyrc.cookiecutter.CookieCutterImageView
+  type: element
+  template: '<div/>'
+
+- id: de.hdodenhof.circleimageview.CircleImageView
+  type: element
+  parent: ImageView
+  template: '<img class="circle" />'
+
+- id: com.rd.PageIndicatorView
+  type: element
+  template: "<div/>"
