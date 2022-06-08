@@ -3,13 +3,13 @@
 import { LoginDemoBinding } from '../resources/layouts/LoginDemoBinding'
 import { BasicExampleVG } from './BasicExampleVG'
 import { xCharSequenceIsBlank } from '@lightningkite/khrysalis-runtime'
-import { ViewGenerator, ViewGeneratorStack, bind, hasClass, onThrottledEventDo, showDialog, subscribeAutoDispose, xStackPush } from '@lightningkite/rxjs-plus'
+import { ViewGenerator, bind, hasClass, onThrottledEventDo, showDialog, subscribeAutoDispose, xStackPush } from '@lightningkite/rxjs-plus'
 import { BehaviorSubject } from 'rxjs'
 
 //! Declares com.lightningkite.rxexample.vg.LoginDemoVG
 export class LoginDemoVG implements ViewGenerator {
     public static implementsViewGenerator = true;
-    public constructor(public readonly stack: ViewGeneratorStack) {
+    public constructor(public readonly stack: BehaviorSubject<Array<ViewGenerator>>) {
         this.username = new BehaviorSubject("");
         this.password = new BehaviorSubject("");
         this.verifyPassword = new BehaviorSubject("");

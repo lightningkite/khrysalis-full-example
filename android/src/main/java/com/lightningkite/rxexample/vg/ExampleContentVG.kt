@@ -16,6 +16,11 @@ import com.lightningkite.rxexample.databinding.ExampleContentBinding
 import com.lightningkite.rx.android.subscribeAutoDispose
 import io.reactivex.rxjava3.core.Observable
 import com.lightningkite.khrysalis.SharedCode
+import com.lightningkite.rx.android.removed
+import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.kotlin.addTo
+import io.reactivex.rxjava3.kotlin.subscribeBy
+import java.util.concurrent.TimeUnit
 
 class ExampleContentVG : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Example Content")
@@ -30,6 +35,19 @@ class ExampleContentVG : ViewGenerator {
     override fun generate(dependency: ActivityAccess): View {
         val xml = ExampleContentBinding.inflate(dependency.layoutInflater)
         val view = xml.root
+
+        Observable.interval(1000L, TimeUnit.MILLISECONDS, AndroidSchedulers.mainThread())
+            .doOnDispose { println("KILLING LISTENER") }
+            .subscribeBy(
+                onNext = {
+                    println("HEY LISTEN")
+                    xml.incrementingNumber.setText(it.toString())
+                },
+                onComplete = {
+                    xml.incrementingNumber.setText("All done!")
+                }
+            )
+            .addTo(xml.incrementingNumber.removed)
 
         xml.exampleContentIncrement.onClick(0L){ this.increment() }
         number

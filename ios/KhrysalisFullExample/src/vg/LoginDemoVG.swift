@@ -67,7 +67,7 @@ public class LoginDemoVG : ViewGenerator {
         self.loading.value = true
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(1000)), execute: { () -> Void in
             self.loading.value = false
-            self.stack.push(ExampleContentVG())
+            self.stack.push(BasicExampleVG())
         })
     }
 }

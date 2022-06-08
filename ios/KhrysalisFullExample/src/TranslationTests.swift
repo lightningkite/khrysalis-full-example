@@ -21,7 +21,7 @@ public func test(old: UIView, new: UICollectionView, layout: ViewGroup, response
     old.exists = true
     old.visible = false
     old.visible = true
-    layout.addView(old)
+    layout.addArrangedSubview(old)
     print(response.code)
     MultipartBody.from(MultipartBody.Part.value(name: "asdf", value: "fdsa"), MultipartBody.Part.file(name: "asdf", filename: "fdsa", body: xStringToRequestBody("asdf")))
     let h = Observable.just(1).withWrite { (it) -> Void in print("write") }

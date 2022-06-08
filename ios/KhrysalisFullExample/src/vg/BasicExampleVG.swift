@@ -28,12 +28,19 @@ public class BasicExampleVG : ViewGenerator {
     public func generate(dependency: ViewControllerAccess) -> UIView {
         let xml = ExampleContentBinding()
         let view = xml.root
-        xml.exampleContentIncrement.onClick { () -> Void in self.increment() }
-        self.number.map { (it) -> String in String(kotlin: it) }
+        
+        xml.exampleContentIncrement.onClick(disabledMilliseconds: 0) { () -> Void in self.increment() }
+        self.number
+            .map { (it) -> String in String(kotlin: it) }
             .subscribeAutoDispose(xml.exampleContentNumber, \UILabel.text)
-        xml.chainedIncrement.onClick { () -> Void in self.chained.value.value = self.chained.value.value + 1 }
-        self.chained.flatMap { (it) -> Observable<Int> in it }.map { (it) -> String in String(kotlin: it) }
+        
+        xml.chainedIncrement
+            .onClick(disabledMilliseconds: 0) { () -> Void in self.chained.value.value = self.chained.value.value + 1 }
+        self.chained
+            .flatMap { (it) -> Observable<Int> in it }
+            .map { (it) -> String in String(kotlin: it) }
             .subscribeAutoDispose(xml.chainedNumber, \UILabel.text)
+        
         xml.scrollToTop.onClick { () -> Void in xml.scrollView.setContentOffset(CGPoint(x: CGFloat(0), y: CGFloat(0)), animated: true) }
         return view
     }

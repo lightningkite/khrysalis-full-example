@@ -10,7 +10,7 @@ public class SelectDemoVG : ViewGenerator {
     public var stack: ValueSubject<Array<ViewGenerator>>
     public init(stack: ValueSubject<Array<ViewGenerator>>) {
         self.stack = stack
-        self.options = [BasicExampleVG(), VideoDemoVG(), WebsocketDemoVG(), HttpDemoVG(), ExternalTestVG(), DateButtonDemoVG(), LocationDemoVG(), LoginDemoVG(stack: stack), LoadImageDemoVG(), ControlsDemoVG(), ExampleContentVG(), ViewPagerDemoVG(stack: stack), SliderDemoVG(), PreviewVG()]
+        self.options = [BasicExampleVG(), VideoDemoVG(), WebsocketDemoVG(), HttpDemoVG(), ExternalTestVG(), DateButtonDemoVG(), LocationDemoVG(), LoginDemoVG(stack: stack), LoadImageDemoVG(), ControlsDemoVG(), ViewPagerDemoVG(stack: stack), SliderDemoVG()]
         //Necessary properties should be initialized now
     }
     

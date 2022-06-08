@@ -20,7 +20,7 @@ class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
     override val titleString: ViewString get() = ViewStringRaw("Select Demo")
 
     val options: List<ViewGenerator> = listOf(
-        BasicExampleVG(),
+        ExampleContentVG(),
         VideoDemoVG(),
         WebsocketDemoVG(),
         HttpDemoVG(),
@@ -30,7 +30,6 @@ class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
         LoginDemoVG(stack),
         LoadImageDemoVG(),
         ControlsDemoVG(),
-//        ExampleContentVG(),
         ViewPagerDemoVG(stack),
         SliderDemoVG(),
 //        PreviewVG()

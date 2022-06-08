@@ -31,10 +31,17 @@ public class MainVG : ViewGenerator, EntryPoint {
         let xml = MainBinding()
         let view = xml.root
         
+        helloWorld()
+        
         self.stack.showIn(xml.mainContent, dependency: dependency)
-        self.stack.map { (it) -> String in (it.last?.titleString).map { temp149 in temp149 } ?? "" }
+        
+        self.stack
+            .map { (it) -> String in (it.last?.titleString).map { temp149 in temp149 } ?? "" }
             .subscribeAutoDispose(xml.title, \UILabel.text)
-        self.shouldBackBeShown.subscribeAutoDispose(xml.mainBack, \UIView.visible)
+        
+        self.shouldBackBeShown
+            .subscribeAutoDispose(xml.mainBack, \UIView.visible)
+        
         xml.mainBack.onClick { () -> Void in self.stack.pop() }
         
         return view

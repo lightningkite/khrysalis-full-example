@@ -17,6 +17,7 @@ import com.lightningkite.rx.android.onClick
 import com.lightningkite.rxexample.databinding.MainBinding
 import com.lightningkite.rx.android.subscribeAutoDispose
 import com.lightningkite.khrysalis.SharedCode
+import com.lightningkite.rxexample.api.helloWorld
 
 class MainVG : ViewGenerator, EntryPoint {
     override val titleString: ViewString get() = ViewStringRaw("Main")
@@ -33,6 +34,8 @@ class MainVG : ViewGenerator, EntryPoint {
     override fun generate(dependency: ActivityAccess): View {
         val xml = MainBinding.inflate(dependency.layoutInflater)
         val view = xml.root
+
+        helloWorld()
 
         stack.showIn(xml.mainContent, dependency)
 

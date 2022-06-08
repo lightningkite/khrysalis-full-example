@@ -27,7 +27,7 @@ public class ExternalTestVG : ViewGenerator {
         xml.openMap.onClick { () -> Void in dependency.openMap(coordinate: CLLocationCoordinate2D(latitude: 41.7269, longitude: (-111.8432)), label: "Lightning Kite", zoom: 14) }
         
         //--- Set Up xml.openWeb
-        xml.openWeb.onClick { () -> Void in dependency.openUrl(url: "https://lightningkite.com") }
+        xml.openWeb.onClick { () -> Void in dependency.openUrl(url: "https://www.lightningkite.com/") }
         
         //--- Set Up xml.openEvent
         xml.openEvent.onClick { () -> Void in dependency.openEvent(title: "A Virtual Lunch with LK", description: "Come eat virtual food with us!", location: "Lightning Kite in Logan Utah", start: (ZonedDateTime().plus(day: 1).with(hour: 12).with(minute: 0).with(second: 0)).toDate(), end: (ZonedDateTime().plus(day: 1).with(hour: 13).with(minute: 0).with(second: 0)).toDate()) }

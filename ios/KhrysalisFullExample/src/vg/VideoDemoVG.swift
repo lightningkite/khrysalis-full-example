@@ -8,8 +8,7 @@ import Foundation
 
 public class VideoDemoVG : ViewGenerator {
     public init() {
-        self.currentVideo = (ValueSubject(VideoRemoteUrl(URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!) as Video?) as ValueSubject<Video?>)
-        self.timesPlayPressed = (ValueSubject(0 as Int) as ValueSubject<Int>)
+        self.currentVideo = (ValueSubject(VideoRemoteUrl(URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!) as Video) as ValueSubject<Video>)
         //Necessary properties should be initialized now
     }
     
@@ -19,28 +18,31 @@ public class VideoDemoVG : ViewGenerator {
         get { return "Video Demo" }
     }
     
-    public let currentVideo: ValueSubject<Video?>
-    public let timesPlayPressed: ValueSubject<Int>
+    public let currentVideo: ValueSubject<Video>
     
     public func generate(dependency: ViewControllerAccess) -> UIView {
         let xml = VideoDemoBinding()
         let view = xml.root
         
         //--- Set Up xml.video
-        self.currentVideo.subscribeAutoDispose(xml.video, { (this, it) -> Void in if (it != nil) { xml.video.setVideo(it!) } })
-        
-        //--- Set Up xml.play (overwritten on flow generation)
-        xml.play.onClick { () -> Void in self.playClick() }
+        self.currentVideo
+            .subscribeAutoDispose(xml.video, { (this, it) -> Void in xml.video.setVideo(it, playWhenReady: false) })
         
         //--- Set Up xml.gallery
-        xml.gallery.onClick { () -> Void in dependency.requestVideoGallery().subscribe(onSuccess: { (it) -> Void in self.currentVideo.value = VideoLocalUrl(it) }) }
+        xml.gallery.onClick { () -> Void in dependency
+                .requestVideoGallery()
+            .subscribe(onSuccess: { (it) -> Void in self.currentVideo.value = VideoLocalUrl(it) }) }
         
         //--- Set Up xml.camera
-        xml.camera.onClick { () -> Void in dependency.requestVideoCamera().subscribe(onSuccess: { (it) -> Void in self.currentVideo.value = VideoLocalUrl(it) }) }
+        xml.camera.onClick { () -> Void in dependency
+                .requestVideoCamera()
+            .subscribe(onSuccess: { (it) -> Void in self.currentVideo.value = VideoLocalUrl(it) }) }
         
         //--- Set Up xml.galleryMulti
-        xml.galleryMulti.onClick { () -> Void in dependency.requestVideosGallery().subscribe(onSuccess: { (it) -> Void in if let it = (it.firstOrNull()) {
-            self.currentVideo.value = VideoLocalUrl(it)
+        xml.galleryMulti.onClick { () -> Void in dependency
+                .requestVideosGallery()
+                .subscribe(onSuccess: { (it) -> Void in if let it = (it.firstOrNull()) {
+                self.currentVideo.value = VideoLocalUrl(it)
         } }) }
         
         //--- Generate End (overwritten on flow generation)
@@ -54,30 +56,12 @@ public class VideoDemoVG : ViewGenerator {
     
     //--- Actions
     
-    public func playClick() -> Void {
-        self.timesPlayPressed.value += 1
-        switch self.timesPlayPressed.value % 3 {
-            case 0:
-            self.currentVideo.value = VideoRemoteUrl(URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!)
-            break
-            case 1:
-            self.currentVideo.value = VideoRemoteUrl(URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4")!)
-            break
-            case 2:
-            self.currentVideo.value = nil
-            break
-            default: break
-        }
-        
-    }
     
     //--- Action galleryClick
     
-    public func cameraClick() -> Void {
-    }
+    //--- Action cameraClick
     
-    public func galleryMultiClick() -> Void {
-    }
+    //--- Action galleryMultiClick
     
     //--- Body End
 }

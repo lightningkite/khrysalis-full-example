@@ -16,7 +16,7 @@ import io.reactivex.rxjava3.subjects.Subject
 import com.lightningkite.khrysalis.SharedCode
 
 class LoginDemoVG(
-    val stack: ViewGeneratorStack
+    val stack: ValueSubject<List<ViewGenerator>>
 ) : ViewGenerator {
     override val titleString: ViewStringRaw get() = ViewStringRaw("Log In Demo")
 
@@ -67,7 +67,7 @@ class LoginDemoVG(
         this.loading.value = true
         delay(1000) {
             this.loading.value = false
-            this.stack.push(BasicExampleVG())
+            this.stack.push(ExampleContentVG())
         }
     }
 }
