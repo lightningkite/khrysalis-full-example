@@ -6,13 +6,13 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class DateButtonDemoVG : ViewGenerator {
+public final class DateButtonDemoVG : ViewGenerator, HasTitle {
     public init() {
         self.date = ValueSubject(ZonedDateTime())
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "ZonedDateTime Button Demo" }
     }
     

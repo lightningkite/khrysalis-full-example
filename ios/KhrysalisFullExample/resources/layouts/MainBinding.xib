@@ -18,7 +18,6 @@
         <outlet destination="mainBack" id="outletFF6EUm" property="_mainBack"></outlet>
         <outlet destination="title" id="outletA7f7Yh" property="_title"></outlet>
         <outlet destination="mainContent" id="outlet2tCJk5" property="_mainContent"></outlet>
-        <outlet destination="bottom0" id="outletYjtYgC" property="_bottom0"></outlet>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
@@ -77,20 +76,12 @@
             <view clipsSubviews="YES" contentMode="scaleToFill" customClass="SwapView" customModule="RxSwiftPlus" id="mainContent" placeholderIntrinsicHeight="50" placeholderIntrinsicWidth="50" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100">
               <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="backgroundColor" red="1.0"></color>
             </view>
-            <view clipsSubviews="YES" contentMode="scaleToFill" id="bottom0" translatesAutoresizingMaskIntoConstraints="NO">
-              <color key="backgroundColor" name="color_colorPrimary"></color>
-              <constraints>
-                <constraint constant="0.0" firstAttribute="height" id="constraintxNQycM" multiplier="1.0" priority="1000" relation="equal"></constraint>
-              </constraints>
-            </view>
           </subviews>
           <constraints>
             <constraint constant="0.0" firstAttribute="width" id="constraintpFNjrq" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewveQVMl"></constraint>
             <constraint constant="0.0" firstAttribute="width" id="constraintNffQgl" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewveQVMl"></constraint>
             <constraint constant="0.0" firstAttribute="width" id="constraintBniyKe" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="mainContent"></constraint>
             <constraint constant="0.0" firstAttribute="width" id="constraint8xvbQ2" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="mainContent"></constraint>
-            <constraint constant="0.0" firstAttribute="width" id="constraintMJ1hn1" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="bottom0"></constraint>
-            <constraint constant="0.0" firstAttribute="width" id="constraint2AlMph" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="bottom0"></constraint>
           </constraints>
           <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"></edgeInsets>
         </stackView>

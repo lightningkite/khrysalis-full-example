@@ -35,11 +35,11 @@ import com.lightningkite.khrysalis.SharedCode
 class VideoDemoVG(
     //--- Dependencies (overwritten on flow generation)
     //--- Extends (overwritten on flow generation)
-) : ViewGenerator {
+) : ViewGenerator, HasTitle {
 
 
     //--- Title (overwritten on flow generation)
-    override val titleString: ViewString get() = ViewStringRaw("Video Demo")
+    override val title: ViewString get() = ViewStringRaw("Video Demo")
 
     //--- Properties
     val currentVideo =

@@ -85,7 +85,7 @@ DEPENDENCIES:
   - RxCoreLocation (from `https://github.com/RxSwiftCommunity/RxCoreLocation.git`, branch `master`)
   - RxSwift (from `https://github.com/lightningkite/RxSwift.git`, branch `main`)
   - RxSwiftPlus (from `https://github.com/lightningkite/RxSwiftPlus.git`, branch `master`)
-  - XmlToXibRuntime (from `https://github.com/lightningkite/android-xml-to-ios-xib.git`, branch `master`)
+  - XmlToXibRuntime (from `https://github.com/lightningkite/android-layout-translator.git`, branch `master`)
 
 SPEC REPOS:
   trunk:
@@ -117,7 +117,7 @@ EXTERNAL SOURCES:
     :git: https://github.com/lightningkite/RxSwiftPlus.git
   XmlToXibRuntime:
     :branch: master
-    :git: https://github.com/lightningkite/android-xml-to-ios-xib.git
+    :git: https://github.com/lightningkite/android-layout-translator.git
 
 CHECKOUT OPTIONS:
   Cosmos:
@@ -136,8 +136,8 @@ CHECKOUT OPTIONS:
     :commit: ba2d119606ff89e0719c1b15c374e7ebf9d6c9f9
     :git: https://github.com/lightningkite/RxSwiftPlus.git
   XmlToXibRuntime:
-    :commit: 3d2595df9d4bfeaa74ada5acbe24efd037aab775
-    :git: https://github.com/lightningkite/android-xml-to-ios-xib.git
+    :commit: 33c7e44f907466b914055957289a2639bef73be4
+    :git: https://github.com/lightningkite/android-layout-translator.git
 
 SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
@@ -154,8 +154,8 @@ SPEC CHECKSUMS:
   RxSwiftPlus: 0adf05aaa8534dbd268500335323eb5778239ef3
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
-  XmlToXibRuntime: fb0067babac6185448e49ad067fbc3b0fa0c86fc
+  XmlToXibRuntime: c16afbfca03f5149e1c5f4771e36af599c28209d
 
-PODFILE CHECKSUM: 68ab65f815fca8dd299c52db3f57614798e46d91
+PODFILE CHECKSUM: 459aba908f441415adc424fe613f5c40729428d9
 
 COCOAPODS: 1.11.3

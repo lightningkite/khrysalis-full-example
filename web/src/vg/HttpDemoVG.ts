@@ -3,20 +3,22 @@
 import { Post } from '../models/Post'
 import { ComponentTextBinding } from '../resources/layouts/ComponentTextBinding'
 import { HttpDemoBinding } from '../resources/layouts/HttpDemoBinding'
+import { HasTitle } from './HasTitle'
 import { HttpClient, HttpProgress, ViewGenerator, approximateProgress, fromJSON, isNonNull, showIn, subscribeAutoDispose } from '@lightningkite/rxjs-plus'
 import { Observable, concat, filter, of, map as rMap } from 'rxjs'
 import { map } from 'rxjs/operators'
 
 //! Declares com.lightningkite.rxexample.vg.HttpDemoVG
-export class HttpDemoVG implements ViewGenerator {
+export class HttpDemoVG implements ViewGenerator, HasTitle {
     public static implementsViewGenerator = true;
+    public static implementsHasTitle = true;
     public constructor() {
     }
     
     
     
-    //! Declares com.lightningkite.rxexample.vg.HttpDemoVG.titleString
-    public get titleString(): string { return "Http Demo"; }
+    //! Declares com.lightningkite.rxexample.vg.HttpDemoVG.title
+    public get title(): string { return "Http Demo"; }
     
     
     public generate(dependency: Window): HTMLElement {

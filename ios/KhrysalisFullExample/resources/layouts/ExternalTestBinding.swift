@@ -16,5 +16,10 @@ public class ExternalTestBinding: XibView {
     public var openMap: UIButton { return _openMap }
     public var openWeb: UIButton { return _openWeb }
     public var openEvent: UIButton { return _openEvent }
+    
+    public override func selectNibName() -> String {
+       
+        return "ExternalTestBinding"
+    }
 
 }

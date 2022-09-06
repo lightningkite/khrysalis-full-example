@@ -16,5 +16,10 @@ public class ComponentBleDeviceBinding: XibView {
     public var deviceId: UILabel { return _deviceId }
     public var rssi: UILabel { return _rssi }
     public var connect: UIButton { return _connect }
+    
+    public override func selectNibName() -> String {
+       
+        return "ComponentBleDeviceBinding"
+    }
 
 }

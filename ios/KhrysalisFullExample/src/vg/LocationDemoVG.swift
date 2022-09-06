@@ -7,13 +7,13 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class LocationDemoVG : ViewGenerator {
+public final class LocationDemoVG : ViewGenerator, HasTitle {
     public init() {
         self.locationInfo = (ValueSubject(nil as CLLocation?) as ValueSubject<CLLocation?>)
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Location Demo" }
     }
     

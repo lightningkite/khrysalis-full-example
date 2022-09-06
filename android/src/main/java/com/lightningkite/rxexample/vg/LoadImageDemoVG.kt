@@ -29,8 +29,8 @@ import io.reactivex.rxjava3.kotlin.subscribeBy
 import java.util.*
 import com.lightningkite.khrysalis.SharedCode
 
-class LoadImageDemoVG : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("Load Image Demo")
+class LoadImageDemoVG : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("Load Image Demo")
 
     val canUpload = ValueSubject<Optional<Boolean>>(Optional.empty())
     val currentImage = ValueSubject<Optional<Image>>(Optional.empty())

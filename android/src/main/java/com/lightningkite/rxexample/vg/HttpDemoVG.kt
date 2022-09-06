@@ -31,11 +31,11 @@ import io.reactivex.rxjava3.kotlin.addTo
 class HttpDemoVG(
     //--- Dependencies (overwritten on flow generation)
     //--- Extends (overwritten on flow generation)
-) : ViewGenerator {
+) : ViewGenerator, HasTitle {
 
 
     //--- Title (overwritten on flow generation)
-    override val titleString: ViewString get() = ViewStringRaw("Http Demo")
+    override val title: ViewString get() = ViewStringRaw("Http Demo")
 
     //--- Generate Start (overwritten on flow generation)
     override fun generate(dependency: ActivityAccess): View {

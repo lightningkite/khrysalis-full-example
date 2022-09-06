@@ -14,7 +14,7 @@ public func test(old: UIView, new: UICollectionView, layout: ViewGroup, response
     let d = [1, 2, 3].reduceOrNull { (acc, i) -> Int in acc + i }
     //    val e = mapOf<Int, Int>(1 to 2, 3 to 4) - Pair(3, 4)
     let f = Pair(from: dictionaryOf(Pair(1, 2)).first())
-    let g = (Optional<Int>.none != nil)
+    let g = Optional<Int>.none != nil
     print(TimeZone.current.identifier)
     old.replace(other: new)
     old.exists = false

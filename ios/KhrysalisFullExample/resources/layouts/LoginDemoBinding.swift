@@ -21,5 +21,10 @@ public class LoginDemoBinding: XibView {
     public var agree: LabeledToggle { return _agree }
     public var submitLoading: UIView { return _submitLoading }
     public var submit: UIButton { return _submit }
+    
+    public override func selectNibName() -> String {
+       
+        return "LoginDemoBinding"
+    }
 
 }

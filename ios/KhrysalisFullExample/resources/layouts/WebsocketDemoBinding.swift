@@ -14,5 +14,10 @@ public class WebsocketDemoBinding: XibView {
     public var items: UICollectionView { return _items }
     public var input: UITextField { return _input }
     public var submit: UIButton { return _submit }
+    
+    public override func selectNibName() -> String {
+       
+        return "WebsocketDemoBinding"
+    }
 
 }

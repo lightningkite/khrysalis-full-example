@@ -31,5 +31,10 @@ public class SliderDemoBinding: XibView {
     public var ratingDisplayStarsFloat: CosmosView { return _ratingDisplayStarsFloat }
     public var ratingDisplayStarsSmallFloat: CosmosView { return _ratingDisplayStarsSmallFloat }
     public var ratingDisplayNumberFloat: UILabel { return _ratingDisplayNumberFloat }
+    
+    public override func selectNibName() -> String {
+       
+        return "SliderDemoBinding"
+    }
 
 }

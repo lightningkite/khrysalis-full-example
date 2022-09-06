@@ -12,5 +12,10 @@ public class PreviewBinding: XibView {
     @IBOutlet weak private var _pager: UICollectionView!
     public var viewName: UILabel { return _viewName }
     public var pager: UICollectionView { return _pager }
+    
+    public override func selectNibName() -> String {
+       
+        return "PreviewBinding"
+    }
 
 }

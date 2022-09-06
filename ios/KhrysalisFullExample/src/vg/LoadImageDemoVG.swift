@@ -6,14 +6,14 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class LoadImageDemoVG : ViewGenerator {
+public final class LoadImageDemoVG : ViewGenerator, HasTitle {
     public init() {
         self.canUpload = (ValueSubject(nil as Bool?) as ValueSubject<Bool?>)
         self.currentImage = (ValueSubject(nil as Image?) as ValueSubject<Image?>)
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Load Image Demo" }
     }
     

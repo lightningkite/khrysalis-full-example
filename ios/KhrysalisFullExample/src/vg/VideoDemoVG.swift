@@ -6,7 +6,7 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class VideoDemoVG : ViewGenerator {
+public final class VideoDemoVG : ViewGenerator, HasTitle {
     public init() {
         self.currentVideo = (ValueSubject(VideoRemoteUrl(URL(string: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4")!) as Video) as ValueSubject<Video>)
         //Necessary properties should be initialized now
@@ -14,7 +14,7 @@ public class VideoDemoVG : ViewGenerator {
     
     
     
-    public var titleString: String {
+    public var title: String {
         get { return "Video Demo" }
     }
     

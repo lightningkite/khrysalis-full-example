@@ -10,5 +10,10 @@ public class SelectDemoBinding: XibView {
 
     @IBOutlet weak private var _list: UICollectionView!
     public var list: UICollectionView { return _list }
+    
+    public override func selectNibName() -> String {
+       
+        return "SelectDemoBinding"
+    }
 
 }

@@ -6,14 +6,14 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class ExternalTestVG : ViewGenerator {
+public final class ExternalTestVG : ViewGenerator, HasTitle {
     public init() {
         //Necessary properties should be initialized now
     }
     
     
     
-    public var titleString: String {
+    public var title: String {
         get { return "External Test" }
     }
     

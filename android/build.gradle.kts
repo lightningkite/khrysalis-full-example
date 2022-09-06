@@ -3,9 +3,10 @@ import com.lightningkite.convertlayout.gradle.androidLayoutConverter
 plugins {
     id("com.android.application")
     id("kotlin-android")
-    id("com.lightningkite.khrysalis")
     id("com.lightningkite.androidlayouttranslator")
-    kotlin("plugin.serialization") version "1.6.10"
+    id("com.lightningkite.rx")
+    id("com.lightningkite.khrysalis")
+    kotlin("plugin.serialization")
 }
 
 android {
@@ -31,32 +32,26 @@ android {
     }
 }
 
-repositories {
-//  mavenLocal()
-    maven(url = "https://s01.oss.sonatype.org/content/repositories/releases/")
-    google()
-    mavenCentral()
-}
-
-val khrysaliVersion = "1.0.0-rc3"
-val rxPlusVersion = "1.0.0-rc4"
-val kotlinVersion = "1.6.10"
+val kotlinVersion:String by extra
+val khrysalisVersion: String by extra
+val androidRuntimeVersion: String by extra
+val rxPlusVersion: String by extra
 dependencies {
 
     // To use khrysalis you need the these plugins for each language you wish to use.
-    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:$khrysaliVersion")
-    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:$khrysaliVersion")
+    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-swift:$khrysalisVersion")
+    kcp("com.lightningkite.khrysalis:kotlin-compiler-plugin-typescript:$khrysalisVersion")
 
     // These are our support libraries built around khrysalis. They have equivalent packages for web and swift.
-    implementation("com.lightningkite.khrysalis:jvm-runtime:$khrysaliVersion")
-    implementation("com.lightningkite.androidlayouttranslator:android-runtime:1.0.0-rc2")
+    implementation("com.lightningkite.khrysalis:jvm-runtime:$khrysalisVersion")
+    implementation("com.lightningkite.androidlayouttranslator:android-runtime:${androidRuntimeVersion}")
     implementation("com.lightningkite.rx:view-generator:$rxPlusVersion")
     implementation("com.lightningkite.rx:okhttp:$rxPlusVersion")
     implementation("com.lightningkite.rx:okhttp-resources:$rxPlusVersion")
 
     // This defines where to find equivalent files for translation.
-    equivalents("com.lightningkite.androidlayouttranslator:android-runtime:1.0.0-rc2:equivalents")
-    equivalents("com.lightningkite.khrysalis:jvm-runtime:$khrysaliVersion:equivalents")
+    equivalents("com.lightningkite.androidlayouttranslator:android-runtime:$androidRuntimeVersion:equivalents")
+    equivalents("com.lightningkite.khrysalis:jvm-runtime:$khrysalisVersion:equivalents")
     equivalents("com.lightningkite.rx:rxplus:$rxPlusVersion:equivalents")
 
     testImplementation("junit:junit:4.13.2")

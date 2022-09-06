@@ -6,7 +6,7 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class WebsocketDemoVG : ViewGenerator {
+public final class WebsocketDemoVG : ViewGenerator, HasTitle {
     public init() {
         self.socket = HttpClient.INSTANCE
             .webSocket(url: "wss://echo.websocket.events")
@@ -17,7 +17,7 @@ public class WebsocketDemoVG : ViewGenerator {
     }
     
     
-    public var titleString: String {
+    public var title: String {
         get { return "Websocket Demo" }
     }
     

@@ -6,7 +6,7 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class LoginDemoVG : ViewGenerator {
+public final class LoginDemoVG : ViewGenerator, HasTitle {
     public var stack: ValueSubject<Array<ViewGenerator>>
     public init(stack: ValueSubject<Array<ViewGenerator>>) {
         self.stack = stack
@@ -18,7 +18,7 @@ public class LoginDemoVG : ViewGenerator {
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Log In Demo" }
     }
     
@@ -67,7 +67,7 @@ public class LoginDemoVG : ViewGenerator {
         self.loading.value = true
         DispatchQueue.main.asyncAfter(deadline: .now() + .milliseconds(Int(1000)), execute: { () -> Void in
             self.loading.value = false
-            self.stack.push(BasicExampleVG())
+            self.stack.push(ExampleContentVG())
         })
     }
 }

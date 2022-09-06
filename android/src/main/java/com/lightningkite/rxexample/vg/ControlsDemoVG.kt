@@ -19,8 +19,8 @@ import com.lightningkite.rx.toSubjectString
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.subjects.Subject
 
-class ControlsDemoVG() : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("Controls Demo")
+class ControlsDemoVG() : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("Controls Demo")
 
     val text: ValueSubject<String> = ValueSubject("")
     val options: ValueSubject<List<String>> =

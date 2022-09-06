@@ -6,7 +6,7 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class MainVG : ViewGenerator, EntryPoint {
+public final class MainVG : ViewGenerator, HasTitle, EntryPoint {
     public init() {
         let stack: ValueSubject<Array<ViewGenerator>> = ValueSubject(([] as Array<ViewGenerator>))
         self.stack = stack
@@ -15,7 +15,7 @@ public class MainVG : ViewGenerator, EntryPoint {
         self.stack.push(SelectDemoVG(stack: self.stack))
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Main" }
     }
     
@@ -31,16 +31,14 @@ public class MainVG : ViewGenerator, EntryPoint {
         let xml = MainBinding()
         let view = xml.root
         
-        helloWorld()
-        
         self.stack.showIn(xml.mainContent, dependency: dependency)
         
         self.stack
-            .map { (it) -> String in (it.last?.titleString).map { temp149 in temp149 } ?? "" }
+            .map { (it) -> String in ((it.last as? HasTitle)?.title).map { temp150 in temp150 } ?? "" }
             .subscribeAutoDispose(xml.title, \UILabel.text)
         
         self.shouldBackBeShown
-            .subscribeAutoDispose(xml.mainBack, \UIView.visible)
+            .subscribeAutoDispose(xml.mainBack, (\UIView.visible))
         
         xml.mainBack.onClick { () -> Void in self.stack.pop() }
         

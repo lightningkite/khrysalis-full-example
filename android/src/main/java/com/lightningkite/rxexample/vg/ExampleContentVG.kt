@@ -22,8 +22,8 @@ import io.reactivex.rxjava3.kotlin.addTo
 import io.reactivex.rxjava3.kotlin.subscribeBy
 import java.util.concurrent.TimeUnit
 
-class ExampleContentVG : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("Example Content")
+class ExampleContentVG : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("Example Content")
 
     val number: ValueSubject<Int> = ValueSubject(0)
     val chained: ValueSubject<ValueSubject<Int>> = ValueSubject(ValueSubject(0))

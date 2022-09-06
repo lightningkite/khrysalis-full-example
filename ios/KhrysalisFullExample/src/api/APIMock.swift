@@ -4,13 +4,13 @@ import KhrysalisRuntime
 import RxSwift
 import Foundation
 
-public class APIMock : APIInterface {
+public final class APIMock : APIInterface {
     public init() {
         //Necessary properties should be initialized now
     }
     
     
-    public class Companion {
+    public final class Companion {
         public init() {
             self.delayMs = 150
             self.lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -23,7 +23,7 @@ public class APIMock : APIInterface {
     }
     
     public func getExamplePosts() -> Single<Array<Post>> {
-        return Single.just([Post(title: "First", body: APIMock.Companion.INSTANCE.lorem)]).delay(.milliseconds(Int(1000)), scheduler: MainScheduler.instance)
+        return Single.just([Post(title: "First", body: APIMock.Companion.INSTANCE.lorem)]).delay(.milliseconds(1000), scheduler: MainScheduler.instance)
     }
 }
 

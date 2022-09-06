@@ -6,14 +6,14 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class HttpDemoVG : ViewGenerator {
+public final class HttpDemoVG : ViewGenerator, HasTitle {
     public init() {
         //Necessary properties should be initialized now
     }
     
     
     
-    public var titleString: String {
+    public var title: String {
         get { return "Http Demo" }
     }
     

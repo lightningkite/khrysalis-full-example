@@ -29,5 +29,10 @@ public class ControlsDemoBinding: XibView {
     public var editableTextCopy: UILabel { return _editableTextCopy }
     public var editableTextBig: UITextView { return _editableTextBig }
     public var spinner: UIButton { return _spinner }
+    
+    public override func selectNibName() -> String {
+       
+        return "ControlsDemoBinding"
+    }
 
 }

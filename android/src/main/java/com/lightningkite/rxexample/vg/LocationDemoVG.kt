@@ -20,8 +20,8 @@ import io.reactivex.rxjava3.core.Observable
 import java.util.*
 import com.lightningkite.khrysalis.SharedCode
 
-class LocationDemoVG : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("Location Demo")
+class LocationDemoVG : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("Location Demo")
 
     val locationInfo = ValueSubject<Optional<Location>>(Optional.empty())
 

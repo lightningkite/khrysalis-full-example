@@ -6,15 +6,15 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class SelectDemoVG : ViewGenerator {
+public final class SelectDemoVG : ViewGenerator, HasTitle {
     public var stack: ValueSubject<Array<ViewGenerator>>
     public init(stack: ValueSubject<Array<ViewGenerator>>) {
         self.stack = stack
-        self.options = [BasicExampleVG(), VideoDemoVG(), WebsocketDemoVG(), HttpDemoVG(), ExternalTestVG(), DateButtonDemoVG(), LocationDemoVG(), LoginDemoVG(stack: stack), LoadImageDemoVG(), ControlsDemoVG(), ViewPagerDemoVG(stack: stack), SliderDemoVG()]
+        self.options = [ExampleContentVG(), VideoDemoVG(), WebsocketDemoVG(), HttpDemoVG(), ExternalTestVG(), DateButtonDemoVG(), LocationDemoVG(), LoginDemoVG(stack: stack), LoadImageDemoVG(), ControlsDemoVG(), ViewPagerDemoVG(stack: stack), SliderDemoVG()]
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Select Demo" }
     }
     
@@ -32,7 +32,7 @@ public class SelectDemoVG : ViewGenerator {
         Observable.just(self.options).showIn(xml.list) { (obs: Observable<ViewGenerator>) -> UIView in
             let xml = ComponentTestBinding()
             let view = xml.root
-            obs.subscribeAutoDispose(xml.label, { (this, it) -> Void in this.text = it.titleString })
+            obs.subscribeAutoDispose(xml.label, { (this, it) -> Void in this.text = (it as? HasTitle)?.title ?? "" })
             xml.button.rx.click
                 .flatMap { (it) -> Observable<ViewGenerator> in obs.take(1) }
                 .subscribeAutoDispose(view, { (this, it) -> Void in self.selectVG(it) })

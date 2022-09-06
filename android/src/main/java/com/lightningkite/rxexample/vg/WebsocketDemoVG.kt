@@ -31,10 +31,10 @@ import com.lightningkite.rx.okhttp.WebSocketInterface
 class WebsocketDemoVG(
     //--- Dependencies (overwritten on flow generation)
     //--- Extends (overwritten on flow generation)
-) : ViewGenerator {
+) : ViewGenerator, HasTitle {
 
     //--- Title (overwritten on flow generation)
-    override val titleString: ViewString get() = ViewStringRaw("Websocket Demo")
+    override val title: ViewString get() = ViewStringRaw("Websocket Demo")
 
     //--- Data
     val socket: Observable<WebSocketInterface> = HttpClient

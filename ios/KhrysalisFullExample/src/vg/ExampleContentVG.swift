@@ -6,14 +6,14 @@ import UIKit
 import RxSwiftPlus
 import Foundation
 
-public class ExampleContentVG : ViewGenerator {
+public final class ExampleContentVG : ViewGenerator, HasTitle {
     public init() {
         self.number = ValueSubject(0)
         self.chained = ValueSubject(ValueSubject(0))
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Example Content" }
     }
     
@@ -21,13 +21,21 @@ public class ExampleContentVG : ViewGenerator {
     public let chained: ValueSubject<ValueSubject<Int>>
     
     public func increment() -> Void {
-        let temp54 = self.number
-        temp54.value = self.number.value + 1
+        let temp43 = self.number
+        temp43.value = self.number.value + 1
     }
     
     public func generate(dependency: ViewControllerAccess) -> UIView {
         let xml = ExampleContentBinding()
         let view = xml.root
+        
+        Observable<Int>.interval(RxTimeInterval.milliseconds(Int(1000)), scheduler: MainScheduler.instance)
+            .doOnDispose { () -> Void in print("KILLING LISTENER") }
+            .subscribe(onNext: { (it) -> Void in
+            print("HEY LISTEN")
+            xml.incrementingNumber.text = String(kotlin: it)
+        }, onCompleted: { () -> Void in xml.incrementingNumber.text = "All done!" })
+            .disposed(by: xml.incrementingNumber.removed)
         
         xml.exampleContentIncrement.onClick(disabledMilliseconds: 0) { () -> Void in self.increment() }
         self.number

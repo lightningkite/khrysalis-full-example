@@ -7,7 +7,7 @@ import RxSwiftPlus
 import Foundation
 import Cosmos
 
-public class SliderDemoVG : ViewGenerator {
+public final class SliderDemoVG : ViewGenerator, HasTitle {
     public init() {
         let ratio: ValueSubject<Float> = ValueSubject(0)
         self.ratio = ratio
@@ -17,7 +17,7 @@ public class SliderDemoVG : ViewGenerator {
         self.obsRatingFloat = self.ratio.map(read: { (it) -> Float in it * 5 }, write: { (it) -> Float in it / 5 })
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Slider Demo" }
     }
     

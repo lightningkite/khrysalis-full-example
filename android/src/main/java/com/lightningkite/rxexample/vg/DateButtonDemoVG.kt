@@ -23,8 +23,8 @@ import java.util.*
 import java.time.*
 import com.lightningkite.khrysalis.SharedCode
 
-class DateButtonDemoVG() : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("ZonedDateTime Button Demo")
+class DateButtonDemoVG() : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("ZonedDateTime Button Demo")
 
     val date: ValueSubject<ZonedDateTime> = ValueSubject(ZonedDateTime.now())
 

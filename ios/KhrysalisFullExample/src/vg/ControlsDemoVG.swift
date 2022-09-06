@@ -7,7 +7,7 @@ import RxSwiftPlus
 import Foundation
 import XmlToXibRuntime
 
-public class ControlsDemoVG : ViewGenerator {
+public final class ControlsDemoVG : ViewGenerator, HasTitle {
     public init() {
         self.text = ValueSubject("")
         self.options = ValueSubject(["Apple", "Banana", "Chili Pepper", "Dragon Fruit"])
@@ -16,7 +16,7 @@ public class ControlsDemoVG : ViewGenerator {
         //Necessary properties should be initialized now
     }
     
-    public var titleString: String {
+    public var title: String {
         get { return "Controls Demo" }
     }
     

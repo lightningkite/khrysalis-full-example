@@ -19,8 +19,8 @@ import com.lightningkite.rx.android.subscribeAutoDispose
 import com.lightningkite.khrysalis.SharedCode
 import com.lightningkite.rxexample.api.helloWorld
 
-class MainVG : ViewGenerator, EntryPoint {
-    override val titleString: ViewString get() = ViewStringRaw("Main")
+class MainVG : ViewGenerator, HasTitle, EntryPoint {
+    override val title: ViewString get() = ViewStringRaw("Main")
 
     val stack: StackSubject<ViewGenerator> = ValueSubject(listOf<ViewGenerator>())
     override val mainStack: StackSubject<ViewGenerator>?
@@ -40,7 +40,7 @@ class MainVG : ViewGenerator, EntryPoint {
         stack.showIn(xml.mainContent, dependency)
 
         stack
-            .map { it -> it.lastOrNull()?.titleString?.get(dependency.context) ?: "" }
+            .map { it -> (it.lastOrNull() as? HasTitle)?.title?.get(dependency.context) ?: "" }
             .subscribeAutoDispose<Observable<String>, TextView, String>(xml.title, TextView::setText)
 
         shouldBackBeShown

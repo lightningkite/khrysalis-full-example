@@ -16,8 +16,8 @@ import com.lightningkite.rxexample.databinding.ComponentTestBinding
 import com.lightningkite.rxexample.databinding.SelectDemoBinding
 import com.lightningkite.khrysalis.SharedCode
 
-class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("Select Demo")
+class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("Select Demo")
 
     val options: List<ViewGenerator> = listOf(
         ExampleContentVG(),
@@ -31,8 +31,7 @@ class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
         LoadImageDemoVG(),
         ControlsDemoVG(),
         ViewPagerDemoVG(stack),
-        SliderDemoVG(),
-//        PreviewVG()
+        SliderDemoVG()
     )
 
     fun selectVG(viewGenerator: ViewGenerator){
@@ -47,7 +46,7 @@ class SelectDemoVG(val stack: StackSubject<ViewGenerator>) : ViewGenerator {
         Observable.just(options).showIn(xml.list){ obs: Observable<ViewGenerator> ->
             val xml = ComponentTestBinding.inflate(dependency.layoutInflater)
             val view = xml.root
-            obs.subscribeAutoDispose(xml.label) { setText(it.titleString) }
+            obs.subscribeAutoDispose(xml.label) { setText((it as? HasTitle)?.title ?: ViewStringRaw("")) }
             xml.button.clicks()
                 .flatMap { obs.take(1) }
                 .subscribeAutoDispose(view) { selectVG(it) }

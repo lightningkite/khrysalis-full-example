@@ -5,7 +5,7 @@ import RxSwift
 import RxSwiftPlus
 import Foundation
 
-public class APIOnline : APIInterface {
+public final class APIOnline : APIInterface {
     public var baseUrl: String
     public init(baseUrl: String = "https://jsonplaceholder.typicode.com") {
         self.baseUrl = baseUrl

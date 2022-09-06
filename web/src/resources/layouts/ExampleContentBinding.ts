@@ -5,6 +5,7 @@ import { ComponentTextBinding } from './ComponentTextBinding'
 //! Declares com.lightningkite.rxexample.databinding.ExampleContentBinding
 export interface ExampleContentBinding {
     root: HTMLElement
+    incrementingNumber: HTMLDivElement
     exampleContentNumber: HTMLDivElement
     exampleContentIncrement: HTMLButtonElement
     chainedNumber: HTMLDivElement
@@ -20,6 +21,6 @@ export namespace ExampleContentBinding {
     widerThan: undefined
 }]
    export function inflate(): ExampleContentBinding {
-       return inflateHtmlFile(variants, ["exampleContentNumber", "exampleContentIncrement", "chainedNumber", "chainedIncrement", "scrollToTop", "scrollView"], {}, {sub: ComponentTextBinding.inflate}) as ExampleContentBinding
+       return inflateHtmlFile(variants, ["incrementingNumber", "exampleContentNumber", "exampleContentIncrement", "chainedNumber", "chainedIncrement", "scrollToTop", "scrollView"], {}, {sub: ComponentTextBinding.inflate}) as ExampleContentBinding
    }
 }

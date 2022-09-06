@@ -31,11 +31,11 @@ import com.lightningkite.khrysalis.SharedCode
 class ExternalTestVG(
     //--- Dependencies (overwritten on flow generation)
     //--- Extends (overwritten on flow generation)
-) : ViewGenerator {
+) : ViewGenerator, HasTitle {
     
     
     //--- Title (overwritten on flow generation)
-    override val titleString: ViewString get() = ViewStringRaw("External Test")
+    override val title: ViewString get() = ViewStringRaw("External Test")
     
     //--- Generate Start (overwritten on flow generation)
     override fun generate(dependency: ActivityAccess): View {

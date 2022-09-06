@@ -3,7 +3,7 @@
 import KhrysalisRuntime
 import Foundation
 
-public class Post : Codable, CustomStringConvertible, Hashable {
+public final class Post : Codable, CustomStringConvertible, Hashable {
     public var userId: Int
     public var id: Int
     public var title: String

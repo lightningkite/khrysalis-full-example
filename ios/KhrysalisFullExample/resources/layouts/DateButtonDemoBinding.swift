@@ -14,5 +14,10 @@ public class DateButtonDemoBinding: XibView {
     public var text: UILabel { return _text }
     public var dateButton: UIButton { return _dateButton }
     public var timeButton: UIButton { return _timeButton }
+    
+    public override func selectNibName() -> String {
+       
+        return "DateButtonDemoBinding"
+    }
 
 }

@@ -20,8 +20,8 @@ import io.reactivex.rxjava3.core.Observable
 import com.lightningkite.khrysalis.SharedCode
 import com.lightningkite.rx.android.progressRatio
 
-class SliderDemoVG() : ViewGenerator {
-    override val titleString: ViewString get() = ViewStringRaw("Slider Demo")
+class SliderDemoVG() : ViewGenerator, HasTitle {
+    override val title: ViewString get() = ViewStringRaw("Slider Demo")
 
     val ratio: ValueSubject<Float> = ValueSubject(0f)
     val percent = ratio.map(

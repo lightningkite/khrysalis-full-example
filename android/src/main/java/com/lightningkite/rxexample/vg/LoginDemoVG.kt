@@ -17,8 +17,8 @@ import com.lightningkite.khrysalis.SharedCode
 
 class LoginDemoVG(
     val stack: ValueSubject<List<ViewGenerator>>
-) : ViewGenerator {
-    override val titleString: ViewStringRaw get() = ViewStringRaw("Log In Demo")
+) : ViewGenerator, HasTitle {
+    override val title: ViewStringRaw get() = ViewStringRaw("Log In Demo")
 
     val username = ValueSubject("")
     val password = ValueSubject("")

@@ -22,5 +22,10 @@ public class LoadImageDemoBinding: XibView {
     public var image: UIImageView { return _image }
     public var checkCanUpload: UIButton { return _checkCanUpload }
     public var canUpload: UILabel { return _canUpload }
+    
+    public override func selectNibName() -> String {
+       
+        return "LoadImageDemoBinding"
+    }
 
 }

@@ -15,43 +15,20 @@
       </attributedString>
       <connections>
         <outlet destination="video" id="outletiue9Me" property="_video"></outlet>
-        <outlet destination="play" id="outletFF6EUm" property="_play"></outlet>
-        <outlet destination="gallery" id="outletA7f7Yh" property="_gallery"></outlet>
-        <outlet destination="camera" id="outlet2tCJk5" property="_camera"></outlet>
-        <outlet destination="galleryMulti" id="outletYjtYgC" property="_galleryMulti"></outlet>
+        <outlet destination="gallery" id="outletFF6EUm" property="_gallery"></outlet>
+        <outlet destination="camera" id="outletA7f7Yh" property="_camera"></outlet>
+        <outlet destination="galleryMulti" id="outlet2tCJk5" property="_galleryMulti"></outlet>
       </connections>
     </placeholder>
     <placeholder customClass="UIResponder" id="-2" placeholderIdentifier="IBFirstResponder"></placeholder>
     <stackView axis="vertical" contentMode="scaleToFill" id="stackViewoXTUo1" insetsLayoutMarginsFromSafeArea="NO" opaque="NO" spacing="0.0" translatesAutoresizingMaskIntoConstraints="NO">
       <subviews>
         <view clipsSubviews="YES" contentMode="scaleToFill" customClass="VCContainerView" customModule="RxSwiftPlus" id="video" placeholderIntrinsicHeight="180" placeholderIntrinsicWidth="320" translatesAutoresizingMaskIntoConstraints="NO">
-          <color alpha="1.0" blue="0.0" colorSpace="calibratedRGB" green="0.0" key="backgroundColor" red="0.0"></color>
           <constraints>
-            <constraint constant="200.0" firstAttribute="height" id="constraintxyxzJP" multiplier="1.0" priority="1000" relation="equal"></constraint>
+            <constraint constant="200.0" firstAttribute="height" id="constrainthl0p8p" multiplier="1.0" priority="1000" relation="equal"></constraint>
           </constraints>
         </view>
         <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewJstrF0" translatesAutoresizingMaskIntoConstraints="NO">
-          <subviews>
-            <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="play" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
-              <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
-              <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute keyPath="backgroundLayerName" type="string" value="button_primary"></userDefinedRuntimeAttribute>
-                <userDefinedRuntimeAttribute keyPath="textAllCaps" type="boolean" value="NO"></userDefinedRuntimeAttribute>
-              </userDefinedRuntimeAttributes>
-              <state key="normal" title="Play video">
-                <color alpha="1.0" blue="1.0" colorSpace="calibratedRGB" green="1.0" key="titleColor" red="1.0"></color>
-              </state>
-              <inset key="contentEdgeInsets" maxX="8" maxY="8" minX="8" minY="8"></inset>
-            </button>
-          </subviews>
-          <constraints>
-            <constraint constant="8.0" firstAttribute="top" firstItem="play" id="constraintJRw3ur" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewJstrF0"></constraint>
-            <constraint constant="8.0" firstAttribute="bottom" id="constraintUORJlI" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="play"></constraint>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="play" id="constraintynU9C1" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewJstrF0"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintxLAv1n" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="play"></constraint>
-          </constraints>
-        </view>
-        <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewIsmnLJ" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="gallery" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
@@ -66,13 +43,13 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="top" firstItem="gallery" id="constraintFz9our" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewIsmnLJ"></constraint>
-            <constraint constant="8.0" firstAttribute="bottom" id="constraintfnzyNH" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="gallery"></constraint>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="gallery" id="constraintOOTA73" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewIsmnLJ"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintBmrw22" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="gallery"></constraint>
+            <constraint constant="8.0" firstAttribute="top" firstItem="gallery" id="constraintJRw3ur" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewJstrF0"></constraint>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintUORJlI" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="gallery"></constraint>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="gallery" id="constraintynU9C1" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewJstrF0"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintxLAv1n" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="gallery"></constraint>
           </constraints>
         </view>
-        <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewHeR1Fz" translatesAutoresizingMaskIntoConstraints="NO">
+        <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewIsmnLJ" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="camera" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
@@ -87,13 +64,13 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="top" firstItem="camera" id="constraintxb0OlN" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewHeR1Fz"></constraint>
-            <constraint constant="8.0" firstAttribute="bottom" id="constraintsSPLBO" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="camera"></constraint>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="camera" id="constraintL6Wbod" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewHeR1Fz"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraint9x6CZj" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="camera"></constraint>
+            <constraint constant="8.0" firstAttribute="top" firstItem="camera" id="constraintFz9our" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewIsmnLJ"></constraint>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintfnzyNH" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="camera"></constraint>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="camera" id="constraintOOTA73" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewIsmnLJ"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraintBmrw22" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="camera"></constraint>
           </constraints>
         </view>
-        <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewG2ljQB" translatesAutoresizingMaskIntoConstraints="NO">
+        <view customClass="ContainerView" customModule="XmlToXibRuntime" id="viewHeR1Fz" translatesAutoresizingMaskIntoConstraints="NO">
           <subviews>
             <button contentHorizontalAlignment="center" contentMode="scaleToFill" contentVerticalAlignment="center" customClass="StyledUIButton" customModule="XmlToXibRuntime" id="galleryMulti" lineBreakMode="wordWrap" opaque="NO" translatesAutoresizingMaskIntoConstraints="NO" verticalCompressionResistancePriority="1000" verticalHuggingPriority="1000">
               <fontDescription key="fontDescription" pointSize="16.0" type="system"></fontDescription>
@@ -108,13 +85,13 @@
             </button>
           </subviews>
           <constraints>
-            <constraint constant="8.0" firstAttribute="top" firstItem="galleryMulti" id="constraintHOVOEy" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewG2ljQB"></constraint>
-            <constraint constant="8.0" firstAttribute="bottom" id="constraintoGrPRm" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="galleryMulti"></constraint>
-            <constraint constant="8.0" firstAttribute="leading" firstItem="galleryMulti" id="constraintUsYm3K" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewG2ljQB"></constraint>
-            <constraint constant="8.0" firstAttribute="trailing" id="constraintZF2G2m" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="galleryMulti"></constraint>
+            <constraint constant="8.0" firstAttribute="top" firstItem="galleryMulti" id="constraintxb0OlN" identifier="constraintMatchParent-top-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="top" secondItem="viewHeR1Fz"></constraint>
+            <constraint constant="8.0" firstAttribute="bottom" id="constraintsSPLBO" identifier="constraintMatchParent-bottom-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="bottom" secondItem="galleryMulti"></constraint>
+            <constraint constant="8.0" firstAttribute="leading" firstItem="galleryMulti" id="constraintL6Wbod" identifier="constraintMatchParent-leading-start" multiplier="1.0" priority="1000" relation="equal" secondAttribute="leading" secondItem="viewHeR1Fz"></constraint>
+            <constraint constant="8.0" firstAttribute="trailing" id="constraint9x6CZj" identifier="constraintMatchParent-trailing-end" multiplier="1.0" priority="1000" relation="equal" secondAttribute="trailing" secondItem="galleryMulti"></constraint>
           </constraints>
         </view>
-        <view id="view4HdzQI" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100"></view>
+        <view id="viewG2ljQB" translatesAutoresizingMaskIntoConstraints="NO" verticalHuggingPriority="100"></view>
       </subviews>
       <constraints>
         <constraint constant="0.0" firstAttribute="width" id="constraintdhGhM8" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="video"></constraint>
@@ -125,8 +102,6 @@
         <constraint constant="0.0" firstAttribute="width" id="constraintF5B0rZ" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewIsmnLJ"></constraint>
         <constraint constant="0.0" firstAttribute="width" id="constraintIxs5YR" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewHeR1Fz"></constraint>
         <constraint constant="0.0" firstAttribute="width" id="constraintVuToXF" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewHeR1Fz"></constraint>
-        <constraint constant="0.0" firstAttribute="width" id="constrainteBoe8K" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="1000" relation="greaterThanOrEqual" secondAttribute="width" secondItem="viewG2ljQB"></constraint>
-        <constraint constant="0.0" firstAttribute="width" id="constraintPC7yPK" identifier="constraintMatchParent-width-end" multiplier="1.0" priority="300" relation="equal" secondAttribute="width" secondItem="viewG2ljQB"></constraint>
       </constraints>
       <edgeInsets bottom="0.0" key="layoutMargins" left="0.0" right="0.0" top="0.0"></edgeInsets>
     </stackView>

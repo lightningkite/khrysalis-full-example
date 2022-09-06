@@ -21,8 +21,8 @@ export function test(old: HTMLElement, _new: HTMLDivElement, layout: HTMLElement
     replaceWithStyles(old, _new);
     viewExists.set(old, false);
     viewExists.set(old, true);
-    old.style.visibility = false ? "visible" : "";
-    old.style.visibility = true ? "visible" : "";
+    old.style.visibility = false ? "visible" : "unset";
+    old.style.visibility = true ? "visible" : "unset";
     layout.appendChild(old);
     console.log(response.status);
     HttpBody.multipart(["asdf", "fdsa"], ["asdf", new Blob(["asdf"], { type: "text/plain" }), "fdsa"]);
