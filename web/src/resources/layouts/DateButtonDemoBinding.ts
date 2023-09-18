@@ -14,7 +14,8 @@ export interface DateButtonDemoBinding {
 export namespace DateButtonDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): DateButtonDemoBinding {
        return inflateHtmlFile(variants, ["text", "dateButton", "timeButton"], {}, {}) as DateButtonDemoBinding

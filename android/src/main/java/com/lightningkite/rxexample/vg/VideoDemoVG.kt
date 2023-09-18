@@ -1,4 +1,3 @@
-@file:SharedCode
 //
 // VideoDemoVG.swift
 // Created by Butterfly Prototype Generator
@@ -9,26 +8,17 @@ package com.lightningkite.rxexample.vg
 //--- Imports
 
 import android.view.View
-import android.widget.ImageView
-import com.google.android.exoplayer2.ui.PlayerView
+import com.badoo.reaktive.maybe.subscribe
+import com.badoo.reaktive.subject.behavior.BehaviorSubject
 import com.lightningkite.rx.android.resources.Video
 import com.lightningkite.rx.android.resources.VideoReference
 import com.lightningkite.rx.android.resources.VideoRemoteUrl
 import com.lightningkite.rx.viewgenerators.ActivityAccess
-import com.lightningkite.rx.ValueSubject
-import com.lightningkite.rx.android.bind
-import com.lightningkite.rx.android.bindVideoThumbnail
 import com.lightningkite.rx.viewgenerators.*
 import com.lightningkite.rx.android.*
 import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.VideoDemoBinding
-import com.lightningkite.rx.kotlin
-import com.lightningkite.rx.optional
-import com.lightningkite.rx.switchMapNotNull
-import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.kotlin.subscribeBy
 import java.util.*
-import com.lightningkite.khrysalis.SharedCode
 
 //--- Name (overwritten on flow generation)
 @Suppress("NAME_SHADOWING")
@@ -43,7 +33,7 @@ class VideoDemoVG(
 
     //--- Properties
     val currentVideo =
-        ValueSubject<Video>(VideoRemoteUrl("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"))
+        BehaviorSubject<Video>(VideoRemoteUrl("https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"))
 
     //--- Generate Start (overwritten on flow generation)
     override fun generate(dependency: ActivityAccess): View {
@@ -58,21 +48,21 @@ class VideoDemoVG(
         xml.gallery.onClick {
             dependency
                 .requestVideoGallery()
-                .subscribeBy { currentVideo.value = VideoReference(it) }
+                .subscribe{ currentVideo.onNext( VideoReference(it)) }
         }
 
         //--- Set Up xml.camera
         xml.camera.onClick {
             dependency
                 .requestVideoCamera()
-                .subscribeBy { currentVideo.value = VideoReference(it) }
+                .subscribe { currentVideo.onNext( VideoReference(it)) }
         }
 
         //--- Set Up xml.galleryMulti
         xml.galleryMulti.onClick {
             dependency
                 .requestVideosGallery()
-                .subscribeBy { it.firstOrNull()?.let { currentVideo.value = VideoReference(it) } }
+                .subscribe { it.firstOrNull()?.let { currentVideo.onNext( VideoReference(it) ) }}
         }
 
         //--- Generate End (overwritten on flow generation)

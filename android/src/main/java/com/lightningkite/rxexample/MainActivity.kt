@@ -8,10 +8,10 @@ import com.lightningkite.rx.android.staticApplicationContext
 import com.lightningkite.rx.okhttp.HttpClient
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.ViewPumpAppCompatDelegate
+import com.badoo.reaktive.scheduler.computationScheduler
+import com.badoo.reaktive.scheduler.mainScheduler
 import com.lightningkite.androidruntime.SafeInsetsInterceptor
 import dev.b3nedikt.viewpump.ViewPump
-import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.schedulers.Schedulers
 
 
 class MainActivity : ViewGeneratorActivity() {
@@ -30,8 +30,8 @@ class MainActivity : ViewGeneratorActivity() {
         )
         ApplicationAccess.applicationIsActiveStartup(application)
         staticApplicationContext = applicationContext
-        HttpClient.ioScheduler = Schedulers.io()
-        HttpClient.responseScheduler = AndroidSchedulers.mainThread()
+        HttpClient.ioScheduler = computationScheduler
+        HttpClient.responseScheduler = mainScheduler
         super.onCreate(savedInstanceState)
     }
 

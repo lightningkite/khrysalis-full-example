@@ -1,32 +1,28 @@
-@file:SharedCode
 package com.lightningkite.rxexample.vg
 
-import com.lightningkite.khrysalis.SharedCode
 import android.view.View
 import android.widget.CheckBox
 import android.widget.Switch
 import android.widget.TextView
+import com.badoo.reaktive.observable.map
+import com.badoo.reaktive.subject.behavior.BehaviorSubject
 import com.lightningkite.rx.viewgenerators.ActivityAccess
-import com.lightningkite.rx.ValueSubject
 import com.lightningkite.rx.android.bind
-import com.lightningkite.rx.android.bindString
 import com.lightningkite.rx.viewgenerators.*
 import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.ControlsDemoBinding
 import com.lightningkite.rx.android.showIn
 import com.lightningkite.rx.android.subscribeAutoDispose
 import com.lightningkite.rx.toSubjectString
-import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.subjects.Subject
 
 class ControlsDemoVG() : ViewGenerator, HasTitle {
     override val title: ViewString get() = ViewStringRaw("Controls Demo")
 
-    val text: ValueSubject<String> = ValueSubject("")
-    val options: ValueSubject<List<String>> =
-        ValueSubject(listOf("Apple", "Banana", "Chili Pepper", "Dragon Fruit"))
-    val number: ValueSubject<Int> = ValueSubject(32)
-    val isOn = ValueSubject(false)
+    val text: BehaviorSubject<String> = BehaviorSubject("")
+    val options: BehaviorSubject<List<String>> =
+        BehaviorSubject(listOf("Apple", "Banana", "Chili Pepper", "Dragon Fruit"))
+    val number: BehaviorSubject<Int> = BehaviorSubject(32)
+    val isOn = BehaviorSubject(false)
 
     override fun generate(dependency: ActivityAccess): View {
         val xml = ControlsDemoBinding.inflate(dependency.layoutInflater)

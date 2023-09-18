@@ -15,7 +15,8 @@ export interface ExternalTestBinding {
 export namespace ExternalTestBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ExternalTestBinding {
        return inflateHtmlFile(variants, ["openMap", "openWeb", "openEvent", "scrollView"], {}, {}) as ExternalTestBinding

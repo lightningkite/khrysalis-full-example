@@ -1,19 +1,18 @@
-@file:SharedCode
 package com.lightningkite.rxexample
 
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.lightningkite.khrysalis.*
+import com.badoo.reaktive.observable.distinctUntilChanged
+import com.badoo.reaktive.observable.observableOf
+import com.badoo.reaktive.subject.behavior.BehaviorSubject
+import com.badoo.reaktive.subject.publish.PublishSubject
 import com.lightningkite.rx.*
 import com.lightningkite.rx.android.exists
 import com.lightningkite.rx.android.replace
 import com.lightningkite.rx.android.visible
 import com.lightningkite.rx.okhttp.from
-import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.subjects.BehaviorSubject
-import io.reactivex.rxjava3.subjects.PublishSubject
 import okhttp3.MultipartBody
 import okhttp3.RequestBody.Companion.toRequestBody
 import okhttp3.Response
@@ -41,12 +40,11 @@ fun test(old: View, new: RecyclerView, layout: ViewGroup, response: Response) {
         MultipartBody.Part.createFormData("asdf", "fdsa"),
         MultipartBody.Part.createFormData("asdf", "fdsa", "asdf".toRequestBody())
     )
-    val h = Observable.just(1).withWrite { println("write") }
-    val i = Observable.just(1).combineLatest(Observable.just(2)) { a, b -> a + b }
-    val j = PublishSubject.create<Int>().isEqualTo(2)
+    val h = observableOf(1).withWrite { println("write") }
+    val i = observableOf(1).combineLatest(observableOf(2)) { a, b -> a + b }
+    val j = PublishSubject<Int>().isEqualTo(2)
     new.layoutManager = GridLayoutManager(old.context, 3)
-    val k = Observable.just(1).distinctUntilChanged { it -> it / 2 }
-    ValueSubject<Optional<Int>>(1.optional).valueNullable = null
+    BehaviorSubject<Int?>(1).onNext(null)
     TODO()
     TODO("asdf")
 }

@@ -13,7 +13,8 @@ export interface PreviewBinding {
 export namespace PreviewBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): PreviewBinding {
        return inflateHtmlFile(variants, ["viewName"], {pager: ["container", "previous", "next"]}, {}) as PreviewBinding

@@ -12,7 +12,8 @@ export interface MultipleDemoBinding {
 export namespace MultipleDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): MultipleDemoBinding {
        return inflateHtmlFile(variants, ["list"], {}, {}) as MultipleDemoBinding

@@ -17,7 +17,8 @@ export interface LoginDemoBinding {
 export namespace LoginDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): LoginDemoBinding {
        return inflateHtmlFile(variants, ["username", "password", "verifyPassword", "submit", "submitLoading"], {agree: ["input", "label"]}, {}) as LoginDemoBinding

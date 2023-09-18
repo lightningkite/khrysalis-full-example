@@ -15,7 +15,8 @@ export interface ComponentBleDeviceBinding {
 export namespace ComponentBleDeviceBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ComponentBleDeviceBinding {
        return inflateHtmlFile(variants, ["deviceName", "deviceId", "rssi", "connect"], {}, {}) as ComponentBleDeviceBinding

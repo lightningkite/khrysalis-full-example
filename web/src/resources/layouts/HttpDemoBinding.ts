@@ -13,7 +13,8 @@ export interface HttpDemoBinding {
 export namespace HttpDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): HttpDemoBinding {
        return inflateHtmlFile(variants, ["progress", "items"], {}, {}) as HttpDemoBinding

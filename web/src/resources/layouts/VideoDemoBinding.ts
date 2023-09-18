@@ -15,7 +15,8 @@ export interface VideoDemoBinding {
 export namespace VideoDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): VideoDemoBinding {
        return inflateHtmlFile(variants, ["video", "gallery", "camera", "galleryMulti"], {}, {}) as VideoDemoBinding

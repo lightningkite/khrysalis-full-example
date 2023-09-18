@@ -13,7 +13,8 @@ export interface BasicExampleBinding {
 export namespace BasicExampleBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): BasicExampleBinding {
        return inflateHtmlFile(variants, ["theNumber", "incrementTheNumber"], {}, {}) as BasicExampleBinding

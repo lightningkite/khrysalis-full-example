@@ -22,7 +22,8 @@ export interface SliderDemoBinding {
 export namespace SliderDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): SliderDemoBinding {
        return inflateHtmlFile(variants, ["slider", "valueDisplay", "progress", "rating", "ratingDisplayStars", "ratingDisplayStarsSmall", "ratingDisplayNumber", "ratingFloat", "ratingDisplayStarsFloat", "ratingDisplayStarsSmallFloat", "ratingDisplayNumberFloat"], {}, {}) as SliderDemoBinding

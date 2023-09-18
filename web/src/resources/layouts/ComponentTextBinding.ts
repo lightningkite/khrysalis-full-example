@@ -12,7 +12,8 @@ export interface ComponentTextBinding {
 export namespace ComponentTextBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ComponentTextBinding {
        return inflateHtmlFile(variants, ["label"], {}, {}) as ComponentTextBinding

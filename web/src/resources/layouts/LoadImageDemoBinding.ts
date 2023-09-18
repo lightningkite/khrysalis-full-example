@@ -18,7 +18,8 @@ export interface LoadImageDemoBinding {
 export namespace LoadImageDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): LoadImageDemoBinding {
        return inflateHtmlFile(variants, ["gallery", "galleryMultiple", "camera", "loremPixel", "image", "checkCanUpload", "canUpload"], {}, {}) as LoadImageDemoBinding

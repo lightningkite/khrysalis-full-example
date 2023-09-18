@@ -1,29 +1,23 @@
-@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.view.View
 import android.widget.ProgressBar
+import com.badoo.reaktive.subject.behavior.BehaviorSubject
 import com.lightningkite.rx.viewgenerators.ActivityAccess
-import io.reactivex.rxjava3.subjects.Subject
-import com.lightningkite.rx.ValueSubject
 import com.lightningkite.rx.map
 import com.lightningkite.rx.android.bind
-import com.lightningkite.rx.android.bindFloat
 
 import com.lightningkite.rx.viewgenerators.*
 import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.SliderDemoBinding
 import com.lightningkite.rx.android.subscribeAutoDispose
-import com.lightningkite.rx.plus
 import com.lightningkite.rx.toSubjectFloat
-import io.reactivex.rxjava3.core.Observable
-import com.lightningkite.khrysalis.SharedCode
 import com.lightningkite.rx.android.progressRatio
 
 class SliderDemoVG() : ViewGenerator, HasTitle {
     override val title: ViewString get() = ViewStringRaw("Slider Demo")
 
-    val ratio: ValueSubject<Float> = ValueSubject(0f)
+    val ratio: BehaviorSubject<Float> = BehaviorSubject(0f)
     val percent = ratio.map(
         read = { it -> (it * 100).toInt() },
         write = { it -> it.toFloat() / 100f }

@@ -1,4 +1,3 @@
-@file:SharedCode
 //
 // ExternalTestVG.swift
 // Created by Butterfly Prototype Generator
@@ -24,7 +23,6 @@ import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.ExternalTestBinding
 import java.util.*
 import java.time.*
-import com.lightningkite.khrysalis.SharedCode
 
 //--- Name (overwritten on flow generation)
 @Suppress("NAME_SHADOWING")

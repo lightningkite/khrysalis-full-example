@@ -1,29 +1,24 @@
-@file:SharedCode
 package com.lightningkite.rxexample.vg
 
 import android.location.Location
 import android.view.View
 import android.widget.TextView
+import com.badoo.reaktive.observable.map
+import com.badoo.reaktive.single.subscribe
+import com.badoo.reaktive.subject.behavior.BehaviorSubject
 import com.lightningkite.rx.viewgenerators.ActivityAccess
-import io.reactivex.rxjava3.subjects.Subject
-import com.lightningkite.rx.ValueSubject
-import com.lightningkite.rx.android.bindString
 
 import com.lightningkite.rx.viewgenerators.*
 import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rx.android.onClick
 import com.lightningkite.rxexample.databinding.LocationDemoBinding
 import com.lightningkite.rx.android.subscribeAutoDispose
-import com.lightningkite.rx.mapFromNullable
-import com.lightningkite.rx.optional
-import io.reactivex.rxjava3.core.Observable
 import java.util.*
-import com.lightningkite.khrysalis.SharedCode
 
 class LocationDemoVG : ViewGenerator, HasTitle {
     override val title: ViewString get() = ViewStringRaw("Location Demo")
 
-    val locationInfo = ValueSubject<Optional<Location>>(Optional.empty())
+    val locationInfo = BehaviorSubject<Location?>(null)
 
     override fun generate(dependency: ActivityAccess): View {
         val xml = LocationDemoBinding.inflate(dependency.layoutInflater)
@@ -32,14 +27,14 @@ class LocationDemoVG : ViewGenerator, HasTitle {
             dependency.requestLocation(
                 accuracyBetterThanMeters = 100.0
             ).subscribe { location ->
-                this.locationInfo.value = location.optional
+                this.locationInfo.onNext(location)
             }
         }
-        locationInfo.mapFromNullable { it ->
+        locationInfo.map { it ->
             if(it != null){
-                return@mapFromNullable "${it}"
+                return@map "${it}"
             } else {
-                return@mapFromNullable "Nothing yet"
+                return@map "Nothing yet"
             }
         }.subscribeAutoDispose(xml.locationDisplay, TextView::setText)
         return view

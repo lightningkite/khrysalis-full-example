@@ -12,7 +12,8 @@ export interface SelectDemoBinding {
 export namespace SelectDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): SelectDemoBinding {
        return inflateHtmlFile(variants, ["list"], {}, {}) as SelectDemoBinding

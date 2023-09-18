@@ -18,7 +18,8 @@ export interface ExampleContentBinding {
 export namespace ExampleContentBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ExampleContentBinding {
        return inflateHtmlFile(variants, ["incrementingNumber", "exampleContentNumber", "exampleContentIncrement", "chainedNumber", "chainedIncrement", "scrollToTop", "scrollView"], {}, {sub: ComponentTextBinding.inflate}) as ExampleContentBinding

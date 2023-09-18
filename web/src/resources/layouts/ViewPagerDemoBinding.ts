@@ -12,7 +12,8 @@ export interface ViewPagerDemoBinding {
 export namespace ViewPagerDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ViewPagerDemoBinding {
        return inflateHtmlFile(variants, [], {viewPager: ["container", "previous", "next"]}, {}) as ViewPagerDemoBinding

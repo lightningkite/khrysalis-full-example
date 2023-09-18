@@ -13,7 +13,8 @@ export interface LocationDemoBinding {
 export namespace LocationDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): LocationDemoBinding {
        return inflateHtmlFile(variants, ["getLocation", "locationDisplay"], {}, {}) as LocationDemoBinding

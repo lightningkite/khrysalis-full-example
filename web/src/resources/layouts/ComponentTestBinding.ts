@@ -13,7 +13,8 @@ export interface ComponentTestBinding {
 export namespace ComponentTestBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ComponentTestBinding {
        return inflateHtmlFile(variants, ["label", "button"], {}, {}) as ComponentTestBinding

@@ -20,7 +20,8 @@ export interface ControlsDemoBinding {
 export namespace ControlsDemoBinding {
    const variants = [{
     html: html,
-    widerThan: undefined
+    widerThan: undefined,
+    tallerThan: undefined
 }]
    export function inflate(): ControlsDemoBinding {
        return inflateHtmlFile(variants, ["editableText", "numberText", "editableAutoText", "editableTextCopy", "editableTextBig", "spinner"], {toggleSwitch: ["input", "label"], check: ["input", "label"], checkAlt: ["input"]}, {}) as ControlsDemoBinding

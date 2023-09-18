@@ -1,4 +1,3 @@
-@file:SharedCode
 //
 // WebsocketDemoVG.swift
 // Created by Butterfly Prototype Generator
@@ -10,20 +9,17 @@ package com.lightningkite.rxexample.vg
 
 import android.view.View
 import android.widget.TextView
+import com.badoo.reaktive.disposable.addTo
+import com.badoo.reaktive.observable.*
+import com.badoo.reaktive.subject.behavior.BehaviorSubject
 import com.lightningkite.rx.viewgenerators.ActivityAccess
-import com.lightningkite.rx.okhttp.ConnectedWebSocket
 import com.lightningkite.rx.okhttp.HttpClient
 import com.lightningkite.rx.okhttp.WebSocketFrame
-import com.lightningkite.rx.ValueSubject
-import io.reactivex.rxjava3.kotlin.addTo
 import com.lightningkite.rx.viewgenerators.*
 import com.lightningkite.rx.android.resources.*
 import com.lightningkite.rxexample.databinding.ComponentTextBinding
 import com.lightningkite.rxexample.databinding.WebsocketDemoBinding
 import com.lightningkite.rx.android.*
-import io.reactivex.rxjava3.core.Observable
-import io.reactivex.rxjava3.subjects.Subject
-import com.lightningkite.khrysalis.SharedCode
 import com.lightningkite.rx.okhttp.WebSocketInterface
 
 //--- Name (overwritten on flow generation)
@@ -42,7 +38,7 @@ class WebsocketDemoVG(
         .replay(1)
         .refCount()
 
-    val text: ValueSubject<String> = ValueSubject("")
+    val text: BehaviorSubject<String> = BehaviorSubject("")
 
     //--- Generate Start (overwritten on flow generation)
     override fun generate(dependency: ActivityAccess): View {
@@ -61,7 +57,7 @@ class WebsocketDemoVG(
                 }
                 return@map responses
             }
-            .startWithItem(responses)
+            .startWithValue(responses)
             .retry()
             .showIn(
                 xml.items,
